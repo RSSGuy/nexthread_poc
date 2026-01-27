@@ -163,7 +163,9 @@ class MarketDataService {
     trend: "+0.02%",
     status: "Neutral",
   );
-}*/
+}*//*
+
+*/
 /*
 import 'dart:convert';
 import 'dart:async'; // Required for TimeoutException
@@ -336,8 +338,11 @@ class MarketDataService {
     trend: "+0.02%",
     status: "Neutral",
   );
-}*/
+}*//*
 
+
+*/
+/*
 import 'dart:convert';
 import 'dart:async';
 import 'package:http/http.dart' as http;
@@ -571,4 +576,713 @@ class MarketDataService {
       return "Wheat: \$5.72 (Stable)\nCorn: \$4.85 (Normal)\nSoybean: \$26.15 (Soft)";
     }
   }
+}*//*
+
+*/
+/*
+
+
+import 'dart:convert';
+import 'dart:async'; // Required for TimeoutException
+import 'package:http/http.dart' as http;
+import '../secrets.dart';
+
+class MarketFact {
+  final String category;
+  final String name;
+  final String value;
+  final String trend;
+  final String status;
+
+  MarketFact({
+    required this.category,
+    required this.name,
+    required this.value,
+    required this.trend,
+    required this.status,
+  });
+
+  // Helper to check if the data is marked pending
+  bool get isPending => status == 'Pending Update';
+
+  @override
+  String toString() {
+    return '$category - $name: $value ($trend). Status: $status';
+  }
+}
+
+class MarketDataService {
+
+  // Define a strict timeout for all API calls
+  static const Duration _apiTimeout = Duration(seconds: 4);
+
+  // --- ALPHA VANTAGE (Commodities) ---
+  Future<MarketFact> fetchWheatPrice() async {
+    if (Secrets.alphaVantageKey.contains("YOUR")) return _getMockWheat();
+
+    try {
+      final url = Uri.parse(
+          'https://www.alphavantage.co/query?function=WHEAT&interval=monthly&apikey=${Secrets.alphaVantageKey}'
+      );
+
+      final response = await http.get(url).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        if (data['data'] == null) return _getPendingFact("Agriculture", "Wheat Futures");
+
+        final latest = data['data'][0];
+        final prev = data['data'][1];
+
+        // Convert $/Metric Ton to $/Bushel (~36.74 bu/ton)
+        final price = double.parse(latest['value']) / 36.74;
+        final prevPrice = double.parse(prev['value']) / 36.74;
+        final change = ((price - prevPrice) / prevPrice) * 100;
+
+        return MarketFact(
+          category: "Agriculture",
+          name: "Wheat Futures",
+          value: "\$${price.toStringAsFixed(2)}/bu",
+          trend: "${change >= 0 ? '+' : ''}${change.toStringAsFixed(1)}% MoM",
+          status: change > 5 ? "Spiking" : change < -5 ? "Crashing" : "Stable",
+        );
+      }
+    } catch (e) {
+      print("AV Error/Timeout: $e");
+    }
+    return _getPendingFact("Agriculture", "Wheat Futures");
+  }
+
+  // --- BANK OF CANADA (Macro Economics) ---
+  Future<MarketFact> fetchInterestRate() async {
+    try {
+      final url = Uri.parse(
+          'https://www.bankofcanada.ca/valet/observations/V122544/json?recent=2'
+      );
+
+      final response = await http.get(url).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        final observations = data['observations'];
+
+        if (observations != null && observations.length >= 2) {
+          final latest = double.parse(observations[1]['V122544']['v']);
+          final prev = double.parse(observations[0]['V122544']['v']);
+          final change = ((latest - prev) / prev) * 100;
+
+          return MarketFact(
+            category: "Macro",
+            name: "10Y Can Bond",
+            value: "$latest%",
+            trend: "${change >= 0 ? '+' : ''}${change.toStringAsFixed(2)}%",
+            status: latest > 3.5 ? "Restrictive" : "Neutral",
+          );
+        }
+      }
+    } catch (e) {
+      print("BoC Error/Timeout: $e");
+    }
+    return _getPendingFact("Macro", "10Y Can Bond");
+  }
+
+  // --- BANK OF CANADA (Forex) ---
+  Future<MarketFact> fetchCadExchangeRate() async {
+    try {
+      final url = Uri.parse(
+          'https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json?recent=2'
+      );
+
+      final response = await http.get(url).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        final observations = data['observations'];
+
+        if (observations != null && observations.length >= 2) {
+          final latest = double.parse(observations[1]['FXUSDCAD']['v']);
+          final prev = double.parse(observations[0]['FXUSDCAD']['v']);
+          final change = ((latest - prev) / prev) * 100;
+
+          return MarketFact(
+            category: "Forex",
+            name: "USD/CAD",
+            value: "\$${latest.toStringAsFixed(4)}",
+            trend: "${change >= 0 ? '+' : ''}${change.toStringAsFixed(2)}%",
+            status: "Live",
+          );
+        }
+      }
+    } catch (e) {
+      print("BoC FX Error/Timeout: $e");
+    }
+    return _getPendingFact("Forex", "USD/CAD");
+  }
+
+  // --- AGGREGATOR ---
+
+  /// Returns all market facts as a list.
+  /// Used by the UI to display individual Pulse items.
+  Future<List<MarketFact>> getAllFacts() async {
+    try {
+      return await Future.wait([
+        fetchWheatPrice(),
+        fetchInterestRate(),
+        fetchCadExchangeRate(),
+      ]).timeout(const Duration(seconds: 6));
+    } catch (e) {
+      print("Global Data Timeout/Error: Reverting to defaults. $e");
+      // Return defaults if the whole batch fails
+      return [
+        _getMockWheat(),
+        _getMockRates(),
+        MarketFact(category: "Forex", name: "USD/CAD", value: "1.3500", trend: "0.0%", status: "Offline")
+      ];
+    }
+  }
+
+  /// Returns a string representation of all facts.
+  /// Used by the AI Service for prompt generation.
+  Future<String> getLiveFactsString() async {
+    final facts = await getAllFacts();
+    return facts.map((f) => f.toString()).join('\n');
+  }
+
+  // --- ASYNC UPDATE LOGIC ---
+
+  /// If some data is marked pending, update the data when it is permissible.
+  Future<MarketFact> updatePendingFact(MarketFact fact) async {
+    if (!fact.isPending) {
+      return fact;
+    }
+
+    switch (fact.name) {
+      case "Wheat Futures":
+        return await fetchWheatPrice();
+      case "10Y Can Bond":
+        return await fetchInterestRate();
+      case "USD/CAD":
+        return await fetchCadExchangeRate();
+      default:
+        return fact;
+    }
+  }
+
+  // --- HELPERS & FALLBACKS ---
+
+  MarketFact _getPendingFact(String category, String name) => MarketFact(
+    category: category,
+    name: name,
+    value: "--",
+    trend: "--",
+    status: "Pending Update",
+  );
+
+  MarketFact _getMockWheat() => MarketFact(
+    category: "Agriculture",
+    name: "Wheat (Simulated)",
+    value: "\$5.80/bu",
+    trend: "-2.1% MoM",
+    status: "Abundant",
+  );
+
+  MarketFact _getMockRates() => MarketFact(
+    category: "Macro",
+    name: "10Y Can Bond (Sim)",
+    value: "3.25%",
+    trend: "+0.02%",
+    status: "Neutral",
+  );
+}*//*
+
+*/
+/*
+import 'dart:convert';
+import 'dart:async'; // Required for TimeoutException
+import 'package:http/http.dart' as http;
+import '../secrets.dart';
+
+class MarketFact {
+  final String category;
+  final String name;
+  final String value;
+  final String trend;
+  final String status;
+
+  MarketFact({
+    required this.category,
+    required this.name,
+    required this.value,
+    required this.trend,
+    required this.status,
+  });
+
+  // Helper to check if the data is marked pending
+  bool get isPending => status == 'Pending Update';
+
+  @override
+  String toString() {
+    return '$category - $name: $value ($trend). Status: $status';
+  }
+}
+
+class MarketDataService {
+
+  // Define a strict timeout for all API calls
+  static const Duration _apiTimeout = Duration(seconds: 4);
+
+  // --- ALPHA VANTAGE (Commodities) ---
+  Future<MarketFact> fetchWheatPrice() async {
+    // If using placeholder key, return mock immediately
+    if (Secrets.alphaVantageKey.contains("YOUR")) return _getMockWheat();
+
+    try {
+      final url = Uri.parse(
+          'https://www.alphavantage.co/query?function=WHEAT&interval=monthly&apikey=${Secrets.alphaVantageKey}'
+      );
+
+      final response = await http.get(url).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        if (data['data'] == null) return _getPendingFact("Agriculture", "Wheat Futures");
+
+        final latest = data['data'][0];
+        final prev = data['data'][1];
+
+        // Convert $/Metric Ton to $/Bushel (~36.74 bu/ton)
+        final price = double.parse(latest['value']) / 36.74;
+        final prevPrice = double.parse(prev['value']) / 36.74;
+        final change = ((price - prevPrice) / prevPrice) * 100;
+
+        return MarketFact(
+          category: "Agriculture",
+          name: "Wheat Futures",
+          value: "\$${price.toStringAsFixed(2)}/bu",
+          trend: "${change >= 0 ? '+' : ''}${change.toStringAsFixed(1)}% MoM",
+          status: change > 5 ? "Spiking" : change < -5 ? "Crashing" : "Stable",
+        );
+      }
+    } catch (e) {
+      print("AV Error/Timeout: $e");
+    }
+    // CHANGED: Return Pending instead of Mock on error
+    return _getPendingFact("Agriculture", "Wheat Futures");
+  }
+
+  // --- BANK OF CANADA (Macro Economics) ---
+  Future<MarketFact> fetchInterestRate() async {
+    try {
+      final url = Uri.parse(
+          'https://www.bankofcanada.ca/valet/observations/V122544/json?recent=2'
+      );
+
+      final response = await http.get(url).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        final observations = data['observations'];
+
+        if (observations != null && observations.length >= 2) {
+          final latest = double.parse(observations[1]['V122544']['v']);
+          final prev = double.parse(observations[0]['V122544']['v']);
+          final change = ((latest - prev) / prev) * 100;
+
+          return MarketFact(
+            category: "Macro",
+            name: "10Y Can Bond",
+            value: "$latest%",
+            trend: "${change >= 0 ? '+' : ''}${change.toStringAsFixed(2)}%",
+            status: latest > 3.5 ? "Restrictive" : "Neutral",
+          );
+        }
+      }
+    } catch (e) {
+      print("BoC Error/Timeout: $e");
+    }
+    return _getPendingFact("Macro", "10Y Can Bond");
+  }
+
+  // --- BANK OF CANADA (Forex) ---
+  Future<MarketFact> fetchCadExchangeRate() async {
+    try {
+      final url = Uri.parse(
+          'https://www.bankofcanada.ca/valet/observations/FXUSDCAD/json?recent=2'
+      );
+
+      final response = await http.get(url).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        final observations = data['observations'];
+
+        if (observations != null && observations.length >= 2) {
+          final latest = double.parse(observations[1]['FXUSDCAD']['v']);
+          final prev = double.parse(observations[0]['FXUSDCAD']['v']);
+          final change = ((latest - prev) / prev) * 100;
+
+          return MarketFact(
+            category: "Forex",
+            name: "USD/CAD",
+            value: "\$${latest.toStringAsFixed(4)}",
+            trend: "${change >= 0 ? '+' : ''}${change.toStringAsFixed(2)}%",
+            status: "Live",
+          );
+        }
+      }
+    } catch (e) {
+      print("BoC FX Error/Timeout: $e");
+    }
+    return _getPendingFact("Forex", "USD/CAD");
+  }
+
+  // --- AGGREGATOR ---
+  Future<String> getLiveFactsString() async {
+    try {
+      final results = await Future.wait([
+        fetchWheatPrice(),
+        fetchInterestRate(),
+        fetchCadExchangeRate(),
+      ]).timeout(const Duration(seconds: 6));
+
+      return results.map((f) => f.toString()).join('\n');
+    } catch (e) {
+      print("Global Data Timeout: Reverting to defaults.");
+      return "Wheat: \$5.80 (Stable)\nInterest Rate: 3.25% (Neutral)\nUSD/CAD: 1.35 (Offline)";
+    }
+  }
+
+  // --- NEW: Helper to Retry Updates ---
+  Future<MarketFact> updatePendingFact(MarketFact fact) async {
+    if (!fact.isPending) return fact;
+
+    // Retry specific logic based on name
+    switch (fact.name) {
+      case "Wheat Futures": return await fetchWheatPrice();
+      case "10Y Can Bond": return await fetchInterestRate();
+      case "USD/CAD": return await fetchCadExchangeRate();
+      default: return fact;
+    }
+  }
+
+  // --- HELPERS & FALLBACKS ---
+
+  MarketFact _getPendingFact(String category, String name) => MarketFact(
+    category: category,
+    name: name,
+    value: "--",
+    trend: "--",
+    status: "Pending Update",
+  );
+
+  MarketFact _getMockWheat() => MarketFact(
+    category: "Agriculture",
+    name: "Wheat (Simulated)",
+    value: "\$5.80/bu",
+    trend: "-2.1% MoM",
+    status: "Abundant",
+  );
+
+  MarketFact _getMockRates() => MarketFact(
+    category: "Macro",
+    name: "10Y Can Bond (Sim)",
+    value: "3.25%",
+    trend: "+0.02%",
+    status: "Neutral",
+  );
+}*/
+/*
+
+import 'dart:convert';
+import 'dart:async';
+import 'package:http/http.dart' as http;
+import '../secrets.dart';
+
+class MarketFact {
+  final String category;
+  final String name;
+  final String value;
+  final String trend;
+  final String status;
+
+  MarketFact({
+    required this.category,
+    required this.name,
+    required this.value,
+    required this.trend,
+    required this.status,
+  });
+
+  bool get isPending => status == 'Pending Update';
+
+  @override
+  String toString() {
+    return '$category - $name: $value ($trend). Status: $status';
+  }
+}
+
+class MarketDataService {
+  static const Duration _apiTimeout = Duration(seconds: 20);
+
+  // --- CACHE VARIABLES ---
+  static MarketFact? _cachedWheat;
+  static DateTime? _lastWheatFetch;
+
+  // --- WHEAT (Active) ---
+  Future<MarketFact> fetchWheatPrice() async {
+    // 1. Check Cache (Valid for 5 minutes)
+    if (_cachedWheat != null &&
+        _lastWheatFetch != null &&
+        DateTime.now().difference(_lastWheatFetch!).inMinutes < 5) {
+      print("MarketData: Returning CACHED Wheat Data (Saving API Quota)");
+      return _cachedWheat!;
+    }
+
+    if (Secrets.alphaVantageKey.contains("YOUR")) {
+      print("MarketData: Using Mock Data (Placeholder Key)");
+      return _getMockWheat();
+    }
+
+    try {
+      final originalUrl = 'https://www.alphavantage.co/query?function=WHEAT&interval=monthly&apikey=${Secrets.alphaVantageKey}';
+      final proxyUrl = Uri.parse("https://corsproxy.io/?${Uri.encodeComponent(originalUrl)}");
+
+      print("MarketData: Fetching Wheat via corsproxy.io...");
+      final response = await http.get(proxyUrl).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final Map<String, dynamic> data = json.decode(response.body);
+
+        // 2. DEBUG: Detect Rate Limit
+        if (data.containsKey('Information') || data.containsKey('Note')) {
+          print("MarketData: RATE LIMIT HIT (5 calls/min). Reverting to Mock.");
+          // If we have old cache, return it instead of mock!
+          if (_cachedWheat != null) return _cachedWheat!;
+          return _getMockWheat();
+        }
+
+        if (data.containsKey('Error Message')) {
+          print("MarketData: API ERROR. Reverting to Mock.");
+          return _getMockWheat();
+        }
+
+        if (data['data'] == null) {
+          print("MarketData: Unexpected structure. Reverting to Mock.");
+          return _getMockWheat();
+        }
+
+        final latest = data['data'][0];
+        final prev = data['data'][1];
+        final price = double.parse(latest['value']) / 36.74;
+        final prevPrice = double.parse(prev['value']) / 36.74;
+        final change = ((price - prevPrice) / prevPrice) * 100;
+
+        final fact = MarketFact(
+          category: "Agriculture",
+          name: "Wheat Futures",
+          value: "\$${price.toStringAsFixed(2)}/bu",
+          trend: "${change >= 0 ? '+' : ''}${change.toStringAsFixed(1)}% MoM",
+          status: change > 5 ? "Spiking" : change < -5 ? "Crashing" : "Stable",
+        );
+
+        // 3. Save to Cache
+        _cachedWheat = fact;
+        _lastWheatFetch = DateTime.now();
+        print("MarketData: SUCCESS. Caching result.");
+
+        return fact;
+      }
+    } catch (e) {
+      print("MarketData Error: $e");
+    }
+
+    return _getPendingFact("Agriculture", "Wheat Futures");
+  }
+
+  // --- UNUSED METHODS ---
+  Future<MarketFact> fetchInterestRate() async => _getPendingFact("Macro", "10Y Bond");
+  Future<MarketFact> fetchCadExchangeRate() async => _getPendingFact("Forex", "USD/CAD");
+
+  Future<String> getLiveFactsString() async {
+    try {
+      final wheat = await fetchWheatPrice();
+      return wheat.toString();
+    } catch (e) {
+      return "Wheat: \$5.80 (Stable)";
+    }
+  }
+
+  Future<MarketFact> updatePendingFact(MarketFact fact) async {
+    if (!fact.isPending) return fact;
+    if (fact.name == "Wheat Futures") return await fetchWheatPrice();
+    return fact;
+  }
+
+  // --- HELPERS ---
+  MarketFact _getPendingFact(String category, String name) => MarketFact(
+    category: category,
+    name: name,
+    value: "--",
+    trend: "--",
+    status: "Pending Update",
+  );
+
+  MarketFact _getMockWheat() => MarketFact(
+    category: "Agriculture",
+    name: "Wheat (Simulated)",
+    value: "\$5.80/bu",
+    trend: "-2.1% MoM",
+    status: "Abundant",
+  );
+}*/
+import 'dart:convert';
+import 'dart:async';
+import 'package:http/http.dart' as http;
+import '../secrets.dart';
+
+class MarketFact {
+  final String category;
+  final String name;
+  final String value;
+  final String trend;
+  final String status;
+
+  MarketFact({
+    required this.category,
+    required this.name,
+    required this.value,
+    required this.trend,
+    required this.status,
+  });
+
+  bool get isPending => status == 'Pending Update';
+
+  @override
+  String toString() {
+    return '$category - $name: $value ($trend). Status: $status';
+  }
+}
+
+class MarketDataService {
+  // Timeout for API calls
+  static const Duration _apiTimeout = Duration(seconds: 20);
+
+  // --- CACHE VARIABLES ---
+  static MarketFact? _cachedWheat;
+  static DateTime? _lastWheatFetch;
+
+  // --- WHEAT (Active) ---
+  Future<MarketFact> fetchWheatPrice() async {
+    // 1. Check Cache (Valid for 5 minutes)
+    if (_cachedWheat != null &&
+        _lastWheatFetch != null &&
+        DateTime.now().difference(_lastWheatFetch!).inMinutes < 5) {
+      print("MarketData: Returning CACHED Wheat Data (EODHD)");
+      return _cachedWheat!;
+    }
+
+    // Check for missing key (assuming you added eodhdApiKey to secrets.dart)
+    // If you haven't renamed the variable in secrets.dart yet, you might need to update this check.
+    if (!Secrets.eodhdApiKey.contains("66") && Secrets.eodhdApiKey.length < 10) {
+      print("MarketData: Invalid EODHD Key detected. Using Mock.");
+      return _getMockWheat();
+    }
+
+    try {
+      // 2. EODHD ENDPOINT (Real-Time for US Tickers)
+      // We use WEAT.US (Teucrium Wheat Fund) as a proxy for Wheat Futures
+      // because it is available on standard EODHD plans.
+      final symbol = "WEAT.US";
+      final originalUrl = 'https://eodhd.com/api/real-time/$symbol?api_token=${Secrets.eodhdApiKey}&fmt=json';
+
+      // 3. Use CORS Proxy (EODHD supports CORS, but Proxy is safer for web POCs)
+      final proxyUrl = Uri.parse("https://corsproxy.io/?${Uri.encodeComponent(originalUrl)}");
+
+      print("MarketData: Fetching $symbol via EODHD...");
+      final response = await http.get(proxyUrl).timeout(_apiTimeout);
+
+      if (response.statusCode == 200) {
+        final dynamic jsonResponse = json.decode(response.body);
+
+        // EODHD returns a single object for one ticker: {"code": "WEAT.US", "close": 5.45, ...}
+        // Check if we got an error message
+        if (jsonResponse is Map && (jsonResponse.containsKey('status') || jsonResponse.containsKey('message'))) {
+          print("MarketData: EODHD Error - ${jsonResponse['message']}");
+          return _getMockWheat();
+        }
+
+        final data = jsonResponse as Map<String, dynamic>;
+
+        // Parse EODHD Real-Time Fields
+        final double price = (data['close'] as num).toDouble();
+        final double changeP = (data['change_p'] as num?)?.toDouble() ?? 0.0;
+
+        // EODHD price is in $, e.g., 5.45
+        final String valueStr = "\$${price.toStringAsFixed(2)}";
+
+        // Determine Status based on % Change
+        String status = "Stable";
+        if (changeP > 2.0) status = "Spiking";
+        if (changeP < -2.0) status = "Crashing";
+
+        final fact = MarketFact(
+          category: "Agriculture",
+          name: "Wheat (ETF)", // Labeled as ETF for accuracy
+          value: valueStr,
+          trend: "${changeP >= 0 ? '+' : ''}${changeP.toStringAsFixed(2)}%",
+          status: status,
+        );
+
+        // 4. Save to Cache
+        _cachedWheat = fact;
+        _lastWheatFetch = DateTime.now();
+        print("MarketData: SUCCESS. Caching EODHD result.");
+
+        return fact;
+      } else {
+        print("MarketData: HTTP Error ${response.statusCode} - ${response.body}");
+      }
+    } catch (e) {
+      print("MarketData Error: $e");
+    }
+
+    // On failure, return Mock (or Pending)
+    return _getMockWheat();
+  }
+
+  // --- UNUSED METHODS (Stubs) ---
+  Future<MarketFact> fetchInterestRate() async => _getPendingFact("Macro", "10Y Bond");
+  Future<MarketFact> fetchCadExchangeRate() async => _getPendingFact("Forex", "USD/CAD");
+
+  Future<String> getLiveFactsString() async {
+    try {
+      final wheat = await fetchWheatPrice();
+      return wheat.toString();
+    } catch (e) {
+      return "Wheat: \$5.80 (Stable)";
+    }
+  }
+
+  Future<MarketFact> updatePendingFact(MarketFact fact) async {
+    if (!fact.isPending) return fact;
+    if (fact.name.contains("Wheat")) return await fetchWheatPrice();
+    return fact;
+  }
+
+  // --- HELPERS ---
+  MarketFact _getPendingFact(String category, String name) => MarketFact(
+    category: category,
+    name: name,
+    value: "--",
+    trend: "--",
+    status: "Pending Update",
+  );
+
+  MarketFact _getMockWheat() => MarketFact(
+    category: "Agriculture",
+    name: "Wheat (Simulated)",
+    value: "\$5.80",
+    trend: "-1.2% (Sim)",
+    status: "Abundant",
+  );
 }
