@@ -10,6 +10,7 @@ import 'ui/widgets/briefing_card.dart';
 
 // UPDATED IMPORT: Point to the new agriculture folder
 import 'topics/agriculture/wheat/wheat_config.dart';
+import 'topics/agriculture/lumber/lumber_config.dart';
 
 void main() {
   runApp(const NexThreadApp());
@@ -51,6 +52,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   final List<TopicConfig> _topics = [
     WheatConfig(),
+    LumberConfig()
   ];
 
   late TopicConfig _currentTopic;
