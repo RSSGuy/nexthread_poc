@@ -499,6 +499,8 @@ class AIService {
     };
   }
 }*/
+/*
+
 import 'dart:convert';
 import 'dart:async';
 import 'dart:io';
@@ -683,6 +685,193 @@ class AIService {
           "sources": [],
           "harness": "Prompt: Analyze wheat drought impact.",
           "signals": ["Aquifer Depletion (Ogallala)"],
+          "is_fallback": true
+        }
+      ]
+    };
+  }
+}*/
+import 'dart:convert';
+import 'dart:async';
+import 'dart:io';
+import 'package:dart_openai/dart_openai.dart';
+import 'package:http/http.dart' as http;
+import 'package:xml/xml.dart';
+import '../../secrets.dart';
+import 'topic_config.dart';
+import 'models.dart';
+import 'storage_service.dart'; // REQUIRED: To save history
+
+class AIService {
+  final String apiKey = Secrets.openAiApiKey;
+
+  AIService() {
+    print("--- AIService: Initializing ---");
+    if (!apiKey.contains("YOUR_")) {
+      OpenAI.apiKey = apiKey;
+      // Increased timeout to prevent early termination during complex analysis
+      OpenAI.requestsTimeOut = const Duration(seconds: 60);
+    }
+  }
+
+  // --- GENERIC SCRAPER ---
+  // Fetches RSS feeds defined in the TopicConfig
+  Future<List<String>> fetchHeadlines(List<NewsSourceConfig> sources, List<String> keywords) async {
+    List<String> headlines = [];
+
+    await Future.wait(sources.map((source) async {
+      try {
+        // 1. Try AllOrigins Proxy (Reliable for text)
+        var proxyUrl = "https://api.allorigins.win/raw?url=${Uri.encodeComponent(source.url)}";
+        var response = await http.get(Uri.parse(proxyUrl)).timeout(const Duration(seconds: 10));
+
+        // 2. Fallback to CorsProxy.io (Reliable for binary/strict CORS)
+        if (response.statusCode != 200) {
+          proxyUrl = "https://corsproxy.io/?${Uri.encodeComponent(source.url)}";
+          response = await http.get(Uri.parse(proxyUrl)).timeout(const Duration(seconds: 10));
+        }
+
+        if (response.statusCode == 200) {
+          final document = XmlDocument.parse(response.body);
+          // Support both RSS <item> and Atom <entry>
+          final items = document.findAllElements('item').followedBy(document.findAllElements('entry'));
+
+          for (var item in items) {
+            final titleNode = item.findElements('title').firstOrNull;
+            if (titleNode != null) {
+              final title = titleNode.innerText.replaceAll(RegExp(r'\s+'), ' ').trim();
+              final t = title.toLowerCase();
+
+              // Filter by Topic Keywords
+              if (keywords.any((k) => t.contains(k.toLowerCase()))) {
+                headlines.add("[${source.name}] $title");
+              }
+            }
+          }
+        }
+      } catch (e) {
+        // Silent fail for individual feeds to keep the process moving
+        print("Scraper Error (${source.name}): $e");
+      }
+    }));
+
+    // deduplicate and sort for consistency
+    headlines = headlines.toSet().toList();
+    headlines.sort();
+
+    // Cap at 15 headlines to manage token costs
+    if (headlines.length > 15) headlines = headlines.sublist(0, 15);
+
+    return headlines;
+  }
+
+  // --- GENERIC INTELLIGENCE GENERATOR ---
+  // 1. Fetches Market Data
+  // 2. Fetches News
+  // 3. Calls GPT-4
+  // 4. SAVES result to Hive History
+  Future<void> generateBriefing(TopicConfig topic) async {
+
+    // FALLBACK MODE (If no API Key)
+    if (apiKey.contains("YOUR_")) {
+      final fallback = _getFallbackData(topic);
+      await StorageService.saveBriefing(topic.id, fallback);
+      return;
+    }
+
+    try {
+      print("AIService: Generating LIVE Intelligence for ${topic.id}...");
+
+      // A. Fetch Live Data
+      final marketFact = await topic.fetchMarketPulse();
+
+      // B. Fetch News
+      final news = await fetchHeadlines(topic.sources, topic.keywords);
+      if (news.isEmpty) news.add("No recent news found for ${topic.name}.");
+
+      // C. Construct Prompt
+      final systemPrompt = '''
+      You are an Intelligence Analyst for the ${topic.name} sector.
+      
+      STEP 1: ANALYZE FACTS vs. SENTIMENT
+      [MARKET DATA]
+      ${marketFact.toString()}
+      
+      [NEWS STREAM]
+      ${news.join('\n')}
+
+      [RISK RULES]
+      ${topic.riskRules}
+      
+      STEP 2: DETECT DIVERGENCE
+      - Compare Data (Status/Trend) against News Sentiment.
+      - Look for: Unjustified Panic, Silent Crisis, or Sector Split.
+
+      STEP 3: OUTPUT JSON
+      Return a JSON object with a "briefs" array. Each brief must have:
+      - id, subsector (e.g. "${topic.name}"), title, summary
+      - severity (High/Medium/Low)
+      - fact_score (0-100), sent_score (0-100)
+      - divergence_tag, divergence_desc
+      - metrics (commodity, price, trend)
+      - chart_data (placeholder array)
+      - headlines (list of strings used)
+      - is_fallback (false)
+      ''';
+
+      // D. Call OpenAI
+      final chatCompletion = await OpenAI.instance.chat.create(
+        model: "gpt-4-turbo",
+        temperature: 0.0, // Strict deterministic output
+        seed: 42,         // Seed for reproducibility
+        responseFormat: {"type": "json_object"},
+        messages: [
+          OpenAIChatCompletionChoiceMessageModel(
+            content: [OpenAIChatCompletionChoiceMessageContentItemModel.text(systemPrompt)],
+            role: OpenAIChatMessageRole.system,
+          ),
+        ],
+      ).timeout(const Duration(seconds: 60));
+
+      final content = chatCompletion.choices.first.message.content?.first.text;
+      Map<String, dynamic> jsonResponse = json.decode(content ?? "{}");
+
+      // E. Inject Real Market History into the AI Response
+      // (The AI cannot generate accurate sparklines, so we overwrite them with real data)
+      if (jsonResponse['briefs'] != null) {
+        for (var brief in jsonResponse['briefs']) {
+          if (marketFact.lineData.isNotEmpty) {
+            brief['chart_data'] = marketFact.lineData;
+          }
+        }
+      }
+
+      // F. SAVE TO STORAGE (Appends to History)
+      await StorageService.saveBriefing(topic.id, jsonResponse);
+
+    } catch (e) {
+      print("AI Generation Error: $e");
+      // Save fallback data so the user sees an error state in the history
+      await StorageService.saveBriefing(topic.id, _getFallbackData(topic));
+    }
+  }
+
+  Map<String, dynamic> _getFallbackData(TopicConfig topic) {
+    return {
+      "briefs": [
+        {
+          "id": "1",
+          "subsector": topic.name,
+          "title": "Simulated Alert: ${topic.name} Volatility",
+          "summary": "This is fallback data because the AI service is unreachable or the API key is missing.",
+          "severity": "Low",
+          "fact_score": 50,
+          "sent_score": 50,
+          "divergence_tag": "Simulation",
+          "divergence_desc": "No live analysis available.",
+          "metrics": {"commodity": topic.name, "price": "--", "trend": "0%"},
+          "headlines": ["System Offline"],
+          "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
           "is_fallback": true
         }
       ]

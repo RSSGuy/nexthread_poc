@@ -74,4 +74,55 @@ class NewsRegistry {
       type: "Industry",
       tags: [Naics.agriculture, Naics.manufacturing] // Forestry & Wood Product Mfg
   );
+
+  // --- MANUFACTURING / APPAREL ---
+  static const sourcingJournal = NewsSourceConfig(
+      name: "Sourcing Journal",
+      url: "https://sourcingjournal.com/feed/",
+      type: "Trade",
+      tags: [Naics.manufacturing, Naics.transportation]
+  );
+
+  static const justStyle = NewsSourceConfig(
+      name: "Just-Style",
+      url: "https://www.just-style.com/feed/",
+      type: "Industry",
+      tags: [Naics.manufacturing, Naics.wholesaleTrade]
+  );
+
+  static const wwd = NewsSourceConfig(
+      name: "WWD",
+      url: "https://wwd.com/feed/",
+      type: "Trade",
+      tags: [Naics.manufacturing, Naics.retailTrade] // Bridges Mfg and Retail
+  );
+
+  // --- CHEMICALS ---
+  static const cenNews = NewsSourceConfig(
+      name: "C&EN", // Chemical & Engineering News
+      url: "https://cen.acs.org/content/cen/global/en.feed.html",
+      type: "Trade",
+      tags: [Naics.manufacturing, Naics.professionalServices]
+  );
+
+  static const chemicalWeek = NewsSourceConfig(
+      name: "ChemWeek",
+      url: "https://www.chemweek.com/rss",
+      type: "Industry",
+      tags: [Naics.manufacturing, Naics.wholesaleTrade]
+  );
+
+  static const epaNews = NewsSourceConfig(
+      name: "EPA Releases",
+      url: "https://www.epa.gov/newsreleases/search/rss",
+      type: "Gov",
+      tags: [Naics.publicAdmin, Naics.manufacturing] // Regulatory impact
+  );
+
+  static const icis = NewsSourceConfig(
+      name: "ICIS News",
+      url: "https://www.icis.com/explore/resources/news-feeds/",
+      type: "Market Data",
+      tags: [Naics.manufacturing, Naics.wholesaleTrade]
+  );
 }

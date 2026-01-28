@@ -162,7 +162,7 @@ class MarketFact {
   String toString() => '$category - $name: $value ($trend). Status: $status';
 }
 
-class Briefing {
+/*class Briefing {
   final String id;
   final String subsector;
   final String title;
@@ -200,6 +200,50 @@ class Briefing {
           .where((x) => x != null && x is num).map((x) => (x as num).toDouble()).toList(),
       headlines: List<String>.from(json['headlines'] ?? []),
       isFallback: json['is_fallback'] ?? false,
+    );
+  }
+}*/
+class Briefing {
+  final String id;
+  final String subsector;
+  final String title;
+  final String summary;
+  final String severity;
+  final int factScore;
+  final int sentScore;
+  final String divergenceTag;
+  final String divergenceDesc;
+  final Metrics metrics;
+  final List<double> chartData;
+  final List<String> headlines;
+  final bool isFallback;
+  final DateTime generatedAt; // NEW FIELD
+
+  Briefing({
+    required this.id, required this.subsector, required this.title, required this.summary,
+    required this.severity, required this.factScore, required this.sentScore,
+    required this.divergenceTag, required this.divergenceDesc, required this.metrics,
+    required this.chartData, required this.headlines, required this.isFallback,
+    required this.generatedAt,
+  });
+
+  factory Briefing.fromJson(Map<String, dynamic> json, DateTime timestamp) {
+    return Briefing(
+      id: json['id']?.toString() ?? '',
+      subsector: json['subsector'] ?? '',
+      title: json['title'] ?? '',
+      summary: json['summary'] ?? '',
+      severity: json['severity'] ?? 'Low',
+      factScore: (json['fact_score'] as num?)?.toInt() ?? 0,
+      sentScore: (json['sent_score'] as num?)?.toInt() ?? 0,
+      divergenceTag: json['divergence_tag'] ?? '',
+      divergenceDesc: json['divergence_desc'] ?? '',
+      metrics: Metrics.fromJson(json['metrics'] ?? {}),
+      chartData: (json['chart_data'] as List<dynamic>? ?? [])
+          .where((x) => x != null && x is num).map((x) => (x as num).toDouble()).toList(),
+      headlines: List<String>.from(json['headlines'] ?? []),
+      isFallback: json['is_fallback'] ?? false,
+      generatedAt: timestamp, // Inject timestamp from Storage/Runtime
     );
   }
 }
