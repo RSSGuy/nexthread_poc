@@ -58,7 +58,7 @@ class LumberConfig implements TopicConfig {
   // NEW: Primary Industry Tag (Forestry falls under NAICS Agriculture)
   Naics get industry => Naics.agriculture;
 
-/*  @override
+  @override
   List<NewsSourceConfig> get sources => [
     NewsRegistry.reutersCommodities,
     NewsRegistry.usdaGeneral,
@@ -66,13 +66,7 @@ class LumberConfig implements TopicConfig {
     NewsRegistry.lbmJournal,
     NewsRegistry.constructionDive,
     NewsRegistry.madisonsReport,
-  ];*/
-
-  @override
-  // DYNAMIC SOURCE LOADING
-  List<NewsSourceConfig> get sources {
-    return NewsRegistry.all.where((s) => s.tags.contains(industry)).toList();
-  }
+  ];
 
   @override
   List<String> get keywords => [
