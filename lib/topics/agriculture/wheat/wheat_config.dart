@@ -1,3 +1,4 @@
+/*
 // UPDATED IMPORTS: Jump up 3 levels
 import '../../../core/topic_config.dart';
 import '../../../core/models.dart';
@@ -35,6 +36,48 @@ class WheatConfig implements TopicConfig {
     4. SUPPLY/CLIMATE (Weight -5 to -7): Drought, Flooding, Yield Failure, Planting Delays.
     5. ENERGY/INPUTS (Weight -3 to -5): Fertilizer Spike, Diesel Shortage.
   ''';
+
+  @override
+  Future<MarketFact> fetchMarketPulse() async {
+    return await _service.getWheatFact();
+  }
+}*/
+import '../../../core/topic_config.dart';
+import '../../../core/models.dart';
+import '../../../core/news_registry.dart';
+import 'wheat_service.dart';
+import 'wheat_risk_rules.dart';
+
+class WheatConfig implements TopicConfig {
+  final _service = WheatService();
+
+  @override
+  String get id => "wheat";
+
+  @override
+  String get name => "Global Wheat";
+
+  @override
+  // NEW: Primary Industry Tag
+  Naics get industry => Naics.agriculture;
+
+  @override
+  List<NewsSourceConfig> get sources => [
+    NewsRegistry.reutersCommodities,
+    NewsRegistry.usdaGeneral,
+    NewsRegistry.agWeb,
+    NewsRegistry.westernProducer,
+    NewsRegistry.foodBusinessNews,
+    NewsRegistry.biofuelsNews,
+  ];
+
+  @override
+  List<String> get keywords => [
+    "wheat", "corn", "sugar", "fuel", "food", "soy", "grain", "rail", "port", "harvest", "drought"
+  ];
+
+  @override
+  String get riskRules => WheatRiskRules.rules;
 
   @override
   Future<MarketFact> fetchMarketPulse() async {
