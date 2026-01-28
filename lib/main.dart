@@ -344,6 +344,7 @@ class NexThreadApp extends StatelessWidget {
     );
   }
 }*/
+/*
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -375,6 +376,46 @@ class NexThreadApp extends StatelessWidget {
           primary: const Color(0xFF6366F1),
           secondary: const Color(0xFF10B981), // Emerald
           error: const Color(0xFFEF4444), // Rose
+        ),
+        useMaterial3: true,
+        textTheme: GoogleFonts.interTextTheme(),
+      ),
+      home: const DashboardScreen(),
+    );
+  }
+}*/
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'ui/screens/dashboard_screen.dart';
+import 'core/storage_service.dart'; // Ensure this is imported
+
+void main() async {
+  // 1. Required for Async Init
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // 2. MUST await this before running app
+  await StorageService.init();
+
+  runApp(const NexThreadApp());
+}
+
+class NexThreadApp extends StatelessWidget {
+  const NexThreadApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'NexThread POC',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFF1F5F9),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF6366F1),
+          primary: const Color(0xFF6366F1),
+          secondary: const Color(0xFF10B981),
+          error: const Color(0xFFEF4444),
         ),
         useMaterial3: true,
         textTheme: GoogleFonts.interTextTheme(),

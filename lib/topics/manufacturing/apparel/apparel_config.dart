@@ -16,7 +16,7 @@ class ApparelConfig implements TopicConfig {
   @override
   Naics get industry => Naics.manufacturing;
 
-  @override
+/*  @override
   List<NewsSourceConfig> get sources => [
     NewsRegistry.reutersCommodities, // For Cotton/Oil
     NewsRegistry.sourcingJournal,
@@ -24,7 +24,13 @@ class ApparelConfig implements TopicConfig {
     NewsRegistry.wwd,
     NewsRegistry.constructionDive, // Often covers factory builds
     // Add specific supply chain feeds if available
-  ];
+  ];*/
+
+  @override
+  // DYNAMIC SOURCE LOADING
+  List<NewsSourceConfig> get sources {
+    return NewsRegistry.all.where((s) => s.tags.contains(industry)).toList();
+  }
 
   @override
   List<String> get keywords => [

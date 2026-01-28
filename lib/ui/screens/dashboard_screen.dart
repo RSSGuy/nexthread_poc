@@ -268,7 +268,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
       ),
     );
   }
-}*/
+}*//*
+
+*/
 /*
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -567,6 +569,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 }*/
+/*
+
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -641,6 +645,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   }
 
   // 2. Generate New (Only called by Refresh Button)
+*/
 /*  void _generateNewBriefing(MarketFact? fact) async {
     setState(() => _loading = true);
 
@@ -665,6 +670,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
       setState(() => _loading = false);
     }
   }*/
+/*
+
   // 2. Generate New (Only called by Refresh Button)
   void _generateNewBriefing(MarketFact? fact) async {
     // Show the Blocking Modal
@@ -882,6 +889,382 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  Widget _buildPulseItem(MarketFact fact) {
+    final isUp = !fact.trend.startsWith('-');
+    final trendColor = isUp ? const Color(0xFF10B981) : const Color(0xFFEF4444);
+    final icon = isUp ? Icons.arrow_upward : Icons.arrow_downward;
+
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all(color: const Color(0xFFE2E8F0))),
+      child: Row(
+        children: [
+          const Icon(Icons.show_chart, size: 16, color: Color(0xFF64748B)),
+          const SizedBox(width: 8),
+          Text(fact.name, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Color(0xFF64748B))),
+          const Spacer(),
+          Text(fact.value, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+          const SizedBox(width: 8),
+          Icon(icon, size: 14, color: trendColor),
+          Text(fact.trend, style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: trendColor)),
+          const SizedBox(width: 12),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+            decoration: BoxDecoration(
+              color: fact.status == "Stable" ? const Color(0xFFF1F5F9) : const Color(0xFFFEF2F2),
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: Text(fact.status.toUpperCase(), style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: fact.status == "Stable" ? const Color(0xFF64748B) : const Color(0xFFEF4444))),
+          )
+        ],
+      ),
+    );
+  }
+}*/
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+// CORE SERVICES
+import '../../core/ai_service.dart';
+import '../../core/topic_config.dart';
+import '../../core/models.dart';
+import '../../core/storage_service.dart';
+
+// WIDGETS
+import '../widgets/briefing_card.dart';
+import '../widgets/generation_loader.dart';
+import 'feed_debug_screen.dart'; // Ensure you created this file from the previous step
+
+// TOPIC CONFIGS
+import '../../topics/agriculture/wheat/wheat_config.dart';
+import '../../topics/agriculture/lumber/lumber_config.dart';
+import '../../topics/manufacturing/apparel/apparel_config.dart';
+import '../../topics/manufacturing/chemical/chemical_config.dart';
+
+class DashboardScreen extends StatefulWidget {
+  const DashboardScreen({super.key});
+
+  @override
+  State<DashboardScreen> createState() => _DashboardScreenState();
+}
+
+class _DashboardScreenState extends State<DashboardScreen> {
+  final AIService _aiService = AIService();
+
+  // --- TOPIC REGISTRY ---
+  final List<TopicConfig> _allTopics = [
+    WheatConfig(),
+    LumberConfig(),
+    ApparelConfig(),
+    ChemicalConfig(),
+  ];
+
+  // --- STATE ---
+  late Naics _selectedIndustry;
+  late TopicConfig _currentTopic;
+
+  List<Briefing> _briefings = []; // Displayed History
+  MarketFact? _marketFact;        // Live Market Pulse
+  bool _loading = false;          // Internal loading state (for non-blocking ops)
+
+  @override
+  void initState() {
+    super.initState();
+    // Default to the first available industry and topic
+    _selectedIndustry = _allTopics.first.industry;
+    _currentTopic = _filteredTopics.first;
+
+    // Initial Load: Check cache only
+    _initLoad();
+  }
+
+  // Helper to filter topics based on selected industry
+  List<TopicConfig> get _filteredTopics {
+    return _allTopics.where((t) => t.industry == _selectedIndustry).toList();
+  }
+
+  // --- DATA LOADING LOGIC ---
+
+  // 1. Initial Load (Fast)
+  // Fetches market data (cached) and loads history from Hive.
+  // Does NOT trigger AI generation.
+  void _initLoad() async {
+    if (!mounted) return;
+    setState(() => _loading = true);
+
+    try {
+      // A. Fetch Market Pulse (Fast / Cached in Service)
+      final fact = await _currentTopic.fetchMarketPulse();
+
+      // B. Load History from Hive
+      final history = StorageService.getHistory(_currentTopic.id);
+
+      if (mounted) {
+        setState(() {
+          _marketFact = fact;
+          _briefings = history;
+          _loading = false;
+        });
+      }
+    } catch (e) {
+      print("Init Load Error: $e");
+      if (mounted) setState(() => _loading = false);
+    }
+  }
+
+  // 2. Generate New Report (Slow / Expensive)
+  // Triggered ONLY by the user clicking the "+" button.
+  void _generateNewBriefing(MarketFact? fact) async {
+    // A. Show Blocking "Wait" Modal
+    GenerationLoader.show(context);
+
+    // B. Set internal loading state
+    setState(() => _loading = true);
+
+    final mFact = fact ?? await _currentTopic.fetchMarketPulse();
+
+    try {
+      // C. Call AI Service (This performs the analysis and saves to Hive)
+      await _aiService.generateBriefing(_currentTopic);
+
+      // D. Reload History from Hive to get the newly created item
+      final updatedHistory = StorageService.getHistory(_currentTopic.id);
+
+      if (mounted) {
+        setState(() {
+          _marketFact = mFact;
+          _briefings = updatedHistory;
+          _loading = false;
+        });
+      }
+    } catch (e) {
+      print("Generation Error: $e");
+      if (mounted) {
+        setState(() => _loading = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text("Generation Failed: $e"), backgroundColor: Colors.red),
+        );
+      }
+    } finally {
+      // E. Hide Blocking Modal
+      if (mounted) {
+        GenerationLoader.hide(context);
+      }
+    }
+  }
+
+  // 3. System Reset
+  // Clears Hive cache for clean demos
+  void _performSystemReset() async {
+    await StorageService.clearAll();
+
+    if (mounted) {
+      setState(() {
+        _briefings = [];
+        _marketFact = null;
+      });
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("System Cache Cleared")),
+      );
+
+      // Reload to show empty state
+      _initLoad();
+    }
+  }
+
+  // --- UI INTERACTION ---
+
+  void _onIndustrySelected(Naics industry) {
+    if (_selectedIndustry == industry) return;
+
+    setState(() {
+      _selectedIndustry = industry;
+
+      // Switch to first topic in the new industry
+      final newTopics = _filteredTopics;
+      if (newTopics.isNotEmpty) {
+        _currentTopic = newTopics.first;
+        _marketFact = null; // Clear old market data
+        _initLoad();        // Load history for new topic
+      } else {
+        _marketFact = null;
+        _briefings = [];
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // Get unique industries from available topics
+    final Set<Naics> availableIndustries = _allTopics.map((t) => t.industry).toSet();
+
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: Row(
+          children: [
+            const Icon(Icons.grain, color: Color(0xFF6366F1)),
+            const SizedBox(width: 8),
+            Text('NexThread', style: GoogleFonts.urbanist(fontWeight: FontWeight.bold, color: const Color(0xFF0F172A))),
+          ],
+        ),
+        actions: [
+          // 1. GENERATE NEW REPORT BUTTON
+          IconButton(
+              icon: Icon(Icons.add_circle_outline, color: _loading ? Colors.grey : const Color(0xFF6366F1)),
+              tooltip: "Generate New Report",
+              onPressed: _loading ? null : () => _generateNewBriefing(_marketFact)
+          ),
+
+          // 2. DEBUG TOOL (FEED MONITOR)
+          IconButton(
+            icon: const Icon(Icons.bug_report, color: Color(0xFF94A3B8)),
+            tooltip: "Debug Feeds",
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FeedDebugScreen())
+              );
+            },
+          ),
+
+          // 3. SYSTEM RESET BUTTON
+          IconButton(
+            icon: const Icon(Icons.delete_forever, color: Color(0xFF94A3B8)),
+            tooltip: "System Reset (Clear Cache)",
+            onPressed: _loading ? null : _performSystemReset,
+          ),
+          const SizedBox(width: 8),
+        ],
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // 1. INDUSTRY FILTER BAR
+          Container(
+            height: 50,
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            color: Colors.white,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              children: availableIndustries.map((industry) {
+                // Smart Truncation for Labels
+                String shortName = industry.label.split(',')[0];
+                if(shortName.length > 15) shortName = shortName.substring(0, 15) + "...";
+
+                final bool isSelected = _selectedIndustry == industry;
+
+                return Padding(
+                  padding: const EdgeInsets.only(right: 8),
+                  child: ChoiceChip(
+                    label: Text(shortName),
+                    selected: isSelected,
+                    onSelected: (bool selected) {
+                      if (selected) _onIndustrySelected(industry);
+                    },
+                    selectedColor: const Color(0xFFEEF2FF),
+                    backgroundColor: Colors.white,
+                    side: BorderSide(color: isSelected ? const Color(0xFF6366F1) : const Color(0xFFE2E8F0)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                    labelStyle: TextStyle(
+                        color: isSelected ? const Color(0xFF6366F1) : const Color(0xFF64748B),
+                        fontWeight: FontWeight.bold
+                    ),
+                  ),
+                );
+              }).toList(),
+            ),
+          ),
+
+          // 2. TOPIC SELECTOR & MARKET PULSE
+          if (_filteredTopics.isNotEmpty)
+            Container(
+              padding: const EdgeInsets.all(16),
+              color: const Color(0xFFF8FAFC),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Dropdown
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all(color: const Color(0xFFE2E8F0))),
+                    child: DropdownButtonHideUnderline(
+                      child: DropdownButton<TopicConfig>(
+                        value: _currentTopic,
+                        isExpanded: true,
+                        icon: const Icon(Icons.keyboard_arrow_down, color: Color(0xFF6366F1)),
+                        items: _filteredTopics.map((t) => DropdownMenuItem(
+                          value: t,
+                          child: Text(t.name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Color(0xFF0F172A))),
+                        )).toList(),
+                        onChanged: (newTopic) {
+                          if (newTopic != null && newTopic != _currentTopic) {
+                            setState(() {
+                              _currentTopic = newTopic;
+                              _marketFact = null;
+                            });
+                            _initLoad(); // Reload for new topic
+                          }
+                        },
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 12),
+
+                  // Market Pulse Bar
+                  if (_marketFact != null)
+                    _buildPulseItem(_marketFact!)
+                  else if (_loading && _marketFact == null)
+                    const LinearProgressIndicator(minHeight: 2, color: Color(0xFF6366F1))
+                ],
+              ),
+            ),
+
+          // 3. BRIEFING HISTORY LIST
+          Expanded(
+            child: _loading && _briefings.isEmpty
+                ? const Center(child: CircularProgressIndicator(color: Color(0xFF6366F1)))
+                : _briefings.isEmpty
+            // Empty State
+                ? Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.history_edu, size: 48, color: Colors.grey.shade300),
+                  const SizedBox(height: 16),
+                  const Text(
+                    "No Reports Found",
+                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    "Tap '+' to generate new intelligence.",
+                    style: TextStyle(color: Colors.grey, fontSize: 14),
+                  ),
+                ],
+              ),
+            )
+            // List of Cards
+                : ListView.builder(
+              padding: const EdgeInsets.all(16),
+              itemCount: _briefings.length,
+              itemBuilder: (context, index) => BriefingCard(
+                brief: _briefings[index],
+                industryTag: _currentTopic.industry.label.split(',')[0],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // Helper Widget for the Market Pulse Bar
   Widget _buildPulseItem(MarketFact fact) {
     final isUp = !fact.trend.startsWith('-');
     final trendColor = isUp ? const Color(0xFF10B981) : const Color(0xFFEF4444);

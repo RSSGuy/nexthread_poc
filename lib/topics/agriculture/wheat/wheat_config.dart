@@ -61,7 +61,7 @@ class WheatConfig implements TopicConfig {
   // NEW: Primary Industry Tag
   Naics get industry => Naics.agriculture;
 
-  @override
+/*  @override
   List<NewsSourceConfig> get sources => [
     NewsRegistry.reutersCommodities,
     NewsRegistry.usdaGeneral,
@@ -69,7 +69,13 @@ class WheatConfig implements TopicConfig {
     NewsRegistry.westernProducer,
     NewsRegistry.foodBusinessNews,
     NewsRegistry.biofuelsNews,
-  ];
+  ];*/
+
+  @override
+  // DYNAMIC SOURCE LOADING
+  List<NewsSourceConfig> get sources {
+    return NewsRegistry.all.where((s) => s.tags.contains(industry)).toList();
+  }
 
   @override
   List<String> get keywords => [

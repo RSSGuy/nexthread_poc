@@ -16,7 +16,7 @@ class ChemicalConfig implements TopicConfig {
   @override
   Naics get industry => Naics.manufacturing;
 
-  @override
+/*  @override
   List<NewsSourceConfig> get sources => [
     NewsRegistry.reutersCommodities, // Crucial for Oil/Gas inputs
     NewsRegistry.cenNews,
@@ -30,7 +30,13 @@ class ChemicalConfig implements TopicConfig {
         type: "Mfg",
         tags: [Naics.manufacturing]
     ),
-  ];
+  ];*/
+
+  @override
+  // DYNAMIC SOURCE LOADING
+  List<NewsSourceConfig> get sources {
+    return NewsRegistry.all.where((s) => s.tags.contains(industry)).toList();
+  }
 
   @override
   List<String> get keywords => [

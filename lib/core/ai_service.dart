@@ -371,7 +371,7 @@ class AIService {
   }
 
   // --- GENERIC SCRAPER ---
-  Future<List<String>> fetchHeadlines(List<NewsSourceConfig> sources, List<String> keywords) async {
+/*  Future<List<String>> fetchHeadlines(List<NewsSourceConfig> sources, List<String> keywords) async {
     List<String> headlines = [];
 
     await Future.wait(sources.map((source) async {
@@ -411,8 +411,80 @@ class AIService {
     if (headlines.length > 15) headlines = headlines.sublist(0, 15);
 
     return headlines;
+  }*/
+  Future<List<String>> fetchHeadlines(List<NewsSourceConfig> sources, List<String> keywords) async {
+    List<String> headlines = [];
+
+    await Future.wait(sources.map((source) async {
+      try {
+        // 1. Try AllOrigins (Best for Text)
+        var proxyUrl = "https://api.allorigins.win/raw?url=${Uri.encodeComponent(source.url)}";
+        var response = await http.get(Uri.parse(proxyUrl)).timeout(const Duration(seconds: 10));
+
+        // 2. Fallback to CorsProxy (Best for Binary/Strict)
+        if (response.statusCode != 200) {
+          proxyUrl = "https://corsproxy.io/?${Uri.encodeComponent(source.url)}";
+          response = await http.get(Uri.parse(proxyUrl)).timeout(const Duration(seconds: 10));
+        }
+
+        if (response.statusCode == 200) {
+          final body = response.body;
+
+          // STRATEGY A: Strict XML Parsing (Preferred)
+          try {
+            final document = XmlDocument.parse(body);
+            final items = document.findAllElements('item').followedBy(document.findAllElements('entry'));
+
+            for (var item in items) {
+              final titleNode = item.findElements('title').firstOrNull;
+              if (titleNode != null) {
+                _addIfKeywordMatch(headlines, source.name, titleNode.innerText, keywords);
+              }
+            }
+          } catch (e) {
+            // STRATEGY B: "Dirty" Regex Fallback
+            // If XML parsing fails (due to bad format or HTML response), scan for title tags manually.
+            print("⚠️ XML Parse failed for ${source.name}, trying Regex fallback...");
+
+            // Regex to find <title>...</title> content
+            final titleRegex = RegExp(r'<title>(.*?)</title>', caseSensitive: false, dotAll: true);
+            final matches = titleRegex.allMatches(body);
+
+            for (var match in matches) {
+              final rawTitle = match.group(1) ?? "";
+              // Clean up CDATA and HTML tags
+              final cleanTitle = rawTitle
+                  .replaceAll('<![CDATA[', '')
+                  .replaceAll(']]>', '')
+                  .replaceAll(RegExp(r'<[^>]*>'), '') // Remove HTML tags
+                  .trim();
+
+              // Filter out generic titles like "Home" or the Site Name
+              if (cleanTitle.length > 10 && !cleanTitle.toLowerCase().contains(source.name.toLowerCase())) {
+                _addIfKeywordMatch(headlines, source.name, cleanTitle, keywords);
+              }
+            }
+          }
+        }
+      } catch (e) {
+        print("Scraper Error (${source.name}): $e");
+      }
+    }));
+
+    headlines = headlines.toSet().toList();
+    headlines.sort();
+    if (headlines.length > 15) headlines = headlines.sublist(0, 15);
+
+    return headlines;
   }
 
+  // Helper to keep code clean
+  void _addIfKeywordMatch(List<String> list, String sourceName, String title, List<String> keywords) {
+    final t = title.replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (keywords.any((k) => t.toLowerCase().contains(k.toLowerCase()))) {
+      list.add("[$sourceName] $t");
+    }
+  }
   // --- GENERIC INTELLIGENCE GENERATOR ---
   Future<void> generateBriefing(TopicConfig topic) async {
     // FIX: Removed the check for StorageService.getBriefing()
