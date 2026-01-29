@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>NexThread Crisis Simulation</title>
+        <description>High Volatility Scenario</description>
+        <item>
+            <title>Urgent: Major port strike declared, halting all agriculture exports</title>
+            <pubDate>Mon, 01 Jan 2024 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>Markets: Wheat futures hit limit up following unexpected export ban</title>
+            <pubDate>Mon, 01 Jan 2024 11:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>Supply Chain: Diesel shortage strands harvest across Midwest</title>
+            <pubDate>Mon, 01 Jan 2024 10:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>Regulatory: Emergency EPA waiver denied, chemical inputs scarce</title>
+            <pubDate>Mon, 01 Jan 2024 09:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

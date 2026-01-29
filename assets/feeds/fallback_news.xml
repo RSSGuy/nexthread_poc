@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>NexThread Local Backup</title>
+        <description>Offline/Fallback News Stream</description>
+        <item>
+            <title>Global Wheat: Prices stabilize as harvest forecasts improve in Midwest</title>
+            <pubDate>Mon, 01 Jan 2024 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>Supply Chain: Rail strike fears subside after tentative agreement</title>
+            <pubDate>Mon, 01 Jan 2024 11:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>Beef Market: Drought in Texas continues to pressure herd sizes</title>
+            <pubDate>Mon, 01 Jan 2024 10:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>AgTech: New autonomous tractor regulations proposed by EU commission</title>
+            <pubDate>Mon, 01 Jan 2024 09:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>Lumber: Construction demand cools off as interest rates remain high</title>
+            <pubDate>Mon, 01 Jan 2024 08:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Farmtario</title>
+        <link>https://farmtario.com/</link>
+        <description>Growing Together</description>
+        <lastBuildDate>Thu, 29 Jan 2026 18:21:35 +0000</lastBuildDate>
+        <language>en-US</language>
+
+        <item>
+            <title>Aster leafhoppers: An unwanted guest migrating from U.S. for canola</title>
+            <link>https://farmtario.com/news/aster-leafhoppers-an-unwanted-guest-migrating-from-u-s-for-canola/</link>
+            <pubDate>Wed, 28 Jan 2026 21:27:15 +0000</pubDate>
+            <category>News</category>
+            <category>pests</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90377</guid>
+            <description>Research scientist talks about the prevalence of aster yellows in canola in Alberta, with testing on its pest carriers and conditions in which it affects yields.</description>
+        </item>
+        <item>
+            <title>R-Tech fence mower wins for farm safety innovation at Ag Days</title>
+            <link>https://farmtario.com/machinery/r-tech-fence-mower-wins-for-farm-safety-innovation-at-ag-days/</link>
+            <pubDate>Wed, 28 Jan 2026 21:08:15 +0000</pubDate>
+            <category>Machinery</category>
+            <category>ag tech</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90371</guid>
+            <description>The R-Tech hydraulic fence mower reduces labour and a farmer's injury risk while cutting grass under pasture electric fence.</description>
+        </item>
+        <item>
+            <title>Scientists discover cause of pig ear necrosis</title>
+            <link>https://farmtario.com/news/scientists-discover-cause-of-pig-ear-necrosis/</link>
+            <pubDate>Wed, 28 Jan 2026 20:47:41 +0000</pubDate>
+            <category>Livestock</category>
+            <category>Pork</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90364</guid>
+            <description>After years of research, a University of Saskatchewan team has discovered new information about pig ear necrosis and how to control it.</description>
+        </item>
+        <item>
+            <title>Video: FPT showcases hybrid engines, modular battery concept at Agritechnica</title>
+            <link>https://farmtario.com/news/video-fpt-showcases-hybrid-engines-modular-battery-concept-at-agritechnica/</link>
+            <pubDate>Wed, 28 Jan 2026 19:56:14 +0000</pubDate>
+            <category>News</category>
+            <category>tractors</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90349</guid>
+            <description>Diesel engines have been the workhorse in agriculture for decades. FPT Industrial is an engine manufacturer that’s looking ahead to the future.</description>
+        </item>
+        <item>
+            <title>National survey of farmer and rancher mental health launches</title>
+            <link>https://farmtario.com/news/national-survey-of-farmer-and-rancher-mental-health-launches/</link>
+            <pubDate>Tue, 27 Jan 2026 22:38:38 +0000</pubDate>
+            <category>News</category>
+            <category>mental health</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90330</guid>
+            <description>The Canadian Centre for Agricultural Wellbeing has launched its third National Survey of Farmer and Rancher Mental Health in Canada.</description>
+        </item>
+        <item>
+            <title>Opinion: Government silence loud on AAFC cuts</title>
+            <link>https://farmtario.com/op-ed/government-silence-loud-on-aafc-cuts/</link>
+            <pubDate>Mon, 26 Jan 2026 21:52:24 +0000</pubDate>
+            <category>op-ed</category>
+            <category>federal government</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90295</guid>
+            <description>Canada's federal government trumpets fiscal responsibility; their silence on a day of massive Agriculture and Agri-Food Canada cuts was baffling at best.</description>
+        </item>
+        <item>
+            <title>Cottage cheese, chicken lead charge in multi-billion-dollar protein boom</title>
+            <link>https://farmtario.com/livestock/cottage-cheese-chicken-lead-charge-in-multi-billion-dollar-protein-boom/</link>
+            <pubDate>Mon, 26 Jan 2026 21:42:22 +0000</pubDate>
+            <category>Dairy</category>
+            <category>Livestock</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90288</guid>
+            <description>Dairy farmers, meat producers, and food brands are pivoting to meet the surge in consumer interest and shifting health trends.</description>
+        </item>
+        <item>
+            <title>Australia adds farm equipment to right to repair</title>
+            <link>https://farmtario.com/news/australia-adds-farm-equipment-to-right-to-repair/</link>
+            <pubDate>Mon, 26 Jan 2026 21:04:17 +0000</pubDate>
+            <category>Machinery</category>
+            <category>Right to repair</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90278</guid>
+            <description>As the right-to-repair farm equipment issue slowly simmers in North America, the issue has been resolved Down Under.</description>
+        </item>
+        <item>
+            <title>Ontario Soils GeoHub allows farmers to harness soil data</title>
+            <link>https://farmtario.com/news/ontario-soils-geohub-allows-farmers-to-harness-soil-data/</link>
+            <pubDate>Mon, 26 Jan 2026 20:55:43 +0000</pubDate>
+            <category>News</category>
+            <category>soil health</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90280</guid>
+            <description>Ontario Soils GeoHub provides accurate soil information that any farmer can access for free to inform crop, farm management and land stewardship decisions.</description>
+        </item>
+        <item>
+            <title>Ontario agribusiness gets $20 million for global competitiveness and market expansion</title>
+            <link>https://farmtario.com/news/ontario-agribusiness-gets-20-million-for-global-competitiveness-and-market-expansion/</link>
+            <pubDate>Tue, 20 Jan 2026 16:21:55 +0000</pubDate>
+            <category>News</category>
+            <category>agribusiness</category>
+            <guid isPermaLink="false">https://farmtario.com/?p=90191</guid>
+            <description>The $20 million funding helps boost Ontario's agriculture sector market expansion and global competitiveness.</description>
+        </item>
+    </channel>
+</rss>

@@ -682,6 +682,7 @@ class AIService {
     };
   }
 }*/
+/*
 import 'dart:convert';
 import 'dart:async';
 import 'package:dart_openai/dart_openai.dart';
@@ -805,6 +806,154 @@ class AIService {
           "divergence_desc": "No live analysis available.",
           "metrics": {"commodity": topic.name, "price": "--", "trend": "0%"},
           "headlines": ["System Offline"],
+          "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
+          "is_fallback": true
+        }
+      ]
+    };
+  }
+}*/
+
+import 'dart:convert';
+import 'dart:async';
+import 'package:dart_openai/dart_openai.dart';
+import '../../secrets.dart';
+import 'topic_config.dart';
+import 'models.dart';
+import 'storage_service.dart';
+import 'feed_service.dart';
+import 'local_feed_service.dart';
+
+class AIService {
+  final String apiKey = Secrets.openAiApiKey;
+  final FeedService _feedService = FeedService();
+  final LocalFeedService _localFeedService = LocalFeedService();
+
+  AIService() {
+    print("--- AIService: Initializing ---");
+    if (!apiKey.contains("YOUR_")) {
+      OpenAI.apiKey = apiKey;
+      OpenAI.requestsTimeOut = const Duration(seconds: 60);
+    }
+  }
+
+  // --- GENERIC INTELLIGENCE GENERATOR ---
+  Future<void> generateBriefing(TopicConfig topic, {String? manualFeedPath}) async {
+    // 1. FORCE FALLBACK if API Key is missing (simulated environment)
+    if (apiKey.contains("YOUR_") && manualFeedPath == null) {
+      print("AIService: No API Key, defaulting to standard fallback.");
+      manualFeedPath = 'assets/feeds/fallback_news.xml';
+    }
+
+    try {
+      print("AIService: Generating Intelligence for ${topic.id}...");
+
+      // Determine News Source
+      Future<List<String>> newsFuture;
+      if (manualFeedPath != null) {
+        print("AIService: Reading from Local File -> $manualFeedPath");
+        newsFuture = _localFeedService.getHeadlinesFromPath(manualFeedPath, topic.keywords);
+      } else {
+        print("AIService: Polling Live RSS Feeds...");
+        newsFuture = _feedService.fetchHeadlines(topic.sources, topic.keywords);
+      }
+
+      final results = await Future.wait([
+        topic.fetchMarketPulse(),
+        newsFuture
+      ]);
+
+      final MarketFact marketFact = results[0] as MarketFact;
+      final List<String> news = results[1] as List<String>;
+
+      if (news.isEmpty) news.add("No recent news found for ${topic.name}.");
+
+      final systemPrompt = '''
+      You are an Intelligence Analyst for the ${topic.name} sector.
+      
+      STEP 1: ANALYZE FACTS vs. SENTIMENT
+      [MARKET DATA]
+      ${marketFact.toString()}
+      
+      [NEWS STREAM]
+      ${news.join('\n')}
+
+      [ANALYSIS RULES]
+      ${topic.riskRules}
+      
+      STEP 2: DETECT DIVERGENCE & TRENDS
+      - Compare Data (Status/Trend) against News Sentiment.
+      - Look for: RISKS (Panic, Crisis) AND EMERGING TRENDS (Opportunities, Shifts).
+      - If a positive trend is found, mark Divergence Tag as "Opportunity" or "Growth".
+
+      STEP 3: OUTPUT JSON
+      Return a JSON object with a "briefs" array. Each brief must have:
+      - id, subsector (e.g. "${topic.name}"), title, summary
+      - severity (High/Medium/Low) -> Use "Low" for positive trends unless impact is massive.
+      - fact_score (0-100), sent_score (0-100)
+      - divergence_tag, divergence_desc
+      - metrics (commodity, price, trend)
+      - chart_data (placeholder array)
+      - headlines (list of strings used)
+      - is_fallback (false)
+      ''';
+
+      // If we are offline/simulating (no API Key), return dummy data wrapped in the structure
+      if (apiKey.contains("YOUR_")) {
+        await StorageService.saveBriefing(topic.id, _getDummyResponse(topic, news));
+        return;
+      }
+
+      final chatCompletion = await OpenAI.instance.chat.create(
+        model: "gpt-4-turbo",
+        temperature: 0.0,
+        seed: 42,
+        responseFormat: {"type": "json_object"},
+        messages: [
+          OpenAIChatCompletionChoiceMessageModel(
+            content: [OpenAIChatCompletionChoiceMessageContentItemModel.text(systemPrompt)],
+            role: OpenAIChatMessageRole.system,
+          ),
+        ],
+      ).timeout(const Duration(seconds: 60));
+
+      final content = chatCompletion.choices.first.message.content?.first.text;
+      Map<String, dynamic> jsonResponse = json.decode(content ?? "{}");
+
+      if (jsonResponse['briefs'] != null) {
+        for (var brief in jsonResponse['briefs']) {
+          if (marketFact.lineData.isNotEmpty) {
+            brief['chart_data'] = marketFact.lineData;
+          }
+        }
+      }
+
+      await StorageService.saveBriefing(topic.id, jsonResponse);
+
+    } catch (e) {
+      print("AI Generation Error: $e");
+      // On error, save a clear error state
+      final errorData = _getDummyResponse(topic, ["System Error: $e"]);
+      await StorageService.saveBriefing(topic.id, errorData);
+    }
+  }
+
+  // Helper for when OpenAI is unreachable/disabled
+  Map<String, dynamic> _getDummyResponse(TopicConfig topic, List<String> headlines) {
+    return {
+      "briefs": [
+        {
+          "id": "1",
+          "subsector": topic.name,
+          "title": "Simulated Report: ${topic.name}",
+          "summary": "This report was generated using fallback data because the AI service is disabled or unreachable.",
+          "severity": "Low",
+          "fact_score": 50,
+          "sent_score": 50,
+          "divergence_tag": "Simulation",
+          "divergence_desc": "Analysis based on: ${headlines.length} items.",
+          "metrics": {"commodity": topic.name, "price": "--", "trend": "0%"},
+          "headlines": headlines.take(5).toList(),
           "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
           "is_fallback": true
         }
