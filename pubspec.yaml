@@ -44,6 +44,7 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   webfeed_plus: ^1.0.9  # NEW PACKAGE
+  google_generative_ai: ^0.4.7
 
 
 dev_dependencies:

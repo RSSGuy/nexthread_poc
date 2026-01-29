@@ -605,6 +605,29 @@ class NewsRegistry {
       tags: [Naics.manufacturing, Naics.retailTrade]
   );
 
+  // --- MANUFACTURING SOURCES ---
+
+  static final NewsSourceConfig canadianMfg = NewsSourceConfig(
+    name: "Cdn Manufacturing",
+    url: "https://www.canadianmanufacturing.com/feed/",
+      type: "News",
+      tags: [Naics.manufacturing]
+  );
+
+  static final NewsSourceConfig plantMagazine = NewsSourceConfig(
+    name: "Plant Magazine",
+    url: "https://www.plant.ca/feed/",
+      type: "News",
+      tags: [Naics.manufacturing]
+  );
+
+  static final NewsSourceConfig industryWest = NewsSourceConfig(
+    name: "Industry West",
+    url: "https://industrywestmagazine.com/feed/",
+      type: "News",
+      tags: [Naics.manufacturing]
+  );
+
   // --- CHEMICALS ---
   static const cenNews = NewsSourceConfig(
       name: "C&EN",
@@ -633,4 +656,10 @@ class NewsRegistry {
       type: "Market Data",
       tags: [Naics.manufacturing, Naics.wholesaleTrade]
   );
+
 }
+
+
+
+
+

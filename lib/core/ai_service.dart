@@ -813,6 +813,7 @@ class AIService {
     };
   }
 }*/
+/*
 
 import 'dart:convert';
 import 'dart:async';
@@ -947,6 +948,159 @@ class AIService {
           "subsector": topic.name,
           "title": "Simulated Report: ${topic.name}",
           "summary": "This report was generated using fallback data because the AI service is disabled or unreachable.",
+          "severity": "Low",
+          "fact_score": 50,
+          "sent_score": 50,
+          "divergence_tag": "Simulation",
+          "divergence_desc": "Analysis based on: ${headlines.length} items.",
+          "metrics": {"commodity": topic.name, "price": "--", "trend": "0%"},
+          "headlines": headlines.take(5).toList(),
+          "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
+          "is_fallback": true
+        }
+      ]
+    };
+  }
+}*/
+
+import 'dart:convert';
+import 'dart:async';
+import 'package:dart_openai/dart_openai.dart'; // Keeping for type safety if needed, but logic moved
+import '../../secrets.dart';
+import 'gemini_provider.dart';
+import 'topic_config.dart';
+import 'models.dart';
+import 'storage_service.dart';
+import 'feed_service.dart';
+import 'local_feed_service.dart';
+
+// NEW IMPORTS
+import 'ai_provider.dart';
+import 'openai_provider.dart';
+import 'ollama_provider.dart';
+
+class AIService {
+  final String apiKey = Secrets.openAiApiKey;
+  final FeedService _feedService = FeedService();
+  final LocalFeedService _localFeedService = LocalFeedService();
+
+  // --- PROVIDER MANAGEMENT ---
+  AIProvider _activeProvider = OpenAIProvider(); // Default
+
+  // Method to switch providers dynamically
+  /*void setProvider(String providerType) {
+    if (providerType == 'ollama') {
+      _activeProvider = OllamaProvider();
+    } else {
+      _activeProvider = OpenAIProvider();
+    }
+    print("AIService: Switched to ${_activeProvider.name}");
+  }*/
+  void setProvider(String providerType) {
+    if (providerType == 'ollama') {
+      _activeProvider = OllamaProvider();
+    } else if (providerType == 'gemini') {
+      _activeProvider = GeminiProvider(); // <--- NEW CASE
+    } else {
+      _activeProvider = OpenAIProvider();
+    }
+    print("AIService: Switched to ${_activeProvider.name}");
+  }
+
+  String get currentProviderName => _activeProvider.name;
+
+  // --- GENERATION LOGIC ---
+  Future<void> generateBriefing(TopicConfig topic, {String? manualFeedPath}) async {
+    // Fallback if API Key is missing and using OpenAI (Ollama doesn't need key)
+    if (_activeProvider is OpenAIProvider && apiKey.contains("YOUR_")) {
+      print("AIService: No API Key, defaulting to standard fallback.");
+      manualFeedPath = 'assets/feeds/fallback_news.xml';
+    }
+
+    try {
+      print("AIService: Generating via ${_activeProvider.name} for ${topic.id}...");
+
+      // 1. DATA INGESTION
+      Future<List<String>> newsFuture;
+      if (manualFeedPath != null) {
+        newsFuture = _localFeedService.getHeadlinesFromPath(manualFeedPath, topic.keywords);
+      } else {
+        newsFuture = _feedService.fetchHeadlines(topic.sources, topic.keywords);
+      }
+
+      final results = await Future.wait([
+        topic.fetchMarketPulse(),
+        newsFuture
+      ]);
+
+      final MarketFact marketFact = results[0] as MarketFact;
+      final List<String> news = results[1] as List<String>;
+
+      if (news.isEmpty) news.add("No recent news found for ${topic.name}.");
+
+      // 2. PROMPT CONSTRUCTION
+      final systemPrompt = '''
+      You are an Intelligence Analyst for the ${topic.name} sector.
+      
+      STEP 1: ANALYZE FACTS vs. SENTIMENT
+      [MARKET DATA]
+      ${marketFact.toString()}
+      
+      [NEWS STREAM]
+      ${news.join('\n')}
+
+      [ANALYSIS RULES]
+      ${topic.riskRules}
+      
+      STEP 2: DETECT DIVERGENCE & TRENDS
+      - Compare Data (Status/Trend) against News Sentiment.
+      - Look for: RISKS (Panic, Crisis) AND EMERGING TRENDS (Opportunities, Shifts).
+
+      STEP 3: OUTPUT JSON
+      Return a JSON object with a "briefs" array. Each brief must have:
+      - id, subsector (e.g. "${topic.name}"), title, summary
+      - severity (High/Medium/Low)
+      - fact_score (0-100), sent_score (0-100)
+      - divergence_tag, divergence_desc
+      - metrics (commodity, price, trend)
+      - chart_data (placeholder array)
+      - headlines (list of strings used)
+      - is_fallback (false)
+      ''';
+
+      // 3. DELEGATE TO PROVIDER
+      // We pass the prompt. The provider handles the specific API call.
+      Map<String, dynamic> jsonResponse = await _activeProvider.generateBriefingJson(
+        systemPrompt: systemPrompt,
+        userContext: "", // Can be used for "Chat" style history later
+      );
+
+      // 4. POST-PROCESSING
+      if (jsonResponse['briefs'] != null) {
+        for (var brief in jsonResponse['briefs']) {
+          if (marketFact.lineData.isNotEmpty) {
+            brief['chart_data'] = marketFact.lineData;
+          }
+        }
+      }
+
+      await StorageService.saveBriefing(topic.id, jsonResponse);
+
+    } catch (e) {
+      print("AI Generation Error: $e");
+      final errorData = _getDummyResponse(topic, ["System Error: $e"]);
+      await StorageService.saveBriefing(topic.id, errorData);
+    }
+  }
+
+  Map<String, dynamic> _getDummyResponse(TopicConfig topic, List<String> headlines) {
+    return {
+      "briefs": [
+        {
+          "id": "1",
+          "subsector": topic.name,
+          "title": "Simulation / Error Report",
+          "summary": "This report was generated because the AI service is unreachable or simulated.",
           "severity": "Low",
           "fact_score": 50,
           "sent_score": 50,
