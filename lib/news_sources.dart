@@ -9,6 +9,12 @@ class NewsSources {
       "type": "Trade Journal"
     },
     {
+      "name": "Farms.com (Farm Journal)",
+      "url": "https://m.farms.com/Portals/_default/RSS_Portal/Featured_Canada_West.xml",
+      "type": "Trade Journal"
+    },
+
+    {
       "name": "Reuters Commodities",
       "url": "https://www.reutersagency.com/feed/?best-topics=commodities&post_type=best",
       "type": "Global Macro"

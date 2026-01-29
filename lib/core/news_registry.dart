@@ -9,6 +9,13 @@ class NewsRegistry {
       tags: [Naics.information, Naics.finance]
   );
 
+  static const farms = NewsSourceConfig(
+      name: "Farms.com",
+      url: "https://m.farms.com/Portals/_default/RSS_Portal/Featured_Canada_West.xml",
+      type: "Canada West",
+      tags: [Naics.agriculture]
+  );
+
   // --- GOVERNMENT ---
   static const usdaGeneral = NewsSourceConfig(
       name: "USDA",
