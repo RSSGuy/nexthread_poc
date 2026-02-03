@@ -4008,6 +4008,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 }*/
+/*
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -4535,6 +4536,361 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 industryTag: _currentTopic.industry.label.split(',')[0],
                 topicId: _currentTopic.id,
                 // NEW: Pass refresh callback to allow child interactions to update points
+                onPointsUpdated: _refreshPoints,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}*/
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+// CORE SERVICES
+import '../../core/ai_service.dart';
+import '../../core/topic_config.dart';
+import '../../core/models.dart';
+import '../../core/storage_service.dart';
+import '../../core/industry_provider.dart'; // NEW IMPORT
+
+// UI COMPONENTS
+import '../widgets/briefing_card.dart';
+import '../widgets/generation_loader.dart';
+import '../widgets/market_pulse_card.dart';
+
+// DIALOGS
+import '../dialogs/fallback_selector_dialog.dart';
+import '../dialogs/model_selector_dialog.dart';
+import '../dialogs/industry_selector_dialog.dart';
+
+class DashboardScreen extends StatefulWidget {
+  const DashboardScreen({super.key});
+
+  @override
+  State<DashboardScreen> createState() => _DashboardScreenState();
+}
+
+class _DashboardScreenState extends State<DashboardScreen> {
+  final AIService _aiService = AIService();
+  final IndustryProvider _industryProvider = IndustryProvider(); // Use the Provider
+
+  // State Variables
+  late Naics _selectedIndustry;
+  late TopicConfig _currentTopic;
+
+  List<Briefing> _briefings = [];
+  MarketFact? _marketFact;
+  bool _loading = false;
+  int _userPoints = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    // Initialize default selection (Fail safely if provider is empty)
+    final activeTopics = _industryProvider.getActiveTopics();
+
+    if (activeTopics.isNotEmpty) {
+      _selectedIndustry = activeTopics.first.industry;
+      _currentTopic = activeTopics.first;
+    } else {
+      // Fallback if no topics are registered (unlikely)
+      _selectedIndustry = Naics.values.first;
+    }
+
+    _initLoad();
+  }
+
+  // Filter topics logic is now simpler or delegated
+  List<TopicConfig> get _filteredTopics {
+    return _industryProvider.getActiveTopics()
+        .where((t) => t.industry == _selectedIndustry)
+        .toList();
+  }
+
+  // --- DATA LOADING ---
+
+  void _initLoad() async {
+    setState(() => _loading = true);
+
+    try {
+      final fact = await _currentTopic.fetchMarketPulse();
+      final history = StorageService.getHistory(_currentTopic.id);
+      final points = StorageService.getPoints();
+
+      if (mounted) {
+        setState(() {
+          _marketFact = fact;
+          _briefings = history;
+          _userPoints = points;
+          _loading = false;
+        });
+      }
+    } catch (e) {
+      print("Init Load Error: $e");
+      if(mounted) setState(() => _loading = false);
+    }
+  }
+
+  void _refreshPoints() {
+    setState(() {
+      _userPoints = StorageService.getPoints();
+    });
+  }
+
+  // --- CORE GENERATION LOGIC ---
+
+  void _generateNewBriefing(MarketFact? fact, {String? manualFeedPath, String? customScenario}) async {
+    // 1. DEDUCT COST
+    if (customScenario != null) {
+      bool success = await StorageService.deductPoints(1000);
+      if (!success) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text("Insufficient Points. You need 1000 pts."), backgroundColor: Colors.redAccent),
+          );
+        }
+        return;
+      }
+      setState(() => _userPoints = StorageService.getPoints());
+    }
+
+    GenerationLoader.show(context);
+    setState(() => _loading = true);
+
+    final mFact = fact ?? await _currentTopic.fetchMarketPulse();
+
+    try {
+      await _aiService.generateBriefing(
+          _currentTopic,
+          manualFeedPath: manualFeedPath,
+          customScenario: customScenario
+      );
+
+      final updatedHistory = StorageService.getHistory(_currentTopic.id);
+
+      if (mounted) {
+        setState(() {
+          _marketFact = mFact;
+          _briefings = updatedHistory;
+          _loading = false;
+        });
+
+        if (customScenario != null) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text("Simulation Complete. Balance: $_userPoints pts"), backgroundColor: const Color(0xFF10B981)),
+          );
+        }
+      }
+    } on IrrelevantScenarioException catch (e) {
+      await StorageService.addPoints(500); // Partial Refund
+      if (mounted) {
+        setState(() {
+          _userPoints = StorageService.getPoints();
+          _loading = false;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text("Simulation Rejected (500 pts returned): ${e.message}"), backgroundColor: Colors.red.shade800),
+        );
+      }
+    } catch (e) {
+      print("Error: $e");
+      if (customScenario != null) {
+        await StorageService.addPoints(1000); // Full Refund
+        if(mounted) setState(() => _userPoints = StorageService.getPoints());
+      }
+      if (mounted) {
+        setState(() => _loading = false);
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Error: $e")));
+      }
+    } finally {
+      if (mounted) GenerationLoader.hide(context);
+    }
+  }
+
+  // --- ACTIONS ---
+
+  void _performSystemReset() async {
+    await StorageService.clearAll();
+    setState(() {
+      _briefings = [];
+      _marketFact = null;
+    });
+    _initLoad();
+    if(mounted) ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("System Reset Complete")));
+  }
+
+  void _onIndustrySelected(Naics industry) {
+    if (_selectedIndustry == industry) return;
+
+    // Get the topic for this industry from the provider
+    final topic = _industryProvider.getTopicForIndustry(industry);
+
+    if (topic != null) {
+      setState(() {
+        _selectedIndustry = industry;
+        _currentTopic = topic;
+        _marketFact = null;
+        _briefings = [];
+      });
+      _initLoad();
+    }
+  }
+
+  void _onIndustrySelectorClicked() async {
+    // PASS DATA TO DIALOG
+    final Naics? selected = await IndustrySelectorDialog.show(
+        context,
+        _selectedIndustry
+    );
+
+    if (selected != null) {
+      _onIndustrySelected(selected);
+    }
+  }
+
+  void _onTopicChanged(TopicConfig newTopic) {
+    if (newTopic != _currentTopic) {
+      setState(() {
+        _currentTopic = newTopic;
+        _marketFact = null;
+      });
+      _initLoad();
+    }
+  }
+
+  void _onFallbackSelected() async {
+    final String? selectedPath = await FallbackSelectorDialog.show(context);
+    if (selectedPath != null) _generateNewBriefing(_marketFact, manualFeedPath: selectedPath);
+  }
+
+  void _onModelSelect() async {
+    final String? providerKey = await ModelSelectorDialog.show(context);
+    if (providerKey != null) {
+      _aiService.setProvider(providerKey);
+      setState(() {});
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xFFF8FAFC),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: Row(
+          children: [
+            const Icon(Icons.grain, color: Color(0xFF6366F1)),
+            const SizedBox(width: 8),
+            Text('NexThread', style: GoogleFonts.urbanist(fontWeight: FontWeight.bold, color: const Color(0xFF0F172A))),
+          ],
+        ),
+        actions: [
+          Center(
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+              margin: const EdgeInsets.only(right: 8),
+              decoration: BoxDecoration(color: const Color(0xFFF1F5F9), borderRadius: BorderRadius.circular(16), border: Border.all(color: const Color(0xFFE2E8F0))),
+              child: Row(
+                children: [
+                  const Icon(Icons.stars, size: 16, color: Color(0xFFF59E0B)),
+                  const SizedBox(width: 6),
+                  Text("$_userPoints", style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Color(0xFF64748B))),
+                ],
+              ),
+            ),
+          ),
+          PopupMenuButton<String>(
+            icon: Icon(Icons.add_circle_outline, color: _loading ? Colors.grey : const Color(0xFF6366F1)),
+            enabled: !_loading,
+            onSelected: (value) {
+              if (value == 'poll') _generateNewBriefing(_marketFact);
+              else if (value == 'fallback') _onFallbackSelected();
+              else if (value == 'model') _onModelSelect();
+            },
+            itemBuilder: (context) => [
+              const PopupMenuItem(value: 'poll', child: Text('Poll RSS Feeds')),
+              const PopupMenuItem(value: 'fallback', child: Text('Use Fallback Data')),
+              const PopupMenuDivider(),
+              PopupMenuItem(value: 'model', child: Text('Model: ${_aiService.currentProviderName.split(' ')[0]}')),
+            ],
+          ),
+          IconButton(
+            icon: const Icon(Icons.delete_forever, color: Color(0xFF94A3B8)),
+            onPressed: _loading ? null : _performSystemReset,
+          ),
+        ],
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // INDUSTRY SELECTOR
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+            child: InkWell(
+              onTap: _onIndustrySelectorClicked,
+              borderRadius: BorderRadius.circular(12),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: const Color(0xFFE2E8F0)),
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 2, offset: const Offset(0, 1))],
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(color: const Color(0xFFF1F5F9), borderRadius: BorderRadius.circular(8)),
+                      child: const Icon(Icons.domain, size: 20, color: Color(0xFF64748B)),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text("INDUSTRY SECTOR", style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Color(0xFF94A3B8), letterSpacing: 0.5)),
+                          const SizedBox(height: 2),
+                          Text(_selectedIndustry.label, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Color(0xFF0F172A)), maxLines: 1, overflow: TextOverflow.ellipsis),
+                        ],
+                      ),
+                    ),
+                    const Icon(Icons.keyboard_arrow_down, color: Color(0xFF64748B)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          // MARKET PULSE
+          if (_filteredTopics.isNotEmpty)
+            MarketPulseCard(
+              topics: _filteredTopics,
+              currentTopic: _currentTopic,
+              marketFact: _marketFact,
+              isLoading: _loading,
+              onTopicChanged: _onTopicChanged,
+              onSimulation: (scenario) => _generateNewBriefing(_marketFact, customScenario: scenario),
+              userPoints: _userPoints,
+            ),
+
+          // LIST
+          Expanded(
+            child: _loading && _briefings.isEmpty
+                ? const Center(child: CircularProgressIndicator(color: Color(0xFF6366F1)))
+                : _briefings.isEmpty
+                ? Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Icon(Icons.history_edu, size: 48, color: Colors.grey.shade300), const SizedBox(height: 16), const Text("No Reports Found", style: TextStyle(color: Colors.grey))]))
+                : ListView.builder(
+              padding: const EdgeInsets.all(16),
+              itemCount: _briefings.length,
+              itemBuilder: (context, index) => BriefingCard(
+                brief: _briefings[index],
+                industryTag: _currentTopic.industry.label.split(',')[0],
+                topicId: _currentTopic.id,
                 onPointsUpdated: _refreshPoints,
               ),
             ),
