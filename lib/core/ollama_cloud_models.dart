@@ -1,6 +1,76 @@
-// lib/core/ollama_cloud_models.dart
+/*
+class OllamaModelConfig {
+  final String id;
+  final String label;
+  final bool recommended;
+  final int contextWindow;
+  final bool supportsSystemSchema; // Helpful to know if model follows complex system prompts well
+
+  const OllamaModelConfig({
+    required this.id,
+    required this.label,
+    this.recommended = false,
+    this.contextWindow = 4096,
+    this.supportsSystemSchema = true,
+  });
+}
+
+class OllamaCloudModels {
+  // DEFAULT ENDPOINTS
+  static const String defaultLocalUrl = 'http://localhost:11434';
+  static const String defaultCloudUrl = ''; // User can override this
+
+  // MODEL REGISTRY
+  static const List<OllamaModelConfig> registry = [
+    OllamaModelConfig(
+        id: 'llama3.2',
+        label: 'Llama 3.2 (3B)',
+        recommended: true,
+        contextWindow: 128000
+    ),
+    OllamaModelConfig(
+        id: 'llama3.1',
+        label: 'Llama 3.1 (8B)',
+        recommended: true,
+        contextWindow: 128000
+    ),
+    OllamaModelConfig(
+        id: 'mistral',
+        label: 'Mistral (7B)',
+        contextWindow: 8192
+    ),
+    OllamaModelConfig(
+        id: 'gemma2',
+        label: 'Gemma 2 (9B)',
+        contextWindow: 8192
+    ),
+    OllamaModelConfig(
+        id: 'phi3.5',
+        label: 'Phi 3.5 (3.8B)',
+        contextWindow: 128000
+    ),
+    OllamaModelConfig(
+        id: 'qwen2.5',
+        label: 'Qwen 2.5 (7B)',
+        recommended: true,
+        contextWindow: 32000
+    ),
+  ];
+
+  static OllamaModelConfig get defaultModel => registry.first;
+
+  /// Helper to find a model configuration by ID
+  static OllamaModelConfig findById(String id) {
+    return registry.firstWhere(
+            (m) => m.id == id,
+        orElse: () => defaultModel
+    );
+  }
+}*/
+
 /// Reference list of Ollama Cloud Models
 /// Source: https://ollama.com/search?c=cloud
+
 class OllamaCloudModel {
   final String id;
   final String name;
@@ -70,4 +140,21 @@ const List<OllamaCloudModel> kOllamaCloudModels = [
     name: 'MiniMax M2.1',
     description: 'Multilingual code engineering model.',
   ),
+  // Fallback / Local Defaults
+  OllamaCloudModel(
+    id: 'llama3',
+    name: 'Llama 3 (Local/Default)',
+    description: 'Standard local model.',
+  ),
 ];
+
+/// Helper class for Provider compatibility
+/// This ensures 'OllamaProvider' can still find default values
+class OllamaCloudModels {
+  static const String defaultLocalUrl = 'http://localhost:11434';
+
+  // Returns the first model in the list as the default
+  static OllamaCloudModel get defaultModel => kOllamaCloudModels.isNotEmpty
+      ? kOllamaCloudModels.first
+      : const OllamaCloudModel(id: 'llama3', name: 'Llama 3', description: 'Fallback');
+}

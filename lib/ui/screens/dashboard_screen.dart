@@ -4554,7 +4554,7 @@ import '../../core/ai_service.dart';
 import '../../core/topic_config.dart';
 import '../../core/models.dart';
 import '../../core/storage_service.dart';
-import '../../core/industry_provider.dart'; // NEW IMPORT
+import '../../core/industry_provider.dart';
 
 // UI COMPONENTS
 import '../widgets/briefing_card.dart';
@@ -4575,9 +4575,8 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> {
   final AIService _aiService = AIService();
-  final IndustryProvider _industryProvider = IndustryProvider(); // Use the Provider
+  final IndustryProvider _industryProvider = IndustryProvider();
 
-  // State Variables
   late Naics _selectedIndustry;
   late TopicConfig _currentTopic;
 
@@ -4589,32 +4588,25 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   void initState() {
     super.initState();
-    // Initialize default selection (Fail safely if provider is empty)
+    // Default to first active topic
     final activeTopics = _industryProvider.getActiveTopics();
-
     if (activeTopics.isNotEmpty) {
       _selectedIndustry = activeTopics.first.industry;
       _currentTopic = activeTopics.first;
     } else {
-      // Fallback if no topics are registered (unlikely)
-      _selectedIndustry = Naics.values.first;
+      _selectedIndustry = Naics.values.first; // Safety fallback
     }
-
     _initLoad();
   }
 
-  // Filter topics logic is now simpler or delegated
   List<TopicConfig> get _filteredTopics {
     return _industryProvider.getActiveTopics()
         .where((t) => t.industry == _selectedIndustry)
         .toList();
   }
 
-  // --- DATA LOADING ---
-
   void _initLoad() async {
     setState(() => _loading = true);
-
     try {
       final fact = await _currentTopic.fetchMarketPulse();
       final history = StorageService.getHistory(_currentTopic.id);
@@ -4629,7 +4621,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
         });
       }
     } catch (e) {
-      print("Init Load Error: $e");
       if(mounted) setState(() => _loading = false);
     }
   }
@@ -4640,18 +4631,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
     });
   }
 
-  // --- CORE GENERATION LOGIC ---
+  // --- GENERATION LOGIC ---
 
   void _generateNewBriefing(MarketFact? fact, {String? manualFeedPath, String? customScenario}) async {
-    // 1. DEDUCT COST
     if (customScenario != null) {
       bool success = await StorageService.deductPoints(1000);
       if (!success) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text("Insufficient Points. You need 1000 pts."), backgroundColor: Colors.redAccent),
-          );
-        }
+        if (mounted) ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Insufficient Points."), backgroundColor: Colors.redAccent));
         return;
       }
       setState(() => _userPoints = StorageService.getPoints());
@@ -4677,33 +4663,24 @@ class _DashboardScreenState extends State<DashboardScreen> {
           _briefings = updatedHistory;
           _loading = false;
         });
-
         if (customScenario != null) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text("Simulation Complete. Balance: $_userPoints pts"), backgroundColor: const Color(0xFF10B981)),
-          );
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Simulation Complete. Balance: $_userPoints pts"), backgroundColor: const Color(0xFF10B981)));
         }
       }
     } on IrrelevantScenarioException catch (e) {
-      await StorageService.addPoints(500); // Partial Refund
+      await StorageService.addPoints(500);
       if (mounted) {
-        setState(() {
-          _userPoints = StorageService.getPoints();
-          _loading = false;
-        });
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Simulation Rejected (500 pts returned): ${e.message}"), backgroundColor: Colors.red.shade800),
-        );
+        setState(() { _userPoints = StorageService.getPoints(); _loading = false; });
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Simulation Rejected (500 pts returned): ${e.message}"), backgroundColor: Colors.red.shade800));
       }
     } catch (e) {
-      print("Error: $e");
       if (customScenario != null) {
-        await StorageService.addPoints(1000); // Full Refund
+        await StorageService.addPoints(1000);
         if(mounted) setState(() => _userPoints = StorageService.getPoints());
       }
       if (mounted) {
         setState(() => _loading = false);
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Error: $e")));
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("System Error: $e"), duration: const Duration(seconds: 5)));
       }
     } finally {
       if (mounted) GenerationLoader.hide(context);
@@ -4724,10 +4701,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   void _onIndustrySelected(Naics industry) {
     if (_selectedIndustry == industry) return;
-
-    // Get the topic for this industry from the provider
     final topic = _industryProvider.getTopicForIndustry(industry);
-
     if (topic != null) {
       setState(() {
         _selectedIndustry = industry;
@@ -4740,25 +4714,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
   }
 
   void _onIndustrySelectorClicked() async {
-    // PASS DATA TO DIALOG
-    final Naics? selected = await IndustrySelectorDialog.show(
-        context,
-        _selectedIndustry
-    );
-
-    if (selected != null) {
-      _onIndustrySelected(selected);
-    }
-  }
-
-  void _onTopicChanged(TopicConfig newTopic) {
-    if (newTopic != _currentTopic) {
-      setState(() {
-        _currentTopic = newTopic;
-        _marketFact = null;
-      });
-      _initLoad();
-    }
+    final Naics? selected = await IndustrySelectorDialog.show(context, _selectedIndustry);
+    if (selected != null) _onIndustrySelected(selected);
   }
 
   void _onFallbackSelected() async {
@@ -4766,11 +4723,30 @@ class _DashboardScreenState extends State<DashboardScreen> {
     if (selectedPath != null) _generateNewBriefing(_marketFact, manualFeedPath: selectedPath);
   }
 
+  // --- MODEL SELECTION (UPDATED) ---
   void _onModelSelect() async {
-    final String? providerKey = await ModelSelectorDialog.show(context);
-    if (providerKey != null) {
-      _aiService.setProvider(providerKey);
+    // 1. Get the complex result from the dialog
+    final result = await ModelSelectorDialog.show(context);
+
+    if (result != null) {
+      final String key = result['key'];
+
+      // 2. Cast the config map safely
+      Map<String, String>? config;
+      if (result['config'] != null) {
+        config = Map<String, String>.from(result['config']);
+      }
+
+      // 3. Pass to Service
+      _aiService.setProvider(key, config: config);
+
       setState(() {});
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text("Switched to ${_aiService.currentProviderName}")),
+        );
+      }
     }
   }
 
@@ -4815,7 +4791,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               const PopupMenuItem(value: 'poll', child: Text('Poll RSS Feeds')),
               const PopupMenuItem(value: 'fallback', child: Text('Use Fallback Data')),
               const PopupMenuDivider(),
-              PopupMenuItem(value: 'model', child: Text('Model: ${_aiService.currentProviderName.split(' ')[0]}')),
+              PopupMenuItem(value: 'model', child: Text('Model: ${_aiService.currentProviderName.split('(')[0].trim()}')), // Clean name
             ],
           ),
           IconButton(
@@ -4827,7 +4803,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // INDUSTRY SELECTOR
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
             child: InkWell(
@@ -4865,20 +4840,21 @@ class _DashboardScreenState extends State<DashboardScreen> {
               ),
             ),
           ),
-
-          // MARKET PULSE
           if (_filteredTopics.isNotEmpty)
             MarketPulseCard(
               topics: _filteredTopics,
               currentTopic: _currentTopic,
               marketFact: _marketFact,
               isLoading: _loading,
-              onTopicChanged: _onTopicChanged,
-              onSimulation: (scenario) => _generateNewBriefing(_marketFact, customScenario: scenario),
+              onTopicChanged: (t) {
+                if (t != _currentTopic) {
+                  setState(() { _currentTopic = t; _marketFact = null; });
+                  _initLoad();
+                }
+              },
+              onSimulation: (s) => _generateNewBriefing(_marketFact, customScenario: s),
               userPoints: _userPoints,
             ),
-
-          // LIST
           Expanded(
             child: _loading && _briefings.isEmpty
                 ? const Center(child: CircularProgressIndicator(color: Color(0xFF6366F1)))
