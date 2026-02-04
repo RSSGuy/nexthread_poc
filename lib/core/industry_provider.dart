@@ -9,6 +9,7 @@ import '../topics/agriculture/agtech/agtech_config.dart';
 import '../topics/manufacturing/apparel/apparel_config.dart';
 import '../topics/manufacturing/chemical/chemical_config.dart';
 import '../topics/manufacturing/canadian_manufacturing/canadian_manufacturing_config.dart';
+import '../topics/mining/oil_gas/oil_gas_config.dart';
 
 class IndustryProvider {
   // Singleton pattern for easy access
@@ -25,6 +26,7 @@ class IndustryProvider {
     ApparelConfig(),
     ChemicalConfig(),
     CanadianManufacturingConfig(),
+    OilGasConfig(),
   ];
 
   /// Returns a list of all TopicConfigs that are currently active/implemented
