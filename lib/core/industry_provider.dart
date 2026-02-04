@@ -155,6 +155,7 @@ class StubTopicConfig implements TopicConfig {
   }
 }*/
 
+/*
 import '../core/topic_config.dart';
 import '../core/models.dart';
 import '../core/market_data_provider.dart';
@@ -244,6 +245,102 @@ class IndustryProvider {
 
 // --- HELPER CONFIG FOR STUBS ---
 // This allows sectors to exist in the menu without full implementation files
+class StubTopicConfig implements TopicConfig {
+  @override
+  final String id;
+  @override
+  final String name;
+  @override
+  final Naics industry;
+
+  StubTopicConfig(this.id, this.name, this.industry);
+
+  @override
+  List<NewsSourceConfig> get sources => [];
+  @override
+  List<String> get keywords => [];
+  @override
+  String get riskRules => "Standard risk assessment rules apply for the $name sector.";
+
+  @override
+  Future<MarketFact> fetchMarketPulse() async {
+    // Uses the MarketDataProvider to get basic sector benchmarks
+    return await MarketDataProvider().getSectorBenchmarks(industry);
+  }
+}*/
+
+import '../core/topic_config.dart';
+import '../core/models.dart';
+import '../core/market_data_provider.dart';
+
+// TOPIC IMPORTS
+import '../topics/agriculture/wheat/wheat_config.dart';
+import '../topics/agriculture/lumber/lumber_config.dart';
+import '../topics/agriculture/beef/beef_config.dart';
+import '../topics/agriculture/agtech/agtech_config.dart';
+import '../topics/manufacturing/apparel/apparel_config.dart';
+import '../topics/manufacturing/chemical/chemical_config.dart';
+import '../topics/manufacturing/canadian_manufacturing/canadian_manufacturing_config.dart';
+
+// NEW TOPIC IMPORT
+import '../topics/mining/oil_gas/oil_gas_config.dart';
+
+class IndustryProvider {
+  // Singleton pattern
+  static final IndustryProvider _instance = IndustryProvider._internal();
+  factory IndustryProvider() => _instance;
+  IndustryProvider._internal();
+
+  // THE REGISTRY - Single Source of Truth
+  final List<TopicConfig> _registeredTopics = [
+    // Agriculture
+    WheatConfig(),
+    BeefConfig(),
+    AgTechConfig(),
+    LumberConfig(),
+
+    // Manufacturing
+    ApparelConfig(),
+    ChemicalConfig(),
+    CanadianManufacturingConfig(),
+
+    // Mining (NEW)
+    OilGasConfig(),
+
+    // --- STUBS REMOVED ---
+    // StubTopicConfigs have been removed from this list to disable
+    // selection of unimplemented industries in the IndustrySelectorDialog.
+  ];
+
+  /// Returns a list of all TopicConfigs that are currently active/implemented
+  List<TopicConfig> getActiveTopics() {
+    return _registeredTopics;
+  }
+
+  /// Returns the specific TopicConfig for a given active industry
+  TopicConfig? getTopicForIndustry(Naics industry) {
+    try {
+      return _registeredTopics.firstWhere((t) => t.industry == industry);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /// Returns a set of all Naics enum values that have active implementations
+  Set<Naics> getActiveIndustries() {
+    return _registeredTopics.map((t) => t.industry).toSet();
+  }
+
+  /// Get ALL possible industries (active + inactive) sorted by label
+  List<Naics> getAllIndustriesSorted() {
+    final list = Naics.values.toList();
+    list.sort((a, b) => a.label.compareTo(b.label));
+    return list;
+  }
+}
+
+// --- HELPER CONFIG FOR STUBS ---
+// Kept for reference or future use, but not currently registered.
 class StubTopicConfig implements TopicConfig {
   @override
   final String id;
