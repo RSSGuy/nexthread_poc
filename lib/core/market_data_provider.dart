@@ -2,6 +2,7 @@
 
 import 'dart:math';
 import 'models.dart';
+import 'sector_benchmarks.dart'; // IMPORT NEW CLASS
 
 import '../../secrets.dart';
 import 'package:http/http.dart' as http;
@@ -35,6 +36,36 @@ class MarketDataProvider {
     }
   }
 
+  // --- NEW: FETCH SECTOR BENCHMARKS VIA FILE ---
+  Future<MarketFact> getSectorBenchmarks(Naics industry) async {
+    // 1. Get Tickers from File
+    final tickers = SectorBenchmarks.getAllTickers(industry);
+
+    // 2. Handle Single vs Multi
+    if (tickers.isEmpty) {
+      return getFact("ARKK", industry);
+    } else if (tickers.length == 1) {
+      // Standard Case
+      return getFact(tickers.first, industry);
+    } else {
+      // Multi-Benchmark Case (e.g. Mining)
+      List<MarketFact> facts = [];
+      for (var t in tickers) {
+        facts.add(await getFact(t, industry));
+      }
+
+      // Return a composite container
+      return MarketFact(
+          category: industry.label,
+          name: "Sector Pulse",
+          value: "",
+          trend: "",
+          status: "Multiple",
+          subFacts: facts // <--- THIS POPULATES THE UI
+      );
+    }
+  }
+
   Future<MarketFact> _fetchFromApi(String ticker, Naics industry) async {
     // Reusing your existing logic pattern here, but centralized
     // Implement your EODHD or other API calls here once
@@ -52,7 +83,7 @@ class MarketDataProvider {
 
     return MarketFact(
       category: industry.label,
-      name: "$ticker Innovation Index",
+      name: "$ticker Index",
       value: "\$${current.toStringAsFixed(2)}",
       trend: "${change > 0 ? '+' : ''}${change.toStringAsFixed(2)}%",
       status: change.abs() > 2.0 ? "Volatile" : "Stable",
