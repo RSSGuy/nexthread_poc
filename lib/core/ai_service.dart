@@ -1387,6 +1387,7 @@ class AIService {
     };
   }
 }*/
+/*
 
 import 'dart:async';
 import '../../secrets.dart';
@@ -1643,6 +1644,364 @@ class AIService {
           "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
           "is_fallback": true,
           "sources": topic.sources.map((s) => s.name).toList() // Save sources even in error
+        }
+      ]
+    };
+  }
+}*/
+
+import 'dart:async';
+import 'dart:math'; // For shuffling
+import '../../secrets.dart';
+import 'topic_config.dart';
+import 'models.dart';
+import 'storage_service.dart';
+import 'feed_service.dart';
+import 'local_feed_service.dart';
+
+// PROVIDERS
+import 'ai_provider.dart';
+import 'openai_provider.dart';
+import 'ollama_provider.dart';
+import 'gemini_provider.dart';
+import '../ui/widgets/console_log_widget.dart';
+
+// CUSTOM EXCEPTION
+class IrrelevantScenarioException implements Exception {
+  final String message;
+  IrrelevantScenarioException(this.message);
+  @override
+  String toString() => message;
+}
+
+class AIService {
+  static final AIService _instance = AIService._internal();
+  factory AIService() => _instance;
+  AIService._internal();
+
+  final FeedService _feedService = FeedService();
+  final LocalFeedService _localFeedService = LocalFeedService();
+
+  AIProvider _activeProvider = OpenAIProvider();
+
+  String get currentProviderName => _activeProvider.name;
+
+  void setProvider(String providerType, {Map<String, String>? config}) {
+    if (providerType == 'ollama') {
+      final url = config?['url'] ?? "";
+      final model = config?['model'] ?? "llama3";
+      final apiKey = config?['apiKey'];
+      final proxy = config?['proxy'];
+
+      _activeProvider = OllamaProvider(
+          baseUrl: url,
+          modelName: model,
+          apiKey: apiKey,
+          proxyUrl: proxy
+      );
+    } else if (providerType == 'gemini') {
+      _activeProvider = GeminiProvider();
+    } else {
+      _activeProvider = OpenAIProvider();
+    }
+    print("AIService: Switched to ${_activeProvider.name}");
+  }
+
+  // --- PRE-FLIGHT GUARDRAIL ---
+  Future<Map<String, dynamic>> _checkRelevance(String scenario, String topicName) async {
+    final guardrailPrompt = '''
+    SYSTEM: You are a Relevance Filter. 
+    TASK: Determine if the following input is RELEVANT to the $topicName industry, supply chain, or macro-economics.
+    INPUT: "$scenario"
+    
+    OUTPUT: JSON ONLY. Format: {"is_relevant": boolean, "reason": "string"}
+    CRITERIA: 
+    - Sports, celebrity, coding, or personal questions -> FALSE.
+    - Economic, weather, trade, political, or logistic shocks -> TRUE.
+    ''';
+
+    try {
+      return await _activeProvider.generateBriefingJson(
+        systemPrompt: guardrailPrompt,
+        userContext: "",
+      );
+    } catch (e) {
+      return {"is_relevant": true};
+    }
+  }
+
+  // --- ASK AI ABOUT BRIEFING ---
+  Future<String> askAboutBriefing(Briefing brief, String userQuestion) async {
+    try {
+      final guardrailCheck = await _checkRelevance(userQuestion, brief.subsector);
+      if (guardrailCheck['is_relevant'] == false) {
+        throw IrrelevantScenarioException(
+            guardrailCheck['reason'] ?? "Query unrelated to ${brief.subsector}"
+        );
+      }
+    } catch (e) {
+      if (e is IrrelevantScenarioException) rethrow;
+    }
+
+    final contextPrompt = '''
+    CONTEXT: You are an Intelligence Analyst for the ${brief.subsector} sector.
+    
+    REPORT DATA:
+    - Title: ${brief.title}
+    - Summary: ${brief.summary}
+    - Severity: ${brief.severity}
+    - Key Metrics: ${brief.metrics.commodity} is ${brief.metrics.price} (${brief.metrics.trend})
+    - Headlines Analyzed: ${brief.headlines.join(', ')}
+
+    USER QUESTION: "$userQuestion"
+
+    INSTRUCTION: 
+    1. Answer the question using the Report Data.
+    2. You may use your general knowledge of the ${brief.subsector} industry to explain the *implications*.
+    3. BE SPECIFIC. Cite the metrics or headlines.
+    ''';
+
+    final systemPrompt = "$contextPrompt\n\nOUTPUT JSON: { \"answer\": \"your text here\" }";
+
+    try {
+      final response = await _activeProvider.generateBriefingJson(
+        systemPrompt: systemPrompt,
+        userContext: "",
+      );
+      return response['answer'] ?? "I could not analyze that report.";
+    } catch (e) {
+      return "System Error: Unable to process query. ($e)";
+    }
+  }
+
+  // --- MAIN GENERATION ---
+  Future<void> generateBriefing(TopicConfig topic, {
+    String? manualFeedPath,
+    String? customScenario,
+    List<TopicConfig>? allTopics // NEW: Pass all topics for cross-poling
+  }) async {
+
+    if (_activeProvider is OpenAIProvider && Secrets.openAiApiKey.contains("YOUR_")) {
+      manualFeedPath = 'assets/feeds/fallback_news.xml';
+    }
+
+    try {
+      if (customScenario != null && customScenario.isNotEmpty) {
+        final guardrailCheck = await _checkRelevance(customScenario, topic.name);
+        if (guardrailCheck['is_relevant'] == false) {
+          throw IrrelevantScenarioException(
+              guardrailCheck['reason'] ?? "Scenario unrelated to ${topic.name}"
+          );
+        }
+      }
+
+      ConsoleLogger.log("AIService: Analyzing ${topic.id} via ${_activeProvider.name}...", type: 'system');
+
+      // 1. FETCH PRIMARY DATA
+      Future<List<String>> newsFuture;
+      if (manualFeedPath != null) {
+        newsFuture = _localFeedService.getHeadlinesFromPath(manualFeedPath, topic.keywords);
+      } else {
+        newsFuture = _feedService.fetchHeadlines(topic.sources, topic.keywords);
+      }
+
+      final results = await Future.wait([
+        topic.fetchMarketPulse(),
+        newsFuture
+      ]);
+
+      final MarketFact marketFact = results[0] as MarketFact;
+      final List<String> news = results[1] as List<String>;
+
+      if (news.isEmpty) news.add("No recent news found for ${topic.name}.");
+
+      // 2. GENERATE INITIAL REPORT
+      Map<String, dynamic> jsonResponse = await _generateInternal(
+          topic, marketFact, news, customScenario
+      );
+
+      // ---------------------------------------------------------
+      // STEP 3: BORING CHECK & CROSS-SECTOR POLLING
+      // ---------------------------------------------------------
+      bool isBoring = false;
+
+      // Check if Severity is Low or Summary indicates no news
+      if (jsonResponse['briefs'] != null && (jsonResponse['briefs'] as List).isNotEmpty) {
+        final firstBrief = jsonResponse['briefs'][0];
+        final severity = firstBrief['severity'] ?? "Low";
+        if (severity == "Low") {
+          isBoring = true;
+        }
+      }
+
+      // If boring AND we have access to other topics -> POLL
+      if (isBoring && allTopics != null && allTopics.isNotEmpty) {
+        ConsoleLogger.warning("Topic '${topic.name}' is quiet (Severity Low). Polling other sectors...");
+
+        List<String> crossSectorNews = [];
+        List<String> polledSources = []; // To track what we added
+
+        // Shuffle to get random variety
+        var otherTopics = List<TopicConfig>.from(allTopics)..shuffle();
+
+        for (var t in otherTopics) {
+          if (t.id == topic.id) continue; // Skip self
+
+          ConsoleLogger.log("Polling ${t.name}...", type: 'info');
+          try {
+            var h = await _feedService.fetchHeadlines(t.sources, t.keywords);
+            if (h.isNotEmpty) {
+              // Take the top headline
+              String item = "[SECTOR: ${t.name.toUpperCase()}] ${h.first}";
+              crossSectorNews.add(item);
+              polledSources.add(t.name);
+
+              // Stop if we found 3 pieces of info
+              if (crossSectorNews.length >= 3) break;
+            }
+          } catch (e) {
+            // Ignore feed errors during polling
+          }
+        }
+
+        if (crossSectorNews.isNotEmpty) {
+          ConsoleLogger.success("Found ${crossSectorNews.length} cross-sector items. Re-analyzing...");
+
+          // APPEND TO NEWS STREAM
+          news.add("\n--- CROSS-SECTOR INTELLIGENCE (Other Sectors) ---");
+          news.addAll(crossSectorNews);
+
+          // RE-GENERATE with specific instruction
+          jsonResponse = await _generateInternal(
+              topic,
+              marketFact,
+              news,
+              customScenario,
+              forceCrossSectorAnalysis: true
+          );
+        } else {
+          ConsoleLogger.log("No cross-sector news found either. Truly no news.", type: 'warning');
+        }
+      }
+
+      // ---------------------------------------------------------
+      // STEP 4: FINAL SAVE
+      // ---------------------------------------------------------
+      final sourceNames = topic.sources.map((s) => s.name).toList();
+
+      if (jsonResponse['briefs'] != null) {
+        for (var brief in jsonResponse['briefs']) {
+          if (marketFact.lineData.isNotEmpty) {
+            brief['chart_data'] = marketFact.lineData;
+          }
+          if (customScenario != null && customScenario.isNotEmpty) {
+            brief['title'] = "[SIMULATION] ${brief['title']}";
+            brief['is_fallback'] = false;
+          }
+          brief['sources'] = sourceNames;
+        }
+      }
+
+      await StorageService.saveBriefing(topic.id, jsonResponse);
+
+    } on IrrelevantScenarioException {
+      rethrow;
+    } catch (e) {
+      ConsoleLogger.error("AI Generation Error: $e");
+      final errorData = _getDummyResponse(topic, ["System Error: $e"]);
+      await StorageService.saveBriefing(topic.id, errorData);
+    }
+  }
+
+  // Helper to keep the prompt logic clean
+  Future<Map<String, dynamic>> _generateInternal(
+      TopicConfig topic,
+      MarketFact marketFact,
+      List<String> news,
+      String? customScenario,
+      {bool forceCrossSectorAnalysis = false}
+      ) async {
+
+    String scenarioBlock = "";
+    if (customScenario != null && customScenario.isNotEmpty) {
+      scenarioBlock = '''
+        [USER SIMULATION ACTIVE]
+        HYPOTHESIS: "$customScenario"
+        INSTRUCTION: Analyze Market Data and News assuming this is TRUE.
+        ''';
+    }
+
+    String crossSectorInstruction = "";
+    if (forceCrossSectorAnalysis) {
+      crossSectorInstruction = '''
+        [ATTENTION: CROSS-SECTOR DATA INJECTED]
+        The primary sector news is quiet. 
+        I have provided headlines from OTHER sectors labeled [SECTOR: NAME].
+        
+        TASK:
+        1. Keep the Severity as "Low" or "Medium" (do not fake a crisis).
+        2. IN THE SUMMARY: Explicitly add a paragraph starting with "Cross-Sector Observations:".
+        3. Explain how these events in other sectors might indirectly impact ${topic.name} (e.g. logistics, costs, or opportunities).
+        ''';
+    }
+
+    final systemPrompt = '''
+      You are an Intelligence Analyst for the ${topic.name} sector.
+      
+      STEP 1: ANALYZE FACTS vs. SENTIMENT
+      [MARKET DATA]
+      ${marketFact.toString()}
+      
+      [NEWS STREAM]
+      ${news.join('\n')}
+
+      [ANALYSIS RULES]
+      ${topic.riskRules}
+      
+      $scenarioBlock
+
+      $crossSectorInstruction
+      
+      STEP 2: DETECT DIVERGENCE & TRENDS
+      - Compare Data (Status/Trend) against News Sentiment.
+      - Look for: RISKS (Panic, Crisis) AND EMERGING TRENDS (Opportunities, Shifts).
+
+      STEP 3: OUTPUT JSON
+      Return a JSON object with a "briefs" array. Each brief must have:
+      - id, subsector (e.g. "${topic.name}"), title, summary
+      - severity (High/Medium/Low)
+      - fact_score (0-100), sent_score (0-100)
+      - divergence_tag, divergence_desc
+      - metrics (commodity, price, trend)
+      - chart_data (placeholder array)
+      - headlines (list of strings used)
+      - is_fallback (false)
+      ''';
+
+    return await _activeProvider.generateBriefingJson(
+      systemPrompt: systemPrompt,
+      userContext: customScenario ?? "",
+    );
+  }
+
+  Map<String, dynamic> _getDummyResponse(TopicConfig topic, List<String> headlines) {
+    return {
+      "briefs": [
+        {
+          "id": "1",
+          "subsector": topic.name,
+          "title": "Simulation / Error Report",
+          "summary": "This report was generated because the AI service is unreachable or simulated.",
+          "severity": "Low",
+          "fact_score": 50,
+          "sent_score": 50,
+          "divergence_tag": "Simulation",
+          "divergence_desc": "Analysis based on: ${headlines.length} items.",
+          "metrics": {"commodity": topic.name, "price": "--", "trend": "0%"},
+          "headlines": headlines.take(5).toList(),
+          "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
+          "is_fallback": true,
+          "sources": topic.sources.map((s) => s.name).toList()
         }
       ]
     };
