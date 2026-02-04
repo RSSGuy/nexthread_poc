@@ -1121,6 +1121,7 @@ class AIService {
     };
   }
 }*/
+/*
 
 import 'dart:async';
 import '../../secrets.dart';
@@ -1381,6 +1382,267 @@ class AIService {
           "headlines": headlines.take(5).toList(),
           "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
           "is_fallback": true
+        }
+      ]
+    };
+  }
+}*/
+
+import 'dart:async';
+import '../../secrets.dart';
+import 'topic_config.dart';
+import 'models.dart';
+import 'storage_service.dart';
+import 'feed_service.dart';
+import 'local_feed_service.dart';
+
+// PROVIDERS
+import 'ai_provider.dart';
+import 'openai_provider.dart';
+import 'ollama_provider.dart';
+import 'gemini_provider.dart';
+
+// CUSTOM EXCEPTION
+class IrrelevantScenarioException implements Exception {
+  final String message;
+  IrrelevantScenarioException(this.message);
+  @override
+  String toString() => message;
+}
+
+class AIService {
+  static final AIService _instance = AIService._internal();
+  factory AIService() => _instance;
+  AIService._internal();
+
+  final FeedService _feedService = FeedService();
+  final LocalFeedService _localFeedService = LocalFeedService();
+
+  // Default to OpenAI
+  AIProvider _activeProvider = OpenAIProvider();
+
+  String get currentProviderName => _activeProvider.name;
+
+  void setProvider(String providerType, {Map<String, String>? config}) {
+    if (providerType == 'ollama') {
+      final url = config?['url'] ?? "";
+      final model = config?['model'] ?? "llama3";
+      final apiKey = config?['apiKey'];
+      final proxy = config?['proxy'];
+
+      _activeProvider = OllamaProvider(
+          baseUrl: url,
+          modelName: model,
+          apiKey: apiKey,
+          proxyUrl: proxy
+      );
+
+    } else if (providerType == 'gemini') {
+      _activeProvider = GeminiProvider();
+    } else {
+      _activeProvider = OpenAIProvider();
+    }
+
+    print("AIService: Switched to ${_activeProvider.name}");
+  }
+
+  // --- PRE-FLIGHT GUARDRAIL ---
+  Future<Map<String, dynamic>> _checkRelevance(String scenario, String topicName) async {
+    final guardrailPrompt = '''
+    SYSTEM: You are a Relevance Filter. 
+    TASK: Determine if the following input is RELEVANT to the $topicName industry, supply chain, or macro-economics.
+    INPUT: "$scenario"
+    
+    OUTPUT: JSON ONLY. Format: {"is_relevant": boolean, "reason": "string"}
+    CRITERIA: 
+    - Sports, celebrity, coding, or personal questions -> FALSE.
+    - Economic, weather, trade, political, or logistic shocks -> TRUE.
+    ''';
+
+    try {
+      return await _activeProvider.generateBriefingJson(
+        systemPrompt: guardrailPrompt,
+        userContext: "",
+      );
+    } catch (e) {
+      print("Guardrail Check Failed: $e");
+      return {"is_relevant": true};
+    }
+  }
+
+  // --- ASK AI ABOUT BRIEFING ---
+  Future<String> askAboutBriefing(Briefing brief, String userQuestion) async {
+    try {
+      final guardrailCheck = await _checkRelevance(userQuestion, brief.subsector);
+      if (guardrailCheck['is_relevant'] == false) {
+        throw IrrelevantScenarioException(
+            guardrailCheck['reason'] ?? "Query unrelated to ${brief.subsector}"
+        );
+      }
+    } catch (e) {
+      if (e is IrrelevantScenarioException) rethrow;
+    }
+
+    final contextPrompt = '''
+    CONTEXT: You are an Intelligence Analyst for the ${brief.subsector} sector.
+    
+    REPORT DATA:
+    - Title: ${brief.title}
+    - Summary: ${brief.summary}
+    - Severity: ${brief.severity}
+    - Key Metrics: ${brief.metrics.commodity} is ${brief.metrics.price} (${brief.metrics.trend})
+    - Headlines Analyzed: ${brief.headlines.join(', ')}
+
+    USER QUESTION: "$userQuestion"
+
+    INSTRUCTION: 
+    1. Answer the question using the Report Data.
+    2. You may use your general knowledge of the ${brief.subsector} industry to explain the *implications*.
+    3. BE SPECIFIC. Cite the metrics or headlines.
+    ''';
+
+    final systemPrompt = "$contextPrompt\n\nOUTPUT JSON: { \"answer\": \"your text here\" }";
+
+    try {
+      final response = await _activeProvider.generateBriefingJson(
+        systemPrompt: systemPrompt,
+        userContext: "",
+      );
+
+      return response['answer'] ?? "I could not analyze that report.";
+    } catch (e) {
+      print("Ask AI Error: $e");
+      return "System Error: Unable to process query. ($e)";
+    }
+  }
+
+  // --- MAIN GENERATION ---
+  Future<void> generateBriefing(TopicConfig topic, {String? manualFeedPath, String? customScenario}) async {
+    if (_activeProvider is OpenAIProvider && Secrets.openAiApiKey.contains("YOUR_")) {
+      manualFeedPath = 'assets/feeds/fallback_news.xml';
+    }
+
+    try {
+      if (customScenario != null && customScenario.isNotEmpty) {
+        final guardrailCheck = await _checkRelevance(customScenario, topic.name);
+        if (guardrailCheck['is_relevant'] == false) {
+          throw IrrelevantScenarioException(
+              guardrailCheck['reason'] ?? "Scenario unrelated to ${topic.name}"
+          );
+        }
+      }
+
+      print("AIService: Generating via ${_activeProvider.name} for ${topic.id}...");
+
+      Future<List<String>> newsFuture;
+      if (manualFeedPath != null) {
+        newsFuture = _localFeedService.getHeadlinesFromPath(manualFeedPath, topic.keywords);
+      } else {
+        newsFuture = _feedService.fetchHeadlines(topic.sources, topic.keywords);
+      }
+
+      final results = await Future.wait([
+        topic.fetchMarketPulse(),
+        newsFuture
+      ]);
+
+      final MarketFact marketFact = results[0] as MarketFact;
+      final List<String> news = results[1] as List<String>;
+
+      if (news.isEmpty) news.add("No recent news found for ${topic.name}.");
+
+      String scenarioBlock = "";
+      if (customScenario != null && customScenario.isNotEmpty) {
+        scenarioBlock = '''
+        [USER SIMULATION ACTIVE]
+        HYPOTHESIS: "$customScenario"
+        INSTRUCTION: Analyze Market Data and News assuming this is TRUE.
+        ''';
+      }
+
+      final systemPrompt = '''
+      You are an Intelligence Analyst for the ${topic.name} sector.
+      
+      STEP 1: ANALYZE FACTS vs. SENTIMENT
+      [MARKET DATA]
+      ${marketFact.toString()}
+      
+      [NEWS STREAM]
+      ${news.join('\n')}
+
+      [ANALYSIS RULES]
+      ${topic.riskRules}
+      
+      $scenarioBlock
+      
+      STEP 2: DETECT DIVERGENCE & TRENDS
+      - Compare Data (Status/Trend) against News Sentiment.
+      - Look for: RISKS (Panic, Crisis) AND EMERGING TRENDS (Opportunities, Shifts).
+
+      STEP 3: OUTPUT JSON
+      Return a JSON object with a "briefs" array. Each brief must have:
+      - id, subsector (e.g. "${topic.name}"), title, summary
+      - severity (High/Medium/Low)
+      - fact_score (0-100), sent_score (0-100)
+      - divergence_tag, divergence_desc
+      - metrics (commodity, price, trend)
+      - chart_data (placeholder array)
+      - headlines (list of strings used)
+      - is_fallback (false)
+      ''';
+
+      Map<String, dynamic> jsonResponse = await _activeProvider.generateBriefingJson(
+        systemPrompt: systemPrompt,
+        userContext: customScenario ?? "",
+      );
+
+      // --- NEW: Capture Polled Sources for Storage ---
+      final sourceNames = topic.sources.map((s) => s.name).toList();
+
+      if (jsonResponse['briefs'] != null) {
+        for (var brief in jsonResponse['briefs']) {
+          // Augment with real data
+          if (marketFact.lineData.isNotEmpty) {
+            brief['chart_data'] = marketFact.lineData;
+          }
+          if (customScenario != null && customScenario.isNotEmpty) {
+            brief['title'] = "[SIMULATION] ${brief['title']}";
+            brief['is_fallback'] = false;
+          }
+          // Inject polled sources into each brief for persistence
+          brief['sources'] = sourceNames;
+        }
+      }
+
+      await StorageService.saveBriefing(topic.id, jsonResponse);
+
+    } on IrrelevantScenarioException {
+      rethrow;
+    } catch (e) {
+      print("AI Generation Error: $e");
+      final errorData = _getDummyResponse(topic, ["System Error: $e"]);
+      await StorageService.saveBriefing(topic.id, errorData);
+    }
+  }
+
+  Map<String, dynamic> _getDummyResponse(TopicConfig topic, List<String> headlines) {
+    return {
+      "briefs": [
+        {
+          "id": "1",
+          "subsector": topic.name,
+          "title": "Simulation / Error Report",
+          "summary": "This report was generated because the AI service is unreachable or simulated.",
+          "severity": "Low",
+          "fact_score": 50,
+          "sent_score": 50,
+          "divergence_tag": "Simulation",
+          "divergence_desc": "Analysis based on: ${headlines.length} items.",
+          "metrics": {"commodity": topic.name, "price": "--", "trend": "0%"},
+          "headlines": headlines.take(5).toList(),
+          "chart_data": [1.0, 2.0, 1.5, 2.5, 2.0],
+          "is_fallback": true,
+          "sources": topic.sources.map((s) => s.name).toList() // Save sources even in error
         }
       ]
     };
