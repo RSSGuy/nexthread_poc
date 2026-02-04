@@ -72,7 +72,10 @@ class SectorBenchmarks {
     Naics.realEstate: {"Real Estate": "XLRE"},
     Naics.professionalServices: {"Software": "IGV"},
     Naics.management: {"Quality Factor": "QUAL"},
-    Naics.adminSupport: {"Robotics": "RBO"},
+    Naics.adminSupport: {"Industrial Select Sector SPDR Fund XLI": "XLI", "Vanguard Industrials": "VIS", "iShares U.S. Industrials IYJ":"IYJ",
+      "First Trust AlphaDEX™ U.S. Industrials Sector Index ETF (FHG)":"FHG"
+
+    },
     Naics.education: {"Education": "LRN"},
     Naics.healthCare: {"Health Care": "XLV"},
     Naics.arts: {"Leisure & Ent": "PEJ"},

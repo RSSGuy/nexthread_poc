@@ -2178,10 +2178,17 @@ class NewsRegistry {
       tags: [Naics.publicAdmin, Naics.information,Naics.manufacturing, Naics.construction,Naics.agriculture,Naics.professionalServices,Naics.healthCare]
   );
 
+  static const globeNewsWire = NewsSourceConfig(
+      name: "Global News Wire",
+      url: "https://financialpost.com/category/globe-newswire/feed.xml",
+      type: "News",
+      tags: [Naics.publicAdmin, Naics.information,Naics.manufacturing, Naics.construction,Naics.agriculture,Naics.professionalServices,Naics.healthCare, Naics.finance]
+  );
+
   // --- EXPOSED LIST FOR DIAGNOSTICS ---
   static List<NewsSourceConfig> get allSources => [
     // Global
-    reutersCommodities, nytAgriculture, forbesAg,
+    reutersCommodities, nytAgriculture, forbesAg,globeNewsWire,
     // Gov & Policy
     usdaGeneral, usdaForestService, nationalAgLaw, sustainableAgCoalition, calClimateAg,
     // AgTech
