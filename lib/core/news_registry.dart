@@ -1070,11 +1070,11 @@ class NewsRegistry {
       tags: [Naics.publicAdmin, Naics.information]
   );
 
-  static const routeFifty = NewsSourceConfig(
-      name: "Route Fifty",
-      url: "https://www.route-fifty.com/rss/all/",
-      type: "Trade",
-      tags: [Naics.publicAdmin]
+  static const googleNewsTest = NewsSourceConfig(
+      name: "Google News Test",
+      url: "https://news.google.com/rss/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx6TVdZU0JXVnVMVWRDR2dKRFFTZ0FQAQ?hl=en-CA&gl=CA&ceid=CA%3Aen&oc=11?gl=CA&ceid=CA%253Aen&hl=en-CA",
+      type: "News",
+      tags: [Naics.publicAdmin, Naics.information,Naics.manufacturing, Naics.construction,]
   );
 
 }
