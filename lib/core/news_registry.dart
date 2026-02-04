@@ -2164,6 +2164,20 @@ class NewsRegistry {
       tags: [Naics.publicAdmin, Naics.information,Naics.manufacturing, Naics.construction,]
   );
 
+  static const googleNewsScience = NewsSourceConfig(
+      name: "Google News Science",
+      url: "https://news.google.com/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRFp0Y1RjU0JXVnVMVWRDR2dKRFFTZ0FQAQ?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      type: "News",
+      tags: [Naics.publicAdmin, Naics.information,Naics.manufacturing, Naics.construction,Naics.agriculture,Naics.professionalServices,Naics.healthCare]
+  );
+
+  static const googleNewsHealth = NewsSourceConfig(
+      name: "Google News Health",
+      url: "https://news.google.com/rss/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNR3QwTlRFU0JXVnVMVWRDS0FBUAE?hl=en-CA&gl=CA&ceid=CA%3Aen&oc=11?oc=3&ceid=CA%3Aen",
+      type: "News",
+      tags: [Naics.publicAdmin, Naics.information,Naics.manufacturing, Naics.construction,Naics.agriculture,Naics.professionalServices,Naics.healthCare]
+  );
+
   // --- EXPOSED LIST FOR DIAGNOSTICS ---
   static List<NewsSourceConfig> get allSources => [
     // Global
@@ -2225,7 +2239,7 @@ class NewsRegistry {
     healthcareDive, medtechDive, biopharmaDive, k12Dive, higherEdDive, chronicleHigherEd,
     // Arts/Hosp
     hotelDive, restaurantDive, variety, hollywoodReporter, artNews, govTech,
-    // Test
-    googleNewsTest
+    // Test Google News
+    googleNewsTest,googleNewsScience, googleNewsHealth
   ];
 }
