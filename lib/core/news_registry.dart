@@ -657,6 +657,426 @@ class NewsRegistry {
       tags: [Naics.manufacturing, Naics.wholesaleTrade]
   );
 
+
+  // --- MINING & OIL/GAS ---
+  static const miningDotCom = NewsSourceConfig(
+      name: "Mining.com",
+      url: "https://www.mining.com/feed/",
+      type: "Trade",
+      tags: [Naics.mining]
+  );
+
+  static const oilPrice = NewsSourceConfig(
+      name: "OilPrice.com",
+      url: "https://oilprice.com/rss/main",
+      type: "Trade",
+      tags: [Naics.mining, Naics.utilities]
+  );
+
+  static const eiaEnergy = NewsSourceConfig(
+      name: "EIA Today",
+      url: "https://www.eia.gov/rss/todayinenergy.xml",
+      type: "Government",
+      tags: [Naics.mining, Naics.utilities]
+  );
+
+  static const miningTechnology = NewsSourceConfig(
+      name: "Mining Tech",
+      url: "https://www.mining-technology.com/feed/",
+      type: "Tech",
+      tags: [Naics.mining, Naics.professionalServices]
+  );
+
+  static const worldOil = NewsSourceConfig(
+      name: "World Oil",
+      url: "https://www.worldoil.com/rss",
+      type: "Trade",
+      tags: [Naics.mining]
+  );
+
+  // --- UTILITIES & ENERGY ---
+  static const utilityDive = NewsSourceConfig(
+      name: "Utility Dive",
+      url: "https://www.utilitydive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.utilities]
+  );
+
+  static const powerMag = NewsSourceConfig(
+      name: "POWER Mag",
+      url: "https://www.powermag.com/feed/",
+      type: "Trade",
+      tags: [Naics.utilities, Naics.construction]
+  );
+
+  static const renewableEnergyWorld = NewsSourceConfig(
+      name: "Renewable Energy",
+      url: "https://www.renewableenergyworld.com/feed/",
+      type: "Tech",
+      tags: [Naics.utilities, Naics.professionalServices]
+  );
+
+  static const energyStorageNews = NewsSourceConfig(
+      name: "Energy Storage",
+      url: "https://www.energy-storage.news/feed/",
+      type: "Tech",
+      tags: [Naics.utilities, Naics.manufacturing]
+  );
+
+  static const smartCitiesDive = NewsSourceConfig(
+      name: "Smart Cities Dive",
+      url: "https://www.smartcitiesdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.utilities, Naics.publicAdmin]
+  );
+
+  // --- CONSTRUCTION ---
+
+
+  static const constrEquipGuide = NewsSourceConfig(
+      name: "Const Equip Guide",
+      url: "https://www.constructionequipmentguide.com/rss/news-feed",
+      type: "Trade",
+      tags: [Naics.construction, Naics.wholesaleTrade]
+  );
+
+  static const builderOnline = NewsSourceConfig(
+      name: "Builder Online",
+      url: "https://www.builderonline.com/rss/news",
+      type: "Trade",
+      tags: [Naics.construction, Naics.realEstate]
+  );
+
+  static const enrNews = NewsSourceConfig(
+      name: "ENR",
+      url: "https://www.enr.com/rss/news",
+      type: "Trade",
+      tags: [Naics.construction, Naics.professionalServices]
+  );
+
+  static const buildingDesign = NewsSourceConfig(
+      name: "BD+C",
+      url: "https://www.bdcnetwork.com/rss",
+      type: "Trade",
+      tags: [Naics.construction, Naics.professionalServices]
+  );
+
+  // --- MANUFACTURING ---
+  static const mfgDive = NewsSourceConfig(
+      name: "Manufacturing Dive",
+      url: "https://www.manufacturingdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.manufacturing]
+  );
+
+  static const industryWeek = NewsSourceConfig(
+      name: "IndustryWeek",
+      url: "https://www.industryweek.com/rss",
+      type: "Trade",
+      tags: [Naics.manufacturing, Naics.management]
+  );
+
+  static const foodDive = NewsSourceConfig(
+      name: "Food Dive",
+      url: "https://www.fooddive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.manufacturing, Naics.agriculture]
+  );
+
+  static const plasticsNews = NewsSourceConfig(
+      name: "Plastics News",
+      url: "https://www.plasticsnews.com/rss",
+      type: "Trade",
+      tags: [Naics.manufacturing]
+  );
+
+  static const thomasInsights = NewsSourceConfig(
+      name: "Thomas Insights",
+      url: "https://www.thomasnet.com/insights/rss",
+      type: "Trade",
+      tags: [Naics.manufacturing, Naics.wholesaleTrade]
+  );
+
+  // --- WHOLESALE & RETAIL ---
+  static const retailDive = NewsSourceConfig(
+      name: "Retail Dive",
+      url: "https://www.retaildive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.retailTrade]
+  );
+
+  static const wholesaleCentral = NewsSourceConfig(
+      name: "Wholesale Central",
+      url: "https://blog.wholesalecentral.com/feed/",
+      type: "Trade",
+      tags: [Naics.wholesaleTrade]
+  );
+
+  static const nrfRetail = NewsSourceConfig(
+      name: "NRF",
+      url: "https://nrf.com/rss.xml",
+      type: "Trade",
+      tags: [Naics.retailTrade, Naics.wholesaleTrade]
+  );
+
+  static const groceryDive = NewsSourceConfig(
+      name: "Grocery Dive",
+      url: "https://www.grocerydive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.retailTrade, Naics.agriculture]
+  );
+
+  static const retailWire = NewsSourceConfig(
+      name: "RetailWire",
+      url: "https://retailwire.com/feed/",
+      type: "Trade",
+      tags: [Naics.retailTrade]
+  );
+
+  // --- TRANSPORTATION & LOGISTICS ---
+  static const supplyChainDive = NewsSourceConfig(
+      name: "Supply Chain Dive",
+      url: "https://www.supplychaindive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.transportation, Naics.wholesaleTrade]
+  );
+
+  static const transportDive = NewsSourceConfig(
+      name: "Transport Dive",
+      url: "https://www.transportdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.transportation]
+  );
+
+  static const freightWaves = NewsSourceConfig(
+      name: "FreightWaves",
+      url: "https://www.freightwaves.com/feed",
+      type: "Trade",
+      tags: [Naics.transportation]
+  );
+
+  static const truckingInfo = NewsSourceConfig(
+      name: "Trucking Info",
+      url: "https://www.truckinginfo.com/rss",
+      type: "Trade",
+      tags: [Naics.transportation]
+  );
+
+  static const logisticsMgmt = NewsSourceConfig(
+      name: "Logistics Mgmt",
+      url: "https://www.logisticsmgmt.com/rss",
+      type: "Trade",
+      tags: [Naics.transportation, Naics.management]
+  );
+
+  // --- INFORMATION & TECH ---
+  static const techCrunch = NewsSourceConfig(
+      name: "TechCrunch",
+      url: "https://techcrunch.com/feed/",
+      type: "Tech",
+      tags: [Naics.information]
+  );
+
+  static const cioDive = NewsSourceConfig(
+      name: "CIO Dive",
+      url: "https://www.ciodive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.information, Naics.management]
+  );
+
+  static const vergeTech = NewsSourceConfig(
+      name: "The Verge",
+      url: "https://www.theverge.com/rss/index.xml",
+      type: "Tech",
+      tags: [Naics.information]
+  );
+
+  static const wiredBiz = NewsSourceConfig(
+      name: "Wired Business",
+      url: "https://www.wired.com/feed/category/business/latest/rss",
+      type: "Tech",
+      tags: [Naics.information, Naics.professionalServices]
+  );
+
+  static const infoWeek = NewsSourceConfig(
+      name: "InformationWeek",
+      url: "https://www.informationweek.com/rss.xml",
+      type: "Tech",
+      tags: [Naics.information]
+  );
+
+  // --- FINANCE & REAL ESTATE ---
+  static const bankingDive = NewsSourceConfig(
+      name: "Banking Dive",
+      url: "https://www.bankingdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.finance]
+  );
+
+  static const cfoDive = NewsSourceConfig(
+      name: "CFO Dive",
+      url: "https://www.cfodive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.finance, Naics.management]
+  );
+
+  static const insuranceJournal = NewsSourceConfig(
+      name: "Insurance Journal",
+      url: "https://www.insurancejournal.com/rss/news",
+      type: "Trade",
+      tags: [Naics.finance]
+  );
+
+  static const housingWire = NewsSourceConfig(
+      name: "HousingWire",
+      url: "https://www.housingwire.com/feed/",
+      type: "Trade",
+      tags: [Naics.realEstate, Naics.finance]
+  );
+
+  static const multifamilyDive = NewsSourceConfig(
+      name: "Multifamily Dive",
+      url: "https://www.multifamilydive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.realEstate, Naics.construction]
+  );
+
+  static const inmanNews = NewsSourceConfig(
+      name: "Inman",
+      url: "https://www.inman.com/feed/",
+      type: "Trade",
+      tags: [Naics.realEstate]
+  );
+
+  // --- PROFESSIONAL SERVICES & MANAGEMENT ---
+  static const legalDive = NewsSourceConfig(
+      name: "Legal Dive",
+      url: "https://www.legaldive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.professionalServices]
+  );
+
+  static const marketingDive = NewsSourceConfig(
+      name: "Marketing Dive",
+      url: "https://www.marketingdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.professionalServices]
+  );
+
+  static const consultingUs = NewsSourceConfig(
+      name: "Consulting.us",
+      url: "https://www.consulting.us/rss",
+      type: "Trade",
+      tags: [Naics.professionalServices, Naics.management]
+  );
+
+  static const hrDive = NewsSourceConfig(
+      name: "HR Dive",
+      url: "https://www.hrdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.adminSupport, Naics.management]
+  );
+
+  static const wasteDive = NewsSourceConfig(
+      name: "Waste Dive",
+      url: "https://www.wastedive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.adminSupport, Naics.utilities]
+  );
+
+  // --- HEALTHCARE & EDUCATION ---
+  static const healthcareDive = NewsSourceConfig(
+      name: "Healthcare Dive",
+      url: "https://www.healthcaredive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.healthCare]
+  );
+
+  static const medtechDive = NewsSourceConfig(
+      name: "MedTech Dive",
+      url: "https://www.medtechdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.healthCare, Naics.manufacturing]
+  );
+
+  static const biopharmaDive = NewsSourceConfig(
+      name: "BioPharma Dive",
+      url: "https://www.biopharmadive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.healthCare, Naics.manufacturing]
+  );
+
+  static const k12Dive = NewsSourceConfig(
+      name: "K-12 Dive",
+      url: "https://www.k12dive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.education]
+  );
+
+  static const higherEdDive = NewsSourceConfig(
+      name: "Higher Ed Dive",
+      url: "https://www.highereddive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.education]
+  );
+
+  static const chronicleHigherEd = NewsSourceConfig(
+      name: "Chronicle HE",
+      url: "https://www.chronicle.com/rss",
+      type: "Trade",
+      tags: [Naics.education]
+  );
+
+  // --- ARTS, HOSPITALITY & OTHER ---
+  static const hotelDive = NewsSourceConfig(
+      name: "Hotel Dive",
+      url: "https://www.hoteldive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.accommodation]
+  );
+
+  static const restaurantDive = NewsSourceConfig(
+      name: "Restaurant Dive",
+      url: "https://www.restaurantdive.com/feeds/news/",
+      type: "Trade",
+      tags: [Naics.accommodation]
+  );
+
+  static const variety = NewsSourceConfig(
+      name: "Variety",
+      url: "https://variety.com/feed/",
+      type: "Trade",
+      tags: [Naics.arts]
+  );
+
+  static const hollywoodReporter = NewsSourceConfig(
+      name: "Hollywood Rptr",
+      url: "https://www.hollywoodreporter.com/feed/",
+      type: "Trade",
+      tags: [Naics.arts]
+  );
+
+  static const artNews = NewsSourceConfig(
+      name: "ARTnews",
+      url: "https://www.artnews.com/feed/",
+      type: "Trade",
+      tags: [Naics.arts]
+  );
+
+  static const govTech = NewsSourceConfig(
+      name: "GovTech",
+      url: "https://www.govtech.com/rss",
+      type: "Trade",
+      tags: [Naics.publicAdmin, Naics.information]
+  );
+
+  static const routeFifty = NewsSourceConfig(
+      name: "Route Fifty",
+      url: "https://www.route-fifty.com/rss/all/",
+      type: "Trade",
+      tags: [Naics.publicAdmin]
+  );
+
 }
 
 
