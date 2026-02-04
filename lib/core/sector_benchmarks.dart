@@ -59,7 +59,10 @@ class SectorBenchmarks {
     },
 
     Naics.utilities: {"Utilities": "XLU"},
-    Naics.construction: {"Home Construction": "ITB"},
+    Naics.construction: {"Home Construction": "ITB",
+      "State Street SPDR S&P Homebuilders ETF (XHB)": "XHB",
+      "Invesco Building & Construction ET (PKB)": "PKB"
+    },
     Naics.manufacturing: {"Industrial": "XLI"},
     Naics.wholesaleTrade: {"Technology": "IYW"}, // Proxy
     Naics.retailTrade: {"Retail": "XRT"},
