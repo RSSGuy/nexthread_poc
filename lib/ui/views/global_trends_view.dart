@@ -1321,6 +1321,7 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
 
 // lib/ui/views/global_trends_view.dart
 
+
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import 'package:intl/intl.dart';
@@ -1330,6 +1331,7 @@ import '../../core/local_feed_service.dart';
 import '../../core/ai_service.dart';
 import '../../core/storage_service.dart';
 import '../dialogs/fallback_selector_dialog.dart';
+import '../widgets/market_pulse_row.dart'; // Import the reusable widget
 
 class GlobalTrendsView extends StatefulWidget {
   const GlobalTrendsView({super.key});
@@ -1347,7 +1349,7 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
   List<String> _selectedPaths = [];
   bool _isAnalyzing = false;
 
-  // Changed to Map to hold structured data
+  // Analysis Data
   Map<String, dynamic>? _analysisResult;
   DateTime? _lastUpdated;
 
@@ -1362,11 +1364,9 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
     final data = StorageService.getGlobalAnalysis();
     if (data != null) {
       setState(() {
-        // Ensure type safety
         if (data['content'] is Map) {
           _analysisResult = Map<String, dynamic>.from(data['content']);
         } else if (data['content'] is String) {
-          // Legacy string support
           _analysisResult = {'summary': data['content'], 'expansions': []};
         }
 
@@ -1386,6 +1386,7 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
     }
   }
 
+  // UPDATED: Robust Analysis Method (Handles String/Map return types)
   void _runAnalysis(MarketFact globalData) async {
     if (_selectedPaths.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -1408,18 +1409,31 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
         aggregatedNews.addAll(news.map((n) => "[$sourceTag] $n"));
       }
 
-      // Result is now a Map
-      final result = await _aiService.analyzeGlobalTrends(aggregatedNews, globalData);
+      // 1. Get raw result (handles both String and Map returns from Service)
+      final dynamic rawResult = await _aiService.analyzeGlobalTrends(aggregatedNews, globalData);
 
-      // Inject Debug Info for Logic Modal
-      result['debug_headlines'] = aggregatedNews;
-      result['debug_sources'] = _selectedPaths;
+      // 2. Normalize to Map
+      Map<String, dynamic> structuredResult;
+      if (rawResult is String) {
+        structuredResult = {
+          'summary': rawResult,
+          'expansions': []
+        };
+      } else {
+        structuredResult = Map<String, dynamic>.from(rawResult as Map);
+      }
 
-      await StorageService.saveGlobalAnalysis(result);
+      // 3. Inject Debug Info
+      structuredResult['debug_headlines'] = aggregatedNews;
+      structuredResult['debug_sources'] = _selectedPaths;
+      structuredResult['timestamp'] = DateTime.now().toIso8601String();
+
+      // 4. Save
+      await StorageService.saveGlobalAnalysis(structuredResult);
 
       if (mounted) {
         setState(() {
-          _analysisResult = result;
+          _analysisResult = structuredResult;
           _lastUpdated = DateTime.now();
         });
       }
@@ -1458,7 +1472,7 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // --- LEFT COLUMN (Unchanged) ---
+        // --- LEFT COLUMN (Fixed Width 500px) ---
         SizedBox(
           width: 500,
           child: SingleChildScrollView(
@@ -1523,21 +1537,18 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
                 const SizedBox(height: 32),
                 _buildSectionTitle("Market Benchmarks"),
                 const SizedBox(height: 8),
+
+                // UPDATED: Now uses MarketPulseRow for each benchmark
                 FutureBuilder<MarketFact>(
                   future: _marketDataFuture,
                   builder: (context, snapshot) {
                     if (!snapshot.hasData) return const LinearProgressIndicator();
                     final facts = snapshot.data!.subFacts;
-                    return Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Colors.grey.shade200),
-                      ),
-                      child: Column(
-                        children: facts.map((f) => _buildIndexRow(f)).toList(),
-                      ),
+                    return Column(
+                      children: facts.map((f) => Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: MarketPulseRow(fact: f),
+                      )).toList(),
                     );
                   },
                 ),
@@ -1546,7 +1557,7 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
           ),
         ),
 
-        // --- RIGHT COLUMN: ANALYSIS CONTENT (Updated) ---
+        // --- RIGHT COLUMN: ANALYSIS CONTENT ---
         Expanded(
           child: Padding(
             padding: const EdgeInsets.fromLTRB(24, 24, 24, 0),
@@ -1687,31 +1698,6 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
           Text("Ready to Analyze", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.grey.shade600)),
           const SizedBox(height: 8),
           const Text("Select data sources from the left panel\nand generate a global executive summary.", textAlign: TextAlign.center, style: TextStyle(color: Colors.grey)),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildIndexRow(MarketFact fact) {
-    final isUp = !fact.trend.startsWith('-');
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Expanded(child: Text(fact.name, style: const TextStyle(color: Color(0xFF64748B), fontSize: 13, fontWeight: FontWeight.w500))),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Text(fact.value, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
-              const SizedBox(height: 2),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
-                decoration: BoxDecoration(color: isUp ? const Color(0xFFDCFCE7) : const Color(0xFFFEE2E2), borderRadius: BorderRadius.circular(3)),
-                child: Text(fact.trend, style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: isUp ? const Color(0xFF166534) : const Color(0xFF991B1B))),
-              ),
-            ],
-          ),
         ],
       ),
     );

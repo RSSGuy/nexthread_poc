@@ -1535,7 +1535,7 @@ class AIService {
     return crossSectorNews;
   }
 
-  Future<Map<String, dynamic>> _generateInternal(
+/*  Future<Map<String, dynamic>> _generateInternal(
       TopicConfig topic,
       MarketFact marketFact,
       List<String> news,
@@ -1577,6 +1577,110 @@ class AIService {
       systemPrompt: systemPrompt,
       userContext: customScenario ?? "",
     );
+  }*/
+
+  Future<Map<String, dynamic>> _generateInternal(
+      TopicConfig topic,
+      MarketFact marketFact,
+      List<String> news,
+      String? customScenario,
+      String globalContext,
+      {bool forceCrossSectorAnalysis = false}
+      ) async {
+
+    String scenarioBlock = "";
+    if (customScenario != null && customScenario.isNotEmpty) {
+      scenarioBlock = '''
+        [USER SIMULATION ACTIVE]
+        HYPOTHESIS: "$customScenario"
+        INSTRUCTION: Analyze Market Data and News assuming this is TRUE.
+        ''';
+    }
+
+    String crossSectorInstruction = "";
+    if (forceCrossSectorAnalysis) {
+      crossSectorInstruction = '''
+        [ATTENTION: CROSS-SECTOR DATA INJECTED]
+        I have provided headlines from OTHER sectors labeled [SECTOR: NAME].
+        
+        TASK:
+        1. Explicitly add a paragraph starting with "Cross-Sector Observations:" in the summary.
+        2. Explain how these events in other sectors might indirectly impact ${topic.name}.
+        ''';
+    }
+
+    final systemPrompt = '''
+      You are an Intelligence Analyst for the ${topic.name} sector.
+      
+      STEP 1: ANALYZE FACTS vs. SENTIMENT
+      
+      [GLOBAL MACRO CONTEXT]
+      $globalContext
+
+      [SECTOR SPECIFIC DATA]
+      ${marketFact.toString()}
+      
+      [NEWS STREAM]
+      ${news.join('\n')}
+
+      [ANALYSIS RULES]
+      ${topic.riskRules}
+      
+      $scenarioBlock
+      $crossSectorInstruction
+      
+      STEP 2: DETECT DIVERGENCE & TRENDS
+      - Compare Data (Status/Trend) against News Sentiment.
+      - Look for: RISKS (Panic, Crisis) AND EMERGING TRENDS (Opportunities, Shifts).
+
+      STEP 3: OUTPUT JSON
+      Return a JSON object with a "briefs" array. Each brief must have:
+      - id, subsector (e.g. "${topic.name}"), title, summary
+      - severity (High/Medium/Low)
+      - fact_score (0-100), sent_score (0-100)
+      - divergence_tag, divergence_desc
+      - metrics (commodity, price, trend)
+      - chart_data (placeholder array)
+      - headlines (list of strings used)
+      - is_fallback (false)
+      ''';
+
+    // 1. Capture response as dynamic to allow Type checking
+    final dynamic rawResponse = await _activeProvider.generateBriefingJson(
+      systemPrompt: systemPrompt,
+      userContext: customScenario ?? "",
+    );
+
+    // 2. Safety Check: Did we get a String instead of a Map?
+    if (rawResponse is String) {
+      // Create a fallback wrapper for the raw text
+      return {
+        "briefs": [
+          {
+            "id": DateTime.now().millisecondsSinceEpoch.toString(),
+            "subsector": topic.name,
+            "title": "${topic.name} Report",
+            "summary": rawResponse, // Put the raw markdown here
+            "severity": "Low",
+            "fact_score": 50,
+            "sent_score": 50,
+            "divergence_tag": "Analysis",
+            "divergence_desc": "AI returned raw text format.",
+            "metrics": {
+              "commodity": topic.name,
+              "price": marketFact.value,
+              "trend": marketFact.trend
+            },
+            "chart_data": [],
+            "headlines": [],
+            "is_fallback": false
+          }
+        ]
+      };
+    }
+
+    // 3. Return as Map if it was successful
+    return Map<String, dynamic>.from(rawResponse);
   }
 
   Future<void> _finalizeAndSave(
