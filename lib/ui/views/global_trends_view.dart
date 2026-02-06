@@ -92,7 +92,7 @@ class _GlobalTrendsViewState extends State<GlobalTrendsView> {
       children: [
         // --- LEFT COLUMN: CONTROLS & INDICES (Fixed Width 320px) ---
         SizedBox(
-          width: 320,
+          width: 500,
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(16),
             child: Column(
