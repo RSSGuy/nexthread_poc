@@ -1,12 +1,10 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import '../../core/models.dart';
 import '../../core/market_data_provider.dart';
 import '../../core/topic_config.dart';
 import '../../core/ai_service.dart';
-import '../../core/storage_service.dart'; // Direct import
+import '../../core/storage_service.dart';
 
 class GlobalIndicesDialog extends StatefulWidget {
   final List<TopicConfig> topics;
@@ -41,13 +39,23 @@ class _GlobalIndicesDialogState extends State<GlobalIndicesDialog> {
     _loadSavedAnalysis();
   }
 
-  // --- NEW: Direct Storage Load ---
+  // --- UPDATED: Handle Map or String content ---
   void _loadSavedAnalysis() {
     final data = StorageService.getGlobalAnalysis();
     if (data != null) {
       setState(() {
-        _analysisResult = data['content'] as String;
-        _analysisTimestamp = DateTime.parse(data['timestamp'] as String);
+        final content = data['content'];
+
+        // Handle the new Map structure or legacy String
+        if (content is Map) {
+          _analysisResult = content['summary'] as String?;
+        } else if (content is String) {
+          _analysisResult = content;
+        }
+
+        if (data['timestamp'] != null) {
+          _analysisTimestamp = DateTime.parse(data['timestamp'] as String);
+        }
       });
     }
   }
@@ -59,10 +67,16 @@ class _GlobalIndicesDialogState extends State<GlobalIndicesDialog> {
     });
 
     try {
+      // 1. Get String result from AI
       final result = await AIService().analyzeGlobalMarket(widget.topics, globalData);
 
-      // --- NEW: Direct Storage Save ---
-      await StorageService.saveGlobalAnalysis(result);
+      // 2. Wrap in Map to satisfy StorageService requirements
+      final mapToSave = {
+        'summary': result,
+        'expansions': [], // Empty for this view
+      };
+
+      await StorageService.saveGlobalAnalysis(mapToSave);
 
       if (mounted) {
         setState(() {
