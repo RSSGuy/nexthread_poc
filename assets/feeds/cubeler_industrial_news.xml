@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Cubeler Industrial News Monitor</title>
+        <link>https://www.cubeler.com/news</link>
+        <description>Monthly industrial news compilation across 10 sectors for February 2026.</description>
+        <lastBuildDate>Thu, 26 Feb 2026 11:30:00 +0000</lastBuildDate>
+        <language>en-CA</language>
+        <generator>Gemini-AI-2026-Tracker</generator>
+
+        <item>
+            <title>Federal Food Affordability Announcement and Industry Reaction</title>
+            <link>https://www.restaurantscanada.org/ceo-note/tackling-affordability-challenges-and-shifting-consumer-dining-behaviours/</link>
+            <pubDate>Mon, 26 Jan 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[The federal government announced a 25% increase to the GST credit and a $150 million Food Security Fund; Restaurants Canada responds with calls for a total GST exemption on restaurant meals.]]></description>
+        </item>
+        <item>
+            <title>The Rise of Agentic AI in Restaurant Operations</title>
+            <link>https://www.restobiz.ca/the-rise-of-agentic-ai-in-restaurant-operations/</link>
+            <pubDate>Wed, 25 Feb 2026 14:30:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[A deep dive into how AI agents are moving beyond simple chatbots to autonomously managing inventory and scheduling for Canadian operators.]]></description>
+        </item>
+        <item>
+            <title>Are GLP-1s Driving Canadian Menu Changes?</title>
+            <link>https://www.restobiz.ca/are-glp-1s-driving-menu-changes/</link>
+            <pubDate>Wed, 25 Feb 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[With 2 million Canadians now using GLP-1 weight-loss medications, researchers examine the shift toward smaller "grazing" portions in restaurants.]]></description>
+        </item>
+        <item>
+            <title>Authenticity and Intentionality Drive 2026 Menu Trends</title>
+            <link>https://www.restobiz.ca/authenticity-and-intentionality-drive-2026-menu-trends/</link>
+            <pubDate>Wed, 18 Feb 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[Consumer demand for "clean labels" and authentic cultural storytelling is redefining top-performing menus this year.]]></description>
+        </item>
+        <item>
+            <title>Puratos Opens First Canadian Bakery School</title>
+            <link>https://www.restobiz.ca/puratos-opens-its-first-canadian-bakery-school/</link>
+            <pubDate>Thu, 12 Feb 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[A new culinary institution has launched in Canada to address the specialized labor shortage in the professional baking sector.]]></description>
+        </item>
+        <item>
+            <title>Yes Shef Culinary Event Makes Ontario Debut</title>
+            <link>https://www.restobiz.ca/culinary-event-yes-shef-makes-ontario-debut/</link>
+            <pubDate>Mon, 09 Feb 2026 13:00:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[The "Yes Shef" event spotlights women in the hospitality and tourism industry, celebrating leadership and mentorship.]]></description>
+        </item>
+        <item>
+            <title>CaféTO Curb Lane Program Deadlines</title>
+            <link>https://www.restobiz.ca/applications-and-renewals-for-the-2026-cafeto-curb-lane-program-close-february-11/</link>
+            <pubDate>Thu, 05 Feb 2026 16:20:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[Toronto restaurant operators must finalize applications for the 2026 curb lane patio season by mid-February.]]></description>
+        </item>
+        <item>
+            <title>Protein Packs a Punch on 2026 Restaurant Menus</title>
+            <link>https://www.restobiz.ca/protein-packs-a-punch-on-2026-restaurant-menus/</link>
+            <pubDate>Tue, 03 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[High-protein ingredients like mung beans and pulses are trending as functional nutrition becomes a diner priority.]]></description>
+        </item>
+        <item>
+            <title>Franchising Trends: Opportunities for Growth in 2026</title>
+            <link>https://www.hoteliermagazine.com/january-february-2026-digital-issue/</link>
+            <pubDate>Sun, 01 Feb 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[Hotelier Magazine analyzes how franchising is becoming a preferred expansion route for major hotel brands in a high-interest environment.]]></description>
+        </item>
+        <item>
+            <title>Dynamic Pricing Models Dissected</title>
+            <link>https://www.hoteliermagazine.com/january-february-2026-digital-issue/</link>
+            <pubDate>Sun, 01 Feb 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Accommodation & Food Services]]></category>
+            <description><![CDATA[An analysis of new algorithmic pricing tools helping independent hotels compete with global chains on room rate elasticity.]]></description>
+        </item>
+
+        <item>
+            <title>Ag Canada Expands AgriStability to Include Pasture-Related Feed Costs</title>
+            <link>https://www.realagriculture.com/2026/02/ag-canada-expands-agristability-to-include-pasture-related-feed-costs/</link>
+            <pubDate>Wed, 25 Feb 2026 07:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[A major policy shift now allows livestock producers to claim feed costs on rented pasture under the safety net program.]]></description>
+        </item>
+        <item>
+            <title>Wheat Pete’s Word: Compaction Consequences and Manure on Snow</title>
+            <link>https://www.realagriculture.com/2026/02/wheat-petes-word-feb-25-compaction-consequences-manure-on-snow-warnings-and-s-surprises/</link>
+            <pubDate>Wed, 25 Feb 2026 12:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[Agronomy expert Peter Johnson warns of the yield risks associated with early-season soil compaction and improper manure application.]]></description>
+        </item>
+        <item>
+            <title>FMC Launches Avireo: New Pre-Seed Herbicide for Cereals</title>
+            <link>https://www.realagriculture.com/2026/02/fmc-launches-avireo-a-new-pre-seed-herbicide-option-for-cereal-growers-for-26/</link>
+            <pubDate>Wed, 25 Feb 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[A new chemical tool has been approved for the 2026 season to combat glufosinate-resistant weeds in cereal crops.]]></description>
+        </item>
+        <item>
+            <title>82% of Farmers Say They’ll Have Access to Capital in 2026</title>
+            <link>https://www.realagriculture.com/2026/02/82-per-cent-of-farmers-say-theyll-have-access-to-the-capital-needed-in-2026/</link>
+            <pubDate>Wed, 25 Feb 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[Despite high rates, a majority of Canadian farmers remain optimistic about securing the necessary growth capital for spring seeding.]]></description>
+        </item>
+        <item>
+            <title>Minister MacDonald and Secretary Rollins Meet Face-to-Face</title>
+            <link>https://www.realagriculture.com/2026/02/macdonald-rollins-quietly-meet-face-to-face-for-first-time/</link>
+            <pubDate>Tue, 24 Feb 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[Canada’s Ag Minister quietly met with the U.S. Secretary of Agriculture to discuss trade stability and tariff concerns.]]></description>
+        </item>
+        <item>
+            <title>Canada Secures Expanded Market Access for Meat to Indonesia</title>
+            <link>https://www.realagriculture.com/2026/02/canada-secures-expanded-market-access-for-canadian-meat-products-to-indonesia/</link>
+            <pubDate>Mon, 23 Feb 2026 15:45:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[Indonesia has opened its doors to Canadian pork and 'over-thirty-month' bone-in beef products.]]></description>
+        </item>
+        <item>
+            <title>CFA: Canadians Worked First 39 Days of 2026 to Pay for Groceries</title>
+            <link>https://www.canadiancattlemen.ca/daily/canadians-worked-first-39-days-of-2026-to-pay-for-years-grocery-bill-says-cfa/</link>
+            <pubDate>Mon, 09 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA['Food Freedom Day' falls on Feb. 8, highlighting the growing burden of food costs on household disposable income.]]></description>
+        </item>
+        <item>
+            <title>Jason Leblond Named Beef Farmers of Ontario President</title>
+            <link>https://farmtario.com/news/jason-leblond-steps-into-beef-farmers-of-ontario-presidency/</link>
+            <pubDate>Mon, 09 Feb 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[The BFO has appointed new leadership focused on advancing the Beef Breeder Loan Program and provincial traceability.]]></description>
+        </item>
+        <item>
+            <title>Glufosinate Resistance Threatens Fight for Weed Freedom</title>
+            <link>https://www.realagriculture.com/2026/02/glufosinate-resistance-threatens-fight-for-weed-freedom-in-canola-and-soybeans/</link>
+            <pubDate>Mon, 23 Feb 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[Researchers warn that increasing herbicide resistance is putting pressure on traditional canola and soybean rotations.]]></description>
+        </item>
+        <item>
+            <title>Soybean School: Soybean Cyst Nematode Lessons from Brazil</title>
+            <link>https://www.realagriculture.com/2026/02/soybean-school-soybean-cyst-nematode-lessons-from-brazil/</link>
+            <pubDate>Mon, 23 Feb 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[A cross-border research update provides new strategies for Canadian growers to manage nematode infestations.]]></description>
+        </item>
+
+        <item>
+            <title>SiteAI Launches Custom AI Tools for Industrial Construction</title>
+            <link>https://readsitenews.com/siteai-launches-to-create-custom-ai-tools-for-the-industrial-sector/</link>
+            <pubDate>Wed, 25 Feb 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[A new software platform aims to automate site safety inspections and equipment tracking for large-scale projects.]]></description>
+        </item>
+        <item>
+            <title>Military Aims to Build 7,500 Housing Units Across Canada</title>
+            <link>https://readsitenews.com/military-aims-to-build-7500-housing-units-across-canada/</link>
+            <pubDate>Wed, 25 Feb 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[The Canadian Armed Forces are accelerating a massive housing initiative to provide dedicated units for military families.]]></description>
+        </item>
+        <item>
+            <title>4 Takeaways from Canada’s New Defence Industrial Strategy</title>
+            <link>https://readsitenews.com/4-takeaways-from-canadas-new-defence-industrial-strategy/</link>
+            <pubDate>Mon, 23 Feb 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[Construction experts analyze how the new federal strategy will prioritize domestic infrastructure and 'Build-Partner-Buy' frameworks.]]></description>
+        </item>
+        <item>
+            <title>Institutional Capital Returns to Canadian Commercial Real Estate</title>
+            <link>https://ontarioconstructionnews.com/institutional-capital-returns-to-canadian-commercial-real-estate/</link>
+            <pubDate>Thu, 26 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[Major pension funds are re-entering the market as commercial valuations stabilize in early 2026.]]></description>
+        </item>
+        <item>
+            <title>Ottawa New Home Sales Remain Under Pressure</title>
+            <link>https://ontarioconstructionnews.com/ottawa-new-home-sales-remain-under-pressure-to-start-2026/</link>
+            <pubDate>Thu, 26 Feb 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[High inventory and buyer hesitation are keeping new residential sales in the nation's capital below seasonal norms.]]></description>
+        </item>
+        <item>
+            <title>30-Storey Mixed-Use Tower Proposed for St. Laurent Boulevard</title>
+            <link>https://ontarioconstructionnews.com/30-storey-mixed-use-tower-proposed/</link>
+            <pubDate>Thu, 26 Feb 2026 13:20:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[Developers have filed plans for a major intensification project in Ottawa's east end.]]></description>
+        </item>
+        <item>
+            <title>Guelph and GRCA Partner to Secure 126-Acre Niska Road Site</title>
+            <link>https://ontarioconstructionnews.com/guelph-grca-partner-to-secure-126-acre-site/</link>
+            <pubDate>Thu, 26 Feb 2026 15:50:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[A strategic land acquisition has been finalized to protect future green space and public infrastructure.]]></description>
+        </item>
+        <item>
+            <title>Major Contracts Awarded for Matawinie Mine Work</title>
+            <link>https://readsitenews.com/major-contracts-awarded-for-matawinie-mine-work/</link>
+            <pubDate>Wed, 25 Feb 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[Infrastructure firms have secured key civil engineering and construction mandates for the northern graphite mine.]]></description>
+        </item>
+        <item>
+            <title>Site Service Awards Ceremony in Vancouver</title>
+            <link>https://readsitenews.com/join-us-at-the-site-service-awards-event/</link>
+            <pubDate>Thu, 26 Feb 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[Industry leaders gather to recognize excellence in construction service and operational safety.]]></description>
+        </item>
+        <item>
+            <title>Ontario Dominated This Year’s Top 100 Projects List</title>
+            <link>https://readsitenews.com/42-reasons-ontario-dominated-this-years-top-100-projects-list/</link>
+            <pubDate>Wed, 25 Feb 2026 16:30:00 +0000</pubDate>
+            <category><![CDATA[Construction]]></category>
+            <description><![CDATA[With $343B in project value, Ontario remains the primary hub for Canadian infrastructure development.]]></description>
+        </item>
+
+        <item>
+            <title>Wellness Wins: Why 94% of Members Can’t Live Without Their Gym</title>
+            <link>https://fitbizweekly.ca/wellness-wins-why-94-percent-of-members-cant-live-without-their-gym/</link>
+            <pubDate>Tue, 24 Feb 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[A comprehensive 2026 study highlights the 'essentialization' of fitness as a core part of mental and physical wellness.]]></description>
+        </item>
+        <item>
+            <title>Impact Magazine Releases Canada’s Top Fitness Trainers Class of 2026</title>
+            <link>https://fitbizweekly.ca/impact-magazine-releases-canadas-top-fitness-trainers-class-of-2026/</link>
+            <pubDate>Tue, 24 Feb 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[Recognition of the 36 top professionals nationwide who are leading innovation in functional health.]]></description>
+        </item>
+        <item>
+            <title>canfitpro Returns to Montreal with fitMONTRÉAL One-Day Event</title>
+            <link>https://fitbizweekly.ca/canfitpro-returns-to-montreal-with-fitmontreal-one-day-event/</link>
+            <pubDate>Tue, 24 Feb 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[The largest Canadian fitness professional association hosts a boutique-focused educational event in Quebec.]]></description>
+        </item>
+        <item>
+            <title>Rethinking Exercise for Long-Term Health</title>
+            <link>https://wellnessinstitute.ca/rethinking-exercise-for-long-term-health/</link>
+            <pubDate>Fri, 20 Feb 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[Wellness experts urge a move away from 'all-or-nothing' workouts toward sustainable, daily physical integration.]]></description>
+        </item>
+        <item>
+            <title>New Partnership Explores the Power of Pea Protein for Healthy Aging</title>
+            <link>https://wellnessinstitute.ca/new-partnership-explores-the-power-of-pea-protein-for-healthy-aging/</link>
+            <pubDate>Thu, 12 Feb 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[A research collaboration explores plant-based nutrition's role in maintaining muscle mass in the elderly.]]></description>
+        </item>
+        <item>
+            <title>Bridging the Gap to Better Nutrition: The Food Access Bus Pilot</title>
+            <link>https://wellnessinstitute.ca/bridging-the-gap-to-better-nutrition/</link>
+            <pubDate>Wed, 18 Feb 2026 13:00:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[A new transit-based initiative brings fresh produce directly to wellness deserts in urban neighborhoods.]]></description>
+        </item>
+        <item>
+            <title>Recovering After Heart Surgery: Jemalyn’s Story</title>
+            <link>https://wellnessinstitute.ca/recovering-after-heart-surgery-jemalyns-story/</link>
+            <pubDate>Mon, 09 Feb 2026 15:30:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[A patient case study highlighting the success of integrated cardiovascular rehabilitation programs.]]></description>
+        </item>
+        <item>
+            <title>ECW Ratio: The Hidden Metric for Assessing Muscle Quality</title>
+            <link>https://fitbizweekly.ca/ecw-ratio-the-hidden-metric-for-assessing-muscle-quality/</link>
+            <pubDate>Sun, 22 Feb 2026 16:45:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[A technical guide for health professionals on using Bioelectrical Impedance to measure intracellular fluid and muscle health.]]></description>
+        </item>
+        <item>
+            <title>PACMan Pilot Study: Shaping the Future of Healthy Aging</title>
+            <link>https://wellnessinstitute.ca/pacman-pilot-study/</link>
+            <pubDate>Thu, 05 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[Call for participants in a new study focusing on digital wellness interventions for older adults.]]></description>
+        </item>
+        <item>
+            <title>Why Heart Health Month Needs Solutions, Not Slogans</title>
+            <link>https://fitbizweekly.ca/category/news/</link>
+            <pubDate>Tue, 24 Feb 2026 13:00:00 +0000</pubDate>
+            <category><![CDATA[Health and Wellness]]></category>
+            <description><![CDATA[Industry leaders call for actionable policy changes rather than simple awareness campaigns to combat heart disease.]]></description>
+        </item>
+
+        <item>
+            <title>Premium Brands to Acquire Stampede Culinary Partners</title>
+            <link>https://cdn.annexbusinessmedia.com/FIC/eNews/2025/12/12/ANXCD251206002-mail.html</link>
+            <pubDate>Fri, 20 Feb 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[A $662.5 million deal expands Canada's protein and culinary solution platform into the U.S. market.]]></description>
+        </item>
+        <item>
+            <title>Swiss Bakery Cornu to Open New Facility in Edmundston</title>
+            <link>https://cdn.annexbusinessmedia.com/FIC/eNews/2025/12/12/ANXCD251206002-mail.html</link>
+            <pubDate>Tue, 10 Feb 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[A $32.5 million artisan baked goods facility is set to create local jobs in New Brunswick.]]></description>
+        </item>
+        <item>
+            <title>NRCan Unveils Retrofit Hub for Institutional Owners</title>
+            <link>https://cdn.annexbusinessmedia.com/EM/eNews/2024/10/10/ANXCD240927005-mail.html</link>
+            <pubDate>Tue, 03 Feb 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[A new centralized platform launched to help manufacturers and building owners finance and implement energy retrofits.]]></description>
+        </item>
+        <item>
+            <title>ams Osram and Ledvance Extend Licensing Partnership Beyond 2026</title>
+            <link>https://cdn.annexbusinessmedia.com/EM/eNews/2024/10/10/ANXCD240927005-mail.html</link>
+            <pubDate>Tue, 24 Feb 2026 14:45:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[The global lighting giants commit to a long-term partnership to advance Osram-branded products globally.]]></description>
+        </item>
+        <item>
+            <title>Cancoil Invests Over $16 Million to Enhance Production Capacity</title>
+            <link>https://cdn.annexbusinessmedia.com/EM/eNews/2024/10/10/ANXCD240927005-mail.html</link>
+            <pubDate>Tue, 10 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[The refrigeration manufacturer is installing new state-of-the-art automated equipment in its Ontario facilities.]]></description>
+        </item>
+        <item>
+            <title>Inter Function to Acquire New Automated Equipment for Door Production</title>
+            <link>https://cdn.annexbusinessmedia.com/EM/eNews/2024/10/10/ANXCD240927005-mail.html</link>
+            <pubDate>Wed, 18 Feb 2026 13:20:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[A repayable federal contribution supports the purchase of new automated inspection and production tools.]]></description>
+        </item>
+        <item>
+            <title>Norbec’s New Strathroy Facility Designed as Highly Automated Operation</title>
+            <link>https://cdn.annexbusinessmedia.com/EM/eNews/2024/10/10/ANXCD240927005-mail.html</link>
+            <pubDate>Fri, 13 Feb 2026 15:10:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[Norbec officially opened its $45-million manufacturing plant in Ontario, focusing on insulated metal panels.]]></description>
+        </item>
+        <item>
+            <title>Manufacturing Sector Stabilizes in January (S&P Global PMI)</title>
+            <link>https://www.plant.ca/factory/canadas-manufacturing-sector-stabilizes-in-january-s-p-global/</link>
+            <pubDate>Wed, 25 Feb 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[Data indicates the sector has returned to expansion territory for the first time in 12 months.]]></description>
+        </item>
+        <item>
+            <title>Schneider Electric EcoFit Center Opens</title>
+            <link>https://www.canadianmanufacturing.com/</link>
+            <pubDate>Sun, 01 Feb 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[Milton facility to focus on 'circularity' and electrical modernization R&D.]]></description>
+        </item>
+        <item>
+            <title>Mars-Kellanova Merger Clears All Regulatory Hurdles</title>
+            <link>https://cdn.annexbusinessmedia.com/FIC/eNews/2025/12/12/ANXCD251206002-mail.html</link>
+            <pubDate>Fri, 20 Feb 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Manufacturing]]></category>
+            <description><![CDATA[The multi-billion dollar acquisition is finalized, creating a new global leader in the snack and snacking category.]]></description>
+        </item>
+
+        <item>
+            <title>Hazelview Begins Strategic Review for Four Quadrant Fund</title>
+            <link>https://renx.ca/hazelview-strategic-review-four-quadrant-global-real-estate-partners-fund</link>
+            <pubDate>Tue, 17 Feb 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[A review is underway to explore portfolio sales or recapitalization for the massive real estate fund to unlock unitholder value.]]></description>
+        </item>
+        <item>
+            <title>The Great Decoupling in Industrial Real Estate Leasing</title>
+            <link>https://renx.ca/the-great-decoupling-in-industrial-real-estate-leasing</link>
+            <pubDate>Mon, 09 Feb 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[Analysis shows a widening gap in lease rates between Class-A and Class-C properties in the Greater Toronto Area.]]></description>
+        </item>
+        <item>
+            <title>Station House: New Rental Towers Launch in Toronto</title>
+            <link>https://renx.ca/hazelview-strategic-review-four-quadrant-global-real-estate-partners-fund</link>
+            <pubDate>Tue, 17 Feb 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[Hazelview and Fitzrovia have launched leasing for two major rental towers within the Bloor and Dufferin project.]]></description>
+        </item>
+        <item>
+            <title>Calgary Market Update February 2026: Balanced Conditions Return</title>
+            <link>https://www.urbanupgrade.ca/blog/96774/february-2026-market-update</link>
+            <pubDate>Sun, 08 Feb 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[While sales are down 15% YoY, inventory has hit a six-year high, shifting power back toward buyers.]]></description>
+        </item>
+        <item>
+            <title>CIBC Square Both Towers Fully Leased</title>
+            <link>https://renx.ca/hazelview-strategic-review-four-quadrant-global-real-estate-partners-fund</link>
+            <pubDate>Tue, 17 Feb 2026 13:20:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[Despite wider office market uncertainty, CIBC Square has hit 100% occupancy for its downtown towers.]]></description>
+        </item>
+        <item>
+            <title>Real Capital 2026 Conference Highlights</title>
+            <link>https://renx.ca/the-great-decoupling-in-industrial-real-estate-leasing</link>
+            <pubDate>Tue, 24 Feb 2026 15:50:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[Institutional investors gather in Toronto to discuss the impact of stabilizing interest rates on national portfolios.]]></description>
+        </item>
+        <item>
+            <title>Housing Market Outlook 2026: Resilient Starts Amid Uncertainty</title>
+            <link>https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/housing-market/housing-market-outlook</link>
+            <pubDate>Sun, 01 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[CMHC report suggests housing starts will remain higher than historic averages despite economic cooling.]]></description>
+        </item>
+        <item>
+            <title>RE/MAX: Confident First-Time Buyers Returning to Market</title>
+            <link>https://buzzbuzzmediainc.com/2026-canadian-housing-market-outlook-re-max-canada/</link>
+            <pubDate>Thu, 05 Feb 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[Lowered rates and stable prices are driving a surge in first-time buyer inquiries across major Canadian metros.]]></description>
+        </item>
+        <item>
+            <title>Atlantic Canada’s Strategic Stability Favors Long-Term Investors</title>
+            <link>https://buzzbuzzmediainc.com/2026-canadian-housing-market-outlook-re-max-canada/</link>
+            <pubDate>Thu, 05 Feb 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[Nova Scotia and New Brunswick markets show less volatility than central Canada, attracting institutional capital.]]></description>
+        </item>
+        <item>
+            <title>Vancouver Real Estate Forum: MIPIM Preview</title>
+            <link>https://renx.ca/hazelview-strategic-review-four-quadrant-global-real-estate-partners-fund</link>
+            <pubDate>Tue, 17 Feb 2026 16:30:00 +0000</pubDate>
+            <category><![CDATA[Real Estate]]></category>
+            <description><![CDATA[Regional leaders prepare for the global urban festival with a focus on sustainable densification.]]></description>
+        </item>
+
+        <item>
+            <title>Daily Synopsis: Retail Expansion and Innovation Signal Resilience</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-25-2026-retail-expansion-and-innovation/</link>
+            <pubDate>Wed, 25 Feb 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[Amazon launches AI-powered Creative Agent in Canada to help retailers automate high-quality ad creation.]]></description>
+        </item>
+        <item>
+            <title>Loblaw Retail Revenue Surpasses $16 Billion in 2025</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-25-2026-retail-expansion-and-innovation/</link>
+            <pubDate>Wed, 25 Feb 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[The grocery giant reports record year-end results while committing to 77 new store openings.]]></description>
+        </item>
+        <item>
+            <title>Canada’s Grocery Store Density is Declining</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-25-2026-retail-expansion-and-innovation/</link>
+            <pubDate>Wed, 25 Feb 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[Despite major expansions, the number of supermarkets per capita is falling as discount stores replace traditional formats.]]></description>
+        </item>
+        <item>
+            <title>Quebec Retail Hours Pilot Expands Weekend Shopping</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-23-2026-canadian-retail-growth-and-ai/</link>
+            <pubDate>Mon, 23 Feb 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[New provincial pilot allows stores to stay open later on weekends to compete with e-commerce giants.]]></description>
+        </item>
+        <item>
+            <title>Valentine’s Day Spending in Canada Jumps 48%</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-23-2026-canadian-retail-growth-and-ai/</link>
+            <pubDate>Mon, 23 Feb 2026 13:20:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[Moneris data shows a massive week-over-week spending spike led by florists and restaurants.]]></description>
+        </item>
+        <item>
+            <title>Walmart Canada Supercentre Expansion</title>
+            <link>https://issuu.com/ensembleiq/docs/canadian_grocer_february_2026</link>
+            <pubDate>Fri, 20 Feb 2026 15:50:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[Two new 140,000-sq.-ft. locations in Ontario and Alberta are set to open as part of a $1B national strategy.]]></description>
+        </item>
+        <item>
+            <title>Roots Appoints Rosie Pouzar as Chief Commercial Officer</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-25-2026-retail-expansion-and-innovation/</link>
+            <pubDate>Wed, 25 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[The iconic brand taps new leadership to advance global commercial execution and growth strategy.]]></description>
+        </item>
+        <item>
+            <title>Jimmy John’s Opens First Saskatoon Location</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-25-2026-retail-expansion-and-innovation/</link>
+            <pubDate>Wed, 25 Feb 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[The sandwich giant continues its aggressive Canadian expansion with its first site in the Saskatchewan market.]]></description>
+        </item>
+        <item>
+            <title>AI Adoption Accelerates Across Canadian Retail</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-23-2026-canadian-retail-growth-and-ai/</link>
+            <pubDate>Mon, 23 Feb 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[Major retailers shift from AI pilots to full-scale 'agentic commerce' for inventory and pricing.]]></description>
+        </item>
+        <item>
+            <title>Amazon Expands Same-Day Delivery Options</title>
+            <link>https://retail-insider.com/daily-news/2026/02/daily-synopsis-feb-23-2026-canadian-retail-growth-and-ai/</link>
+            <pubDate>Mon, 23 Feb 2026 16:30:00 +0000</pubDate>
+            <category><![CDATA[Retail]]></category>
+            <description><![CDATA[New urban hubs allow for same-day delivery on over 450 million items across major Canadian cities.]]></description>
+        </item>
+
+        <item>
+            <title>NordSpace Launches Venture Arm with Strategic Investment in Wyvern</title>
+            <link>https://betakit.com/nordspace-launches-venture-arm-with-strategic-investment-in-wyvern/</link>
+            <pubDate>Thu, 26 Feb 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[The space-tech firm invests in Edmonton’s satellite technology to advance high-resolution Rosette imaging.]]></description>
+        </item>
+        <item>
+            <title>OpenAI Connection to Tumbler Ridge Tragedy Puts Privacy in Spotlight</title>
+            <link>https://betakit.com/openai-connection-to-tumbler-ridge-tragedy-puts-balance-between-privacy-and-public-safety-in-the-spotlight/</link>
+            <pubDate>Wed, 25 Feb 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[Regulators investigate why OpenAI failed to alert police to shooter-related ChatGPT logs prior to a fatal event.]]></description>
+        </item>
+        <item>
+            <title>Private Equity Firm Novacap Closes Seventh and Largest Tech Fund</title>
+            <link>https://betakit.com/private-equity-firm-novacap-closes-seventh-and-largest-tech-fund/</link>
+            <pubDate>Wed, 25 Feb 2026 14:15:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[A massive $3.8 billion USD fund has been closed to target majority stakes in profitable Canadian tech firms.]]></description>
+        </item>
+        <item>
+            <title>New Alliance Positioning Edmonton as a Canadian Defence Hub</title>
+            <link>https://betakit.com/the-new-alliance-positioning-edmonton-as-a-canadian-defence-hub/</link>
+            <pubDate>Wed, 25 Feb 2026 16:00:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[Organizations unite to pursue federal contracts under the new Defence Industrial Strategy.]]></description>
+        </item>
+        <item>
+            <title>Can Canada Find Digital Sovereignty in the Fediverse?</title>
+            <link>https://betakit.com/can-canada-find-digital-sovereignty-in-the-fediverse/</link>
+            <pubDate>Wed, 25 Feb 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[Advocates at FediMTL argue for a decentralized 'social web' to combat the influence of global Big Tech.]]></description>
+        </item>
+        <item>
+            <title>As Vacancies Rise, Padder Aims to Insure Rent Payments</title>
+            <link>https://betakit.com/as-vacancies-rise-padder-aims-to-insure-rent-payments/</link>
+            <pubDate>Wed, 25 Feb 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[A new 'guarantor-as-a-service' startup launches to help non-traditional tenants secure Ontario housing.]]></description>
+        </item>
+        <item>
+            <title>L-Spark Completes First Cohort as a Corporate Accelerator</title>
+            <link>https://betakit.com/l-spark-completes-its-first-cohort-as-a-corporate-accelerator/</link>
+            <pubDate>Tue, 24 Feb 2026 13:40:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[Eight companies have successfully integrated new telecom solutions into Mitel’s global infrastructure.]]></description>
+        </item>
+        <item>
+            <title>Alberta-Made Robots are Helping Keep Vancouver Shipyards Safe</title>
+            <link>https://betakit.com/alberta-made-robots-are-helping-keep-this-vancouver-shipyard-safe/</link>
+            <pubDate>Tue, 24 Feb 2026 15:10:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[Deep-tech robotics from Edmonton are being deployed for hazardous site inspections on the West Coast.]]></description>
+        </item>
+        <item>
+            <title>General Magic Secures $7.2 Million USD for Insurance AI Agents</title>
+            <link>https://betakit.com/general-magic-secures-7-2-million-usd/</link>
+            <pubDate>Tue, 24 Feb 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[The Toronto startup uses AI agents to automate customer communications via text and voice.]]></description>
+        </item>
+        <item>
+            <title>Neo Financial Partners with United Airlines to Launch Credit Card</title>
+            <link>https://betakit.com/neo-financial-partners-with-united-airlines-to-launch-credit-card/</link>
+            <pubDate>Tue, 24 Feb 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Technology]]></category>
+            <description><![CDATA[The fintech disruptor beats out major traditional banks to secure a massive airline partnership.]]></description>
+        </item>
+
+        <item>
+            <title>Ministers Agree to Deal with Driver Inc. Across Canada</title>
+            <link>https://cantruck.ca/ministers-with-transportation-portfolios-will-deal-with-driver-inc-across-canada/</link>
+            <pubDate>Sat, 21 Feb 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[Provincial and federal leaders commit to coordinated enforcement against employee misclassification in trucking.]]></description>
+        </item>
+        <item>
+            <title>Commitment to Solve 14 Key Interprovincial Trade Barriers</title>
+            <link>https://cantruck.ca/ministers-with-transportation-portfolios-will-deal-with-driver-inc-across-canada/</link>
+            <pubDate>Sat, 21 Feb 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[Ministers sign an MoU to streamline regulatory hurdles for cross-border hauling between provinces.]]></description>
+        </item>
+        <item>
+            <title>DOT Forces 550 Truck Driver Training Schools to Close</title>
+            <link>https://www.trucknews.com/transportation/dot-forces-550-truck-driver-training-schools-to-close/1003209467/</link>
+            <pubDate>Thu, 19 Feb 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[A major safety sweep identifies hundreds of unqualified schools failing to meet federal training standards.]]></description>
+        </item>
+        <item>
+            <title>CVTA Chairman: Reputable Schools Welcome Decertification of Bad Players</title>
+            <link>https://www.trucknews.com/transportation/dot-forces-550-truck-driver-training-schools-to-close/1003209467/</link>
+            <pubDate>Thu, 19 Feb 2026 13:00:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[Industry leaders support the crackdown on 'sham schools' to improve national road safety and driver value.]]></description>
+        </item>
+        <item>
+            <title>CTA: Survey Confirms Wage Theft and Dangerous Conditions Warnings</title>
+            <link>https://cantruck.ca/ministers-with-transportation-portfolios-will-deal-with-driver-inc-across-canada/</link>
+            <pubDate>Sat, 21 Feb 2026 15:30:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[A new national survey of drivers highlights ongoing labor abuse within the Driver Inc. model.]]></description>
+        </item>
+        <item>
+            <title>Ottawa Signals Tougher Transparency for Non-Compliant Firms</title>
+            <link>https://cantruck.ca/ministers-with-transportation-portfolios-will-deal-with-driver-inc-across-canada/</link>
+            <pubDate>Sat, 21 Feb 2026 16:45:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[New legislation will require public disclosure of trucking firms failing to meet safety and tax audits.]]></description>
+        </item>
+        <item>
+            <title>Strategic Response Urged to U.S. EPA Emission Regulation Rescission</title>
+            <link>https://cantruck.ca/ministers-with-transportation-portfolios-will-deal-with-driver-inc-across-canada/</link>
+            <pubDate>Sat, 21 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[The CTA warns that Canada must align its GHG strategy as the U.S. eliminates key trucking emission rules.]]></description>
+        </item>
+        <item>
+            <title>Gordie Howe Bridge Hailed as Economic Backbone for Allies</title>
+            <link>https://cantruck.ca/ministers-with-transportation-portfolios-will-deal-with-driver-inc-across-canada/</link>
+            <pubDate>Sat, 21 Feb 2026 13:00:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[Officials highlight the bridge as a vital artery for the $100B North American agri-food corridor.]]></description>
+        </item>
+        <item>
+            <title>Trucking Associations Praise DOT Decisive Action on Safety</title>
+            <link>https://www.trucknews.com/transportation/dot-forces-550-truck-driver-training-schools-to-close/1003209467/</link>
+            <pubDate>Thu, 19 Feb 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[The ATA and OOIDA release statements supporting the removal of 550 training providers from the registry.]]></description>
+        </item>
+        <item>
+            <title>Established Schools Pass First Enforcement Audits Since 2022</title>
+            <link>https://www.trucknews.com/transportation/dot-forces-550-truck-driver-training-schools-to-close/1003209467/</link>
+            <pubDate>Thu, 19 Feb 2026 15:45:00 +0000</pubDate>
+            <category><![CDATA[Transportation]]></category>
+            <description><![CDATA[Reputable training centers celebrate the first actual enforcement of federal standards passed four years ago.]]></description>
+        </item>
+
+        <item>
+            <title>Ransomware Surges as Auto Cyberattacks Double</title>
+            <link>https://canadianautodealer.ca/2026/02/ransomware-surges-as-auto-cyberattacks-double/</link>
+            <pubDate>Fri, 20 Feb 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[Auto cyberattacks doubled in 2025, with ransomware now accounting for 44% of incidents.]]></description>
+        </item>
+        <item>
+            <title>B.C. Dealers Say Budget 2026 Misses Transportation Reality</title>
+            <link>https://canadianautodealer.ca/2026/02/b-c-dealers-say-budget-misses-transportation-reality/</link>
+            <pubDate>Fri, 20 Feb 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[The NCDA argues the new budget fails to address EV charging infrastructure and technician shortages.]]></description>
+        </item>
+        <item>
+            <title>92% of Automotive Cyberattacks Conducted Remotely</title>
+            <link>https://canadianautodealer.ca/2026/02/ransomware-surges-as-auto-cyberattacks-double/</link>
+            <pubDate>Fri, 20 Feb 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[New data reveals that physical proximity is no longer required for massive-scale breaches of vehicle systems.]]></description>
+        </item>
+        <item>
+            <title>Technician Shortage Placing Upward Pressure on Ownership Costs</title>
+            <link>https://canadianautodealer.ca/2026/02/b-c-dealers-say-budget-misses-transportation-reality/</link>
+            <pubDate>Fri, 20 Feb 2026 13:00:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[A lack of specialized EV technicians is driving up maintenance and repair labor rates across Canada.]]></description>
+        </item>
+        <item>
+            <title>NCDA Renews Call to Revisit $55,000 Luxury Tax Threshold</title>
+            <link>https://canadianautodealer.ca/2026/02/b-c-dealers-say-budget-misses-transportation-reality/</link>
+            <pubDate>Fri, 20 Feb 2026 15:30:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[With the average new-vehicle price exceeding $66k, dealers argue the tax is unfairly hitting modern essentials.]]></description>
+        </item>
+        <item>
+            <title>67% of Auto Incidents Involved Telematics and Cloud Systems</title>
+            <link>https://canadianautodealer.ca/2026/02/ransomware-surges-as-auto-cyberattacks-double/</link>
+            <pubDate>Fri, 20 Feb 2026 16:45:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[The Upstream report highlights that cloud vulnerabilities are the primary entry point for wholesale data breaches.]]></description>
+        </item>
+        <item>
+            <title>Retail Sales in B.C. represent $17 Billion and 30,000 Jobs</title>
+            <link>https://canadianautodealer.ca/2026/02/b-c-dealers-say-budget-misses-transportation-reality/</link>
+            <pubDate>Fri, 20 Feb 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[The NCDA emphasizes the wholesale sector's vital role in the provincial economy during budget talks.]]></description>
+        </item>
+        <item>
+            <title>Ransomware Expanding Beyond Enterprise to Vehicles Themselves</title>
+            <link>https://canadianautodealer.ca/2026/02/ransomware-surges-as-auto-cyberattacks-double/</link>
+            <pubDate>Fri, 20 Feb 2026 13:00:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[Attackers have begun locking owners out of vehicles via companion apps, demanding payment for access.]]></description>
+        </item>
+        <item>
+            <title>B.C. ZEV Framework Alignment with Federal Policy Welcomed</title>
+            <link>https://canadianautodealer.ca/2026/02/b-c-dealers-say-budget-misses-transportation-reality/</link>
+            <pubDate>Fri, 20 Feb 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[Dealers applaud the clarity provided by aligning provincial zero-emission targets with national standards.]]></description>
+        </item>
+        <item>
+            <title>Average Used Car Price in Canada Rises Amidst Inventory Gaps</title>
+            <link>https://canadianautodealer.ca/2026/02/ransomware-surges-as-auto-cyberattacks-double/</link>
+            <pubDate>Fri, 20 Feb 2026 15:45:00 +0000</pubDate>
+            <category><![CDATA[Wholesale]]></category>
+            <description><![CDATA[Persistent wholesale inventory shortages continue to drive up resale values for late-model vehicles.]]></description>
+        </item>
+    </channel>
+</rss>
