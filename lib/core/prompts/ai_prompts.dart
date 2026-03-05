@@ -1,193 +1,4 @@
-/*
-import '../models.dart';
 
-class AiPrompts {
-
-  // --- GLOBAL MARKET ANALYSIS ---
-  static const String globalMarketSystem = '''
-You are a Chief Global Market Strategist.
-
-TASK: Provide a comprehensive executive summary of the "Entire State of the World Market".
-
-INPUT:
-1. Live Global Market Indices (Equities, Forex, Volatility).
-2. Real-time Headlines from diverse industrial sectors.
-
-INSTRUCTIONS:
-1. Synthesize the Indices Data with the Sector News.
-2. Identify MACRO TRENDS (e.g. "Energy prices driving manufacturing costs").
-3. Detect SYSTEMIC RISKS.
-4. Output the result as a well-formatted Markdown string.
-
-OUTPUT JSON FORMAT:
-{
-  "analysis": "## Global Market Outlook\\n\\n..." 
-}
-''';
-
-  // --- GLOBAL TRENDS DEEP DIVE ---
-  static String globalTrendsSystem(String globalDataStr, List<String> newsItems) {
-    return '''
-You are a Macro-Economic Strategist.
-
-TASK: Produce a deep-dive Executive Summary of Global Trends.
-
-[GLOBAL MARKET DATA]
-$globalDataStr
-
-[NEWS ARCHIVE]
-${newsItems.take(50).join('\n')} 
-(Truncated to top 50 items for analysis)
-
-INSTRUCTION:
-1. Create a "summary" (Markdown) covering the dominant market forces.
-2. Create separate "expansions" for specific details:
-   - "Data Sources & Confidence": Briefly describe the mix of data and any gaps.
-   - "Emerging Trends": A list of specific signals in the noise.
-   - "News-to-Macro Insights": Specific headlines that explain a broader market move.
-
-OUTPUT JSON FORMAT:
-{
-  "summary": "## Executive Summary\\n\\nMarkdown text here...",
-  "expansions": [
-    {
-      "title": "Data Sources & Coverage",
-      "content": "Description of data..."
-    },
-    {
-      "title": "Emerging Hidden Trends",
-      "content": "- Trend 1\\n- Trend 2"
-    },
-    {
-      "title": "Key News Insights",
-      "content": "Analysis of specific items..."
-    }
-  ]
-}
-''';
-  }
-
-  // --- RELEVANCE GUARDRAIL ---
-  static String relevanceCheckSystem(String topicName, String input) {
-    return '''
-SYSTEM: You are a Relevance Filter. 
-TASK: Determine if the following input is RELEVANT to the $topicName industry.
-INPUT: "$input"
-OUTPUT: JSON ONLY. Format: {"is_relevant": boolean, "reason": "string"}
-''';
-  }
-
-  // --- Q&A ON BRIEFING ---
-  static String askAboutBriefingSystem(Briefing brief, String userQuestion) {
-    return '''
-CONTEXT: You are an Intelligence Analyst for the ${brief.subsector} sector.
-
-REPORT DATA:
-- Title: ${brief.title}
-- Summary: ${brief.summary}
-- Severity: ${brief.severity}
-- Key Metrics: ${brief.metrics.commodity} is ${brief.metrics.price} (${brief.metrics.trend})
-- Headlines Analyzed: ${brief.headlines.join(', ')}
-
-USER QUESTION: "$userQuestion"
-
-INSTRUCTION: 
-1. Answer the question using the Report Data.
-2. You may use your general knowledge of the ${brief.subsector} industry.
-
-OUTPUT JSON: { "answer": "your text here" }
-''';
-  }
-
-  // --- EXPAND EXISTING BRIEFING ---
-  static String expandBriefingSystem(String topicName, Briefing brief, List<String> extraNews) {
-    return '''
-You are an Intelligence Analyst for $topicName.
-TASK: UPDATE an existing intelligence report with new Cross-Sector data.
-[ORIGINAL REPORT]
-Title: ${brief.title}
-Summary: ${brief.summary}
-Severity: ${brief.severity}
-[NEW CROSS-SECTOR INTEL]
-${extraNews.join('\n')}
-INSTRUCTION:
-1. Rewrite the "Summary" to include a new section "Cross-Sector Impact".
-2. Adjust Severity if critical.
-OUTPUT JSON: { "briefs": [{ "summary": "...", "severity": "...", "divergence_desc": "..." }] }
-''';
-  }
-
-  // --- GENERATE PRIMARY BRIEFING ---
-  static String generateBriefingSystem({
-    required String topicName,
-    required String globalContext,
-    required String marketFactStr,
-    required List<String> news,
-    required String riskRules,
-    String? customScenario,
-    bool forceCrossSectorAnalysis = false,
-  }) {
-    String scenarioBlock = "";
-    if (customScenario != null && customScenario.isNotEmpty) {
-      scenarioBlock = '''
-        [USER SIMULATION ACTIVE]
-        HYPOTHESIS: "$customScenario"
-        INSTRUCTION: Analyze Market Data and News assuming this is TRUE.
-        ''';
-    }
-
-    String crossSectorInstruction = "";
-    if (forceCrossSectorAnalysis) {
-      crossSectorInstruction = '''
-        [ATTENTION: CROSS-SECTOR DATA INJECTED]
-        I have provided headlines from OTHER sectors labeled [SECTOR: NAME].
-        
-        TASK:
-        1. Explicitly add a paragraph starting with "Cross-Sector Observations:" in the summary.
-        2. Explain how these events in other sectors might indirectly impact $topicName.
-        ''';
-    }
-
-    return '''
-      You are an Intelligence Analyst for the $topicName sector.
-      
-      STEP 1: ANALYZE FACTS vs. SENTIMENT
-      
-      [GLOBAL MACRO CONTEXT]
-      $globalContext
-
-      [SECTOR SPECIFIC DATA]
-      $marketFactStr
-      
-      [NEWS STREAM]
-      ${news.join('\n')}
-
-      [ANALYSIS RULES]
-      $riskRules
-      
-      $scenarioBlock
-      $crossSectorInstruction
-      
-      STEP 2: DETECT DIVERGENCE & TRENDS
-      - Compare Data (Status/Trend) against News Sentiment.
-      - Look for: RISKS (Panic, Crisis) AND EMERGING TRENDS (Opportunities, Shifts).
-
-      STEP 3: OUTPUT JSON
-      Return a JSON object with a "briefs" array. Each brief must have:
-      - id, subsector (e.g. "$topicName"), title, summary
-      - severity (High/Medium/Low)
-      - fact_score (0-100), sent_score (0-100)
-      - divergence_tag, divergence_desc
-      - metrics (commodity, price, trend)
-      - chart_data (placeholder array)
-      - headlines (list of strings used)
-      - is_fallback (false)
-      ''';
-  }
-}*/
-
-
-// lib/core/prompts/ai_prompts.dart
 
 import '../models.dart';
 
@@ -340,6 +151,11 @@ OUTPUT JSON:
 ''';
   }
 
+
+
+
+
+
   // --- 6. GENERATE PRIMARY BRIEFING ---
   static String generateBriefingSystem({
     required String topicName,
@@ -421,4 +237,48 @@ OUTPUT JSON:
       }
       ''';
   }
+
+  // --- 7. SENIOR INDUSTRIAL STRATEGY CONSULTANT ---
+  static String industrialStrategyConsultantSystem(List<String> crossSectorNews) {
+    return '''
+You are a Senior Industrial Strategy Consultant.
+\$_jsonFormattingRule
+\$_dateContext
+
+OBJECTIVE: Transform raw news data into a high-level executive briefing called the "Industrial Intelligence Report."
+
+[CROSS-SECTOR INDUSTRIAL NEWS]
+\${crossSectorNews.join('\\n')}
+
+INSTRUCTIONS & ANALYSIS PARAMETERS:
+1. Analyze the provided dataset across all 10 NAICS sectors.
+2. Synthesize developments by connecting multiple news items into a single "Shift" or "Trend" per sector.
+3. Apply strategic logic to identify downstream effects on labor, supply chains, and market competition.
+4. Keep an eye out for the following Meta-Themes:
+   - Agentic AI: Autonomous decision-making systems.
+   - Regulatory Realignment: Federal/provincial enforcement and new standards.
+   - Capital Concentration: Infrastructure pipelines and private equity flows.
+
+CONSTRAINTS:
+- Respect copyright law by synthesizing facts rather than quoting directly.
+- Ensure every sector present in the source file is represented.
+- Do not include speculative data not supported by the provided context.
+
+OUTPUT JSON FORMAT:
+{
+  "report_title": "Industrial Intelligence Report",
+  "sectors": [
+    {
+      "sector_name": "Name of the Sector (e.g., Agriculture, Retail)",
+      "synthesized_development": "Original analysis of the primary trend (avoid verbatim quoting).",
+      "strategic_insight": "The 'so what' factor—explain the consequences of the trend.",
+      "opportunity": "A specific, actionable upside for business owners or investors.",
+      "visual_suggestion": "A description of an illustration or data visualization to accompany the text."
+    }
+  ],
+  "synthesis_conclusion": "A final 'Synthesis Conclusion' identifying the primary meta-trend across all industries."
+}
+''';
+  }
+
 }

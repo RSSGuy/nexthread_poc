@@ -54,6 +54,7 @@ class DashboardToolbar extends StatelessWidget implements PreferredSizeWidget {
         tabs: const [
           Tab(text: "Standard Industry Analytics"),
           Tab(text: "Global Trends"),
+          Tab(text: "Industrial Strategy"), // <-- ADD THIS NEW TAB
         ],
       ),
       actions: [
