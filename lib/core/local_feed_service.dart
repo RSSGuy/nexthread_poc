@@ -119,4 +119,38 @@ class LocalFeedService {
     }
     return allHeadlines;
   }
+
+
+  /// Specifically parses feeds for cross-sector intelligence, retaining Category and Description
+  Future<List<String>> getCrossSectorIntelligence(String filePath) async {
+    try {
+      final xmlString = await rootBundle.loadString(filePath);
+      List<String> formattedItems = [];
+
+      try {
+        final rss = RssFeed.parse(xmlString);
+        if (rss.items != null) {
+          for (var item in rss.items!) {
+            final title = item.title?.trim() ?? "Unknown Event";
+            // Get the category, default to 'General' if missing
+            final category = (item.categories != null && item.categories!.isNotEmpty)
+                ? item.categories!.first.value
+                : "General";
+            final description = item.description?.trim() ?? "";
+
+            // Format it specifically for the AI to understand the sector context
+            formattedItems.add("[SECTOR: $category] $title - $description");
+          }
+        }
+      } catch (e) {
+        print("Error parsing Cross-Sector RSS: $e");
+      }
+
+      return formattedItems;
+    } catch (e) {
+      print("LocalFeedService Error loading $filePath: $e");
+      return ["[System] Unable to load selected archive."];
+    }
+  }
+
 }
