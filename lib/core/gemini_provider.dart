@@ -52,4 +52,10 @@ class GeminiProvider implements AIProvider {
       rethrow;
     }
   }
+
+  @override
+  Future<String?> generateImage({required String prompt}) {
+    // TODO: implement generateImage
+    throw UnimplementedError();
+  }
 }

@@ -14,4 +14,10 @@ abstract class AIProvider {
     required String systemPrompt,
     required String userContext,
   });
+
+  // Add this inside the abstract class AIProvider
+  Future<String?> generateImage({required String prompt}) async {
+    // Default implementation returns null if the provider doesn't support images
+    return null;
+  }
 }

@@ -6,6 +6,8 @@ import '../../secrets.dart';
 import 'ai_provider.dart';
 import '../ui/widgets/console_log_widget.dart'; // Import Logger
 
+import 'package:http/http.dart' as http;
+
 class OpenAIProvider implements AIProvider {
   @override
   String get name => "OpenAI (GPT-4)";
@@ -51,4 +53,44 @@ class OpenAIProvider implements AIProvider {
       rethrow;
     }
   }
+
+
+
+  // lib/core/openai_provider.dart
+// (Add this method inside your OpenAIProvider class)
+  @override
+  Future<String?> generateImage({required String prompt}) async {
+    final url = Uri.parse('https://api.openai.com/v1/images/generations');
+
+    final enhancedPrompt = "A professional, minimalist corporate data visualization or conceptual illustration representing: $prompt. Clean white background, modern corporate style, no text or words.";
+
+    try {
+      final response = await http.post(
+        url,
+        headers: {
+          'Content-Type': 'application/json',
+          // FIXED: Using Secrets.openAiApiKey
+          'Authorization': 'Bearer ${Secrets.openAiApiKey}',
+        },
+        body: jsonEncode({
+          "model": "dall-e-3",
+          "prompt": enhancedPrompt,
+          "n": 1,
+          "size": "1024x1024",
+        }),
+      );
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        return data['data'][0]['url'];
+      } else {
+        print("DALL-E Error: ${response.statusCode} - ${response.body}");
+        return null;
+      }
+    } catch (e) {
+      print("DALL-E Exception: $e");
+      return null;
+    }
+  }
+
 }

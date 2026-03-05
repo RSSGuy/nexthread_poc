@@ -165,6 +165,12 @@ class OllamaProvider implements AIProvider {
     }
     return content.trim();
   }
+
+  @override
+  Future<String?> generateImage({required String prompt}) {
+    // TODO: implement generateImage
+    throw UnimplementedError();
+  }
 }
 
 extension StringExtension on String {
