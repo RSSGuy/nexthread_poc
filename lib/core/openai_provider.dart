@@ -58,7 +58,7 @@ class OpenAIProvider implements AIProvider {
 
   // lib/core/openai_provider.dart
 // (Add this method inside your OpenAIProvider class)
-  @override
+/*  @override
   Future<String?> generateImage({required String prompt}) async {
     final url = Uri.parse('https://api.openai.com/v1/images/generations');
 
@@ -91,6 +91,41 @@ class OpenAIProvider implements AIProvider {
       print("DALL-E Exception: $e");
       return null;
     }
-  }
+  }*/
 
+
+  @override
+  Future<String?> generateImage({required String prompt}) async {
+    final url = Uri.parse('https://api.openai.com/v1/images/generations');
+
+    final enhancedPrompt = "A professional, minimalist corporate data visualization or conceptual illustration representing: $prompt. Clean white background, modern corporate style, no text or words.";
+
+    try {
+      final response = await http.post(
+        url,
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ${Secrets.openAiApiKey}',
+        },
+        body: jsonEncode({
+          "model": "dall-e-3",
+          "prompt": enhancedPrompt,
+          "n": 1,
+          "size": "1024x1024",
+          "response_format": "b64_json" // <-- NEW: Ask for raw data, not a URL
+        }),
+      );
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        return data['data'][0]['b64_json']; // <-- NEW: Extract the base64 string
+      } else {
+        print("DALL-E Error: ${response.statusCode} - ${response.body}");
+        return null;
+      }
+    } catch (e) {
+      print("DALL-E Exception: $e");
+      return null;
+    }
+  }
 }

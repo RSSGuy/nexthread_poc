@@ -1,68 +1,5 @@
-/*
-// lib/core/strategy_consultant_service.dart
-
-import 'dart:async';
-import 'local_feed_service.dart';
-import 'ai_service.dart';
-import 'prompts/ai_prompts.dart';
-import '../ui/widgets/console_log_widget.dart';
-
-class StrategyConsultantService {
-  final LocalFeedService _localFeedService = LocalFeedService();
-
-  Future<Map<String, dynamic>> generateIndustrialStrategyReport() async {
-    ConsoleLogger.log("StrategyService: Generating Industrial Strategy Report...", type: 'system');
-
-    try {
-      // 1. Fetch the multi-sector news feed from local assets.
-  */
-/*    final newsItems = await _localFeedService.getHeadlinesFromPath(
-          'assets/feeds/cubeler_industrial_news.xml',
-          []
-      );*/
-/*
-
-
-      final newsItems = await _localFeedService.getCrossSectorIntelligence('assets/feeds/cubeler_industrial_news.xml');
-
-      if (newsItems.isEmpty || newsItems.first.contains("[System]")) {
-        return {
-          "report_title": "Data Error",
-          "synthesis_conclusion": "Could not load the Cubeler Industrial News feed.",
-          "sectors": []
-        };
-      }
-
-      // 2. Generate using the specialized prompt
-      final systemPrompt = AiPrompts.industrialStrategyConsultantSystem(newsItems);
-
-      // 3. Ask the AIService for the currently active provider to make the call
-      final activeProvider = AIService().activeProvider;
-      final response = await activeProvider.generateBriefingJson(
-        systemPrompt: systemPrompt,
-        userContext: "Generate the Industrial Intelligence Report based on the provided cross-sector data.",
-      );
-
-      // Validation fallback
-      if (response['sectors'] == null) {
-        response['sectors'] = [];
-      }
-
-      return response;
-    } catch (e) {
-      ConsoleLogger.error("Strategy Generation Failed: $e");
-      return {
-        "report_title": "Generation Failed",
-        "synthesis_conclusion": "An error occurred: $e",
-        "sectors": []
-      };
-    }
-  }
-}*/
 
 /*
-
-// lib/core/strategy_consultant_service.dart
 
 import 'dart:async';
 import 'local_feed_service.dart';
@@ -87,9 +24,6 @@ class StrategyConsultantService {
       if (newsItems.isEmpty || newsItems.first.contains("[System]")) {
         return {"report_title": "Data Error", "synthesis_conclusion": "Could not load feed.", "sectors": []};
       }
-
-
-
 
       // 2. Extract unique sectors dynamically from the feed
       Set<String> uniqueSectors = {};
@@ -118,15 +52,53 @@ class StrategyConsultantService {
           userContext: "Generate the verbose report specifically for $sector.",
         );
 
-        // Map and yield the new sector back to the UI immediately
         if (response.containsKey('sector_name') || response.containsKey('synthesized_development')) {
           response['sector_name'] ??= sector;
+
+*/
+/*          // --- DALL-E 3 IMAGE GENERATION ---
+          if (response['visual_suggestion'] != null && response['visual_suggestion'].toString().isNotEmpty) {
+            ConsoleLogger.log("Requesting DALL-E 3 Image for $sector...", type: 'system');
+            onProgress?.call("Generating visual illustration for $sector...", null);
+
+
+
+            final imageUrl = await activeProvider.generateImage(prompt: response['visual_suggestion']);
+
+            if (imageUrl != null) {
+              // Wrap the DALL-E URL in the CORS proxy so CanvasKit is allowed to draw it
+              final proxiedUrl = "https://corsproxy.io/?${Uri.encodeComponent(imageUrl)}";
+              response['image_url'] = proxiedUrl;
+
+              ConsoleLogger.success("Image generated for $sector.");
+            }
+          }
+          // ---------------------------------
+
           generatedSectors.add(response);
           briefSummariesForConclusion.add("$sector: ${response['synthesized_development']}");
 
           onProgress?.call("Completed: $sector", response);
         }
-      }
+      }*/
+/*
+
+          // --- DALL-E 3 IMAGE GENERATION ---
+          if (response['visual_suggestion'] != null && response['visual_suggestion'].toString().isNotEmpty) {
+            ConsoleLogger.log("Requesting DALL-E 3 Image for $sector...", type: 'system');
+            onProgress?.call("Generating visual illustration for $sector...", null);
+
+            final imageB64 = await activeProvider.generateImage(prompt: response['visual_suggestion']);
+
+            if (imageB64 != null) {
+              response['image_base64'] = imageB64; // <-- Changed key
+              ConsoleLogger.success("Image generated for $sector.");
+            } else {
+              ConsoleLogger.warning("Failed to generate image for $sector.");
+            }
+          }
+
+
 
       // 4. Generate the final overarching conclusion
       ConsoleLogger.log("Generating Final Meta-Trend Conclusion...", type: 'system');
@@ -212,28 +184,18 @@ class StrategyConsultantService {
         if (response.containsKey('sector_name') || response.containsKey('synthesized_development')) {
           response['sector_name'] ??= sector;
 
-          // --- DALL-E 3 IMAGE GENERATION ---
+          // --- DALL-E 3 BASE64 IMAGE GENERATION ---
           if (response['visual_suggestion'] != null && response['visual_suggestion'].toString().isNotEmpty) {
             ConsoleLogger.log("Requesting DALL-E 3 Image for $sector...", type: 'system');
             onProgress?.call("Generating visual illustration for $sector...", null);
 
-/*            final imageUrl = await activeProvider.generateImage(prompt: response['visual_suggestion']);
+            final imageB64 = await activeProvider.generateImage(prompt: response['visual_suggestion']);
 
-            if (imageUrl != null) {
-              response['image_url'] = imageUrl;
+            if (imageB64 != null) {
+              response['image_base64'] = imageB64;
               ConsoleLogger.success("Image generated for $sector.");
             } else {
               ConsoleLogger.warning("Failed to generate image for $sector.");
-            }*/
-
-            final imageUrl = await activeProvider.generateImage(prompt: response['visual_suggestion']);
-
-            if (imageUrl != null) {
-              // Wrap the DALL-E URL in the CORS proxy so CanvasKit is allowed to draw it
-              final proxiedUrl = "https://corsproxy.io/?${Uri.encodeComponent(imageUrl)}";
-              response['image_url'] = proxiedUrl;
-
-              ConsoleLogger.success("Image generated for $sector.");
             }
           }
           // ---------------------------------
@@ -270,5 +232,12 @@ class StrategyConsultantService {
       onProgress?.call("Error: $e", null);
       return {"report_title": "Generation Failed", "synthesis_conclusion": "Error: $e", "sectors": []};
     }
+
+    //6. SAFETY FALLBACK: Guarantees Dart compiler never worries about returning null.
+    return {
+      "report_title": "Unknown Error",
+      "synthesis_conclusion": "Execution failed unexpectedly.",
+      "sectors": []
+    };
   }
 }
