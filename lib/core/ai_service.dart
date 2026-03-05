@@ -20,6 +20,9 @@ import '../ui/widgets/console_log_widget.dart';
 // PROMPTS
 import 'prompts/ai_prompts.dart';
 
+
+
+
 // CUSTOM EXCEPTION
 class IrrelevantScenarioException implements Exception {
   final String message;
@@ -39,6 +42,9 @@ class AIService {
   AIProvider _activeProvider = OpenAIProvider();
 
   String get currentProviderName => _activeProvider.name;
+
+  // Add this getter so other services can use the active model
+  AIProvider get activeProvider => _activeProvider;
 
   void setProvider(String providerType, {Map<String, String>? config}) {
     if (providerType == 'ollama') {
