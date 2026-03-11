@@ -13,7 +13,8 @@
       "synthesized_development": "Supply & Demand: Detail the current domestic supply levels and shifting agricultural demand for phosphate.",
       "strategic_insight": "Producer Activity: Analyze the recent actions, outputs, or vulnerabilities of the main Canadian phosphate producers.",
       "opportunity": "Transportation & Logistics: Identify specific logistical bottlenecks or transportation opportunities (e.g., rail, ports) affecting phosphate distribution.",
-      "visual_suggestion": "Describe a map or chart showing Canadian phosphate transportation routes, producer locations, or supply/demand curves."
+      "visual_suggestion": "Describe a map or chart showing Canadian phosphate transportation routes, producer locations, or supply/demand curves.",
+      "ai_logic_references": "Provide a bulleted list of the exact headlines, sources, and links (if present in the feed) that you used to generate this analysis to ensure traceability."
     },
     "meta_themes": [
       "Logistical Bottlenecks in Canadian Rail/Ports.",

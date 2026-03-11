@@ -12,7 +12,8 @@
       "synthesized_development": "Supply, Demand & Producers: Provide a detailed analysis of current domestic supply, market demand, and the dominant producers in the region.",
       "strategic_insight": "Pricing & Logistics: Analyze pricing trends, input costs, and how transportation/logistics infrastructure is impacting the market.",
       "opportunity": "Risks & Opportunities: Identify specific market vulnerabilities (risks) alongside actionable strategic opportunities for growth or investment.",
-      "visual_suggestion": "A description of a geographic map or financial chart illustrating supply chain flows, yield distribution, or pricing volatility."
+      "visual_suggestion": "A description of a geographic map or financial chart illustrating supply chain flows, yield distribution, or pricing volatility.",
+      "ai_logic_references": "Provide a bulleted list of the exact headlines, sources, and links (if present in the feed) that you used to generate this analysis to ensure traceability."
     },
     "meta_themes": [
       "Supply Chain Resilience & Transportation Bottlenecks.",

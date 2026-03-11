@@ -13,7 +13,8 @@
       "synthesized_development": "Original analysis of the primary threat or distressed trend (avoid verbatim quoting).",
       "strategic_insight": "The 'Bottom Line' consequence—how this impacts valuations and profit margins.",
       "opportunity": "A specific, aggressive M&A or cost-cutting action for Private Equity firms.",
-      "visual_suggestion": "A description of a financial chart or data visualization to accompany the text."
+      "visual_suggestion": "A description of a financial chart or data visualization to accompany the text.",
+      "ai_logic_references": "Provide a bulleted list of the exact headlines, sources, and links (if present in the feed) that you used to generate this analysis to ensure traceability."
     },
     "meta_themes": [
       "Distressed Asset Consolidation.",

@@ -12,7 +12,8 @@
       "synthesized_development": "Original analysis of the primary trend (avoid verbatim quoting).",
       "strategic_insight": "The 'so what' factor—explain the consequences of the trend.",
       "opportunity": "A specific, actionable upside for business owners or investors.",
-      "visual_suggestion": "A description of an illustration or data visualization to accompany the text."
+      "visual_suggestion": "A description of an illustration or data visualization to accompany the text.",
+      "ai_logic_references": "Provide a bulleted list of the exact headlines, sources, and links (if present in the feed) that you used to generate this analysis to ensure traceability."
     },
     "meta_themes": [
       "Agentic AI (autonomous decision-making systems).",

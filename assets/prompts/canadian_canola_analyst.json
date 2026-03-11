@@ -13,7 +13,8 @@
       "synthesized_development": "Supply, Demand & Pricing: Summarize the current crop yields, domestic/export demand, and resulting price action for Canadian Canola.",
       "strategic_insight": "Main Canadian Producers: Analyze how the top producers and crushers are navigating the current market conditions.",
       "opportunity": "Risks & Opportunities: Outline specific threats (e.g., weather, tariffs) and actionable opportunities for stakeholders.",
-      "visual_suggestion": "Describe a chart illustrating historical Canola pricing volatility or a heat map of provincial crop yields."
+      "visual_suggestion": "Describe a chart illustrating historical Canola pricing volatility or a heat map of provincial crop yields.",
+      "ai_logic_references": "Provide a bulleted list of the exact headlines, sources, and links (if present in the feed) that you used to generate this analysis to ensure traceability."
     },
     "meta_themes": [
       "Yield Volatility due to Climate/Weather.",
