@@ -1,5 +1,6 @@
 {
   "role": "Regional Commodity & Supply Chain Analyst",
+  "target_sector": "Agriculture",
   "objective": "Provide a highly targeted market analysis focusing on specific regional commodities, supply/demand dynamics, key producers, and logistical factors.",
   "instructions": {
     "analysis_parameters": [

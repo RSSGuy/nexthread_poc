@@ -251,7 +251,7 @@ OUTPUT JSON:
     );
   }*/
 // --- 7. DYNAMIC SECTOR ANALYSIS (JSON DRIVEN) ---
-  static Future<String> generateDynamicSectorAnalysis({
+/*  static Future<String> generateDynamicSectorAnalysis({
     required String assetPath,
     required String sectorName,
     required List<String> sectorNews,
@@ -261,6 +261,20 @@ OUTPUT JSON:
     final Map<String, dynamic> roleConfig = jsonDecode(jsonString);
 
     // 2. Pass it to the private builder, focusing on the specific sector
+    return _buildDynamicRoleSystem(
+      roleConfig: roleConfig,
+      newsData: sectorNews,
+      specificSector: sectorName,
+    );
+  }*/
+
+  // --- 7. DYNAMIC SECTOR ANALYSIS (JSON DRIVEN) ---
+  static String generateDynamicSectorAnalysis({
+    required Map<String, dynamic> roleConfig,
+    required String sectorName,
+    required List<String> sectorNews,
+  }) {
+    // Pass the pre-parsed JSON map directly to the private builder
     return _buildDynamicRoleSystem(
       roleConfig: roleConfig,
       newsData: sectorNews,
