@@ -338,6 +338,9 @@ class _IndustrialStrategyViewState extends State<IndustrialStrategyView> with Au
   final Map<String, String> _availablePrompts = {
     "Standard Strategy Consultant": "assets/prompts/senior_industrial_strategy_consultant.json",
     "Aggressive P.E. Analyst": "assets/prompts/aggressive_pe_analyst.json",
+    "Regional Commodity Analyst": "assets/prompts/regional_commodity_analyst.json",
+    "Canadian Phosphate Focus": "assets/prompts/canadian_phosphate_analyst.json",
+    "Canadian Canola Focus": "assets/prompts/canadian_canola_analyst.json",
   };
   late String _selectedPromptPath;
 
