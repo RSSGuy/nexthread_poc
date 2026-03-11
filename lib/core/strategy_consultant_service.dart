@@ -129,6 +129,7 @@ class StrategyConsultantService {
 }*/
 
 // lib/core/strategy_consultant_service.dart
+/*
 
 import 'dart:async';
 import 'local_feed_service.dart';
@@ -176,6 +177,128 @@ class StrategyConsultantService {
         final sectorNews = newsItems.where((n) => n.contains('[SECTOR: $sector]')).toList();
 
         final prompt = AiPrompts.industrialSectorAnalysisSystem(sector, sectorNews);
+        final response = await activeProvider.generateBriefingJson(
+          systemPrompt: prompt,
+          userContext: "Generate the verbose report specifically for $sector.",
+        );
+
+        if (response.containsKey('sector_name') || response.containsKey('synthesized_development')) {
+          response['sector_name'] ??= sector;
+
+          // --- DALL-E 3 BASE64 IMAGE GENERATION ---
+          if (response['visual_suggestion'] != null && response['visual_suggestion'].toString().isNotEmpty) {
+            ConsoleLogger.log("Requesting DALL-E 3 Image for $sector...", type: 'system');
+            onProgress?.call("Generating visual illustration for $sector...", null);
+
+            final imageB64 = await activeProvider.generateImage(prompt: response['visual_suggestion']);
+
+            if (imageB64 != null) {
+              response['image_base64'] = imageB64;
+              ConsoleLogger.success("Image generated for $sector.");
+            } else {
+              ConsoleLogger.warning("Failed to generate image for $sector.");
+            }
+          }
+          // ---------------------------------
+
+          generatedSectors.add(response);
+          briefSummariesForConclusion.add("$sector: ${response['synthesized_development']}");
+
+          onProgress?.call("Completed: $sector", response);
+        }
+      }
+
+      // 4. Generate the final overarching conclusion
+      ConsoleLogger.log("Generating Final Meta-Trend Conclusion...", type: 'system');
+      onProgress?.call("Synthesizing final meta-trend conclusion...", null);
+
+      final conclusionPrompt = AiPrompts.industrialConclusionSystem(briefSummariesForConclusion);
+      final conclusionResponse = await activeProvider.generateBriefingJson(
+        systemPrompt: conclusionPrompt,
+        userContext: "Generate the final overarching synthesis conclusion.",
+      );
+
+      ConsoleLogger.success("Industrial Strategy Report Complete.");
+      onProgress?.call("Report Complete", null);
+
+      // 5. Return full payload
+      return {
+        "report_title": "Industrial Intelligence Report",
+        "synthesis_conclusion": conclusionResponse['synthesis_conclusion'] ?? "Analysis complete.",
+        "sectors": generatedSectors
+      };
+
+    } catch (e) {
+      ConsoleLogger.error("Strategy Generation Failed: $e");
+      onProgress?.call("Error: $e", null);
+      return {"report_title": "Generation Failed", "synthesis_conclusion": "Error: $e", "sectors": []};
+    }
+
+    //6. SAFETY FALLBACK: Guarantees Dart compiler never worries about returning null.
+    return {
+      "report_title": "Unknown Error",
+      "synthesis_conclusion": "Execution failed unexpectedly.",
+      "sectors": []
+    };
+  }
+}*/
+
+// lib/core/strategy_consultant_service.dart
+
+import 'dart:async';
+import 'local_feed_service.dart';
+import 'ai_service.dart';
+import 'prompts/ai_prompts.dart';
+import '../ui/widgets/console_log_widget.dart';
+
+class StrategyConsultantService {
+  final LocalFeedService _localFeedService = LocalFeedService();
+
+  Future<Map<String, dynamic>> generateIndustrialStrategyReport({
+    required String promptAssetPath,
+    Function(String statusMessage, Map<String, dynamic>? newSector)? onProgress,
+  }) async {
+    ConsoleLogger.log("StrategyService: Initiating Verbose Sector-by-Sector Analysis...", type: 'system');
+
+    try {
+      onProgress?.call("Loading cross-sector intelligence feed...", null);
+
+      // 1. Fetch the multi-sector news feed
+      final newsItems = await _localFeedService.getCrossSectorIntelligence('assets/feeds/cubeler_industrial_news.xml');
+
+      if (newsItems.isEmpty || newsItems.first.contains("[System]")) {
+        return {"report_title": "Data Error", "synthesis_conclusion": "Could not load feed.", "sectors": []};
+      }
+
+      // 2. Extract unique sectors dynamically from the feed
+      Set<String> uniqueSectors = {};
+      for (var item in newsItems) {
+        final match = RegExp(r'\[SECTOR:\s*(.*?)\]').firstMatch(item);
+        if (match != null) {
+          uniqueSectors.add(match.group(1)!.trim());
+        }
+      }
+
+      final activeProvider = AIService().activeProvider;
+      List<Map<String, dynamic>> generatedSectors = [];
+      List<String> briefSummariesForConclusion = [];
+
+      // 3. Generate analysis INDIVIDUALLY for each sector
+      for (String sector in uniqueSectors) {
+        ConsoleLogger.log("Analyzing Sector: $sector...", type: 'system');
+        onProgress?.call("Analyzing Sector: $sector...", null);
+
+        // Filter news for just this sector
+        final sectorNews = newsItems.where((n) => n.contains('[SECTOR: $sector]')).toList();
+
+        // --- DYNAMIC PROMPT BUILDER ---
+        final prompt = await AiPrompts.generateDynamicSectorAnalysis(
+          assetPath: promptAssetPath,
+          sectorName: sector,
+          sectorNews: sectorNews,
+        );
+        // ------------------------------
+
         final response = await activeProvider.generateBriefingJson(
           systemPrompt: prompt,
           userContext: "Generate the verbose report specifically for $sector.",
