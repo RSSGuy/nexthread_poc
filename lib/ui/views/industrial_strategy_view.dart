@@ -1,4 +1,5 @@
 
+
 /*
 
 // lib/ui/views/industrial_strategy_view.dart
@@ -126,10 +127,13 @@ class _IndustrialStrategyViewState extends State<IndustrialStrategyView> with Au
             children: [
               Text("AI Logic & Data Provenance", style: GoogleFonts.urbanist(fontSize: 18, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
-              Text(
+
+              // --- CHANGED TO SELECTABLE TEXT FOR URLs ---
+              SelectableText(
                 logicText,
                 style: const TextStyle(fontSize: 14, color: Color(0xFF334155), height: 1.6),
               ),
+              // ------------------------------------------
             ],
           ),
         ),
@@ -444,6 +448,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../core/strategy_consultant_service.dart';
+import '../../core/models.dart';
+import '../widgets/market_pulse_row.dart';
 
 class IndustrialStrategyView extends StatefulWidget {
   const IndustrialStrategyView({super.key});
@@ -563,13 +569,10 @@ class _IndustrialStrategyViewState extends State<IndustrialStrategyView> with Au
             children: [
               Text("AI Logic & Data Provenance", style: GoogleFonts.urbanist(fontSize: 18, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
-
-              // --- CHANGED TO SELECTABLE TEXT FOR URLs ---
               SelectableText(
                 logicText,
                 style: const TextStyle(fontSize: 14, color: Color(0xFF334155), height: 1.6),
               ),
-              // ------------------------------------------
             ],
           ),
         ),
@@ -747,6 +750,32 @@ class _IndustrialStrategyViewState extends State<IndustrialStrategyView> with Au
             _buildDataRow("Opportunity:", sector['opportunity'], icon: Icons.trending_up, iconColor: Colors.green),
             const SizedBox(height: 16),
             _buildDataRow("Visual Suggestion:", sector['visual_suggestion'], icon: Icons.image_outlined, iconColor: Colors.grey),
+
+            // --- MARKET ACTIVITY (ETFs) ---
+            if (sector['market_fact'] != null && sector['market_fact'] is MarketFact) ...[
+              const SizedBox(height: 24),
+              const Row(
+                children: [
+                  Icon(Icons.show_chart, color: Color(0xFF6366F1), size: 20),
+                  SizedBox(width: 8),
+                  Text("Market Activity (ETFs)", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF0F172A))),
+                ],
+              ),
+              const SizedBox(height: 12),
+              Builder(builder: (context) {
+                final fact = sector['market_fact'] as MarketFact;
+                if (fact.subFacts.isNotEmpty) {
+                  return Column(
+                    children: fact.subFacts.map((sub) => Padding(
+                      padding: const EdgeInsets.only(bottom: 8.0),
+                      child: MarketPulseRow(fact: sub),
+                    )).toList(),
+                  );
+                } else {
+                  return MarketPulseRow(fact: fact);
+                }
+              }),
+            ],
 
             // --- BASE64 IMAGE RENDERER ---
             if (sector['image_base64'] != null && sector['image_base64'].toString().isNotEmpty) ...[

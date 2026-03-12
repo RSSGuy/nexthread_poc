@@ -287,7 +287,8 @@ class SectorBenchmarks {
       "Wheat Futures": "ZW=F",
       "Soybean Futures": "ZS=F",
       "Live Cattle": "LE=F",
-      "Coffee": "KC=F"
+      "Coffee": "KC=F",
+      "Canola Futures": "RS=F",
     },
     Naics.mining: {
       // Equities

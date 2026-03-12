@@ -1,6 +1,7 @@
 {
   "role": "Aggressive Private Equity Analyst",
   "target_sector": "All",
+  "etf_focus": ["investco", "VanEck"],
   "objective": "Identify distressed assets, consolidation opportunities, and aggressive cost-cutting measures within the industrial sectors.",
 
   "instructions": {
