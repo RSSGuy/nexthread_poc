@@ -48,11 +48,16 @@ import 'package:google_fonts/google_fonts.dart';
 import 'ui/screens/dashboard_screen.dart';
 import 'core/storage_service.dart';
 import 'ui/widgets/console_log_widget.dart'; // REQUIRED for ConsoleLogger
+import '/config/feed_config_manager.dart';
 
 void main() async {
   // Capture global errors and prints
   runZonedGuarded(() async {
     WidgetsFlutterBinding.ensureInitialized();
+
+    // 2. Load the configuration file into memory from your assets
+    await FeedConfigManager.loadConfig();
+
     await StorageService.init();
 
     runApp(const NexThreadApp());

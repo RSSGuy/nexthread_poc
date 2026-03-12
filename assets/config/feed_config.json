@@ -1,0 +1,19 @@
+{
+  "feed_settings": {
+    "max_target_sources": 10,
+    "fallback_source_count": 15
+  },
+  "sector_mappings": {
+    "agriculture": "agriculture",
+    "manufacturing": "manufacturing",
+    "construction": "construction",
+    "retail": "retail",
+    "technology": "technology"
+  },
+  "role_keyword_fallbacks": {
+    "phosphate": ["phosphate", "fertilizer", "potash", "nutrien"],
+    "fertilizer": ["phosphate", "fertilizer", "potash", "nutrien"],
+    "canola": ["canola", "crop yield", "crush"],
+    "supply chain": ["logistics", "freight", "supply chain", "inventory"]
+  }
+}

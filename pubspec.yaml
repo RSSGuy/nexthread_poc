@@ -78,6 +78,7 @@ flutter:
     - assets/feeds/
     # Add your new prompts folder here:
     - assets/prompts/
+    - assets/config/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
