@@ -238,35 +238,8 @@ OUTPUT JSON:
   }
 // prompt injection***********************************************************************
 
-  // --- 7. SENIOR INDUSTRIAL STRATEGY CONSULTANT (Dynamic JSON) ---
-/*  static Future<String> industrialStrategyConsultantSystem(List<String> crossSectorNews) async {
-    // 1. Load the prompt configuration from the assets folder
-    final jsonString = await rootBundle.loadString('assets/prompts/senior_industrial_strategy_consultant.json');
-    final Map<String, dynamic> roleConfig = jsonDecode(jsonString);
 
-    // 2. Pass it to the private builder
-    return _buildDynamicRoleSystem(
-      roleConfig: roleConfig,
-      newsData: crossSectorNews,
-    );
-  }*/
-// --- 7. DYNAMIC SECTOR ANALYSIS (JSON DRIVEN) ---
-/*  static Future<String> generateDynamicSectorAnalysis({
-    required String assetPath,
-    required String sectorName,
-    required List<String> sectorNews,
-  }) async {
-    // 1. Load the selected prompt configuration
-    final jsonString = await rootBundle.loadString(assetPath);
-    final Map<String, dynamic> roleConfig = jsonDecode(jsonString);
 
-    // 2. Pass it to the private builder, focusing on the specific sector
-    return _buildDynamicRoleSystem(
-      roleConfig: roleConfig,
-      newsData: sectorNews,
-      specificSector: sectorName,
-    );
-  }*/
 
   // --- 7. DYNAMIC SECTOR ANALYSIS (JSON DRIVEN) ---
   static String generateDynamicSectorAnalysis({
@@ -295,7 +268,12 @@ ${sectorNews.join('\n')}
 
 INSTRUCTIONS & ANALYSIS PARAMETERS:
 1. Write a highly detailed, verbose analysis specifically for the "$sectorName" sector.
-2. VERBOSITY REQUIREMENT: You MUST write a full, robust paragraph (at least 4 to 6 sentences) for EVERY field. Do not use bullet points; use cohesive paragraph structures.
+2. VERBOSITY REQUIREMENT: You MUST write a full, robust paragraph (at least 10 to 15 sentences) for EVERY field. Do not use bullet points; use cohesive paragraph structures.
+
+CRITICAL STYLE GUIDELINES:
+1. Write this as a front-page Editorial Feature or Op-Ed. 
+2. BE VERBOSE AND COMPELLING. Connect the dots between the different sectors. Find the overarching macro-economic or geopolitical narrative tying them together.
+3. Write 3 to 4 rich, flowing paragraphs. Use a commanding, insightful, and authoritative journalistic tone.
 
 OUTPUT JSON FORMAT:
 {

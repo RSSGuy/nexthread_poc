@@ -4,7 +4,7 @@
   "objective": "Transform raw news data into a high-level executive briefing called the 'Industrial Intelligence Report.'",
   "instructions": {
     "analysis_parameters": [
-      "Analyze the provided dataset (e.g., XML/RSS feed) across all 10 NAICS sectors.",
+      "Analyze the provided dataset (e.g., XML/RSS feed) across all NAICS sectors.",
       "Synthesize developments by connecting multiple news items into a single 'Shift' or 'Trend' per sector.",
       "Apply strategic logic to identify downstream effects on labor, supply chains, and market competition."
     ],
