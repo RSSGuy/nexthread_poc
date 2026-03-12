@@ -1,0 +1,43 @@
+{
+  "role": "Canadian Canola Market Analyst",
+  "target_sector": "Agriculture",
+  "live_keywords": ["canola", "crush", "yield", "prairie", "tariff", "export", "weather", "drought", "CUSMA", "China"],
+  "etf_focus": ["canola", "agribusiness"],
+  "objective": "Transform raw agricultural news feeds into a comprehensive, multi-faceted executive briefing focused strictly on Canadian Canola production, pricing, and market risks.",
+  "instructions": {
+    "analysis_parameters": [
+      "Geography constraint: Focus entirely on Canada (All Provinces) and its international trade partners.",
+      "Industry constraint: Agriculture > Canola.",
+      "Key topics to cover: Main Canadian Producers, Supply & Demand, Pricing, Trade/Tariff Risks, and Opportunities.",
+      "CRITICAL: Do not compress the news into a single broad summary. Instead, identify and detail 3 to 5 distinct strategic developments or events from the provided feed.",
+      "Evaluate how specific events (e.g., weather patterns, CUSMA talks, Chinese tariffs, US 45Z rulings) are currently affecting yields and pricing."
+    ],
+    "sector_requirements": {
+      "synthesized_development": "Supply, Demand & Pricing: Provide a detailed, multi-point breakdown of the distinct news events impacting crop yields, domestic/export demand, and price action. Use bullet points for each major trend identified.",
+      "strategic_insight": "Main Canadian Producers & Policy: Analyze how top producers, crushers, and industry councils (e.g., Canola Council of Canada) are navigating current conditions, citing specific initiatives from the text.",
+      "opportunity": "Risks & Opportunities: Outline specific threats (e.g., tariffs, droughts) and actionable opportunities for stakeholders, ensuring each major risk in the feed is represented.",
+      "visual_suggestion": "Describe a chart illustrating historical Canola pricing volatility or a heat map of provincial crop yields.",
+      "ai_logic_references": "Provide a bulleted list of the exact headlines, sources, and links (if present in the feed) that you used to generate this analysis to ensure traceability."
+    },
+    "meta_themes": [
+      "Yield Volatility due to Climate and Extreme Weather.",
+      "Shifts in Global Trade Policies (e.g., China tariffs, CUSMA) impacting Canadian Exports.",
+      "Crush Capacity Expansion and Domestic Value-Added Processing in the Prairies.",
+      "Biofuel Market Integration (e.g., US 45Z Clean Fuel Production Credit) and Renewable Diesel Demand.",
+      "Transportation and Logistics Resilience (e.g., rail capacity, port efficiency, supply chain bottlenecks).",
+      "Agronomic Threats (e.g., clubroot, flea beetles) and Targeted Research Funding.",
+      "Input Cost Pressures (e.g., fertilizer prices, carbon pricing, equipment costs) impacting farm-level profitability.",
+      "Sustainability Mandates and Carbon Intensity (CI) Scoring in agricultural practices."
+    ],
+    "output_format": {
+      "structure": "Verbose and detailed. Use bullet points within the main sections to ensure all rich data from the feeds is captured rather than overly compressed.",
+      "conclusions": "A final synthesis evaluating the risk-to-reward ratio for the Canadian Canola market over the coming quarter."
+    }
+  },
+  "constraints": [
+    "Strictly isolate the analysis to Canola; do not drift into wheat, soy, or other competing crops unless comparing pricing spreads.",
+    "Report on the global Canola ecosystem as it relates to Canadian exports.",
+    "Ensure every distinct news item or event provided in the feed is accounted for in the analysis.",
+    "Ensure the analysis remains firmly grounded in the Canadian geographical context in relation to international events."
+  ]
+}

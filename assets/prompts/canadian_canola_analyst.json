@@ -29,6 +29,7 @@
   },
   "constraints": [
     "Strictly isolate the analysis to Canola; do not drift into wheat, soy, or other competing crops unless comparing pricing spreads.",
-    "Ensure the analysis remains firmly grounded in the Canadian geographical context."
+    "Report on the global Canola ecosystem.",
+    "Ensure the analysis remains firmly grounded in the Canadian geographical context in relation to international events."
   ]
 }
