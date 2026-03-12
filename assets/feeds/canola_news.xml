@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Canola Council of Canada News Monitor</title>
+        <link>https://www.canolacouncil.org/news/</link>
+        <description>Recent news and press releases from the Canola Council of Canada and industry partners.</description>
+        <lastBuildDate>Thu, 12 Mar 2026 10:57:18 +0000</lastBuildDate>
+        <language>en-CA</language>
+        <generator>Gemini-AI-2026-Tracker</generator>
+
+        <item>
+            <title>Canola Industry Watches CUSMA Talks</title>
+            <link>https://www.producer.com/crops/canola-watches-cusma-talks/</link>
+            <pubDate>Tue, 10 Mar 2026 10:51:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[With 78% of Canada's canola oil exports heading to the United States in 2025, Canadian growers and the Canola Council of Canada are closely monitoring the upcoming review of the Canada-U.S.-Mexico Agreement (CUSMA).]]></description>
+        </item>
+
+        <item>
+            <title>Final Determination: China Reduces Canola Tariffs</title>
+            <link>https://www.620ckrm.com/2026/03/09/province-pleased-to-see-china-reduce-canola-tariffs/</link>
+            <pubDate>Mon, 09 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[According to a news release from the Canola Council of Canada, China's Ministry of Commerce finalized a reduced 5.9% anti-dumping duty on Canadian canola seed imports and temporarily removed the 100% tariff on canola meal for the remainder of 2026.]]></description>
+        </item>
+
+        <item>
+            <title>Farmer Funding to Drive Innovation under Canola Agronomic Research Program</title>
+            <link>https://saskoilseeds.com/farmer-funding-to-drive-innovation-and-strengthen-canola-production-under-canola-agronomic-research-program-in-2026/</link>
+            <pubDate>Wed, 04 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[Administered by the Canola Council of Canada, the CARP initiative announced a $4 million investment across 11 new research projects aimed at advancing canola productivity and mitigating production threats like pests and drought.]]></description>
+        </item>
+
+        <item>
+            <title>Canola Industry Welcomes 45Z Clean Fuel Ruling in U.S.</title>
+            <link>https://www.producer.com/crops/canola-industry-pumped-about-45z-ruling-in-u-s/</link>
+            <pubDate>Tue, 03 Feb 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[The Canola Council of Canada applauded new U.S. guidance for the 45Z Clean Fuel Production Credit, which confirms fuel made from Canadian canola as an approved pathway without indirect land-use penalties.]]></description>
+        </item>
+
+        <item>
+            <title>Farm Groups Applaud New Preliminary Agreement on Tariffs</title>
+            <link>https://www.syngenta.ca/market-news/farm-groups-applaud-new-agreement-on-tariffs</link>
+            <pubDate>Fri, 16 Jan 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Agriculture]]></category>
+            <description><![CDATA[The Canola Council of Canada and the Canadian Canola Growers Association welcomed a preliminary agreement bringing significant relief, estimating tariffs on seed drops to 15% from the previous 85%.]]></description>
+        </item>
+    </channel>
+</rss>
