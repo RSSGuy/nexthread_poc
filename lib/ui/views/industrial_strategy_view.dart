@@ -1431,7 +1431,7 @@ class _IndustrialStrategyViewState extends State<IndustrialStrategyView> with Au
     );
   }
 
-  Widget _buildDataRow(String label, String? text, {bool isHighlight = false, IconData? icon, Color? iconColor}) {
+/*  Widget _buildDataRow(String label, String? text, {bool isHighlight = false, IconData? icon, Color? iconColor}) {
     if (text == null || text.isEmpty) return const SizedBox.shrink();
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1450,5 +1450,44 @@ class _IndustrialStrategyViewState extends State<IndustrialStrategyView> with Au
         ),
       ],
     );
+  }*/
+
+  Widget _buildDataRow(String label, String? text, {bool isHighlight = false, IconData? icon, Color? iconColor}) {
+    if (text == null || text.isEmpty) return const SizedBox.shrink();
+
+    // --- NEW: Sanitize the AI text before rendering ---
+    // This catches double-escaped backslashes, forward slashes, and spaces between them.
+    final String cleanText = text
+        .replaceAll(r'\n', '\n')   // Catch literal \n
+        .replaceAll(r'/n', '\n')   // Catch literal /n
+        .replaceAll(r'\\n', '\n'); // Catch double-escaped \\n
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16.0), // Give it some breathing room
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (icon != null) ...[Icon(icon, size: 18, color: iconColor), const SizedBox(width: 8)],
+          Expanded(
+            child: RichText(
+              text: TextSpan(
+                style: const TextStyle(fontSize: 15, color: Color(0xFF334155), height: 1.6),
+                children: [
+                  TextSpan(
+                    text: "$label\n", // Moved the label to its own line for better readability
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: isHighlight ? const Color(0xFF6366F1) : const Color(0xFF0F172A),
+                    ),
+                  ),
+                  TextSpan(text: cleanText), // Use the sanitized text here!
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
+
 }

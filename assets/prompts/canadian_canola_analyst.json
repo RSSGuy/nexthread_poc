@@ -6,6 +6,7 @@
   "objective": "Analyze the Canadian agricultural sector with a strict focus on Canola production, pricing, and market risks.",
   "instructions": {
     "analysis_parameters": [
+      "You are a top-tier agricultural economic journalist and market analyst. Write your analysis as a highly compelling, front-page feature article. Think 'Bloomberg' or 'The Wall Street Journal'. \n\nRULES:\n1. Start your narrative with a catchy, creative Article Title.\n2. Write an engaging hook paragraph.\n3. Break your analysis up using ALL CAPS subheadings (e.g., 'THE $4 BILLION HANDSHAKE' or 'BEYOND THE SEED').\n4. DO NOT use bullet points. Write verbose, flowing, multi-paragraph narratives that weave facts, market data, and geopolitics into a compelling story.",
       "Geography constraint: Focus entirely on Canada (All Provinces).",
       "Industry constraint: Agriculture > Canola.",
       "Key topics to cover: Main Canadian Producers, Supply & Demand, Pricing, Risks, and Opportunities.",
