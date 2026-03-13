@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Global Nonmetallic Mineral Products Manufacturing Monitor</title>
+        <link>https://www.mineral-products-monitor.com/news</link>
+        <description>Monthly compilation of 100 news headlines and summaries reflecting the state of global manufacturing for cement, concrete, flat glass, ceramics, gypsum, and abrasives.</description>
+        <lastBuildDate>Fri, 13 Mar 2026 09:30:00 -0400</lastBuildDate>
+        <language>en-US</language>
+        <generator>Gemini-AI-Tracker</generator>
+
+        <item>
+            <title>Holcim Launches Commercial Carbon Capture at European Cement Plant</title>
+            <link>https://www.mineral-products-monitor.com/news/1</link>
+            <pubDate>Mon, 02 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The massive rotary kiln retrofit successfully captures 100% of its CO2 emissions, turning the greenhouse gas into synthetic limestone for reuse in building materials.]]></description>
+        </item>
+        <item>
+            <title>Global Clinker-to-Cement Ratios Drop to Record Lows</title>
+            <link>https://www.mineral-products-monitor.com/news/2</link>
+            <pubDate>Mon, 02 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Manufacturers drastically reduce the amount of energy-intensive burnt limestone in their mixes, replacing it with calcined clays and slag to meet strict embodied carbon limits.]]></description>
+        </item>
+        <item>
+            <title>Rotary Kilns Maximize Alternative Fuel Co-Processing</title>
+            <link>https://www.mineral-products-monitor.com/news/3</link>
+            <pubDate>Tue, 03 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Cement plants abandon coal, feeding shredded municipal waste, biomass, and scrap tires directly into 1450°C burners to fire their massive rotating calciners.]]></description>
+        </item>
+        <item>
+            <title>Limestone Calcined Clay Cement (LC3) Adopted in Latin America</title>
+            <link>https://www.mineral-products-monitor.com/news/4</link>
+            <pubDate>Tue, 03 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Argos and Cemex rapidly scale up LC3 production lines, slashing CO2 emissions by 40% while producing concrete with superior resistance to chloride penetration.]]></description>
+        </item>
+        <item>
+            <title>Precast Concrete Modular Housing Boom Drives Automation</title>
+            <link>https://www.mineral-products-monitor.com/news/5</link>
+            <pubDate>Wed, 04 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Factories pour entire apartment walls, pre-fitted with electrical conduits and plumbing, using massive tilting tables that cure the concrete overnight for next-day shipping.]]></description>
+        </item>
+        <item>
+            <title>Carbon-Injected Concrete Manufacturing Reaches Mainstream</title>
+            <link>https://www.mineral-products-monitor.com/news/6</link>
+            <pubDate>Wed, 04 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Ready-mix providers universally adopt CarbonCure technology, injecting liquid CO2 directly into the mixer trucks where it mineralizes, strengthening the concrete and trapping the carbon forever.]]></description>
+        </item>
+        <item>
+            <title>Ultra-High Performance Concrete (UHPC) Bottlenecks Ease</title>
+            <link>https://www.mineral-products-monitor.com/news/7</link>
+            <pubDate>Thu, 05 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Supply chains for the highly specialized steel micro-fibers and superplasticizers required to mix 20,000-psi concrete stabilize, allowing faster bridge beam fabrication.]]></description>
+        </item>
+        <item>
+            <title>Fly Ash Supply Plummets as Coal Power Plants Shutter</title>
+            <link>https://www.mineral-products-monitor.com/news/8</link>
+            <pubDate>Thu, 05 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Concrete mixers face severe shortages of fly ash, a critical pozzolanic binder, forcing the industry to mine historical ash landfills and develop natural pumice alternatives.]]></description>
+        </item>
+        <item>
+            <title>Concrete 3D Printing Scales from Prototypes to Subdivisions</title>
+            <link>https://www.mineral-products-monitor.com/news/9</link>
+            <pubDate>Fri, 06 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Companies like ICON deploy massive gantry extruders that pump specialized mortar continuously, 'printing' the walls of 100-home communities in Texas in a matter of weeks.]]></description>
+        </item>
+        <item>
+            <title>AI Optimization Stabilizes Cement Kiln Temperatures</title>
+            <link>https://www.mineral-products-monitor.com/news/10</link>
+            <pubDate>Fri, 06 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Machine learning algorithms take direct control of kiln induced-draft fans and fuel feeds, perfectly predicting clinker cooling dynamics to save millions in wasted natural gas.]]></description>
+        </item>
+        <item>
+            <title>Ready-Mix Fleet Electrification Demands Heavy Charging Grids</title>
+            <link>https://www.mineral-products-monitor.com/news/11</link>
+            <pubDate>Mon, 09 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Urban batch plants struggle to upgrade their electrical infrastructure to charge dozens of heavy battery-electric mixer trucks that require massive power to continuously rotate their drums.]]></description>
+        </item>
+        <item>
+            <title>Geopolymer Cement Commercialization Disrupts Traditional Portland</title>
+            <link>https://www.mineral-products-monitor.com/news/12</link>
+            <pubDate>Mon, 09 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Alkali-activated aluminosilicates that require absolutely no kiln heating gain market share, offering a 80% reduction in carbon footprint for non-structural paving and blocks.]]></description>
+        </item>
+        <item>
+            <title>Cement Mill Ball Crushing Media Upgrades to High-Chrome</title>
+            <link>https://www.mineral-products-monitor.com/news/13</link>
+            <pubDate>Tue, 10 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To grind hard clinker into ultra-fine powder, finish mills replace forged steel balls with high-chrome cast iron media, drastically reducing wear rates and preventing iron contamination.]]></description>
+        </item>
+        <item>
+            <title>Autoclaved Aerated Concrete (AAC) Block Demand Surges</title>
+            <link>https://www.mineral-products-monitor.com/news/14</link>
+            <pubDate>Tue, 10 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Factories inject aluminum powder into slurry, creating hydrogen bubbles that foam the concrete before it is baked in high-pressure steam autoclaves, yielding lightweight, highly insulating building blocks.]]></description>
+        </item>
+        <item>
+            <title>Global Sand Shortages Impact Concrete Formulation</title>
+            <link>https://www.mineral-products-monitor.com/news/15</link>
+            <pubDate>Wed, 11 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[With river sand depleted, batch plants are forced to use manufactured crushed sand (M-sand), requiring heavy doses of polycarboxylate ether (PCE) superplasticizers to maintain workability.]]></description>
+        </item>
+        <item>
+            <title>Continuous Acoustic Monitoring of Grinding Mills Prevents Overfilling</title>
+            <link>https://www.mineral-products-monitor.com/news/16</link>
+            <pubDate>Wed, 11 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Smart microphones listen to the impacts inside giant ball mills; if the sound goes dull, the system automatically slows the feed rate to prevent the mill from choking on unground rock.]]></description>
+        </item>
+        <item>
+            <title>Self-Healing Concrete Formulated with Encapsulated Bacteria</title>
+            <link>https://www.mineral-products-monitor.com/news/17</link>
+            <pubDate>Thu, 12 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Boutique precast manufacturers mix dormant Bacillus spores and calcium lactate into concrete; when water seeps into a crack, the bacteria wake up and excrete limestone to seal the fissure.]]></description>
+        </item>
+        <item>
+            <title>EU CBAM Tariff Hits Imported Cement Hard</title>
+            <link>https://www.mineral-products-monitor.com/news/18</link>
+            <pubDate>Thu, 12 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The Carbon Border Adjustment Mechanism goes into full effect, imposing massive duties on cheap, high-carbon clinker imported from North Africa, protecting green European manufacturers.]]></description>
+        </item>
+        <item>
+            <title>Concrete Pipe Extrusion Employs Dry-Cast Packerheads</title>
+            <link>https://www.mineral-products-monitor.com/news/19</link>
+            <pubDate>Fri, 13 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Sewer pipe fabricators use rotating roller-heads to intensely compact zero-slump concrete inside vertical molds, allowing the steel jacket to be stripped immediately without waiting for the concrete to cure.]]></description>
+        </item>
+        <item>
+            <title>RFID Tags Embedded Directly into Precast Elements</title>
+            <link>https://www.mineral-products-monitor.com/news/20</link>
+            <pubDate>Fri, 13 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Structural concrete columns and beams leave the factory with ruggedized microchips cast inside, allowing construction cranes to scan them for exact load-bearing specs and BIM digital-twin tracking.]]></description>
+        </item>
+
+        <item>
+            <title>Float Glass Furnace Hydrogen Transition Begins in UK</title>
+            <link>https://www.mineral-products-monitor.com/news/21</link>
+            <pubDate>Mon, 02 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Pilkington successfully runs a massive float glass line on 100% hydrogen power, melting silica sand at 1600°C without burning natural gas, though water vapor exhaust slightly alters glass chemistry.]]></description>
+        </item>
+        <item>
+            <title>Solar Photovoltaic Glass Capacity Triples in Asia</title>
+            <link>https://www.mineral-products-monitor.com/news/22</link>
+            <pubDate>Mon, 02 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[With solar panel manufacturing exploding, specialized low-iron patterned glass plants run continuous rolling lines to create the ultra-transparent protective sheets required for solar modules.]]></description>
+        </item>
+        <item>
+            <title>Architectural Low-E Coating via Magnetron Sputtering</title>
+            <link>https://www.mineral-products-monitor.com/news/23</link>
+            <pubDate>Tue, 03 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Glass fabricators utilize massive vacuum chambers to atomize silver and titanium dioxide, coating massive skyscraper windows with microscopic layers that reflect infrared heat but let light pass.]]></description>
+        </item>
+        <item>
+            <title>Electrochromic (Smart) Glass Mass Production Achieved</title>
+            <link>https://www.mineral-products-monitor.com/news/24</link>
+            <pubDate>Tue, 03 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Companies like View scale up production of dynamic windows that tint automatically under electrical voltage, eliminating the need for commercial building blinds and slashing HVAC costs.]]></description>
+        </item>
+        <item>
+            <title>Flat Glass Cullet (Scrap) Recycling Mandates Enforced</title>
+            <link>https://www.mineral-products-monitor.com/news/25</link>
+            <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To lower melting energy, float plants are required to use 30% recycled glass (cullet); however, optical sorting machines struggle to remove microscopic ceramic contaminants that cause glass to shatter during cooling.]]></description>
+        </item>
+        <item>
+            <title>Thin-Glass Extrusion Perfected for Foldable Displays</title>
+            <link>https://www.mineral-products-monitor.com/news/26</link>
+            <pubDate>Wed, 04 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Schott and Corning master the 'down-draw' fusion process, pulling continuous ribbons of aluminosilicate glass thinner than a human hair that can fold 200,000 times without breaking.]]></description>
+        </item>
+        <item>
+            <title>Automotive Windshield Lamination Automates PVB Insertion</title>
+            <link>https://www.mineral-products-monitor.com/news/27</link>
+            <pubDate>Thu, 05 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Robotic cells perfectly stretch and place the Polyvinyl Butyral plastic interlayer between two curved sheets of glass, preventing the optical distortion previously caused by manual assembly.]]></description>
+        </item>
+        <item>
+            <title>Fiberglass Insulation Blowing Machines Upgrade Binders</title>
+            <link>https://www.mineral-products-monitor.com/news/28</link>
+            <pubDate>Thu, 05 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Factories spinning molten glass into cotton-candy-like insulation completely eliminate formaldehyde-based glues, switching to plant-based starches to bind the pink batts together safely.]]></description>
+        </item>
+        <item>
+            <title>Float Bath Tin Contamination Control Highly Monitored</title>
+            <link>https://www.mineral-products-monitor.com/news/29</link>
+            <pubDate>Fri, 06 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[As molten glass floats on liquid tin to become perfectly flat, manufacturers inject exact ratios of hydrogen and nitrogen gas into the chamber to prevent the tin from oxidizing and sticking to the bottom of the glass.]]></description>
+        </item>
+        <item>
+            <title>Borosilicate Tubing Extrusion Expanded for Pharma Vials</title>
+            <link>https://www.mineral-products-monitor.com/news/30</link>
+            <pubDate>Fri, 06 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Glass foundries run Vello and Danner draw lines at maximum speed, pulling continuous glass tubes loaded with boron to supply the insatiable global demand for vaccine and biologic vials.]]></description>
+        </item>
+        <item>
+            <title>Gorilla Glass Ion-Exchange Strengthening Scaled Up</title>
+            <link>https://www.mineral-products-monitor.com/news/31</link>
+            <pubDate>Mon, 09 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Smartphone glass panels are submerged in 400°C molten potassium salt baths; the large potassium ions force their way into the glass surface, creating immense compressive stress that prevents cracking.]]></description>
+        </item>
+        <item>
+            <title>Glass Tempering Furnace Energy Recovery Implemented</title>
+            <link>https://www.mineral-products-monitor.com/news/32</link>
+            <pubDate>Mon, 09 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Facilities that heat glass to 600°C and rapidly blast it with cold air to create safety glass now capture the exhaust heat to pre-warm the next batch of raw glass entering the oven.]]></description>
+        </item>
+        <item>
+            <title>Vacuum Insulated Glazing (VIG) Assembly Streamlined</title>
+            <link>https://www.mineral-products-monitor.com/news/33</link>
+            <pubDate>Tue, 10 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Window manufacturers seal two panes of glass separated by microscopic ceramic pillars, pumping out all the air to create a vacuum gap that insulates as effectively as a solid brick wall.]]></description>
+        </item>
+        <item>
+            <title>Container Glass (Bottles) Lightweighting Reaches Physical Limits</title>
+            <link>https://www.mineral-products-monitor.com/news/34</link>
+            <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Using advanced narrow-neck press-and-blow (NNPB) forming, beer and wine bottle makers thin the glass walls to the absolute maximum, drastically reducing shipping weight while maintaining burst-pressure safety.]]></description>
+        </item>
+        <item>
+            <title>Acoustic Lamination in Architectural Glass Surges</title>
+            <link>https://www.mineral-products-monitor.com/news/35</link>
+            <pubDate>Wed, 11 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Urban high-rises increasingly specify specialized sound-dampening glass, forcing lamination lines to sandwich multiple thick layers of acoustic PVB resin between asymmetric glass thicknesses to block traffic noise.]]></description>
+        </item>
+        <item>
+            <title>Mirror Manufacturing Silvering Lines Modernized</title>
+            <link>https://www.mineral-products-monitor.com/news/36</link>
+            <pubDate>Wed, 11 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Conveyor lines that spray liquid silver nitrate and copper onto moving glass sheets are upgraded to completely eliminate lead-based backing paints, shifting to eco-friendly epoxy sealants.]]></description>
+        </item>
+        <item>
+            <title>Optical Defect Detection in Continuous Glass Ribbons</title>
+            <link>https://www.mineral-products-monitor.com/news/37</link>
+            <pubDate>Thu, 12 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[High-speed laser cameras scan the cooling glass ribbon as it exits the annealing lehr, instantly identifying microscopic bubbles or unmelted sand grains and automatically scoring the glass to be broken out as scrap.]]></description>
+        </item>
+        <item>
+            <title>Glass Bending Molds for Automotive Displays Perfected</title>
+            <link>https://www.mineral-products-monitor.com/news/38</link>
+            <pubDate>Thu, 12 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[With cars featuring massive, curved pillar-to-pillar touchscreens, glass makers utilize gravity-sag bending inside highly controlled kilns to drape hot glass over CNC-machined ceramic molds.]]></description>
+        </item>
+        <item>
+            <title>Fiber Optic Preform Manufacturing via Vapor Deposition</title>
+            <link>https://www.mineral-products-monitor.com/news/39</link>
+            <pubDate>Fri, 13 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Telecom suppliers react silicon tetrachloride gas with oxygen inside a spinning quartz tube, building up pure layers of silica glass soot that are then collapsed into a solid rod ready to be drawn into hair-thin fibers.]]></description>
+        </item>
+        <item>
+            <title>Glass Melting Energy Costs Force Market Consolidation</title>
+            <link>https://www.mineral-products-monitor.com/news/40</link>
+            <pubDate>Fri, 13 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Because glass furnaces cannot be turned off without the molten glass freezing and destroying the brickwork, independent manufacturers facing volatile natural gas prices are rapidly bought out by multi-national conglomerates.]]></description>
+        </item>
+
+        <item>
+            <title>Porcelain Tile Continuous Pressing Eliminates Steel Molds</title>
+            <link>https://www.mineral-products-monitor.com/news/41</link>
+            <pubDate>Mon, 02 Mar 2026 10:10:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Sacmi and System Ceramics install massive rolling compactors that squeeze spray-dried clay powder directly into continuous ceramic slabs up to 10 feet long, which are then cut to size before firing.]]></description>
+        </item>
+        <item>
+            <title>Digital Inkjet Printing Revolutionizes Ceramic Decorating</title>
+            <link>https://www.mineral-products-monitor.com/news/42</link>
+            <pubDate>Mon, 02 Mar 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Tile factories abandon traditional silk screens, using wide-format piezo printers to spray complex metallic and pigmented glaze inks that flawlessly mimic natural marble and distressed wood.]]></description>
+        </item>
+        <item>
+            <title>Sanitaryware Slip Casting Automation Takes Over</title>
+            <link>https://www.mineral-products-monitor.com/news/43</link>
+            <pubDate>Tue, 03 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[High-pressure casting machines inject liquid clay 'slip' into porous resin molds, using compressed air to squeeze the water out and form a solid toilet bowl in 20 minutes instead of the traditional 12 hours.]]></description>
+        </item>
+        <item>
+            <title>Robotic Glazing of Toilets and Sinks Improves Yield</title>
+            <link>https://www.mineral-products-monitor.com/news/44</link>
+            <pubDate>Tue, 03 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Six-axis robots programmed via 'lead-through' teaching replicate the exact wrist movements of master glazers, perfectly coating complex sanitaryware to prevent crawling and pinholes during the 1200°C firing.]]></description>
+        </item>
+        <item>
+            <title>Alumina Refractory Brick Shortages Hit Steel Mills</title>
+            <link>https://www.mineral-products-monitor.com/news/45</link>
+            <pubDate>Wed, 04 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The specialized, high-alumina bricks required to line the inside of steel ladles and electric arc furnaces face supply chain crunches due to a lack of calcined bauxite from Asian mines.]]></description>
+        </item>
+        <item>
+            <title>Magnesia-Carbon Brick Pressing Requires Massive Tonnage</title>
+            <link>https://www.mineral-products-monitor.com/news/46</link>
+            <pubDate>Wed, 04 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Refractory plants utilize 2,000-ton hydraulic presses to smash dead-burned magnesia and flake graphite into incredibly dense bricks that resist the corrosive basic slag floating on top of molten steel.]]></description>
+        </item>
+        <item>
+            <title>Silicon Carbide Kiln Furniture Extended Lifespans</title>
+            <link>https://www.mineral-products-monitor.com/news/47</link>
+            <pubDate>Thu, 05 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Advanced ceramics manufacturers extrude and cast lightweight SiC beams and plates used to stack heavy tiles inside tunnel kilns; the material survives thousands of trips through the fire without sagging.]]></description>
+        </item>
+        <item>
+            <title>Advanced Technical Ceramics Vital for Semiconductor Fabs</title>
+            <link>https://www.mineral-products-monitor.com/news/48</link>
+            <pubDate>Thu, 05 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Alumina and Aluminum Nitride ceramic components, machined to nanometer tolerances, are heavily demanded for plasma etching chambers because they generate zero particle dust and resist extreme fluorocarbon gases.]]></description>
+        </item>
+        <item>
+            <title>Ceramic Matrix Composites (CMC) Dominate Aerospace Turbines</title>
+            <link>https://www.mineral-products-monitor.com/news/49</link>
+            <pubDate>Fri, 06 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Manufacturers weave silicon carbide fibers and infiltrate them with ceramic vapor, creating incredibly tough, heat-resistant jet engine blades that weigh one-third as much as traditional nickel superalloys.]]></description>
+        </item>
+        <item>
+            <title>Clay Mining Environmental Permits Constrain Brick Production</title>
+            <link>https://www.mineral-products-monitor.com/news/50</link>
+            <pubDate>Fri, 06 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Heavy clay brick and roof tile manufacturers face raw material shortages as local zoning boards increasingly block the expansion of open-pit clay quarries near expanding suburban boundaries.]]></description>
+        </item>
+        <item>
+            <title>Firing Shrinkage Simulation Software Predicts Ceramic Warpage</title>
+            <link>https://www.mineral-products-monitor.com/news/51</link>
+            <pubDate>Mon, 09 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Because wet clay shrinks up to 12% when fired, engineers use finite element analysis (FEA) to redesign molds so large, complex ceramic parts warp into their final, perfect dimensions during the bake.]]></description>
+        </item>
+        <item>
+            <title>Ceramic Proppants (Fracking Sand) Production Moderates</title>
+            <link>https://www.mineral-products-monitor.com/news/52</link>
+            <pubDate>Mon, 09 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Plants spraying and baking bauxite powder into perfectly round, indestructible ceramic beads see orders flatten as the oil industry shifts toward cheaper, lower-performance natural silica sand for well stimulation.]]></description>
+        </item>
+        <item>
+            <title>Piezoelectric Ceramic Disc Pressing Highly Automated</title>
+            <link>https://www.mineral-products-monitor.com/news/53</link>
+            <pubDate>Tue, 10 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Lead zirconate titanate (PZT) powder is pressed and fired in cleanrooms, then exposed to massive electrical fields to align the internal crystals, creating the sensors used in medical ultrasound and naval sonar.]]></description>
+        </item>
+        <item>
+            <title>Porcelain Enamel Frit Smelting Centralizes</title>
+            <link>https://www.mineral-products-monitor.com/news/54</link>
+            <pubDate>Tue, 10 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The specialized glass-ceramic powder melted onto steel bathtubs and ovens is produced by melting quartz and borax at 1400°C, then violently quenching it in cold water to shatter it into 'frit' for milling.]]></description>
+        </item>
+        <item>
+            <title>Ceramic Tile Anti-Slip Nanocoatings Gain Popularity</title>
+            <link>https://www.mineral-products-monitor.com/news/55</link>
+            <pubDate>Wed, 11 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Manufacturers spray microscopic titanium dioxide and silica particles onto tiles just before firing; the resulting invisible texture grips shoes when wet, exceeding new commercial slip-resistance codes.]]></description>
+        </item>
+        <item>
+            <title>Heavy Clay Brick Extrusion Lines Increase Vacuum De-Airing</title>
+            <link>https://www.mineral-products-monitor.com/news/56</link>
+            <pubDate>Wed, 11 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To prevent traditional building bricks from exploding in the kiln, massive augers push the wet clay through intense vacuum chambers to rip out all trapped air before extruding the final rectangular column.]]></description>
+        </item>
+        <item>
+            <title>Refractory Castables (Monolithics) Mixing Overcomes Brick Usage</title>
+            <link>https://www.mineral-products-monitor.com/news/57</link>
+            <pubDate>Thu, 12 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Industrial foundries increasingly abandon laying individual firebricks, instead pumping liquid, cement-like refractory castables directly against formwork to quickly line ladles and furnace floors.]]></description>
+        </item>
+        <item>
+            <title>Isostatic Pressing of Technical Ceramics Reaches Massive Scale</title>
+            <link>https://www.mineral-products-monitor.com/news/58</link>
+            <pubDate>Thu, 12 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To create perfectly uniform spark plug insulators and hip-joint balls, ceramic powder is placed in a flexible rubber mold and submerged in water pressurized to 30,000 PSI, crushing it evenly from all sides.]]></description>
+        </item>
+        <item>
+            <title>High-Voltage Ceramic Insulator Firing Requires Slow Cooling</title>
+            <link>https://www.mineral-products-monitor.com/news/59</link>
+            <pubDate>Fri, 13 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The massive, shed-shaped porcelain insulators used on power grid transmission towers must spend days cooling in the kiln to prevent 'dunting'—microscopic thermal cracks that cause catastrophic electrical arcing.]]></description>
+        </item>
+        <item>
+            <title>Microwave Assisted Ceramic Sintering Drastically Cuts Cycle Times</title>
+            <link>https://www.mineral-products-monitor.com/news/60</link>
+            <pubDate>Fri, 13 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Advanced ceramic factories abandon gas kilns, using high-power microwaves to heat the ceramic part internally; this prevents the outside from hardening before the inside, eliminating trapped porosity.]]></description>
+        </item>
+
+        <item>
+            <title>Synthetic Gypsum (FGD) Supply Threatened by Coal Plant Closures</title>
+            <link>https://www.mineral-products-monitor.com/news/61</link>
+            <pubDate>Mon, 02 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Drywall manufacturers who relied heavily on Flue-Gas Desulfurization gypsum—a byproduct of scrubbing coal smokestacks—are forced to reopen dormant natural gypsum mines as coal power is phased out.]]></description>
+        </item>
+        <item>
+            <title>Drywall Manufacturing Line Speeds Hit 600 Feet Per Minute</title>
+            <link>https://www.mineral-products-monitor.com/news/62</link>
+            <pubDate>Mon, 02 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Plasterboard factories heavily automate the continuous sandwiching of wet stucco between heavy paper rolls, utilizing massive multi-deck drying ovens to cure the endless ribbon of drywall at blistering speeds.]]></description>
+        </item>
+        <item>
+            <title>Plasterboard Weight Reduction via Foaming Agents</title>
+            <link>https://www.mineral-products-monitor.com/news/63</link>
+            <pubDate>Tue, 03 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To save shipping costs and ease contractor fatigue, gypsum manufacturers inject soapy chemical foams into the wet stucco mix, creating microscopic air voids that reduce the board's weight by 20% without losing strength.]]></description>
+        </item>
+        <item>
+            <title>Moisture-Resistant Drywall Utilizes Fiberglass Facings</title>
+            <link>https://www.mineral-products-monitor.com/news/64</link>
+            <pubDate>Tue, 03 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[For bathroom and exterior sheathing, manufacturers completely replace the traditional cellulose paper backing with inorganic fiberglass mats, completely starving mold of its food source.]]></description>
+        </item>
+        <item>
+            <title>Lime Kiln Electrification Pilots Begin in Scandinavia</title>
+            <link>https://www.mineral-products-monitor.com/news/65</link>
+            <pubDate>Wed, 04 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The energy-intensive process of burning limestone to create quicklime (calcium oxide) tests massive electrical plasma-torches to replace coal and gas burners, cutting direct CO2 emissions significantly.]]></description>
+        </item>
+        <item>
+            <title>Quicklime Slaking Plant Automation Improves Consistency</title>
+            <link>https://www.mineral-products-monitor.com/news/66</link>
+            <pubDate>Wed, 04 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Facilities that violently react dry quicklime with water to create hydrated lime deploy advanced thermal sensors to perfectly control the boiling, exothermic reaction, ensuring a fine, dry powder output.]]></description>
+        </item>
+        <item>
+            <title>Hydrated Lime Demand Driven by Municipal Water Treatment</title>
+            <link>https://www.mineral-products-monitor.com/news/67</link>
+            <pubDate>Thu, 05 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Mineral processors scale up hydrated lime output to feed city water plants, which use the alkaline chemical to adjust pH, soften water, and precipitate out heavy metal contaminants.]]></description>
+        </item>
+        <item>
+            <title>Abrasive Grinding Wheel Resin Bonding Optimized</title>
+            <link>https://www.mineral-products-monitor.com/news/68</link>
+            <pubDate>Thu, 05 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Manufacturers mix aluminum oxide grits with phenolic resins and fiberglass mesh, pressing and baking the discs under extreme pressure to create cutting wheels that won't shatter at 10,000 RPM.]]></description>
+        </item>
+        <item>
+            <title>Sandpaper Jumbo Roll Coating Employs Electrostatic Deposition</title>
+            <link>https://www.mineral-products-monitor.com/news/69</link>
+            <pubDate>Fri, 06 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To ensure every abrasive grain cuts sharply, coated abrasive plants pass glued paper over an electrically charged plate, causing the silicon carbide grains to stand straight up before the glue dries.]]></description>
+        </item>
+        <item>
+            <title>Diamond Abrasive Wire Manufacturing Supports Silicon Fabs</title>
+            <link>https://www.mineral-products-monitor.com/news/70</link>
+            <pubDate>Fri, 06 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Specialized plants utilize nickel-electroplating to bond microscopic industrial diamonds onto miles of high-tensile steel wire, used by the semiconductor industry to slice raw silicon ingots into thin wafers.]]></description>
+        </item>
+        <item>
+            <title>Precipitated Calcium Carbonate (PCC) Plants Built Beside Paper Mills</title>
+            <link>https://www.mineral-products-monitor.com/news/71</link>
+            <pubDate>Mon, 09 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Instead of digging it out of the ground, chemical processors bubble CO2 through milk-of-lime to synthesize perfectly uniform calcium carbonate crystals, piping the bright white slurry directly into paper machines as a filler.]]></description>
+        </item>
+        <item>
+            <title>Mineral Wool (Rock Wool) Cupola Furnaces Adopt Oxygen Enrichment</title>
+            <link>https://www.mineral-products-monitor.com/news/72</link>
+            <pubDate>Mon, 09 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Factories melting basalt rock and steel slag at 1500°C inject pure oxygen into their coke-fired furnaces to increase melting capacity, spinning the molten lava into fireproof acoustic insulation batts.]]></description>
+        </item>
+        <item>
+            <title>Vermiculite Exfoliation Expansion Limited by Furnace Heat</title>
+            <link>https://www.mineral-products-monitor.com/news/73</link>
+            <pubDate>Tue, 10 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Processors run raw mica-like ore through 1000°C vertical furnaces; the trapped water instantly flashes to steam, blowing the mineral apart like an accordion into the lightweight flakes used in potting soil.]]></description>
+        </item>
+        <item>
+            <title>Perlite Popping Kilns Serve Cryogenic Insulation Markets</title>
+            <link>https://www.mineral-products-monitor.com/news/74</link>
+            <pubDate>Tue, 10 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Volcanic glass is dropped into specialized vertical gas kilns, expanding up to 20 times its original volume to create brilliant white, microscopic glass bubbles packed into the walls of LNG storage tanks.]]></description>
+        </item>
+        <item>
+            <title>Mica Processing Consolidates for Fireproof Cables</title>
+            <link>https://www.mineral-products-monitor.com/news/75</link>
+            <pubDate>Wed, 11 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The splitting and grinding of muscovite and phlogopite mica into flexible, heat-resistant paper tapes ramps up to insulate the mission-critical electrical cables required for hospital and skyscraper fire safety systems.]]></description>
+        </item>
+        <item>
+            <title>Talc Milling and Micronization Requires Strict Air Classifiers</title>
+            <link>https://www.mineral-products-monitor.com/news/76</link>
+            <pubDate>Wed, 11 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Facilities grinding talc into microscopic powder for plastics and cosmetics use heavy cyclonic air separators to guarantee precise particle size distribution, discarding any coarse grit.]]></description>
+        </item>
+        <item>
+            <title>Bentonite Clay Expansion Fuels Foundry Sand Binders</title>
+            <link>https://www.mineral-products-monitor.com/news/77</link>
+            <pubDate>Thu, 12 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Sodium bentonite milling operations run at max capacity, supplying metal-casting foundries with the highly swelling clay required to bind silica sand molds together so they don't collapse when poured with molten iron.]]></description>
+        </item>
+        <item>
+            <title>Diatomaceous Earth Calcining Purifies Beer and Oils</title>
+            <link>https://www.mineral-products-monitor.com/news/78</link>
+            <pubDate>Thu, 12 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The fossilized remains of microscopic algae are mined, crushed, and roasted in rotary kilns with fluxing agents, creating an incredibly porous powder used to filter impurities out of commercial beverages and cooking oils.]]></description>
+        </item>
+        <item>
+            <title>Asbestos Litigation Shapes Legacy Mineral Processors</title>
+            <link>https://www.mineral-products-monitor.com/news/79</link>
+            <pubDate>Fri, 13 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Decades after ceasing production, massive nonmetallic mineral conglomerates continue to spin off specialized 'bad bank' subsidiaries to manage billions in liability payouts from historic asbestos-laden insulation and floor tiles.]]></description>
+        </item>
+        <item>
+            <title>Fluorspar Acid-Grade Refining Feeds Aluminum and Chemical Industries</title>
+            <link>https://www.mineral-products-monitor.com/news/80</link>
+            <pubDate>Fri, 13 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Mineral processing plants use heavy froth flotation to upgrade mined fluorite ore into 97% pure 'acidspar', the critical feedstock required to synthesize hydrofluoric acid for Teflon and aluminum smelting.]]></description>
+        </item>
+
+        <item>
+            <title>Graphite Electrode Machining Faces Pitch Needle Coke Shortages</title>
+            <link>https://www.mineral-products-monitor.com/news/81</link>
+            <pubDate>Mon, 02 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Facilities that bake, pitch-impregnate, and graphitize massive carbon cylinders at 3000°C struggle to source high-grade raw coke, threatening the global supply of electrodes used to melt scrap steel.]]></description>
+        </item>
+        <item>
+            <title>Barite Grinding Operations Expand for Deepwater Drilling Muds</title>
+            <link>https://www.mineral-products-monitor.com/news/82</link>
+            <pubDate>Mon, 02 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Mineral millers heavily crush dense barium sulfate rock into a fine powder that the oil and gas industry pumps down into wells to counter extreme subterranean pressures and prevent blowouts.]]></description>
+        </item>
+        <item>
+            <title>Pumice Processing Sustains Lightweight Concrete Demand</title>
+            <link>https://www.mineral-products-monitor.com/news/83</link>
+            <pubDate>Tue, 03 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Operations crushing and screening natural volcanic froth see surging demand from precast manufacturers looking to lighten concrete panels without losing structural fire resistance.]]></description>
+        </item>
+        <item>
+            <title>Nonmetallic Mineral Recycling Standardizes Across Europe</title>
+            <link>https://www.mineral-products-monitor.com/news/84</link>
+            <pubDate>Tue, 03 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[New construction mandates force demolition crews to crush concrete, brick, and glass on-site, perfectly sorting the aggregate for immediate reuse in road base and new building materials.]]></description>
+        </item>
+        <item>
+            <title>Silica Sand Washing Plants Implement Water Recovery Hydrocyclones</title>
+            <link>https://www.mineral-products-monitor.com/news/85</link>
+            <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Facilities purifying sand for glassmaking install massive centrifugal clarifiers and filter presses, extracting clay impurities while recycling 95% of the wash water to comply with strict drought regulations.]]></description>
+        </item>
+        <item>
+            <title>Kaolin Extrusion for Paper Coating Faces Digital Disruption</title>
+            <link>https://www.mineral-products-monitor.com/news/86</link>
+            <pubDate>Wed, 04 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Mines processing the white china clay historically used to give magazine paper its glossy finish pivot heavily, re-purposing their spray dryers to sell the mineral as a functional filler in paints and plastics.]]></description>
+        </item>
+        <item>
+            <title>Magnesite Calcining Operations Driven by Agricultural Demand</title>
+            <link>https://www.mineral-products-monitor.com/news/87</link>
+            <pubDate>Thu, 05 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Beyond refractory bricks, rotary kilns baking magnesium carbonate at lower temperatures see booming business supplying reactive magnesia powder to neutralize acidic farm soils and supplement cattle feed.]]></description>
+        </item>
+        <item>
+            <title>Wollastonite Flake Processing Demands Careful Delamination</title>
+            <link>https://www.mineral-products-monitor.com/news/88</link>
+            <pubDate>Thu, 05 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Milling operations handling the needle-like calcium silicate mineral must use specialized opposing air-jets to separate the fibers without breaking them, preserving the physical reinforcement properties used in automotive plastics.]]></description>
+        </item>
+        <item>
+            <title>Acoustic Ceiling Tile Manufacturing Shifts to Wet-Felted Slag Wool</title>
+            <link>https://www.mineral-products-monitor.com/news/89</link>
+            <pubDate>Fri, 06 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Building product manufacturers blend spun mineral wool, perlite, and starch in massive vats of water, pouring the slurry onto Fourdrinier wire screens to create highly sound-absorbent drop-ceiling panels.]]></description>
+        </item>
+        <item>
+            <title>Foundry Sand Binders Utilize Furan Resins</title>
+            <link>https://www.mineral-products-monitor.com/news/90</link>
+            <pubDate>Fri, 06 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Facilities coating silica sand for heavy engine block casting adopt acid-curing organic resins that harden instantly at room temperature, eliminating the need to bake the massive sand molds in ovens.]]></description>
+        </item>
+        <item>
+            <title>Feldspar Beneficiation Relies on High-Intensity Magnetic Separation</title>
+            <link>https://www.mineral-products-monitor.com/news/91</link>
+            <pubDate>Mon, 09 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To supply the ceramic and glass industries, mineral processors run crushed feldspar through powerful electromagnets to rip out microscopic iron-oxide particles that would otherwise cause unsightly brown speckles in white porcelain.]]></description>
+        </item>
+        <item>
+            <title>Strontium Carbonate Recovery Targets Flat Panel Glass</title>
+            <link>https://www.mineral-products-monitor.com/news/92</link>
+            <pubDate>Mon, 09 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Chemical processors react celestine ore to produce the heavy strontium compounds required to safely absorb X-ray radiation emitted by the cathode ray tubes still manufactured for specialized medical monitors.]]></description>
+        </item>
+        <item>
+            <title>Industrial Garnet Sand Abrasives Used in Waterjet Cutting</title>
+            <link>https://www.mineral-products-monitor.com/news/93</link>
+            <pubDate>Tue, 10 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Mining and milling operations supplying the aerospace fabrication sector aggressively classify hard almandine garnet sand into incredibly precise grit sizes to prevent clogging in 90,000-PSI waterjet cutting nozzles.]]></description>
+        </item>
+        <item>
+            <title>Sepiolite Processing Expands for Industrial Absorbents</title>
+            <link>https://www.mineral-products-monitor.com/news/94</link>
+            <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[The highly porous, lightweight clay is heavily mined, dried, and granularized in Spain to produce massive quantities of industrial spill-absorbents and premium clumping pet litter.]]></description>
+        </item>
+        <item>
+            <title>Roofing Granules Utilize Ceramic Color-Coating</title>
+            <link>https://www.mineral-products-monitor.com/news/95</link>
+            <pubDate>Wed, 11 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To protect asphalt shingles from UV degradation, crushed rock is mixed with clay and mineral pigments, then fired in rotary kilns at 1000°F to permanently bake the color onto the stone.]]></description>
+        </item>
+        <item>
+            <title>Heavy-Media Separation Perfects Aggregate Grading</title>
+            <link>https://www.mineral-products-monitor.com/news/96</link>
+            <pubDate>Wed, 11 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Construction aggregate plants use ferrosilicon slurries to create a heavy liquid bath; lightweight deleterious materials like shale and coal float to the top and are discarded, leaving only pure, dense limestone for high-strength concrete.]]></description>
+        </item>
+        <item>
+            <title>Rail Logistics Dictate Inland Cement Plant Viability</title>
+            <link>https://www.mineral-products-monitor.com/news/97</link>
+            <pubDate>Thu, 12 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Because the bulk value of cement and crushed rock is incredibly low relative to its weight, inland manufacturing facilities become instantly unprofitable if local rail-freight rates increase by even fractions of a cent per ton-mile.]]></description>
+        </item>
+        <item>
+            <title>Sulfur-Polymer Concrete Introduced in Highly Corrosive Environments</title>
+            <link>https://www.mineral-products-monitor.com/news/98</link>
+            <pubDate>Thu, 12 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Instead of portland cement and water, specialized precast plants mix heated aggregates with molten elemental sulfur and plasticizers, casting concrete pipes that are 100% immune to the sulfuric acid generated in municipal sewers.]]></description>
+        </item>
+        <item>
+            <title>Pneumatic Conveying Systems Standardized in Mineral Powders</title>
+            <link>https://www.mineral-products-monitor.com/news/99</link>
+            <pubDate>Fri, 13 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[To prevent hazardous dust clouds inside factories handling lime, talc, and cement, operators utilize dense-phase air compressors to blow tons of dry powder through enclosed steel pipes directly into mixing silos.]]></description>
+        </item>
+        <item>
+            <title>Nonmetallic Minerals Sector Forecast Predicts Steady 5% CAGR</title>
+            <link>https://www.mineral-products-monitor.com/news/100</link>
+            <pubDate>Fri, 13 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Nonmetallic Mineral Products]]></category>
+            <description><![CDATA[Driven by massive US and European infrastructure spending bills and the urbanization of India, the foundational manufacturing of stone, clay, glass, and concrete components looks incredibly robust through the end of the decade.]]></description>
+        </item>
+
+    </channel>
+</rss>
