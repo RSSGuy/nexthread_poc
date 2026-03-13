@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Global Fabricated Metal Products News Monitor</title>
+        <link>https://www.fabricated-metals-monitor.com/news</link>
+        <description>Monthly compilation of 100 news headlines and summaries reflecting the state of global manufacturing for stamping, forging, CNC machining, structural metals, and hardware.</description>
+        <lastBuildDate>Fri, 13 Mar 2026 09:30:00 -0400</lastBuildDate>
+        <language>en-US</language>
+        <generator>Gemini-AI-Tracker</generator>
+
+        <item>
+            <title>5-Axis CNC Milling Centers See Record Installations in US Job Shops</title>
+            <link>https://www.fabricated-metals-monitor.com/news/1</link>
+            <pubDate>Mon, 02 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Machine shops aggressively upgrade from 3-axis setups to reduce multiple part-clamping operations, improving cycle times for complex aerospace and medical components.]]></description>
+        </item>
+        <item>
+            <title>Cobot Machine Tending Solves 3rd Shift Labor Shortages</title>
+            <link>https://www.fabricated-metals-monitor.com/news/2</link>
+            <pubDate>Mon, 02 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators deploy collaborative robots to load and unload CNC lathes overnight, allowing facilities to achieve 'lights-out' manufacturing without hiring additional human operators.]]></description>
+        </item>
+        <item>
+            <title>Swiss-Style Lathe Demand Surges for Micro-Machining</title>
+            <link>https://www.fabricated-metals-monitor.com/news/3</link>
+            <pubDate>Tue, 03 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[The boom in implantable medical devices drives massive orders for sliding-headstock lathes capable of turning titanium parts down to sub-millimeter diameters.]]></description>
+        </item>
+        <item>
+            <title>AI-Driven Tool Wear Prediction Cuts Spindle Downtime</title>
+            <link>https://www.fabricated-metals-monitor.com/news/4</link>
+            <pubDate>Tue, 03 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Acoustic and vibration sensors mounted on end-mills successfully predict exactly when a carbide cutter will break, prompting automated tool changes mid-cycle.]]></description>
+        </item>
+        <item>
+            <title>Titanium Machining Coolant Costs Spike</title>
+            <link>https://www.fabricated-metals-monitor.com/news/5</link>
+            <pubDate>Wed, 04 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[High-pressure fluid delivery systems require specialized, expensive synthetic coolants to prevent titanium chips from catching fire during high-speed aggressive milling.]]></description>
+        </item>
+        <item>
+            <title>Automated Coordinate Measuring Machines (CMM) Move In-Line</title>
+            <link>https://www.fabricated-metals-monitor.com/news/6</link>
+            <pubDate>Wed, 04 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Quality assurance shifts from isolated cleanrooms directly onto the shop floor, with robotic arms placing hot, freshly machined parts straight onto laser-scanning metrology beds.]]></description>
+        </item>
+        <item>
+            <title>Workholding Fixtures Now Routinely 3D Printed</title>
+            <link>https://www.fabricated-metals-monitor.com/news/7</link>
+            <pubDate>Thu, 05 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Rather than machining custom aluminum soft-jaws, CNC programmers use carbon-fiber reinforced nylon printers to quickly create complex, non-marring vice grips overnight.]]></description>
+        </item>
+        <item>
+            <title>Wire EDM Capacity Bottlenecks Aerospace Component Delivery</title>
+            <link>https://www.fabricated-metals-monitor.com/news/8</link>
+            <pubDate>Thu, 05 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Electrical Discharge Machining shops struggle to keep up with orders for turbine blade roots, as the slow, ultra-precise spark-erosion process cannot be easily sped up.]]></description>
+        </item>
+        <item>
+            <title>Private Equity Roll-Ups Consolidate Regional Machine Shops</title>
+            <link>https://www.fabricated-metals-monitor.com/news/9</link>
+            <pubDate>Fri, 06 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Investment firms aggressively acquire retiring 'mom and pop' CNC fabricators, combining them into massive precision engineering conglomerates with unified ERP systems.]]></description>
+        </item>
+        <item>
+            <title>Aluminum Extrusion Machining Cells Fully Automated</title>
+            <link>https://www.fabricated-metals-monitor.com/news/10</link>
+            <pubDate>Fri, 06 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Facilities producing framing for solar panels and EV battery trays utilize long-bed CNC routers combined with automatic cutoff saws to process 20-foot extrusions seamlessly.]]></description>
+        </item>
+        <item>
+            <title>High-Speed Steel (HSS) Cutters Replaced by Advanced Ceramics</title>
+            <link>https://www.fabricated-metals-monitor.com/news/11</link>
+            <pubDate>Mon, 09 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[To deal with harder modern superalloys, fabricators shift tooling budgets toward ceramic inserts that actually perform better as friction temperatures rise.]]></description>
+        </item>
+        <item>
+            <title>Swarf and Metal Chip Briquetting Increases Scrap Value</title>
+            <link>https://www.fabricated-metals-monitor.com/news/12</link>
+            <pubDate>Mon, 09 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Machining centers install hydraulic presses that squeeze loose metal shavings into dense pucks, recovering expensive cutting fluids and selling the dry metal back to foundries at a premium.]]></description>
+        </item>
+        <item>
+            <title>Digital Twins Optimize CNC Toolpaths Before Metal is Cut</title>
+            <link>https://www.fabricated-metals-monitor.com/news/13</link>
+            <pubDate>Tue, 10 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Advanced CAM software perfectly simulates machine kinematics, completely eliminating physical 'dry runs' and preventing costly spindle crashes.]]></description>
+        </item>
+        <item>
+            <title>Vibratory Trough Finishing Replaces Manual Deburring</title>
+            <link>https://www.fabricated-metals-monitor.com/news/14</link>
+            <pubDate>Tue, 10 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Shops processing thousands of small milled parts abandon hand-filing, using massive vibrating tubs of ceramic media to automatically smooth sharp machined edges.]]></description>
+        </item>
+        <item>
+            <title>Gun Drilling Deep-Hole Machining Sees Defense Contract Bump</title>
+            <link>https://www.fabricated-metals-monitor.com/news/15</link>
+            <pubDate>Wed, 11 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Specialized shops capable of drilling perfectly straight, extremely deep holes through hardened steel billets run at maximum capacity to supply artillery and hydraulic cylinder components.]]></description>
+        </item>
+        <item>
+            <title>Reshoring Drives Expansion of Contract Machining in Mexico</title>
+            <link>https://www.fabricated-metals-monitor.com/news/16</link>
+            <pubDate>Wed, 11 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[North American OEMs continue shifting precision metal part sourcing from Shenzhen to Monterrey, seeking shorter supply chains and tariff avoidance.]]></description>
+        </item>
+        <item>
+            <title>Broaching Operations Upgraded with Servo-Driven Machines</title>
+            <link>https://www.fabricated-metals-monitor.com/news/17</link>
+            <pubDate>Thu, 12 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[The traditional hydraulic systems used to cut internal keyways and splines in gears are replaced by electromechanical servo-drives for better precision and lower energy use.]]></description>
+        </item>
+        <item>
+            <title>Pallet Pools Enable Uninterrupted Machining of Mixed Parts</title>
+            <link>https://www.fabricated-metals-monitor.com/news/18</link>
+            <pubDate>Thu, 12 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[High-mix, low-volume job shops utilize automated storage racks that feed dozens of pre-fixtured workpieces into horizontal machining centers continuously.]]></description>
+        </item>
+        <item>
+            <title>Magnesium Machining Requires Strict Fire Suppression Protocols</title>
+            <link>https://www.fabricated-metals-monitor.com/news/19</link>
+            <pubDate>Fri, 13 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[As automotive demand for lightweight magnesium parts grows, CNC shops must install Class D fire extinguishers and wet-dust collectors to prevent catastrophic explosions.]]></description>
+        </item>
+        <item>
+            <title>Water-Soluble Coolants Heavily Regulated for Biocide Usage</title>
+            <link>https://www.fabricated-metals-monitor.com/news/20</link>
+            <pubDate>Fri, 13 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Environmental agencies clamp down on the toxic chemicals used to prevent bacteria growth in machining fluid sumps, forcing shops to adopt UV light purification systems.]]></description>
+        </item>
+
+        <item>
+            <title>Progressive Die Stamping Speeds Hit 1,200 Strokes Per Minute</title>
+            <link>https://www.fabricated-metals-monitor.com/news/21</link>
+            <pubDate>Mon, 02 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Manufacturers producing electrical connectors and motor laminations utilize hyper-fast, vibration-dampened servo presses to stamp parts from metal coils at blinding speeds.]]></description>
+        </item>
+        <item>
+            <title>Closed-Die Forging Bottlenecks Aerospace Landing Gear Supply</title>
+            <link>https://www.fabricated-metals-monitor.com/news/22</link>
+            <pubDate>Mon, 02 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[The massive 50,000-ton hydraulic presses required to squeeze glowing titanium into solid, fatigue-resistant shapes are booked out for over two years globally.]]></description>
+        </item>
+        <item>
+            <title>Mega-Casting Spreads Beyond Automotive OEMs to Tier 1s</title>
+            <link>https://www.fabricated-metals-monitor.com/news/23</link>
+            <pubDate>Tue, 03 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Major fabricated metal suppliers purchase 6,000-ton locking force die-casting machines from Idra and Buhler to produce massive single-piece aluminum subframes.]]></description>
+        </item>
+        <item>
+            <title>Hot Stamping (Press Hardening) Dominates EV Crash Structures</title>
+            <link>https://www.fabricated-metals-monitor.com/news/24</link>
+            <pubDate>Tue, 03 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Sheet metal is heated to 900°C, formed, and rapidly quenched inside the stamping die, creating ultra-high-strength steel pillars essential for battery protection.]]></description>
+        </item>
+        <item>
+            <title>Fineblanking Presses Used for Precision Gear Manufacturing</title>
+            <link>https://www.fabricated-metals-monitor.com/news/25</link>
+            <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators replace slow CNC milling with specialized stamping that applies massive V-ring clamping pressure, shearing thick metal plates with perfectly smooth, tear-free edges.]]></description>
+        </item>
+        <item>
+            <title>Lubricant-Free Stamping Dies Cut Down on Part Washing</title>
+            <link>https://www.fabricated-metals-monitor.com/news/26</link>
+            <pubDate>Wed, 04 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Tooling coated in diamond-like carbon (DLC) allows metal forming without messy drawing oils, allowing stamped parts to move directly to welding and painting.]]></description>
+        </item>
+        <item>
+            <title>Induction Heating Upgrades Traditional Drop Forging</title>
+            <link>https://www.fabricated-metals-monitor.com/news/27</link>
+            <pubDate>Thu, 05 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Forge shops replace open gas furnaces with electromagnetic induction coils to heat steel billets rapidly and evenly, reducing scaling and saving significant energy.]]></description>
+        </item>
+        <item>
+            <title>Die Wear Sensors Prevent Bad Stamping Runs</title>
+            <link>https://www.fabricated-metals-monitor.com/news/28</link>
+            <pubDate>Thu, 05 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[In-die tonnage monitors instantly detect if a scrap 'slug' is left behind or a punch chips, stopping the 1,000-ton press before it creates thousands of defective parts.]]></description>
+        </item>
+        <item>
+            <title>Investment Casting Foundries 3D Print Wax Patterns</title>
+            <link>https://www.fabricated-metals-monitor.com/news/29</link>
+            <pubDate>Fri, 06 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[For low-volume aerospace parts, foundries bypass expensive aluminum injection molds entirely, directly printing the sacrificial wax patterns used to create ceramic casting shells.]]></description>
+        </item>
+        <item>
+            <title>Deep Drawing Aluminum Causes Tearing Challenges</title>
+            <link>https://www.fabricated-metals-monitor.com/news/30</link>
+            <pubDate>Fri, 06 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators producing seamless beverage cans and automotive battery casings struggle to dial in blank-holder pressure to stretch aluminum deeply without fracturing the grain structure.]]></description>
+        </item>
+        <item>
+            <title>Sand Casting Facilities Automate Core Shooting</title>
+            <link>https://www.fabricated-metals-monitor.com/news/31</link>
+            <pubDate>Mon, 09 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Iron and steel foundries deploy robotic core-shooters to rapidly pack resin-coated sand into molds, accelerating the production of complex engine blocks and pump housings.]]></description>
+        </item>
+        <item>
+            <title>Transfer Press Automation Handles Massive Body Panels</title>
+            <link>https://www.fabricated-metals-monitor.com/news/32</link>
+            <pubDate>Mon, 09 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Instead of a single continuous die, massive stamping lines use high-speed robotic cross-bars to move giant truck-bed panels between five separate stamping stations in seconds.]]></description>
+        </item>
+        <item>
+            <title>Coil Feeding Equipment Upgraded for Heavy Gauge Steel</title>
+            <link>https://www.fabricated-metals-monitor.com/news/33</link>
+            <pubDate>Tue, 10 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Stamping shops invest in heavy-duty straighteners and uncoilers to handle thick, 40,000-pound master coils of steel without warping or stalling the press feed.]]></description>
+        </item>
+        <item>
+            <title>Cold Heading Operations Dominate Fastener Production</title>
+            <link>https://www.fabricated-metals-monitor.com/news/34</link>
+            <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[High-speed multi-station formers violently smash room-temperature wire rod into screws and bolts at 400 pieces a minute, achieving massive material savings over machining.]]></description>
+        </item>
+        <item>
+            <title>Hydroforming Shapes Complex Exhaust and Structural Tubes</title>
+            <link>https://www.fabricated-metals-monitor.com/news/35</link>
+            <pubDate>Wed, 11 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators seal steel tubing inside a die and pump it full of high-pressure water, ballooning the metal into complex, asymmetrical shapes impossible to achieve with traditional bending.]]></description>
+        </item>
+        <item>
+            <title>Press Brake Safety Relies on Advanced Laser Curtains</title>
+            <link>https://www.fabricated-metals-monitor.com/news/36</link>
+            <pubDate>Wed, 11 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[To prevent horrific crush injuries, sheet metal bending operators are protected by laser arrays that instantly stop the descending ram if a finger breaks the beam plane near the V-die.]]></description>
+        </item>
+        <item>
+            <title>Scrap Skeleton Optimization Reduces Stamping Waste</title>
+            <link>https://www.fabricated-metals-monitor.com/news/37</link>
+            <pubDate>Thu, 12 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Engineers utilize advanced nesting software to stagger part layouts on the metal strip, reducing the leftover web of scrap metal by 12% and saving thousands in material costs.]]></description>
+        </item>
+        <item>
+            <title>Forged Aluminum Control Arms Replace Cast Iron</title>
+            <link>https://www.fabricated-metals-monitor.com/news/38</link>
+            <pubDate>Thu, 12 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Automotive suspension fabricators shift heavily to forged aluminum, utilizing massive mechanical presses to smash heated billets into strong, lightweight wishbones.]]></description>
+        </item>
+        <item>
+            <title>Die Casting Lubricant Buildup Cleaned via Dry Ice Blasting</title>
+            <link>https://www.fabricated-metals-monitor.com/news/39</link>
+            <pubDate>Fri, 13 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Maintenance crews blast frozen CO2 pellets into complex steel molds to strip baked-on release agents without abrasive wear, keeping mold tolerances perfect.]]></description>
+        </item>
+        <item>
+            <title>Centrifugal Casting Used for Seamless Titanium Pipes</title>
+            <link>https://www.fabricated-metals-monitor.com/news/40</link>
+            <pubDate>Fri, 13 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Specialized foundries pour molten metal into rapidly spinning cylindrical molds, using G-forces to push impurities to the center and create flawless, high-pressure chemical piping.]]></description>
+        </item>
+
+        <item>
+            <title>Structural Steel Fabrication Booms for Data Center Construction</title>
+            <link>https://www.fabricated-metals-monitor.com/news/41</link>
+            <pubDate>Mon, 02 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabrication yards run double shifts sawing, drilling, and welding massive I-beams to supply the skeletal frameworks for hyper-scale AI server facilities.]]></description>
+        </item>
+        <item>
+            <title>Laser Hybrid Welding Dominates Heavy Plate Fabrication</title>
+            <link>https://www.fabricated-metals-monitor.com/news/42</link>
+            <pubDate>Mon, 02 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Shipbuilders and railcar fabricators combine deep-penetrating lasers with traditional MIG wire-feeders to weld half-inch thick steel plates in a single, high-speed pass.]]></description>
+        </item>
+        <item>
+            <title>Robotic Welding Cells Tackle High-Mix, Low-Volume Work</title>
+            <link>https://www.fabricated-metals-monitor.com/news/43</link>
+            <pubDate>Tue, 03 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[New software allows fabricators to automatically generate weld paths from 3D CAD files, making robotic welding profitable even for batches of just 10 or 20 parts.]]></description>
+        </item>
+        <item>
+            <title>Wind Turbine Tower Fabrication Demands Massive Plate Rollers</title>
+            <link>https://www.fabricated-metals-monitor.com/news/44</link>
+            <pubDate>Tue, 03 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Facilities upgrade to 4-roll bending machines capable of curling 3-inch thick steel plate into massive 20-foot diameter conical sections for offshore turbine masts.]]></description>
+        </item>
+        <item>
+            <title>Fume Extraction Mandates Force Welding Shop Upgrades</title>
+            <link>https://www.fabricated-metals-monitor.com/news/45</link>
+            <pubDate>Wed, 04 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[OSHA tightens limits on hexavalent chromium and manganese exposure, forcing structural fabricators to install expensive source-capture exhaust hoods over every welding bay.]]></description>
+        </item>
+        <item>
+            <title>Fiber Lasers Completely Overtake CO2 in Sheet Metal Cutting</title>
+            <link>https://www.fabricated-metals-monitor.com/news/46</link>
+            <pubDate>Wed, 04 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Job shops retire legacy mirror-based CO2 lasers, adopting 20kW solid-state fiber lasers that cut through quarter-inch steel three times faster with significantly less electricity.]]></description>
+        </item>
+        <item>
+            <title>Abrasive Waterjet Cutting Favored for Heat-Sensitive Alloys</title>
+            <link>https://www.fabricated-metals-monitor.com/news/47</link>
+            <pubDate>Thu, 05 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Aerospace fabricators utilize 90,000 PSI water mixed with garnet sand to cut titanium and Inconel plate, avoiding the heat-affected zones (HAZ) caused by plasma and lasers.]]></description>
+        </item>
+        <item>
+            <title>Automated Beam Drill Lines Eliminate Manual Layout</title>
+            <link>https://www.fabricated-metals-monitor.com/news/48</link>
+            <pubDate>Thu, 05 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Structural steel yards feed massive raw beams into CNC lines that automatically measure, drill all bolt holes, and bandsaw the beam to exact lengths based on architectural software.]]></description>
+        </item>
+        <item>
+            <title>Submerged Arc Welding (SAW) Flux Supply Tightens</title>
+            <link>https://www.fabricated-metals-monitor.com/news/49</link>
+            <pubDate>Fri, 06 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Pipe mills and tank fabricators face shortages of the granular mineral flux poured over thick automated welds to shield the molten puddle from atmospheric contamination.]]></description>
+        </item>
+        <item>
+            <title>Rebar Fabrication Turns to Automated Stirrup Benders</title>
+            <link>https://www.fabricated-metals-monitor.com/news/50</link>
+            <pubDate>Fri, 06 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[To feed civil construction projects, wire yards utilize high-speed CNC bending machines to instantly straighten, cut, and bend coiled rebar into complex concrete reinforcing shapes.]]></description>
+        </item>
+        <item>
+            <title>Friction Stir Welding Used for EV Battery Trays</title>
+            <link>https://www.fabricated-metals-monitor.com/news/51</link>
+            <pubDate>Mon, 09 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Automotive fabricators use rapidly spinning metal pins to plasticize and seamlessly merge aluminum extrusions together without melting them, ensuring water-tight battery enclosures.]]></description>
+        </item>
+        <item>
+            <title>Heavy Bridge Girder Fabrication Relies on Sub-Arc Tractors</title>
+            <link>https://www.fabricated-metals-monitor.com/news/52</link>
+            <pubDate>Mon, 09 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Infrastructure yards use automated welding tractors that slowly drive themselves down 100-foot steel plates, laying massive, flawless fillet welds to construct highway bridge supports.]]></description>
+        </item>
+        <item>
+            <title>Automated Tube Laser Cutting Transforms Furniture and Gym Gear</title>
+            <link>https://www.fabricated-metals-monitor.com/news/53</link>
+            <pubDate>Tue, 10 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators abandon manual sawing and coping, feeding raw steel tubing into 6-axis lasers that instantly cut complex notches, slots, and intersecting joints perfectly.]]></description>
+        </item>
+        <item>
+            <title>Welding Gas Shielding Shifts to Complex Argon Mixes</title>
+            <link>https://www.fabricated-metals-monitor.com/news/54</link>
+            <pubDate>Tue, 10 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[To reduce spatter and improve penetration on stainless steel, fabrication shops move away from pure CO2, piping specialized ternary gas mixes (Argon/He/CO2) directly to welding stations.]]></description>
+        </item>
+        <item>
+            <title>Non-Destructive Testing (NDT) Backlogs Halt Pressure Vessel Shipping</title>
+            <link>https://www.fabricated-metals-monitor.com/news/55</link>
+            <pubDate>Wed, 11 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Boiler and tank manufacturers face severe shipping delays due to a critical shortage of certified technicians required to X-ray and ultrasound high-pressure weld seams.]]></description>
+        </item>
+        <item>
+            <title>Modular Construction Chassis Built Like Automotive Frames</title>
+            <link>https://www.fabricated-metals-monitor.com/news/56</link>
+            <pubDate>Wed, 11 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators building steel frames for pre-fab modular housing adopt automotive-style jigging and robotic spot welding to drastically lower costs and increase dimensional accuracy.]]></description>
+        </item>
+        <item>
+            <title>Plasma Cutting Tables Implement Automated Beveling Heads</title>
+            <link>https://www.fabricated-metals-monitor.com/news/57</link>
+            <pubDate>Thu, 12 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[High-definition plasma cutters tilt the torch head during cutting to create pre-chamfered edges on thick steel plates, allowing them to be welded immediately without secondary grinding.]]></description>
+        </item>
+        <item>
+            <title>Offshore Wind Jackets Demand Specialized Tubular Nodes</title>
+            <link>https://www.fabricated-metals-monitor.com/news/58</link>
+            <pubDate>Thu, 12 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Heavy fabrication yards struggle with the complex, multi-pipe intersecting welds required to build the massive steel lattice structures that anchor offshore wind turbines to the seabed.]]></description>
+        </item>
+        <item>
+            <title>Sheet Metal Folding Machines Replace Manual Press Brakes</title>
+            <link>https://www.fabricated-metals-monitor.com/news/59</link>
+            <pubDate>Fri, 13 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[For large architectural panels and HVAC ducting, shops install automated panel benders that swing the metal up, eliminating the need for two operators to manually lift heavy sheets.]]></description>
+        </item>
+        <item>
+            <title>Skilled Welder Shortage Reaches Crisis Levels in North America</title>
+            <link>https://www.fabricated-metals-monitor.com/news/60</link>
+            <pubDate>Fri, 13 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[The American Welding Society estimates a deficit of 300,000 operators, forcing major fabrication firms to open their own aggressive, paid training academies just to staff their floors.]]></description>
+        </item>
+
+        <item>
+            <title>Aerospace Fastener Lead Times Stretch Past 50 Weeks</title>
+            <link>https://www.fabricated-metals-monitor.com/news/61</link>
+            <pubDate>Mon, 02 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[The millions of specialized, lightweight titanium bolts and locknuts required to assemble commercial aircraft become a severe chokepoint for global aviation manufacturers.]]></description>
+        </item>
+        <item>
+            <title>Industrial Valve Machining Centers Prioritize Exotic Alloys</title>
+            <link>https://www.fabricated-metals-monitor.com/news/62</link>
+            <pubDate>Mon, 02 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Facilities producing high-pressure ball and gate valves for the oil & gas sector heavily invest in rigid tooling capable of cutting corrosive-resistant Hastelloy and Monel forgings.]]></description>
+        </item>
+        <item>
+            <title>Thread Rolling Speeds Maximize Fastener Output</title>
+            <link>https://www.fabricated-metals-monitor.com/news/63</link>
+            <pubDate>Tue, 03 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Rather than cutting threads which creates weak points, high-volume hardware manufacturers squeeze blank bolts between hardened steel dies to cold-form threads instantly and strongly.]]></description>
+        </item>
+        <item>
+            <title>Copper and Brass Pipe Fitting Forging Consolidated</title>
+            <link>https://www.fabricated-metals-monitor.com/news/64</link>
+            <pubDate>Tue, 03 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Plumbing hardware giants merge regional casting operations, utilizing massive automated rotary transfer machines to drill, thread, and finish brass elbows and T-junctions in a single pass.]]></description>
+        </item>
+        <item>
+            <title>Smart Fasteners Embedded with RFID Traceability</title>
+            <link>https://www.fabricated-metals-monitor.com/news/65</link>
+            <pubDate>Wed, 04 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Structural bolt manufacturers begin embedding micro-chips into the bolt heads, allowing bridge inspectors and aerospace mechanics to digitally scan a bolt to verify its torque history and metallurgy.]]></description>
+        </item>
+        <item>
+            <title>Spring Coiling Automation Hits Micro-Medical Scale</title>
+            <link>https://www.fabricated-metals-monitor.com/news/66</link>
+            <pubDate>Wed, 04 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Hardware factories utilize ultra-precise CNC wire benders to coil microscopic stainless steel springs used inside surgical auto-injectors and specialized fluid check-valves.]]></description>
+        </item>
+        <item>
+            <title>US Tariffs on Chinese Fasteners Drive Mexican Expansion</title>
+            <link>https://www.fabricated-metals-monitor.com/news/67</link>
+            <pubDate>Thu, 05 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Makers of basic construction screws, nuts, and washers rapidly shift their cold-heading operations to Monterrey to supply the US hardware store market without heavy duties.]]></description>
+        </item>
+        <item>
+            <title>Forged Steel Flange Manufacturing Heavily Automated</title>
+            <link>https://www.fabricated-metals-monitor.com/news/68</link>
+            <pubDate>Thu, 05 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Robotic arms transfer glowing steel donuts from ring-rolling mills directly into CNC vertical lathes, machining the sealing faces of pipeline flanges while the metal is still hot.]]></description>
+        </item>
+        <item>
+            <title>Sanitary Valve Production Spikes for Biopharma</title>
+            <link>https://www.fabricated-metals-monitor.com/news/69</link>
+            <pubDate>Fri, 06 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Machining centers producing stainless steel diaphragm and butterfly valves run overtime, polishing the internal surfaces to a mirror finish to prevent bacterial growth in pharmaceutical plants.]]></description>
+        </item>
+        <item>
+            <title>Wire Drawing Facilities Struggle with Die Wear</title>
+            <link>https://www.fabricated-metals-monitor.com/news/70</link>
+            <pubDate>Fri, 06 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Mills that pull raw steel rod through progressively smaller tungsten-carbide dies to create industrial wire face soaring tooling costs as high-carbon steel demand rises.]]></description>
+        </item>
+        <item>
+            <title>Cutlery and Hand Tool Forging Relies on Robotic Grinding</title>
+            <link>https://www.fabricated-metals-monitor.com/news/71</link>
+            <pubDate>Mon, 09 Mar 2026 10:10:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Makers of wrenches, pliers, and industrial knives abandon manual finishing, using force-sensing robots to press the forged steel against abrasive belts to create perfect cutting edges.]]></description>
+        </item>
+        <item>
+            <title>Blind Rivet Manufacturing Achieves 100% Optical Sorting</title>
+            <link>https://www.fabricated-metals-monitor.com/news/72</link>
+            <pubDate>Mon, 09 Mar 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Hardware suppliers dump millions of completed pop-rivets down glass chutes where high-speed cameras photograph every piece, instantly blowing defective rivets into a scrap bin with compressed air.]]></description>
+        </item>
+        <item>
+            <title>Heat Exchanger Tube Sheet Drilling Requires Massive Gantry Mills</title>
+            <link>https://www.fabricated-metals-monitor.com/news/73</link>
+            <pubDate>Tue, 10 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators building HVAC chillers and power plant condensers utilize multi-spindle CNC drills to bore thousands of perfect holes through solid 8-inch thick steel plates.]]></description>
+        </item>
+        <item>
+            <title>Stamped Metal Bracket Suppliers Suffer Material Volatility</title>
+            <link>https://www.fabricated-metals-monitor.com/news/74</link>
+            <pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[High-volume producers of galvanized L-brackets and joist hangers for the construction industry see profit margins vanish as hot-rolled steel coil prices fluctuate erratically.]]></description>
+        </item>
+        <item>
+            <title>Oil and Gas Subsea Manifold Machining Demands Inconel Cladding</title>
+            <link>https://www.fabricated-metals-monitor.com/news/75</link>
+            <pubDate>Wed, 11 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Heavy machine shops bore the massive steel blocks used to route offshore oil, then utilize automated TIG welding to line the internal pipes with highly anti-corrosive nickel alloys.]]></description>
+        </item>
+        <item>
+            <title>Door Lock and Hinge Assembly Returns to North America</title>
+            <link>https://www.fabricated-metals-monitor.com/news/76</link>
+            <pubDate>Wed, 11 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Assa Abloy and Allegion invest in highly automated zinc die-casting and brass machining lines in the US and Mexico to avoid the long maritime transit times from Asian hardware hubs.]]></description>
+        </item>
+        <item>
+            <title>Nylon-Insert Locknut Assembly Machines Sped Up</title>
+            <link>https://www.fabricated-metals-monitor.com/news/77</link>
+            <pubDate>Thu, 12 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fastener plants deploy rotary dial machines that automatically tap the steel nut, punch out a nylon washer, and crimp it perfectly into the crown of the nut in a fraction of a second.]]></description>
+        </item>
+        <item>
+            <title>HVAC Spiral Duct Fabricators Suffer Galvanized Steel Shortages</title>
+            <link>https://www.fabricated-metals-monitor.com/news/78</link>
+            <pubDate>Thu, 12 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Shops that roll and seam thin-gauge sheet metal into the miles of round ventilation ducting required for commercial buildings face localized supply crunches.]]></description>
+        </item>
+        <item>
+            <title>Investment Casting Used for High-End Golf Club Heads</title>
+            <link>https://www.fabricated-metals-monitor.com/news/79</link>
+            <pubDate>Fri, 13 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Sporting goods hardware relies heavily on lost-wax casting in Asia, carefully pouring molten stainless steel and titanium to create perfectly weighted iron and driver heads.]]></description>
+        </item>
+        <item>
+            <title>Industrial Shock Absorber and Spring Assembly Requires Heavy Presses</title>
+            <link>https://www.fabricated-metals-monitor.com/news/80</link>
+            <pubDate>Fri, 13 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators building suspension struts for mining trucks and trains must utilize specialized hydraulic rigs just to safely compress the massive steel springs during final bolting.]]></description>
+        </item>
+
+        <item>
+            <title>Powder Coating Lines Eliminate VOC Emissions Completely</title>
+            <link>https://www.fabricated-metals-monitor.com/news/81</link>
+            <pubDate>Mon, 02 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Metal fabricators abandon traditional wet spray paint, using electrostatic guns to apply dry plastic powder which is then baked into a durable, eco-friendly shell.]]></description>
+        </item>
+        <item>
+            <title>Hot-Dip Galvanizing Kettles Shift to Induction Heating</title>
+            <link>https://www.fabricated-metals-monitor.com/news/82</link>
+            <pubDate>Mon, 02 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[To keep massive vats of molten zinc at 840°F, galvanizers replace gas burners with internal electric induction heating, prolonging the life of the steel kettle holding the metal.]]></description>
+        </item>
+        <item>
+            <title>Titanium Anodizing Colors Standardized for Medical Screws</title>
+            <link>https://www.fabricated-metals-monitor.com/news/83</link>
+            <pubDate>Tue, 03 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Electrolytic finishing plants perfectly control voltage in acid baths to grow exact oxide thicknesses on titanium fasteners, changing the structural color to identify screw diameters.]]></description>
+        </item>
+        <item>
+            <title>Electroplating Facilities Face EPA PFAS Crackdowns</title>
+            <link>https://www.fabricated-metals-monitor.com/news/84</link>
+            <pubDate>Tue, 03 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Chrome plating operations scramble to replace the 'forever chemicals' historically used as fume suppressants to keep toxic chromic acid from bubbling out of the electroplating vats.]]></description>
+        </item>
+        <item>
+            <title>Vacuum Heat Treatment Furnaces Essential for Aerospace Forgings</title>
+            <link>https://www.fabricated-metals-monitor.com/news/85</link>
+            <pubDate>Wed, 04 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[To harden superalloys without surface oxidation, components are baked in sealed chambers evacuated of all air, followed by rapid quenching using pressurized nitrogen gas.]]></description>
+        </item>
+        <item>
+            <title>Passivation of Stainless Steel Welds Automated</title>
+            <link>https://www.fabricated-metals-monitor.com/news/86</link>
+            <pubDate>Wed, 04 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Instead of manual pickling paste, fabricators utilize electro-chemical wands that instantly strip the heat-tint and free iron from stainless TIG welds, restoring corrosion resistance.]]></description>
+        </item>
+        <item>
+            <title>Robotic Shot Peening Extends Gear Lifespans</title>
+            <link>https://www.fabricated-metals-monitor.com/news/87</link>
+            <pubDate>Thu, 05 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Automotive transmission components are bombarded with tiny steel ball-bearings by automated nozzles, creating compressive surface stress that prevents microscopic crack propagation.]]></description>
+        </item>
+        <item>
+            <title>Eco-Friendly Vapor Degreasing Replaces Trichloroethylene</title>
+            <link>https://www.fabricated-metals-monitor.com/news/88</link>
+            <pubDate>Thu, 05 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Machine shops update their cleaning protocols, using advanced, non-toxic fluorinated solvents in sealed ultrasonic tanks to remove cutting oils from finished metal parts.]]></description>
+        </item>
+        <item>
+            <title>Metal Fabricator Consolidation Driven by Aging Owners</title>
+            <link>https://www.fabricated-metals-monitor.com/news/89</link>
+            <pubDate>Fri, 06 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[The highly fragmented US job shop market sees rampant M&A activity as the 'baby boomer' generation of machine shop and welding business owners look for exit strategies.]]></description>
+        </item>
+        <item>
+            <title>Cloud ERP Software Transforms Job Shop Quoting</title>
+            <link>https://www.fabricated-metals-monitor.com/news/90</link>
+            <pubDate>Fri, 06 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Fabricators abandon clipboards for AI-driven platforms that automatically analyze customer 3D CAD files, instantly calculating machining time, material usage, and generating accurate quotes.]]></description>
+        </item>
+        <item>
+            <title>Carbon Tracking Becomes Mandatory for Fabricated Metal Exports to EU</title>
+            <link>https://www.fabricated-metals-monitor.com/news/91</link>
+            <pubDate>Mon, 09 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Job shops must now provide full supply chain documentation proving the carbon emissions of the raw steel and the electricity used during the fabrication process.]]></description>
+        </item>
+        <item>
+            <title>Energy Surcharges Plaque Heat Treating Facilities</title>
+            <link>https://www.fabricated-metals-monitor.com/news/92</link>
+            <pubDate>Mon, 09 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Companies specializing in annealing, tempering, and carburizing metal parts are forced to pass along massive natural gas and electricity price spikes to their manufacturing customers.]]></description>
+        </item>
+        <item>
+            <title>ISO 9001 and AS9100 Certifications Act as Gatekeepers</title>
+            <link>https://www.fabricated-metals-monitor.com/news/93</link>
+            <pubDate>Tue, 10 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Smaller CNC and sheet metal shops are effectively locked out of lucrative defense and aerospace contracts unless they invest heavily in strict, audited quality management systems.]]></description>
+        </item>
+        <item>
+            <title>Cybersecurity Vulnerabilities High in Networked CNC Shops</title>
+            <link>https://www.fabricated-metals-monitor.com/news/94</link>
+            <pubDate>Tue, 10 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Ransomware attacks increasingly target the manufacturing sector, locking up the CAD/CAM files and DNC networks that feed G-code directly to the machines on the shop floor.]]></description>
+        </item>
+        <item>
+            <title>3D Printing Metal (DMLS) Supplements Rather Than Replaces CNC</title>
+            <link>https://www.fabricated-metals-monitor.com/news/95</link>
+            <pubDate>Wed, 11 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[The industry consensus settles on hybrid manufacturing, using laser powder bed fusion to print complex shapes, but still requiring 5-axis CNC mills to finish the critical mating surfaces.]]></description>
+        </item>
+        <item>
+            <title>OSHA Combustible Dust Enforcement Hits Polishing Shops</title>
+            <link>https://www.fabricated-metals-monitor.com/news/96</link>
+            <pubDate>Wed, 11 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Facilities heavily grinding and buffing aluminum and titanium must install explosion-proof wet dust collection systems to prevent catastrophic factory deflagrations.]]></description>
+        </item>
+        <item>
+            <title>Localized Supplier Parks Built Around Heavy Equipment OEMs</title>
+            <link>https://www.fabricated-metals-monitor.com/news/97</link>
+            <pubDate>Thu, 12 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[John Deere and Caterpillar encourage their stamped metal and welded bracket suppliers to physically relocate next door to their assembly plants to guarantee Just-In-Time delivery.]]></description>
+        </item>
+        <item>
+            <title>Scrap Metal Theft Plagues Industrial Fabrication Yards</title>
+            <link>https://www.fabricated-metals-monitor.com/news/98</link>
+            <pubDate>Thu, 12 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[With copper and high-nickel stainless prices surging, fabrication plants are forced to hire armed guards and install advanced perimeter security to protect their recycling dumpsters.]]></description>
+        </item>
+        <item>
+            <title>Carbide Insert Recycling Becomes a Significant Cost Saver</title>
+            <link>https://www.fabricated-metals-monitor.com/news/99</link>
+            <pubDate>Fri, 13 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Machine shops aggressively collect the dull, broken tungsten-carbide cutting tips used in their lathes and mills, selling them back to tooling manufacturers for high-value recycling.]]></description>
+        </item>
+        <item>
+            <title>Global Fabricated Metal Products Market Approaches $3 Trillion</title>
+            <link>https://www.fabricated-metals-monitor.com/news/100</link>
+            <pubDate>Fri, 13 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Fabricated Metal Products]]></category>
+            <description><![CDATA[Despite material volatility and labor shortages, the massive ecosystem of tier 2 and tier 3 metal shapers reports consistent growth driven by infrastructure and defense spending.]]></description>
+        </item>
+
+    </channel>
+</rss>
