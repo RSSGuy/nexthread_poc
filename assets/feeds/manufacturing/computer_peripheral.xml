@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Global Computer &amp; Peripheral Equipment News Monitor</title>
+        <link>https://www.compute-hardware-monitor.com/news</link>
+        <description>Monthly compilation of 100 news headlines and summaries reflecting the state of global manufacturing for enterprise servers, data center infrastructure, and specialized computing hardware.</description>
+        <lastBuildDate>Fri, 13 Mar 2026 09:30:00 -0400</lastBuildDate>
+        <language>en-US</language>
+        <generator>Gemini-AI-Tracker</generator>
+
+        <item>
+            <title>Supermicro Triples Liquid-Cooled Rack Assembly Capacity in Silicon Valley</title>
+            <link>https://www.compute-hardware-monitor.com/news/1</link>
+            <pubDate>Mon, 02 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[To meet the thermal demands of next-generation AI accelerators, the server manufacturer aggressively expands its direct-to-chip liquid cooling integration lines.]]></description>
+        </item>
+        <item>
+            <title>Foxconn Opens Massive Data Center Hardware Factory in Mexico</title>
+            <link>https://www.compute-hardware-monitor.com/news/2</link>
+            <pubDate>Mon, 02 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Capitalizing on nearshoring trends, the contract manufacturer begins producing hyperscale server racks just south of the US border.]]></description>
+        </item>
+        <item>
+            <title>Dell Secures Record Enterprise AI Server Contract, Straining Supply Chain</title>
+            <link>https://www.compute-hardware-monitor.com/news/3</link>
+            <pubDate>Mon, 02 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[A massive order from a coalition of Tier-2 cloud providers creates an immediate backlog in Dell's high-end PowerEdge server assembly facilities.]]></description>
+        </item>
+        <item>
+            <title>Wistron Scales Up GPU Baseboard Assembly in Taiwan and Vietnam</title>
+            <link>https://www.compute-hardware-monitor.com/news/4</link>
+            <pubDate>Tue, 03 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[As a primary supplier for Nvidia's HGX baseboards, Wistron adds new automated SMT lines to handle heavy, complex server motherboards.]]></description>
+        </item>
+        <item>
+            <title>High-Density Power Supply Units (PSUs) Become the New AI Server Chokepoint</title>
+            <link>https://www.compute-hardware-monitor.com/news/5</link>
+            <pubDate>Tue, 03 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Server integrators report delays as component manufacturers struggle to produce Titanium-rated PSUs capable of delivering massive wattage.]]></description>
+        </item>
+        <item>
+            <title>Hyperscalers Accelerate In-House Custom Silicon Integration</title>
+            <link>https://www.compute-hardware-monitor.com/news/6</link>
+            <pubDate>Wed, 04 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[AWS, Google, and Microsoft mandate specialized motherboard assembly processes from ODMs to seamlessly integrate their proprietary ARM-based server chips.]]></description>
+        </item>
+        <item>
+            <title>Quanta Computer Completes Shift of US-Bound Server Production from China</title>
+            <link>https://www.compute-hardware-monitor.com/news/7</link>
+            <pubDate>Wed, 04 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The ODM completes its multi-year transition, finalizing new L6 to L10 server assembly hubs in Thailand and the United States.]]></description>
+        </item>
+        <item>
+            <title>Immersion Cooling Tank Manufacturing Becomes a High-Growth Subsector</title>
+            <link>https://www.compute-hardware-monitor.com/news/8</link>
+            <pubDate>Thu, 05 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Traditional sheet metal fabricators pivot to building precision-welded, leak-proof tanks required for two-phase immersion cooling.]]></description>
+        </item>
+        <item>
+            <title>Ultra-High Layer Count Printed Circuit Boards (PCBs) Face Scrutiny</title>
+            <link>https://www.compute-hardware-monitor.com/news/9</link>
+            <pubDate>Thu, 05 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Quality assurance bottlenecks hit assembly lines as the 30+ layer PCBs required for AI routing switches demand unprecedented AOI times.]]></description>
+        </item>
+        <item>
+            <title>Server Rack Steel Chassis Shortages Impact Build-to-Order Timelines</title>
+            <link>https://www.compute-hardware-monitor.com/news/10</link>
+            <pubDate>Fri, 06 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[A spike in the cost of specialized, load-bearing stamped steel causes minor delays for ODMs assembling full 42U and 48U data center racks.]]></description>
+        </item>
+        <item>
+            <title>High-Density Connector Shortages Frustrate Server Motherboard OEMs</title>
+            <link>https://www.compute-hardware-monitor.com/news/11</link>
+            <pubDate>Fri, 06 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The transition to PCIe Gen 6 necessitates highly specialized board-to-board connectors, causing localized component droughts on SMT lines.]]></description>
+        </item>
+        <item>
+            <title>Advanced Testing Protocols Increase Server Manufacturing Lead Times</title>
+            <link>https://www.compute-hardware-monitor.com/news/12</link>
+            <pubDate>Mon, 09 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[To guarantee reliability for trillion-parameter AI workloads, OEMs implement grueling multi-day thermal and compute stress tests before shipping.]]></description>
+        </item>
+        <item>
+            <title>Inventec Automates Server Motherboard Soldering with AI Robotics</title>
+            <link>https://www.compute-hardware-monitor.com/news/13</link>
+            <pubDate>Mon, 09 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The Taiwanese ODM reduces defect rates by 15% using computer-vision guided selective soldering machines.]]></description>
+        </item>
+        <item>
+            <title>Data Center Expansion in Northern Virginia Spurs Local Assembly Hubs</title>
+            <link>https://www.compute-hardware-monitor.com/news/14</link>
+            <pubDate>Tue, 10 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[System integrators set up final-mile rack configuration warehouses directly adjacent to 'Data Center Alley'.]]></description>
+        </item>
+        <item>
+            <title>Hyperscale Server Refresh Cycle Drives Record Manufacturing Volumes</title>
+            <link>https://www.compute-hardware-monitor.com/news/15</link>
+            <pubDate>Tue, 10 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Cloud giants begin retiring 2021-era hardware, triggering a massive wave of replacement orders for ODMs.]]></description>
+        </item>
+        <item>
+            <title>Copper Busbar Manufacturing Scales Up for 100kW Racks</title>
+            <link>https://www.compute-hardware-monitor.com/news/16</link>
+            <pubDate>Wed, 11 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Traditional cabling is abandoned in high-density AI racks in favor of solid copper busbars to handle immense power loads.]]></description>
+        </item>
+        <item>
+            <title>Custom Liquid Cooling Manifolds Become Bottleneck in Rack Assembly</title>
+            <link>https://www.compute-hardware-monitor.com/news/17</link>
+            <pubDate>Wed, 11 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Plumbing components designed to distribute coolant across dozens of GPUs face severe manufacturing backlogs.]]></description>
+        </item>
+        <item>
+            <title>HP Enterprise Opens Server Factory in Saudi Arabia</title>
+            <link>https://www.compute-hardware-monitor.com/news/18</link>
+            <pubDate>Thu, 12 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The new facility will serve the rapidly expanding Middle Eastern cloud market and meet local data sovereignty rules.]]></description>
+        </item>
+        <item>
+            <title>AI Server Chassis Move to Aluminum to Reduce Rack Weight</title>
+            <link>https://www.compute-hardware-monitor.com/news/19</link>
+            <pubDate>Thu, 12 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[With water-blocks and dense GPUs maxing out data center floor load limits, manufacturers switch to lighter metals.]]></description>
+        </item>
+        <item>
+            <title>Modular Data Center Enclosure Manufacturing Surges</title>
+            <link>https://www.compute-hardware-monitor.com/news/20</link>
+            <pubDate>Fri, 13 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Prefabricated, shipping-container-style data centers see a massive spike in orders for remote deployments.]]></description>
+        </item>
+
+        <item>
+            <title>Shortage of 800G Optical Transceivers Bottlenecks Switch Manufacturing</title>
+            <link>https://www.compute-hardware-monitor.com/news/21</link>
+            <pubDate>Mon, 02 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Networking hardware giants face delays on the assembly line as the supply of high-speed optics fails to keep pace with demand.]]></description>
+        </item>
+        <item>
+            <title>Cisco Automates Final Assembly for Core Data Center Switches</title>
+            <link>https://www.compute-hardware-monitor.com/news/22</link>
+            <pubDate>Mon, 02 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The networking leader deploys advanced robotic arms capable of seating delicate networking line cards without human intervention.]]></description>
+        </item>
+        <item>
+            <title>Silicon Photonics Integration Requires Class 10 Cleanrooms</title>
+            <link>https://www.compute-hardware-monitor.com/news/23</link>
+            <pubDate>Tue, 03 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Switch manufacturers upgrade factory air purification as co-packaged optics become highly sensitive to microscopic dust.]]></description>
+        </item>
+        <item>
+            <title>Arista Networks Shifts Switch Production from US to Malaysia</title>
+            <link>https://www.compute-hardware-monitor.com/news/24</link>
+            <pubDate>Tue, 03 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Seeking to lower assembly costs while avoiding tariffs, the networking giant expands its Southeast Asian footprint.]]></description>
+        </item>
+        <item>
+            <title>Fiber Optic Cable Manufacturing Constrained by Glass Preform Shortages</title>
+            <link>https://www.compute-hardware-monitor.com/news/25</link>
+            <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Corning and Prysmian struggle to supply enough raw glass to meet the cabling demands of new hyperscale builds.]]></description>
+        </item>
+        <item>
+            <title>Broadcom Network ASIC Packaging Takes Over 12 Weeks</title>
+            <link>https://www.compute-hardware-monitor.com/news/26</link>
+            <pubDate>Wed, 04 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Complex 2.5D packaging of massive routing chips slows down the entire networking hardware supply chain.]]></description>
+        </item>
+        <item>
+            <title>SmartNIC (DPU) Assembly Lines Multiply Across Taiwan</title>
+            <link>https://www.compute-hardware-monitor.com/news/27</link>
+            <pubDate>Thu, 05 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Data Processing Units become standard in all enterprise servers, forcing ODMs to dedicate entire factory wings to their production.]]></description>
+        </item>
+        <item>
+            <title>Juniper Networks Standardizes Modular Power Supplies</title>
+            <link>https://www.compute-hardware-monitor.com/news/28</link>
+            <pubDate>Thu, 05 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[To simplify inventory, the networking company redesigns its chassis to accept a single type of hot-swappable PSU across all switch families.]]></description>
+        </item>
+        <item>
+            <title>Direct Attach Copper (DAC) Cable Automation Reaches 90%</title>
+            <link>https://www.compute-hardware-monitor.com/news/29</link>
+            <pubDate>Fri, 06 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Stripping, terminating, and molding of high-speed copper cables is now almost entirely handled by robotic workcells.]]></description>
+        </item>
+        <item>
+            <title>1.6T Optical Transceivers Enter Low-Volume Production</title>
+            <link>https://www.compute-hardware-monitor.com/news/30</link>
+            <pubDate>Fri, 06 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The next generation of extreme-speed optical modules begins rolling off boutique assembly lines for early AI adopters.]]></description>
+        </item>
+        <item>
+            <title>Network Hardware OEMs Lobby Against Critical Mineral Tariffs</title>
+            <link>https://www.compute-hardware-monitor.com/news/31</link>
+            <pubDate>Mon, 09 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Manufacturers warn that duties on rare earth metals will drive up the cost of optical lasers and fiber transceivers.]]></description>
+        </item>
+        <item>
+            <title>Rack-Level Network Switches Migrate to Water Cooling</title>
+            <link>https://www.compute-hardware-monitor.com/news/32</link>
+            <pubDate>Mon, 09 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[For the first time, Top-of-Rack (ToR) switches require built-in liquid cooling loops, drastically altering factory testing.]]></description>
+        </item>
+        <item>
+            <title>InfiniBand Hardware Sees Resurgence in Assembly Priority</title>
+            <link>https://www.compute-hardware-monitor.com/news/33</link>
+            <pubDate>Tue, 10 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Nvidia's proprietary networking standard commands premium factory floor space over traditional Ethernet gear.]]></description>
+        </item>
+        <item>
+            <title>White-Box Switch Manufacturers Capture 35% of Global Market</title>
+            <link>https://www.compute-hardware-monitor.com/news/34</link>
+            <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[ODMs like Edgecore and Celestica see booming unbranded hardware sales direct to major cloud providers.]]></description>
+        </item>
+        <item>
+            <title>Supply of Pluggable Optics Cages Stabilizes</title>
+            <link>https://www.compute-hardware-monitor.com/news/35</link>
+            <pubDate>Wed, 11 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Sheet metal stamping facilities finally catch up to the demand for the physical cages that hold QSFP transceivers.]]></description>
+        </item>
+        <item>
+            <title>Optical Fiber Splicing Machines Hit Record Sales</title>
+            <link>https://www.compute-hardware-monitor.com/news/36</link>
+            <pubDate>Wed, 11 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Fujikura and Sumitomo ramp up production of the precision tools required to build data center cable networks.]]></description>
+        </item>
+        <item>
+            <title>Network Cable Extrusion Factories Mandate Recycled PVC</title>
+            <link>https://www.compute-hardware-monitor.com/news/37</link>
+            <pubDate>Thu, 12 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[European environmental regulations force manufacturers to re-tool their plastic jacketing machines.]]></description>
+        </item>
+        <item>
+            <title>Automated Testing Rigs for Switches Reduced to 5 Minutes per Unit</title>
+            <link>https://www.compute-hardware-monitor.com/news/38</link>
+            <pubDate>Thu, 12 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[AI-driven diagnostic software drastically speeds up the factory Quality Assurance phase for enterprise routing gear.]]></description>
+        </item>
+        <item>
+            <title>Wireless Access Point Assembly Consolidates in Vietnam</title>
+            <link>https://www.compute-hardware-monitor.com/news/39</link>
+            <pubDate>Fri, 13 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Enterprise Wi-Fi 7 hardware production is almost entirely shifted out of China by major networking brands.]]></description>
+        </item>
+        <item>
+            <title>Telecom Hardware Giants Pivot to Private 5G Data Center Integration</title>
+            <link>https://www.compute-hardware-monitor.com/news/40</link>
+            <pubDate>Fri, 13 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Ericsson and Nokia build specialized assembly lines for enterprise-grade 5G core servers.]]></description>
+        </item>
+
+        <item>
+            <title>Enterprise NVMe SSD Production Yields Improve Dramatically</title>
+            <link>https://www.compute-hardware-monitor.com/news/41</link>
+            <pubDate>Mon, 02 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Storage peripheral manufacturers report lowered costs and faster assembly times for high-capacity solid-state drives.]]></description>
+        </item>
+        <item>
+            <title>Lenovo Expands Enterprise Storage Array Assembly in Hungary</title>
+            <link>https://www.compute-hardware-monitor.com/news/42</link>
+            <pubDate>Mon, 02 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The European facility ramps up production of SAN hardware to serve stringent EU data sovereignty requirements.]]></description>
+        </item>
+        <item>
+            <title>High-Capacity HDD Assembly Hit by Actuator Component Shortage</title>
+            <link>https://www.compute-hardware-monitor.com/news/43</link>
+            <pubDate>Tue, 03 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Seagate and Western Digital face delays on 30TB+ mechanical drives due to bottlenecks in precision read/write heads.]]></description>
+        </item>
+        <item>
+            <title>CXL Memory Expansion Modules Enter Mass Production</title>
+            <link>https://www.compute-hardware-monitor.com/news/44</link>
+            <pubDate>Tue, 03 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Factories begin churning out Compute Express Link hardware, allowing data centers to pool RAM across multiple servers.]]></description>
+        </item>
+        <item>
+            <title>Helium Sealing Technology for HDDs Fully Automated</title>
+            <link>https://www.compute-hardware-monitor.com/news/45</link>
+            <pubDate>Wed, 04 Mar 2026 08:35:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Laser-welding robots replace human technicians in the critical step of hermetically sealing high-density hard drives.]]></description>
+        </item>
+        <item>
+            <title>Tape Storage Library Manufacturing Sees Unexpected 12% Growth</title>
+            <link>https://www.compute-hardware-monitor.com/news/46</link>
+            <pubDate>Wed, 04 Mar 2026 09:35:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Ransomware fears drive enterprise customers to invest heavily in physically air-gapped magnetic tape backup systems.]]></description>
+        </item>
+        <item>
+            <title>EDSFF (Ruler) SSDs Become Standard in New Server Builds</title>
+            <link>https://www.compute-hardware-monitor.com/news/47</link>
+            <pubDate>Thu, 05 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Server chassis manufacturers completely re-tool their drive bays to accommodate the thermally superior 'ruler' form factor.]]></description>
+        </item>
+        <item>
+            <title>Storage Server Chassis Shift to Tool-less Rail Designs</title>
+            <link>https://www.compute-hardware-monitor.com/news/48</link>
+            <pubDate>Thu, 05 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[To speed up data center deployment, ODMs design massive storage arrays that require zero screws for hard drive mounting.]]></description>
+        </item>
+        <item>
+            <title>DRAM Module Assembly Lines Upgrade to Handle DDR6</title>
+            <link>https://www.compute-hardware-monitor.com/news/49</link>
+            <pubDate>Fri, 06 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Memory manufacturers invest billions in new SMT machines to handle the tight pin-pitch of next-generation server RAM.]]></description>
+        </item>
+        <item>
+            <title>Flash Memory Controllers Suffer Extended Factory Lead Times</title>
+            <link>https://www.compute-hardware-monitor.com/news/50</link>
+            <pubDate>Fri, 06 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[While NAND flash remains abundant, the specific silicon controllers required to manage enterprise SSDs face severe shortages.]]></description>
+        </item>
+        <item>
+            <title>Storage Array Odm Assembly Concentrates in Thailand</title>
+            <link>https://www.compute-hardware-monitor.com/news/51</link>
+            <pubDate>Mon, 09 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Following massive floods a decade ago, the nation has successfully rebuilt and expanded its dominance in HDD and storage assembly.]]></description>
+        </item>
+        <item>
+            <title>Network Attached Storage (NAS) Enclosure Production Diversifies</title>
+            <link>https://www.compute-hardware-monitor.com/news/52</link>
+            <pubDate>Mon, 09 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Synology and QNAP shift a portion of their PCB and chassis manufacturing to Vietnam and India.]]></description>
+        </item>
+        <item>
+            <title>AI-Powered Firmware Flashing Speeds Up SSD Production</title>
+            <link>https://www.compute-hardware-monitor.com/news/53</link>
+            <pubDate>Tue, 10 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Automated test jigs can now provision and test 500 enterprise SSDs simultaneously, reducing factory bottleneck time.]]></description>
+        </item>
+        <item>
+            <title>Glass-Based Optical Archival Storage Enters Prototyping Phase</title>
+            <link>https://www.compute-hardware-monitor.com/news/54</link>
+            <pubDate>Tue, 10 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Microsoft's Project Silica spurs early boutique manufacturing of quartz glass read/write robotic libraries.]]></description>
+        </item>
+        <item>
+            <title>Thermal Pad Assembly for High-Speed NVMe Drives Automated</title>
+            <link>https://www.compute-hardware-monitor.com/news/55</link>
+            <pubDate>Wed, 11 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Robots successfully replace human hands in the delicate placement of thermal interface materials on bare NAND chips.]]></description>
+        </item>
+        <item>
+            <title>Fiber Channel SAN Hardware Sees Continued Decline in Output</title>
+            <link>https://www.compute-hardware-monitor.com/news/56</link>
+            <pubDate>Wed, 11 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Manufacturers slowly sunset legacy 32G and 64G FC assembly lines as enterprise data centers migrate to NVMe-over-Fabrics.]]></description>
+        </item>
+        <item>
+            <title>Hardware-Based Ransomware Protection Chips Added to SSDs</title>
+            <link>https://www.compute-hardware-monitor.com/news/57</link>
+            <pubDate>Thu, 12 Mar 2026 08:10:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Assembly lines are updated to solder dedicated encryption and heuristic-monitoring ICs directly onto storage drives.]]></description>
+        </item>
+        <item>
+            <title>Storage Hardware OEMs Embrace Circular Economy Refurbishment</title>
+            <link>https://www.compute-hardware-monitor.com/news/58</link>
+            <pubDate>Thu, 12 Mar 2026 09:10:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Major server makers build dedicated 'reverse logistics' factories to wipe, test, and resell off-lease data center drives.]]></description>
+        </item>
+        <item>
+            <title>DRAM PCB Substrate Shortages Cause Minor Panic</title>
+            <link>https://www.compute-hardware-monitor.com/news/59</link>
+            <pubDate>Fri, 13 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[A chemical fire at a major Japanese substrate supplier creates a temporary crunch for server memory assembly.]]></description>
+        </item>
+        <item>
+            <title>Enterprise SSD Form Factors Consolidate to E3.S</title>
+            <link>https://www.compute-hardware-monitor.com/news/60</link>
+            <pubDate>Fri, 13 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[ODMs rejoice as the industry finally standardizes on a single physical dimension for next-gen flash storage, simplifying chassis tooling.]]></description>
+        </item>
+
+        <item>
+            <title>HPE Launches Next-Gen Ruggedized Servers for Edge Computing</title>
+            <link>https://www.compute-hardware-monitor.com/news/61</link>
+            <pubDate>Mon, 02 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Manufacturing shifts to accommodate vibration-resistant and dust-proof chassis designs tailored for telco towers.]]></description>
+        </item>
+        <item>
+            <title>Edge AI Gateway Hardware Production Surges by 45% YOY</title>
+            <link>https://www.compute-hardware-monitor.com/news/62</link>
+            <pubDate>Mon, 02 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Manufacturers of small-form-factor, fanless industrial PCs race to keep up with demand from smart factories.]]></description>
+        </item>
+        <item>
+            <title>Fanless PC Manufacturing Perfects Extruded Aluminum Heat Sinks</title>
+            <link>https://www.compute-hardware-monitor.com/news/63</link>
+            <pubDate>Tue, 03 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Industrial computing firms optimize metal extrusion techniques to passively cool high-wattage Edge AI processors.]]></description>
+        </item>
+        <item>
+            <title>Telco-Grade Server Assembly Requires NEBS Compliance Testing</title>
+            <link>https://www.compute-hardware-monitor.com/news/64</link>
+            <pubDate>Tue, 03 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Factories install massive earthquake-simulation shake tables to test 5G edge servers before shipment.]]></description>
+        </item>
+        <item>
+            <title>Micro-Data Center 'Data Vaults' See Boom in Manufacturing</title>
+            <link>https://www.compute-hardware-monitor.com/news/65</link>
+            <pubDate>Wed, 04 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Companies like Schneider Electric scale up production of self-contained, half-rack server enclosures with built-in cooling and fire suppression.]]></description>
+        </item>
+        <item>
+            <title>Conformal Coating Becomes Standard for Edge PC Motherboards</title>
+            <link>https://www.compute-hardware-monitor.com/news/66</link>
+            <pubDate>Wed, 04 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Assembly lines add automated spray booths to coat circuit boards in protective polymers to resist humidity and corrosive gases.]]></description>
+        </item>
+        <item>
+            <title>Industrial IoT Sensors Face Microcontroller Shortages</title>
+            <link>https://www.compute-hardware-monitor.com/news/67</link>
+            <pubDate>Thu, 05 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The production of factory-floor edge nodes stalls as legacy 28nm silicon chips remain in tight supply.]]></description>
+        </item>
+        <item>
+            <title>DIN-Rail Mountable Computers Dominate Automation Sector</title>
+            <link>https://www.compute-hardware-monitor.com/news/68</link>
+            <pubDate>Thu, 05 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Hardware OEMs redesign their chassis tooling to universally clip into standard industrial control cabinets.]]></description>
+        </item>
+        <item>
+            <title>Ruggedized Tablet Manufacturing Consolidates in Taiwan</title>
+            <link>https://www.compute-hardware-monitor.com/news/69</link>
+            <pubDate>Fri, 06 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Panasonic and Getac competitors rely heavily on Taiwanese ODMs for specialized drop-resistant enclosure assembly.]]></description>
+        </item>
+        <item>
+            <title>Automated Optical Inspection Rejects 15% of Wide-Temp RAM</title>
+            <link>https://www.compute-hardware-monitor.com/news/70</link>
+            <pubDate>Fri, 06 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Strict quality tolerances for memory destined for extreme environments lead to high factory scrap rates.]]></description>
+        </item>
+        <item>
+            <title>Edge Servers Integrate Built-in Battery Backups</title>
+            <link>https://www.compute-hardware-monitor.com/news/71</link>
+            <pubDate>Mon, 09 Mar 2026 10:10:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Manufacturing lines are adapted to securely install miniature Lithium-Ion UPS systems directly into 1U chassis.]]></description>
+        </item>
+        <item>
+            <title>Marine-Grade Computing Hardware Sees Niche Manufacturing Growth</title>
+            <link>https://www.compute-hardware-monitor.com/news/72</link>
+            <pubDate>Mon, 09 Mar 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Specialized facilities focus on assembling IP68-rated, salt-fog resistant servers for offshore oil rigs and naval vessels.]]></description>
+        </item>
+        <item>
+            <title>Smart City Camera Hubs Combine Networking and AI Compute</title>
+            <link>https://www.compute-hardware-monitor.com/news/73</link>
+            <pubDate>Tue, 10 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Factories begin churning out all-in-one pole-mounted boxes that handle PoE switching and localized video analytics.]]></description>
+        </item>
+        <item>
+            <title>M.2 AI Accelerator Modules Flood the SMT Lines</title>
+            <link>https://www.compute-hardware-monitor.com/news/74</link>
+            <pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Manufacturers like Hailo and Coral see massive production runs of tiny, low-power AI chips designed to plug into existing edge PCs.]]></description>
+        </item>
+        <item>
+            <title>Vibration Testing Bottlenecks Automotive Edge Compute Hardware</title>
+            <link>https://www.compute-hardware-monitor.com/news/75</link>
+            <pubDate>Wed, 11 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Servers built for autonomous vehicle trunks require extensive multi-axis shake testing before leaving the factory.]]></description>
+        </item>
+        <item>
+            <title>Wide-Voltage DC Power Supply Assembly Grows Rapidly</title>
+            <link>https://www.compute-hardware-monitor.com/news/76</link>
+            <pubDate>Wed, 11 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Edge computers shift away from standard AC power, requiring factories to build robust DC-DC converters for unstable vehicle power grids.]]></description>
+        </item>
+        <item>
+            <title>Retail Self-Checkout Kiosks Drive Specialized Compute Demand</title>
+            <link>https://www.compute-hardware-monitor.com/news/77</link>
+            <pubDate>Thu, 12 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[ODMs report a surge in orders for custom motherboard shapes designed to fit inside slim retail kiosks.]]></description>
+        </item>
+        <item>
+            <title>Satellite Edge Computing Hardware Toughens Manufacturing Standards</title>
+            <link>https://www.compute-hardware-monitor.com/news/78</link>
+            <pubDate>Thu, 12 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Servers destined for Low Earth Orbit require specialized radiation-hardened soldering and vacuum-sealed assembly environments.]]></description>
+        </item>
+        <item>
+            <title>Telemedicine Carts Demand Medical-Grade Server Certification</title>
+            <link>https://www.compute-hardware-monitor.com/news/79</link>
+            <pubDate>Fri, 13 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Hardware OEMs must navigate strict FDA and IEC 60601-1 electrical safety standards on their factory floors.]]></description>
+        </item>
+        <item>
+            <title>Edge Data Centers Utilize 100% Recycled Aluminum Chassis</title>
+            <link>https://www.compute-hardware-monitor.com/news/80</link>
+            <pubDate>Fri, 13 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Environmental mandates force ruggedized server manufacturers to abandon virgin metals in favor of sustainable alloys.]]></description>
+        </item>
+
+        <item>
+            <title>IBM Quantum System Assembly Reaches Commercial Viability Phase</title>
+            <link>https://www.compute-hardware-monitor.com/news/81</link>
+            <pubDate>Mon, 02 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Moving beyond laboratory environments, IBM standardizes the manufacturing supply chain for its dilution refrigerators.]]></description>
+        </item>
+        <item>
+            <title>Mainframe Manufacturing Sees Unexpected Revival for Financial Sector</title>
+            <link>https://www.compute-hardware-monitor.com/news/82</link>
+            <pubDate>Mon, 02 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Hardware manufacturers see a steady uptick in orders for proprietary mainframe hardware prioritizing absolute transactional security.]]></description>
+        </item>
+        <item>
+            <title>Cryogenic Coaxial Cable Manufacturing Becomes a Key Chokepoint</title>
+            <link>https://www.compute-hardware-monitor.com/news/83</link>
+            <pubDate>Tue, 03 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The specialized, highly insulated cabling required to send signals to super-cooled quantum chips faces severe backlogs.]]></description>
+        </item>
+        <item>
+            <title>Optical Computing Startups Begin Low-Volume Silicon Photonic Assembly</title>
+            <link>https://www.compute-hardware-monitor.com/news/84</link>
+            <pubDate>Tue, 03 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Foundries successfully package processors that use light instead of electricity, requiring entirely new testing paradigms.]]></description>
+        </item>
+        <item>
+            <title>Supercomputer Node Assembly Demands Extreme Cleanroom Standards</title>
+            <link>https://www.compute-hardware-monitor.com/news/85</link>
+            <pubDate>Wed, 04 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Cray and HPE implement aerospace-level particulate control during the final integration of massive Exascale compute blades.]]></description>
+        </item>
+        <item>
+            <title>Neuromorphic Chip Packaging Requires Exotic Substrates</title>
+            <link>https://www.compute-hardware-monitor.com/news/86</link>
+            <pubDate>Wed, 04 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Processors designed to mimic human brain functions force ODMs to experiment with novel organic materials during the SMT process.]]></description>
+        </item>
+        <item>
+            <title>High-Frequency Trading Servers Demand Liquid Nitrogen Cooling Blocks</title>
+            <link>https://www.compute-hardware-monitor.com/news/87</link>
+            <pubDate>Thu, 05 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Boutique manufacturers machine custom copper blocks to extreme overclocked CPUs used by Wall Street quant firms.]]></description>
+        </item>
+        <item>
+            <title>ASIC Miner Manufacturing Pivots to Enterprise Zero-Knowledge Proofs</title>
+            <link>https://www.compute-hardware-monitor.com/news/88</link>
+            <pubDate>Thu, 05 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Former cryptocurrency hardware builders retool their assembly lines to produce dedicated cryptographic acceleration servers.]]></description>
+        </item>
+        <item>
+            <title>Gold Plating Shortages Impact High-End Server Motherboards</title>
+            <link>https://www.compute-hardware-monitor.com/news/89</link>
+            <pubDate>Fri, 06 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[The thick gold flashing required for PCIe slot durability on $50,000 servers becomes a critical supply chain bottleneck.]]></description>
+        </item>
+        <item>
+            <title>Military-Grade Encryption Modules Require US-Only Assembly</title>
+            <link>https://www.compute-hardware-monitor.com/news/90</link>
+            <pubDate>Fri, 06 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Defense contractors pull sensitive Hardware Security Module (HSM) production entirely onshore to highly secure, audited facilities.]]></description>
+        </item>
+        <item>
+            <title>Dilution Refrigerator Gold-Plating Requires Specialized Artisans</title>
+            <link>https://www.compute-hardware-monitor.com/news/91</link>
+            <pubDate>Mon, 09 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Quantum computing hardware remains stubbornly un-automatable, relying on hand-crafted thermal shielding components.]]></description>
+        </item>
+        <item>
+            <title>Data Center Power Distribution Units (PDUs) Become Smart</title>
+            <link>https://www.compute-hardware-monitor.com/news/92</link>
+            <pubDate>Mon, 09 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Manufacturing lines add Wi-Fi modules and complex logic boards to what used to be simple 'dumb' power strips for racks.]]></description>
+        </item>
+        <item>
+            <title>Liquid Immersion Coolant Chemical Production Scales Up</title>
+            <link>https://www.compute-hardware-monitor.com/news/93</link>
+            <pubDate>Tue, 10 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[3M and competitors rapidly expand factories dedicated to producing the engineered dielectric fluids required for submerged servers.]]></description>
+        </item>
+        <item>
+            <title>Custom Silicon Packaging Requires Massive Factory Re-tooling</title>
+            <link>https://www.compute-hardware-monitor.com/news/94</link>
+            <pubDate>Tue, 10 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Traditional server motherboard lines cannot handle the massive size of new chiplet-based processor packages, forcing equipment upgrades.]]></description>
+        </item>
+        <item>
+            <title>Video Encoding Servers Drive Demand for Specialized PCIe Cards</title>
+            <link>https://www.compute-hardware-monitor.com/news/95</link>
+            <pubDate>Wed, 11 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Streaming giants like Netflix force ODMs to build servers packed entirely with dedicated ASIC encoding hardware rather than general CPUs.]]></description>
+        </item>
+        <item>
+            <title>Server Fan Manufacturing Prioritizes High-Static Pressure Blades</title>
+            <link>https://www.compute-hardware-monitor.com/news/96</link>
+            <pubDate>Wed, 11 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Delta and Sunon re-design injection molds to create incredibly thick, aggressive fan blades needed to push air through dense 1U AI nodes.]]></description>
+        </item>
+        <item>
+            <title>Blind-Mate Connectors Reduce Server Node Replacement Time</title>
+            <link>https://www.compute-hardware-monitor.com/news/97</link>
+            <pubDate>Thu, 12 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Data center racks are redesigned to allow servers to plug directly into power and networking backplanes without manual cabling.]]></description>
+        </item>
+        <item>
+            <title>Optical Circuit Switches Enter Enterprise Manufacturing</title>
+            <link>https://www.compute-hardware-monitor.com/news/98</link>
+            <pubDate>Thu, 12 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Hardware that uses microscopic mirrors to physically route light beams, previously Google-exclusive, begins rolling off commercial assembly lines.]]></description>
+        </item>
+        <item>
+            <title>Analog Computing Hardware Startups Scale Up Operations</title>
+            <link>https://www.compute-hardware-monitor.com/news/99</link>
+            <pubDate>Fri, 13 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Niche manufacturers begin producing chips that perform AI math using continuous electrical currents rather than digital 1s and 0s.]]></description>
+        </item>
+        <item>
+            <title>Enterprise Compute Output Predicted to Grow 18% Annually Through 2030</title>
+            <link>https://www.compute-hardware-monitor.com/news/100</link>
+            <pubDate>Fri, 13 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Computer & Peripheral Equipment]]></category>
+            <description><![CDATA[Industry analysts confirm that AI and cloud demands will keep data center hardware manufacturing in a state of perpetual expansion.]]></description>
+        </item>
+
+    </channel>
+</rss>

@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Global Primary Metal Manufacturing News Monitor</title>
+        <link>https://www.primary-metals-monitor.com/news</link>
+        <description>Monthly compilation of 100 news headlines and summaries reflecting the state of global manufacturing for steel mills, aluminum production, copper foundries, and specialty metal refining.</description>
+        <lastBuildDate>Fri, 13 Mar 2026 09:30:00 -0400</lastBuildDate>
+        <language>en-US</language>
+        <generator>Gemini-AI-Tracker</generator>
+
+        <item>
+            <title>Nucor Expands Electric Arc Furnace (EAF) Capacity in West Virginia</title>
+            <link>https://www.primary-metals-monitor.com/news/1</link>
+            <pubDate>Mon, 02 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The steel giant brings a new state-of-the-art sheet steel mill online, utilizing 100% scrap metal to dramatically lower the carbon footprint of its hot-rolled coil.]]></description>
+        </item>
+        <item>
+            <title>SSAB Delivers First Commercial Batch of Fossil-Free Steel to Volvo</title>
+            <link>https://www.primary-metals-monitor.com/news/2</link>
+            <pubDate>Mon, 02 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The Swedish steelmaker successfully scales its HYBRIT technology, replacing coking coal with green hydrogen in the direct reduction of iron ore.]]></description>
+        </item>
+        <item>
+            <title>ArcelorMittal Implements AI-Driven Blast Furnace Optimization</title>
+            <link>https://www.primary-metals-monitor.com/news/3</link>
+            <pubDate>Tue, 03 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Machine learning algorithms at the Ghent facility predict thermal dynamics inside the massive furnace, reducing coke consumption by 4% and stabilizing pig iron output.]]></description>
+        </item>
+        <item>
+            <title>Global Scrap Steel Shortage Inflates Rebar Prices</title>
+            <link>https://www.primary-metals-monitor.com/news/4</link>
+            <pubDate>Tue, 03 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[As traditional blast furnaces pivot to scrap-heavy EAF production to meet emissions goals, the global supply of heavy melting steel (HMS) scrap tightens significantly.]]></description>
+        </item>
+        <item>
+            <title>US Steel Idles Legacy Blast Furnace at Gary Works</title>
+            <link>https://www.primary-metals-monitor.com/news/5</link>
+            <pubDate>Wed, 04 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The historic Indiana steel mill permanently shuts down its oldest iron-making furnace, citing insurmountable maintenance costs and shifting market demand toward high-strength alloys.]]></description>
+        </item>
+        <item>
+            <title>Tata Steel UK Transitions from Blast to Electric Furnaces</title>
+            <link>https://www.primary-metals-monitor.com/news/6</link>
+            <pubDate>Wed, 04 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Port Talbot undergoes a massive $1.25 billion transformation, tearing down traditional coal-fired stacks to install modern, less labor-intensive EAF operations.]]></description>
+        </item>
+        <item>
+            <title>Direct Reduced Iron (DRI) Pellet Manufacturing Surges in Middle East</title>
+            <link>https://www.primary-metals-monitor.com/news/7</link>
+            <pubDate>Thu, 05 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Leveraging abundant natural gas, Oman and Saudi Arabia aggressively expand DRI module production to export high-purity iron feedstocks to European steelmakers.]]></description>
+        </item>
+        <item>
+            <title>High-Strength Automotive Steel Cold-Rolling Bottlenecks</title>
+            <link>https://www.primary-metals-monitor.com/news/8</link>
+            <pubDate>Thu, 05 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Mills struggle to keep up with automaker demand for Advanced High-Strength Steel (AHSS), experiencing severe wear on the massive tungsten-carbide cold-rolling cylinders.]]></description>
+        </item>
+        <item>
+            <title>China Baowu Steel Group Caps Total Annual Production</title>
+            <link>https://www.primary-metals-monitor.com/news/9</link>
+            <pubDate>Fri, 06 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[To prevent global market flooding and adhere to state environmental mandates, the world's largest steelmaker strictly limits its output of crude steel to 115 million tons.]]></description>
+        </item>
+        <item>
+            <title>Steel Slag Upcycling Becomes Highly Profitable for Mills</title>
+            <link>https://www.primary-metals-monitor.com/news/10</link>
+            <pubDate>Fri, 06 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The rocky byproduct of iron smelting is increasingly processed and sold directly to the cement industry, drastically reducing landfill waste and creating a new revenue stream.]]></description>
+        </item>
+        <item>
+            <title>Metallurgical Coke Prices Spike Amid Mine Floodings</title>
+            <link>https://www.primary-metals-monitor.com/news/11</link>
+            <pubDate>Mon, 09 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Heavy rains in Queensland, Australia disrupt major coking coal exports, sending panic through integrated steel mills in Japan and South Korea that rely on the carbon fuel.]]></description>
+        </item>
+        <item>
+            <title>Stainless Steel Foundries Hit by Nickel Supply Volatility</title>
+            <link>https://www.primary-metals-monitor.com/news/12</link>
+            <pubDate>Mon, 09 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Producers of 304 and 316-grade stainless steel face erratic pricing and supply chain delays from Indonesian nickel pig iron smelters.]]></description>
+        </item>
+        <item>
+            <title>Galvanizing Lines Implement Advanced Zinc Bath Controls</title>
+            <link>https://www.primary-metals-monitor.com/news/13</link>
+            <pubDate>Tue, 10 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Continuous galvanizing facilities use real-time laser thickness gauges and air-knives to perfectly control zinc coating weights on sheet metal, saving millions in raw material costs.]]></description>
+        </item>
+        <item>
+            <title>Graphite Electrode Shortage Threatens EAF Steel Output</title>
+            <link>https://www.primary-metals-monitor.com/news/14</link>
+            <pubDate>Tue, 10 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The massive, consumable carbon rods required to strike the 3000°C electric arcs used to melt scrap steel face acute manufacturing backlogs in Europe and Asia.]]></description>
+        </item>
+        <item>
+            <title>Thyssenkrupp Halts Hydrogen Pipeline Project to Duisburg Mill</title>
+            <link>https://www.primary-metals-monitor.com/news/15</link>
+            <pubDate>Wed, 11 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The German industrial giant cites ballooning infrastructure costs as it temporarily pauses its ambitious plan to pipe liquid hydrogen directly into its main iron ore smelter.]]></description>
+        </item>
+        <item>
+            <title>Automated Ladle Cranes Prevent Molten Steel Spills</title>
+            <link>https://www.primary-metals-monitor.com/news/16</link>
+            <pubDate>Wed, 11 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Steel mills increasingly adopt remote-operated, self-leveling gantry cranes to move 200-ton cauldrons of liquid steel from the furnace to the continuous caster, drastically improving worker safety.]]></description>
+        </item>
+        <item>
+            <title>Tinplate Production Shifts Exclusively to Food Packaging</title>
+            <link>https://www.primary-metals-monitor.com/news/17</link>
+            <pubDate>Thu, 12 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[With automakers fully transitioned to aluminum and high-strength alloys, traditional tinplate lines retool entirely to produce ultra-thin gauge metal for the canned food industry.]]></description>
+        </item>
+        <item>
+            <title>Continuous Casting Breakouts Prevented by Thermal Sensors</title>
+            <link>https://www.primary-metals-monitor.com/news/18</link>
+            <pubDate>Thu, 12 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Fiber-optic temperature mapping embedded in the copper molds of continuous casters instantly detects sticking steel skin, preventing catastrophic molten metal eruptions on the line.]]></description>
+        </item>
+        <item>
+            <title>Iron Ore Pelletizing Plants Mandate Scrubbers</title>
+            <link>https://www.primary-metals-monitor.com/news/19</link>
+            <pubDate>Fri, 13 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[New EPA regulations force iron ore processing facilities in the Great Lakes region to install massive wet scrubbers to capture fine particulate matter during the pellet baking process.]]></description>
+        </item>
+        <item>
+            <title>EU Carbon Border Adjustment Mechanism (CBAM) Impacts Steel Imports</title>
+            <link>https://www.primary-metals-monitor.com/news/20</link>
+            <pubDate>Fri, 13 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[European manufacturing buyers face steep new tariffs on cheap, high-carbon steel imported from Asia, leveling the playing field for cleaner domestic foundries.]]></description>
+        </item>
+
+        <item>
+            <title>Alcoa Commercializes ELYSIS Inert Anode Technology</title>
+            <link>https://www.primary-metals-monitor.com/news/21</link>
+            <pubDate>Mon, 02 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The revolutionary aluminum smelting process finally reaches commercial scale, eliminating traditional carbon anodes to emit pure oxygen instead of greenhouse gases.]]></description>
+        </item>
+        <item>
+            <title>Rio Tinto Invests $1B in Hydro-Powered Aluminum Smelter</title>
+            <link>https://www.primary-metals-monitor.com/news/22</link>
+            <pubDate>Mon, 02 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The mining titan expands its Quebec operations, leveraging abundant, cheap hydroelectricity to produce premium 'green aluminum' for the automotive sector.]]></description>
+        </item>
+        <item>
+            <title>Global Alumina Refinery Capacity Constrained by Bauxite Quality</title>
+            <link>https://www.primary-metals-monitor.com/news/23</link>
+            <pubDate>Tue, 03 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Refineries utilizing the Bayer process struggle to maintain output as the silica content in global bauxite ore supplies rises, requiring more caustic soda for extraction.]]></description>
+        </item>
+        <item>
+            <title>Century Aluminum Rebuilds Kentucky Smelter Potlines</title>
+            <link>https://www.primary-metals-monitor.com/news/24</link>
+            <pubDate>Tue, 03 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Supported by Department of Energy grants, the facility undergoes a complete relining of its electrolytic reduction cells to restore full operational capacity.]]></description>
+        </item>
+        <item>
+            <title>Norsk Hydro Expands Aluminum Scrap Sorting Facilities</title>
+            <link>https://www.primary-metals-monitor.com/news/25</link>
+            <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The Norwegian firm deploys advanced X-ray transmission (XRT) technology to rapidly separate distinct aluminum alloys from mixed post-consumer scrap for infinite recycling.]]></description>
+        </item>
+        <item>
+            <title>Electricity Spikes Curtail European Aluminum Output</title>
+            <link>https://www.primary-metals-monitor.com/news/26</link>
+            <pubDate>Wed, 04 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Energy-intensive smelters in Germany and Eastern Europe are forced to temporarily power down potlines as winter grid prices surge past the breakeven cost of production.]]></description>
+        </item>
+        <item>
+            <title>Aluminum Billet Casting Achieves Superior Grain Structure</title>
+            <link>https://www.primary-metals-monitor.com/news/27</link>
+            <pubDate>Thu, 05 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Casthouses adopt ultrasonic melt treatment during the chilling of massive aluminum logs, breaking up dendritic growth to create stronger metal for extrusion presses.]]></description>
+        </item>
+        <item>
+            <title>Rusal Bypasses Supply Chains with Guinean Bauxite Expansion</title>
+            <link>https://www.primary-metals-monitor.com/news/28</link>
+            <pubDate>Thu, 05 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The Russian aluminum giant heavily funds West African mining infrastructure to ensure a steady, uninterrupted flow of raw ore to its Siberian refineries.]]></description>
+        </item>
+        <item>
+            <title>Automotive 'Gigacasting' Drives Demand for Primary Foundry Alloys</title>
+            <link>https://www.primary-metals-monitor.com/news/29</link>
+            <pubDate>Fri, 06 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Smelters rapidly shift their product mix, churning out specialized Al-Si-Mg alloys tailored specifically for the massive, single-piece die-castings used in EV manufacturing.]]></description>
+        </item>
+        <item>
+            <title>Cryolite and Aluminum Fluoride Chemical Shortages Hit Smelters</title>
+            <link>https://www.primary-metals-monitor.com/news/30</link>
+            <pubDate>Fri, 06 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The essential bath salts used to dissolve alumina inside electrolytic reduction cells see price spikes due to a disruption in synthetic fluorite manufacturing.]]></description>
+        </item>
+        <item>
+            <title>Dross Recycling Programs Recover 15% More Aluminum</title>
+            <link>https://www.primary-metals-monitor.com/news/31</link>
+            <pubDate>Mon, 09 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Casthouses invest in heated rotary furnaces to squeeze every last drop of pure liquid metal out of the oxidized 'dross' skimmed off the top of holding furnaces.]]></description>
+        </item>
+        <item>
+            <title>Aluminum Foil Rolling Mills Automate Gauge Controls</title>
+            <link>https://www.primary-metals-monitor.com/news/32</link>
+            <pubDate>Mon, 09 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Continuous rolling mills use isotopic radiation sensors to measure and adjust roller pressure thousands of times per second, ensuring foil is perfectly uniform at 6 microns thick.]]></description>
+        </item>
+        <item>
+            <title>Magnesium Alloying Shortages Stutter Aluminum Production</title>
+            <link>https://www.primary-metals-monitor.com/news/33</link>
+            <pubDate>Tue, 10 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[A temporary shutdown of Chinese magnesium ingot production prevents global aluminum foundries from mixing the crucial 5000 and 6000 series aerospace alloys.]]></description>
+        </item>
+        <item>
+            <title>Red Mud (Bauxite Residue) Neutralization Projects Break Ground</title>
+            <link>https://www.primary-metals-monitor.com/news/34</link>
+            <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Alumina refineries face intense environmental pressure, investing millions in pilot plants designed to extract iron and rare earths from the highly caustic toxic sludge lakes.]]></description>
+        </item>
+        <item>
+            <title>Carbon Anode Baking Furnaces Shift to Natural Gas</title>
+            <link>https://www.primary-metals-monitor.com/news/35</link>
+            <pubDate>Wed, 11 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[To lower sulfur emissions, pre-bake anode facilities transition their heavy fuel oil kilns to natural gas, improving the purity of the massive carbon blocks consumed in aluminum smelting.]]></description>
+        </item>
+        <item>
+            <title>Molten Aluminum Transport Logistics Expand in US Midwest</title>
+            <link>https://www.primary-metals-monitor.com/news/36</link>
+            <pubDate>Wed, 11 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Smelters increase the use of highly insulated, over-the-road crucible trucks to deliver liquid metal at 750°C directly to automotive die-casters, bypassing the need to re-melt ingots.]]></description>
+        </item>
+        <item>
+            <title>LME Aluminum Warehouse Inventories Drop to Critical Lows</title>
+            <link>https://www.primary-metals-monitor.com/news/37</link>
+            <pubDate>Thu, 12 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Strong demand from solar panel framing and EV chassis manufacturing draws down global stockpiles of pure aluminum ingots, driving spot prices higher.]]></description>
+        </item>
+        <item>
+            <title>Can Stock (UBC) Recycling Outpaces Virgin Metal Production</title>
+            <link>https://www.primary-metals-monitor.com/news/38</link>
+            <pubDate>Thu, 12 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Novelis confirms that the majority of its aluminum sheet output for the beverage industry now originates from re-melted Used Beverage Cans, consuming 95% less energy.]]></description>
+        </item>
+        <item>
+            <title>Anodizing Facilities Struggle with Sulfuric Acid Supply</title>
+            <link>https://www.primary-metals-monitor.com/news/39</link>
+            <pubDate>Fri, 13 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Surface finishing plants that run electrical currents through acid baths to create protective oxide layers on architectural aluminum face chemical procurement delays.]]></description>
+        </item>
+        <item>
+            <title>High-Purity Alumina (HPA) Refineries Scale for Battery Separators</title>
+            <link>https://www.primary-metals-monitor.com/news/40</link>
+            <pubDate>Fri, 13 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Boutique refineries expand operations to produce 99.99% pure alumina powder, a critical heat-resistant coating used in lithium-ion battery manufacturing.]]></description>
+        </item>
+
+        <item>
+            <title>Aurubis Expands Secondary Copper Smelting in Georgia</title>
+            <link>https://www.primary-metals-monitor.com/news/41</link>
+            <pubDate>Mon, 02 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The massive US recycling plant comes online, processing complex electronic waste (e-scrap) and printed circuit boards to extract pure copper blister.]]></description>
+        </item>
+        <item>
+            <title>Codelco Struggles with Declining Ore Grades in Chile</title>
+            <link>https://www.primary-metals-monitor.com/news/42</link>
+            <pubDate>Mon, 02 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The world's largest copper producer warns that foundries must process 20% more raw rock to extract the same amount of copper concentrate, drastically increasing smelting costs.]]></description>
+        </item>
+        <item>
+            <title>Freeport-McMoRan Upgrades Indonesian Copper Smelter</title>
+            <link>https://www.primary-metals-monitor.com/news/43</link>
+            <pubDate>Tue, 03 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Following export bans on raw ore, the massive Gresik facility ramps up its flash smelting furnaces to process Grasberg concentrate directly into copper anodes onshore.]]></description>
+        </item>
+        <item>
+            <title>Copper Electrowinning Tanks Implement Robotic Cathode Harvesting</title>
+            <link>https://www.primary-metals-monitor.com/news/44</link>
+            <pubDate>Tue, 03 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Refineries remove human laborers from toxic, acidic tankhouses, deploying overhead robotics to pull 99.99% pure copper cathodes out of the electrolytic bath.]]></description>
+        </item>
+        <item>
+            <title>Sulfuric Acid Byproduct Storage Maxes Out at Copper Mills</title>
+            <link>https://www.primary-metals-monitor.com/news/45</link>
+            <pubDate>Wed, 04 Mar 2026 08:35:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Smelters capturing sulfur dioxide off-gas to prevent acid rain produce massive quantities of sulfuric acid, struggling to find buyers in the agricultural fertilizer market.]]></description>
+        </item>
+        <item>
+            <title>Glencore Consolidates European Zinc Smelting Operations</title>
+            <link>https://www.primary-metals-monitor.com/news/46</link>
+            <pubDate>Wed, 04 Mar 2026 09:35:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[In response to sustained high European energy prices, the mining giant permanently curtails operations at smaller zinc roasting facilities, consolidating roasting into a single mega-plant.]]></description>
+        </item>
+        <item>
+            <title>Continuous Cast Copper Wire Rod Plants Run at 100% Capacity</title>
+            <link>https://www.primary-metals-monitor.com/news/47</link>
+            <pubDate>Thu, 05 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Driven by the insatiable global demand for electric vehicle motors and grid modernization, facilities melting cathodes into 8mm wire rod cannot keep up with cable manufacturers.]]></description>
+        </item>
+        <item>
+            <title>Lead-Acid Battery Recycling Smelters Face Tougher OSHA Rules</title>
+            <link>https://www.primary-metals-monitor.com/news/48</link>
+            <pubDate>Thu, 05 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Secondary lead smelters must install advanced HEPA vacuum systems and enforce strict blood-lead testing as the government tightens airborne exposure limits inside foundries.]]></description>
+        </item>
+        <item>
+            <title>Flash Smelting Burners Re-Engineered for Hydrogen Fuel</title>
+            <link>https://www.primary-metals-monitor.com/news/49</link>
+            <pubDate>Fri, 06 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Outotec pioneers new burner technology allowing copper foundries to partially replace natural gas and pulverized coal with hydrogen when firing massive concentrate smelting furnaces.]]></description>
+        </item>
+        <item>
+            <title>Zinc Galvanizing Foundries Experience Flux Shortages</title>
+            <link>https://www.primary-metals-monitor.com/news/50</link>
+            <pubDate>Fri, 06 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Hot-dip galvanizers serving the construction steel industry face temporary slowdowns due to supply chain issues with ammonium chloride flux, critical for preparing steel for zinc coating.]]></description>
+        </item>
+        <item>
+            <title>Arsenic Contamination Plagues Low-Grade Copper Processing</title>
+            <link>https://www.primary-metals-monitor.com/news/51</link>
+            <pubDate>Mon, 09 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[As high-grade ores deplete, smelters are forced to process 'dirty' copper concentrates, requiring heavy investments in specialized roasting scrubbers to safely capture toxic arsenic dust.]]></description>
+        </item>
+        <item>
+            <title>Tin Smelting Drops Amid Indonesian Export Policies</title>
+            <link>https://www.primary-metals-monitor.com/news/52</link>
+            <pubDate>Mon, 09 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Global electronics manufacturers face severe solder shortages as the primary supplier of refined tin ingots restricts exports to force downstream manufacturing localization.]]></description>
+        </item>
+        <item>
+            <title>Copper Foil Rolling Perfected for Battery Anodes</title>
+            <link>https://www.primary-metals-monitor.com/news/53</link>
+            <pubDate>Tue, 10 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Specialized metallurgy mills utilize continuous electrodeposition to produce ultra-thin, flawless copper foil at 4 micrometers thick, critical for lithium-ion battery cells.]]></description>
+        </item>
+        <item>
+            <title>Slag Fuming Furnaces Recover Zinc from Legacy Waste</title>
+            <link>https://www.primary-metals-monitor.com/news/54</link>
+            <pubDate>Tue, 10 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Lead smelters deploy high-temperature fuming processes to boil zinc out of decades-old slag heaps, capturing the zinc oxide dust in massive baghouses for secondary refining.]]></description>
+        </item>
+        <item>
+            <title>Brass and Bronze Casting Foundries Adopt 3D Printed Sand Cores</title>
+            <link>https://www.primary-metals-monitor.com/news/55</link>
+            <pubDate>Wed, 11 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Manufacturers of complex marine propellers and industrial valves speed up production by printing the intricate internal sand cores directly from digital files, skipping physical tooling.]]></description>
+        </item>
+        <item>
+            <title>Anode Slime Processing Yields Massive Gold and Silver Windfalls</title>
+            <link>https://www.primary-metals-monitor.com/news/56</link>
+            <pubDate>Wed, 11 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Copper refineries heavily optimize the 'slime' that falls to the bottom of electrowinning tanks, successfully extracting enough precious metals to completely offset their electricity costs.]]></description>
+        </item>
+        <item>
+            <title>Bismuth Supply Chains Tighten for Lead-Free Plumbing Alloys</title>
+            <link>https://www.primary-metals-monitor.com/news/57</link>
+            <pubDate>Thu, 12 Mar 2026 08:10:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Foundries producing compliant drinking water valves face massive price increases for bismuth, the primary metallurgical substitute used to replace toxic lead in brass alloys.]]></description>
+        </item>
+        <item>
+            <title>Electric Induction Melting Replaces Gas in Small Foundries</title>
+            <link>https://www.primary-metals-monitor.com/news/58</link>
+            <pubDate>Thu, 12 Mar 2026 09:10:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Custom copper and bronze casting shops abandon reverberatory gas furnaces, switching to coreless induction melting for finer temperature control and zero direct emissions.]]></description>
+        </item>
+        <item>
+            <title>Nickel Refining Capacity Explodes to Meet Sulfate Demand</title>
+            <link>https://www.primary-metals-monitor.com/news/59</link>
+            <pubDate>Fri, 13 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Hydrometallurgical plants utilizing High-Pressure Acid Leaching (HPAL) are rapidly built to convert low-grade laterite ores directly into battery-grade nickel sulfate.]]></description>
+        </item>
+        <item>
+            <title>Refractory Brick Wear Monitored by Continuous Acoustic Sensors</title>
+            <link>https://www.primary-metals-monitor.com/news/60</link>
+            <pubDate>Fri, 13 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Copper converters implement acoustic emission technology to listen to the firebrick lining inside molten furnaces, preventing catastrophic burn-throughs before they happen.]]></description>
+        </item>
+
+        <item>
+            <title>Titanium Sponge Production Restricted by Russian Sanctions</title>
+            <link>https://www.primary-metals-monitor.com/news/61</link>
+            <pubDate>Mon, 02 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Aerospace manufacturers scramble to secure titanium ingots as VSMPO-AVISMA is fully blocked from Western markets, forcing Japanese and US foundries to run at max capacity.]]></description>
+        </item>
+        <item>
+            <title>Kroll Process Titanium Refineries Suffer Chlorine Gas Leaks</title>
+            <link>https://www.primary-metals-monitor.com/news/62</link>
+            <pubDate>Mon, 02 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[A major titanium sponge manufacturing facility in Nevada is temporarily shuttered by OSHA following a breach in the highly corrosive titanium tetrachloride distillation pipeline.]]></description>
+        </item>
+        <item>
+            <title>Rare Earth Solvent Extraction Scaled Up in Texas</title>
+            <link>https://www.primary-metals-monitor.com/news/63</link>
+            <pubDate>Tue, 03 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[MP Materials successfully brings its heavy rare-earth separation facility online, utilizing miles of complex chemical mixer-settlers to purify Neodymium and Praseodymium onshore.]]></description>
+        </item>
+        <item>
+            <title>Vacuum Arc Remelting (VAR) Furnaces Bottleneck Superalloys</title>
+            <link>https://www.primary-metals-monitor.com/news/64</link>
+            <pubDate>Tue, 03 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[To remove microscopic impurities from aerospace titanium and nickel alloys, foundries must melt the metal in a complete vacuum multiple times, creating agonizingly slow factory throughput.]]></description>
+        </item>
+        <item>
+            <title>Magnesium Die-Casting Surges for Automotive Lightweighting</title>
+            <link>https://www.primary-metals-monitor.com/news/65</link>
+            <pubDate>Wed, 04 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Primary magnesium smelters see record orders as automakers utilize the ultra-light, highly flammable metal to cast steering wheel cores and dashboard cross-car beams.]]></description>
+        </item>
+        <item>
+            <title>Cobalt Refining Escapes the Congo with Domestic Bio-Mining</title>
+            <link>https://www.primary-metals-monitor.com/news/66</link>
+            <pubDate>Wed, 04 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Canadian metallurgical startups deploy engineered bacteria to slowly leach battery-grade cobalt directly from mine tailings, bypassing traditional energy-intensive smelting entirely.]]></description>
+        </item>
+        <item>
+            <title>Molybdenum Roasting Plants Face Stricter Sulfur Emissions Caps</title>
+            <link>https://www.primary-metals-monitor.com/news/67</link>
+            <pubDate>Thu, 05 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Producers of the crucial steel-hardening alloying element are forced to install massive double-contact sulfuric acid plants to capture off-gassing from the molybdenum disulfide roasting ovens.]]></description>
+        </item>
+        <item>
+            <title>Lithium Hydroxide Refineries Experience Spodumene Feedstock Shortages</title>
+            <link>https://www.primary-metals-monitor.com/news/68</link>
+            <pubDate>Thu, 05 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Massive chemical conversion kilns in Australia and China sit idle for days as the supply of hard-rock lithium ore fails to keep pace with refinery expansion.]]></description>
+        </item>
+        <item>
+            <title>Tungsten Powder Metallurgy Driven by Defense Sector</title>
+            <link>https://www.primary-metals-monitor.com/news/69</link>
+            <pubDate>Fri, 06 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[With a melting point too high for traditional foundries, manufacturers use complex sintering ovens to press and bake tungsten powder into armor-piercing munitions and aerospace counterweights.]]></description>
+        </item>
+        <item>
+            <title>Gallium and Germanium Refining Heavily Subsidized by US Defense Act</title>
+            <link>https://www.primary-metals-monitor.com/news/70</link>
+            <pubDate>Fri, 06 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Following Chinese export restrictions, zinc and alumina smelters in North America receive federal grants to retroactively capture these critical semiconductor metals from their waste streams.]]></description>
+        </item>
+        <item>
+            <title>Silicon Metal Smelting Essential for Solar Supply Chains</title>
+            <link>https://www.primary-metals-monitor.com/news/71</link>
+            <pubDate>Mon, 09 Mar 2026 10:10:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Submerged arc furnaces running on vast amounts of electricity work to reduce quartz rock into 99% pure metallurgical-grade silicon, the first step in creating solar panels.]]></description>
+        </item>
+        <item>
+            <title>Zirconium Sponge Manufacturing Requires Hafnium Separation</title>
+            <link>https://www.primary-metals-monitor.com/news/72</link>
+            <pubDate>Mon, 09 Mar 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Foundries supplying the nuclear power industry utilize complex liquid-liquid extraction to remove neutron-absorbing hafnium from zirconium before forging reactor fuel rods.]]></description>
+        </item>
+        <item>
+            <title>Chromium Metal Production Moves to Aluminothermic Reduction</title>
+            <link>https://www.primary-metals-monitor.com/news/73</link>
+            <pubDate>Tue, 10 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[To produce the high-purity chromium required for jet engine superalloys, specialty foundries ignite violent thermite reactions using aluminum powder to rip oxygen away from chromic oxide.]]></description>
+        </item>
+        <item>
+            <title>Vanadium Pentoxide Flake Drying Bottlenecks Redox Batteries</title>
+            <link>https://www.primary-metals-monitor.com/news/74</link>
+            <pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[As grid-scale flow batteries gain popularity, primary refiners struggle to crystallize and dry enough vanadium salts to supply the required liquid electrolyte.]]></description>
+        </item>
+        <item>
+            <title>Beryllium Foundries Maintain Extreme Negative Pressure</title>
+            <link>https://www.primary-metals-monitor.com/news/75</link>
+            <pubDate>Wed, 11 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Facilities casting the ultra-stiff, highly toxic metal for satellite optics operate like biological hazard labs, utilizing massive HEPA filtration to prevent fatal berylliosis in workers.]]></description>
+        </item>
+        <item>
+            <title>Scandium Recovery from Titanium Waste Becomes Profitable</title>
+            <link>https://www.primary-metals-monitor.com/news/76</link>
+            <pubDate>Wed, 11 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Chemical plants begin utilizing ion-exchange resins to extract microscopic amounts of valuable scandium from the acidic waste acids generated by titanium dioxide pigment factories.]]></description>
+        </item>
+        <item>
+            <title>Indium Metal Smelting Scales Up for LCD Display Demand</title>
+            <link>https://www.primary-metals-monitor.com/news/77</link>
+            <pubDate>Thu, 12 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Zinc smelters install secondary electrolytic recovery cells to capture indium byproduct, essential for manufacturing the Indium Tin Oxide (ITO) conductive films on touch screens.]]></description>
+        </item>
+        <item>
+            <title>Niobium Forging Driven by Hypersonic Missile Casings</title>
+            <link>https://www.primary-metals-monitor.com/news/78</link>
+            <pubDate>Thu, 12 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Defense foundries utilize massive electron-beam cold hearth melting to forge Niobium C-103 alloys capable of surviving the extreme atmospheric friction of hypersonic flight.]]></description>
+        </item>
+        <item>
+            <title>Platinum Group Metals (PGMs) Extracted from Spent Catalytic Converters</title>
+            <link>https://www.primary-metals-monitor.com/news/79</link>
+            <pubDate>Fri, 13 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Secondary smelting operations crush millions of stolen and scrapped automotive exhaust pipes, using plasma arc furnaces to melt the ceramic honeycombs and recover pure palladium and rhodium.]]></description>
+        </item>
+        <item>
+            <title>High-Entropy Alloy (HEA) Casting Transitions from Lab to Factory</title>
+            <link>https://www.primary-metals-monitor.com/news/80</link>
+            <pubDate>Fri, 13 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Foundries begin commercial induction-melting of revolutionary alloys consisting of five or more equal-part metals, creating structures with unprecedented strength-to-weight ratios.]]></description>
+        </item>
+
+        <item>
+            <title>Refractory Brick Supply Chain Heavily Disrupted</title>
+            <link>https://www.primary-metals-monitor.com/news/81</link>
+            <pubDate>Mon, 02 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Metal smelters globally face delays in scheduled furnace relinings as the high-grade magnesite and alumina bricks required to contain 1500°C molten metal face export snags from China.]]></description>
+        </item>
+        <item>
+            <title>Scrap Metal Sorting Automated with AI Vision and X-Ray</title>
+            <link>https://www.primary-metals-monitor.com/news/82</link>
+            <pubDate>Mon, 02 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Recycling foundries deploy high-speed conveyor belts where machine learning cameras and X-Ray fluorescence instantly detect and blow apart 'tramp' metals like copper wiring hidden in steel scrap.]]></description>
+        </item>
+        <item>
+            <title>Carbon Capture and Utilization (CCUS) Installed at Major Steelworks</title>
+            <link>https://www.primary-metals-monitor.com/news/83</link>
+            <pubDate>Tue, 03 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Blast furnaces in Europe retrofit amine scrubbing towers to capture CO2 directly from the smokestack, piping the compressed gas to chemical plants to manufacture synthetic ethanol.]]></description>
+        </item>
+        <item>
+            <title>Foundry Sand Recycling Halves Disposal Costs</title>
+            <link>https://www.primary-metals-monitor.com/news/84</link>
+            <pubDate>Tue, 03 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Casting plants invest in thermal reclamation kilns to bake the chemical binders off used silica casting sand, allowing it to be reused dozens of times rather than dumped in landfills.]]></description>
+        </item>
+        <item>
+            <title>Predictive Maintenance on Rolling Mills Prevents Costly Downtime</title>
+            <link>https://www.primary-metals-monitor.com/news/85</link>
+            <pubDate>Wed, 04 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Heavy vibration sensors attached to the massive gearbox bearings of steel hot-strip mills alert mechanics to microscopic flaws weeks before catastrophic mechanical failure.]]></description>
+        </item>
+        <item>
+            <title>Union Negotiations Stall at Major North American Smelters</title>
+            <link>https://www.primary-metals-monitor.com/news/86</link>
+            <pubDate>Wed, 04 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Steelworkers push for heavy inflation-adjusted wage increases, threatening strikes that could instantly paralyze domestic production of tinplate and automotive sheet steel.]]></description>
+        </item>
+        <item>
+            <title>Industrial Oxygen Shortages Impact Basic Oxygen Furnaces (BOF)</title>
+            <link>https://www.primary-metals-monitor.com/news/87</link>
+            <pubDate>Thu, 05 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[A failure at a major regional air separation unit forces steelmakers to throttle back the supersonic oxygen lances used to burn carbon out of liquid pig iron.]]></description>
+        </item>
+        <item>
+            <title>Electric Arc Furnace (EAF) Acoustic Optimization Reduces Energy Use</title>
+            <link>https://www.primary-metals-monitor.com/news/88</link>
+            <pubDate>Thu, 05 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Microphones mounted outside the furnace listen to the roar of the electric arcs, automatically adjusting the electrode depth based on the sound profile of the melting scrap.]]></description>
+        </item>
+        <item>
+            <title>Molten Metal Splatter Tracking Requires Fire-Retardant Drones</title>
+            <link>https://www.primary-metals-monitor.com/news/89</link>
+            <pubDate>Fri, 06 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Safety engineers fly heavily armored, heat-shielded drones high into the rafters of massive casthouses to inspect cranes and exhaust hoods without scaffolding.]]></description>
+        </item>
+        <item>
+            <title>Argon Degassing Bottlenecks Aluminum Foundry Output</title>
+            <link>https://www.primary-metals-monitor.com/news/90</link>
+            <pubDate>Fri, 06 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Supply chain delays in bulk argon gas prevent casthouses from properly bubbling hydrogen out of liquid aluminum, leading to unacceptable porosity in the final cast ingots.]]></description>
+        </item>
+        <item>
+            <title>Port Congestion Delays Iron Ore Capesize Deliveries</title>
+            <link>https://www.primary-metals-monitor.com/news/91</link>
+            <pubDate>Mon, 09 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Massive 200,000-ton dry bulk ships wait for weeks to unload at Chinese steel port terminals, causing a ripple effect that forces mills to dip into strategic raw material reserves.]]></description>
+        </item>
+        <item>
+            <title>Foundry Patternmaking Shifts Entirely to CNC Machining</title>
+            <link>https://www.primary-metals-monitor.com/news/92</link>
+            <pubDate>Mon, 09 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[The traditional art of hand-carving wooden molds for sand-casting is replaced by 5-axis routers milling high-density polyurethane foam blocks directly from engineering CAD files.]]></description>
+        </item>
+        <item>
+            <title>Water Treatment Upgrades Mandated for Heavy Metal Runoff</title>
+            <link>https://www.primary-metals-monitor.com/news/93</link>
+            <pubDate>Tue, 10 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Copper and zinc smelters invest hundreds of millions into reverse-osmosis and precipitation tanks to ensure zero contaminated cooling water enters local river systems.]]></description>
+        </item>
+        <item>
+            <title>Robotic Skimming Removes Dross from Melting Furnaces safely</title>
+            <link>https://www.primary-metals-monitor.com/news/94</link>
+            <pubDate>Tue, 10 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Heavy tracked robots equipped with massive rakes replace human workers standing near the 1000°C open doors of aluminum reverberatory furnaces to remove surface impurities.]]></description>
+        </item>
+        <item>
+            <title>Virtual Reality (VR) Simulators Train Overhead Crane Operators</title>
+            <link>https://www.primary-metals-monitor.com/news/95</link>
+            <pubDate>Wed, 11 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Before touching physical controls, new steelworkers spend weeks in VR headsets learning to safely control the swing of massive ladles filled with liquid iron.]]></description>
+        </item>
+        <item>
+            <title>Lime (Calcium Oxide) Shortages Impact Slag Formation</title>
+            <link>https://www.primary-metals-monitor.com/news/96</link>
+            <pubDate>Wed, 11 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Steelmakers face difficulties sourcing high-calcium quicklime, a critical flux required to bind with silica and phosphorus impurities to form a protective slag layer over molten steel.]]></description>
+        </item>
+        <item>
+            <title>Die-Casting Plunger Lubricants Transition to Water-Free Synthetics</title>
+            <link>https://www.primary-metals-monitor.com/news/97</link>
+            <pubDate>Thu, 12 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Aluminum foundries eliminate water-based mold-release sprays to prevent violent steam explosions and improve the surface finish of cast engine blocks.]]></description>
+        </item>
+        <item>
+            <title>Energy Recovery Turbines Generate Power from Blast Furnace Gas</title>
+            <link>https://www.primary-metals-monitor.com/news/98</link>
+            <pubDate>Thu, 12 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Integrated steel mills capture the highly pressurized, carbon-monoxide rich exhaust from their iron-making stacks to spin massive turbines, providing 20% of the plant's electricity.]]></description>
+        </item>
+        <item>
+            <title>Pickling Line Acid Regeneration Saves Mills Millions</title>
+            <link>https://www.primary-metals-monitor.com/news/99</link>
+            <pubDate>Fri, 13 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Facilities that dip hot-rolled steel into hydrochloric acid to remove rust scale install closed-loop roasters to boil off the iron chloride and infinitely recycle the pure acid.]]></description>
+        </item>
+        <item>
+            <title>Global Demand for Primary Metals Expected to Grow 4% in 2026</title>
+            <link>https://www.primary-metals-monitor.com/news/100</link>
+            <pubDate>Fri, 13 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Primary Metal Manufacturing]]></category>
+            <description><![CDATA[Driven by aggressive infrastructure spending, grid modernization, and the electric vehicle transition, the foundational heavy industries report incredibly robust multi-year order books.]]></description>
+        </item>
+
+    </channel>
+</rss>

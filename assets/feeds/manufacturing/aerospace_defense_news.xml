@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Global Aerospace &amp; Defense Manufacturing Monitor</title>
+        <link>https://www.aerospace-defense-monitor.com/news</link>
+        <description>Monthly compilation of 100 news headlines and summaries reflecting the state of global manufacturing for commercial aircraft, military jets, satellites, drones, and defense systems.</description>
+        <lastBuildDate>Fri, 13 Mar 2026 09:30:00 -0400</lastBuildDate>
+        <language>en-US</language>
+        <generator>Gemini-AI-Tracker</generator>
+
+        <item>
+            <title>Airbus Achieves Target Rate of 75 A320neo Family Aircraft Per Month</title>
+            <link>https://www.aerospace-defense-monitor.com/news/1</link>
+            <pubDate>Mon, 02 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The European aerospace giant hits its ambitious single-aisle production target, heavily relying on newly automated final assembly lines in Toulouse and Mobile.]]></description>
+        </item>
+        <item>
+            <title>Boeing Implements Advanced Digital Quality Gates on 737 MAX Line</title>
+            <link>https://www.aerospace-defense-monitor.com/news/2</link>
+            <pubDate>Mon, 02 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Following intense FAA scrutiny, Boeing integrates AI-driven optical inspection tools to verify every bolt torque and sealant application before fuselage handover.]]></description>
+        </item>
+        <item>
+            <title>Embraer Expands E-Jet E2 Final Assembly in Brazil</title>
+            <link>https://www.aerospace-defense-monitor.com/news/3</link>
+            <pubDate>Tue, 03 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The manufacturer opens a third highly automated bay in São José dos Campos to address a massive backlog of regional jet orders.]]></description>
+        </item>
+        <item>
+            <title>Commercial Engine Manufacturing Bottleneck Persists at Leap-1A</title>
+            <link>https://www.aerospace-defense-monitor.com/news/4</link>
+            <pubDate>Tue, 03 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[CFM International struggles to deliver finished engines due to a persistent shortage of high-pressure turbine blade forgings from Tier 2 suppliers.]]></description>
+        </item>
+        <item>
+            <title>eVTOL Mass Production Begins at Archer Aviation Facility</title>
+            <link>https://www.aerospace-defense-monitor.com/news/5</link>
+            <pubDate>Wed, 04 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The Georgia plant begins rolling off the Midnight aircraft, transitioning air-taxi manufacturing from bespoke prototyping to automotive-style assembly lines.]]></description>
+        </item>
+        <item>
+            <title>Composite Wing Curing Times Slashed by Novel Induction Heating</title>
+            <link>https://www.aerospace-defense-monitor.com/news/6</link>
+            <pubDate>Wed, 04 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Aerospace composite fabricators bypass traditional massive autoclaves, using electromagnetic induction to cure carbon fiber wing skins 40% faster.]]></description>
+        </item>
+        <item>
+            <title>Cabin Interior Manufacturers Struggle with Seat Certification Delays</title>
+            <link>https://www.aerospace-defense-monitor.com/news/7</link>
+            <pubDate>Thu, 05 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Supply chains for business-class pods remain tangled as new 16G dynamic crash-testing standards force multiple redesigns on the factory floor.]]></description>
+        </item>
+        <item>
+            <title>Rolls-Royce Re-Tools Derby Plant for UltraFan Production</title>
+            <link>https://www.aerospace-defense-monitor.com/news/8</link>
+            <pubDate>Thu, 05 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The British engine maker modernizes its largest UK site to handle the massive composite fan blades of its next-generation widebody powerplants.]]></description>
+        </item>
+        <item>
+            <title>Landing Gear Forgings Shift Away from Russian Titanium</title>
+            <link>https://www.aerospace-defense-monitor.com/news/9</link>
+            <pubDate>Fri, 06 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Safran and Collins Aerospace complete their multi-year transition, securing alternative aerospace-grade titanium sponge from North America and Japan.]]></description>
+        </item>
+        <item>
+            <title>Automated Riveting Robots Deployed on Boeing 777X Wings</title>
+            <link>https://www.aerospace-defense-monitor.com/news/10</link>
+            <pubDate>Fri, 06 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Advanced 'flex-track' drilling and fastening machines reduce manual labor and improve the microscopic tolerances required for the folding wingtips.]]></description>
+        </item>
+        <item>
+            <title>Aviation Glass Supply Squeezed by Heated Windshield Demand</title>
+            <link>https://www.aerospace-defense-monitor.com/news/11</link>
+            <pubDate>Mon, 09 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Specialized glass foundries fall behind on producing the curved, multi-layer laminated cockpit windows embedded with anti-ice heating filaments.]]></description>
+        </item>
+        <item>
+            <title>Supersonic Airliner Manufacturing Prototypes Enter Final Assembly</title>
+            <link>https://www.aerospace-defense-monitor.com/news/12</link>
+            <pubDate>Mon, 09 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Boom Supersonic begins mating the carbon composite fuselage of the Overture aircraft at its specialized super-facility in North Carolina.]]></description>
+        </item>
+        <item>
+            <title>Joby Aviation Expands California Production Line</title>
+            <link>https://www.aerospace-defense-monitor.com/news/13</link>
+            <pubDate>Tue, 10 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The eVTOL pioneer partners with Toyota to refine its manufacturing processes, importing lean production principles to aerial mobility.]]></description>
+        </item>
+        <item>
+            <title>Widebody Aircraft Assembly Lags Behind Narrowbody Resurgence</title>
+            <link>https://www.aerospace-defense-monitor.com/news/14</link>
+            <pubDate>Tue, 10 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Despite surging global travel, Airbus A350 and Boeing 787 production rates climb slowly as widebody-specific composite suppliers struggle to re-hire skilled labor.]]></description>
+        </item>
+        <item>
+            <title>Pratt &amp; Whitney Expands Geared Turbofan Overhaul Capacity</title>
+            <link>https://www.aerospace-defense-monitor.com/news/15</link>
+            <pubDate>Wed, 11 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[To deal with powder metal contamination issues, the manufacturer opens three new specialized tear-down and rebuild facilities globally.]]></description>
+        </item>
+        <item>
+            <title>Aircraft Paint Shops Implement Eco-Friendly Electrospray</title>
+            <link>https://www.aerospace-defense-monitor.com/news/16</link>
+            <pubDate>Wed, 11 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Final finishing bays adopt advanced dry-wash and electrostatic painting methods to drastically reduce solvent usage and fuselage weight.]]></description>
+        </item>
+        <item>
+            <title>Friction Stir Welding Replaces Rivets in Narrowbody Cargo Conversions</title>
+            <link>https://www.aerospace-defense-monitor.com/news/17</link>
+            <pubDate>Thu, 12 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[MRO facilities speed up passenger-to-freighter (P2F) conversions by using solid-state welding to seamlessly join massive aluminum cargo doors.]]></description>
+        </item>
+        <item>
+            <title>Aerospace Wire Harness Assembly Outsourced to North Africa</title>
+            <link>https://www.aerospace-defense-monitor.com/news/18</link>
+            <pubDate>Thu, 12 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Morocco cements its position as a primary hub for weaving the miles of complex, shielded wiring required for European commercial jets.]]></description>
+        </item>
+        <item>
+            <title>Hydrogen Fuel Cell Aircraft Enter Low-Rate Initial Production</title>
+            <link>https://www.aerospace-defense-monitor.com/news/19</link>
+            <pubDate>Fri, 13 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[ZeroAvia begins outfitting its first batch of commercial turboprops with certified hydrogen-electric powertrains on a retrofitted assembly line.]]></description>
+        </item>
+        <item>
+            <title>In-Flight Entertainment (IFE) Systems Standardize on MicroLEDs</title>
+            <link>https://www.aerospace-defense-monitor.com/news/20</link>
+            <pubDate>Fri, 13 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Panasonic Avionics shifts screen manufacturing, leveraging the ultra-thin displays to save hundreds of pounds per twin-aisle aircraft.]]></description>
+        </item>
+
+        <item>
+            <title>Lockheed Martin Sustains F-35 Production at 156 Jets Annually</title>
+            <link>https://www.aerospace-defense-monitor.com/news/21</link>
+            <pubDate>Mon, 02 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The massive Fort Worth assembly line hums efficiently, despite ongoing friction with TR-3 software validation and display component delays.]]></description>
+        </item>
+        <item>
+            <title>B-21 Raider Bomber Accelerates Low-Rate Initial Production</title>
+            <link>https://www.aerospace-defense-monitor.com/news/22</link>
+            <pubDate>Mon, 02 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Northrop Grumman ramps up the Palmdale facility, utilizing digital thread manufacturing to tightly control the radar-absorbent skin tolerances.]]></description>
+        </item>
+        <item>
+            <title>155mm Artillery Shell Manufacturing Triples in the US</title>
+            <link>https://www.aerospace-defense-monitor.com/news/23</link>
+            <pubDate>Tue, 03 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Army ammunition plants in Pennsylvania and Texas undergo massive automated expansions to replenish stockpiles depleted by global conflicts.]]></description>
+        </item>
+        <item>
+            <title>Naval Submarine Drydocks Face Severe Welding Labor Shortages</title>
+            <link>https://www.aerospace-defense-monitor.com/news/24</link>
+            <pubDate>Tue, 03 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[General Dynamics Electric Boat initiates emergency training academies as the Virginia and Columbia-class submarine builds overlap.]]></description>
+        </item>
+        <item>
+            <title>Hypersonic Missile Assembly Bottlenecked by Exotic Alloys</title>
+            <link>https://www.aerospace-defense-monitor.com/news/25</link>
+            <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Production of advanced glide vehicles slows due to limited domestic forging capacity for Niobium and Tungsten components required for extreme heat.]]></description>
+        </item>
+        <item>
+            <title>Collaborative Combat Aircraft (CCA) Drones Enter Prototyping</title>
+            <link>https://www.aerospace-defense-monitor.com/news/26</link>
+            <pubDate>Wed, 04 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Anduril and General Atomics begin factory-floor assembly of the autonomous wingman jets designed to fly alongside manned stealth fighters.]]></description>
+        </item>
+        <item>
+            <title>Patriot Missile Interceptor Production Line Expands to Germany</title>
+            <link>https://www.aerospace-defense-monitor.com/news/27</link>
+            <pubDate>Thu, 05 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[MBDA and Raytheon finalize a joint facility in Bavaria to co-produce PAC-3 GEM-T interceptors for European NATO defense shields.]]></description>
+        </item>
+        <item>
+            <title>Stealth Coating Application Automated by AI Robotics</title>
+            <link>https://www.aerospace-defense-monitor.com/news/28</link>
+            <pubDate>Thu, 05 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Toxic and highly precise Radar Absorbent Material (RAM) painting is completely turned over to climate-controlled robotic spray booths.]]></description>
+        </item>
+        <item>
+            <title>Main Battle Tank Upgrades Suffer Armor Plating Delays</title>
+            <link>https://www.aerospace-defense-monitor.com/news/29</link>
+            <pubDate>Fri, 06 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The integration of active protection systems and depleted uranium armor meshes causes unexpected retrofitting delays at heavy defense plants.]]></description>
+        </item>
+        <item>
+            <title>Solid Rocket Motor Supply Chain Finally Stabilizes</title>
+            <link>https://www.aerospace-defense-monitor.com/news/30</link>
+            <pubDate>Fri, 06 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[New domestic chemical pouring facilities alleviate the massive shortage of solid propellant required for GMLRS and Javelin missiles.]]></description>
+        </item>
+        <item>
+            <title>Eurofighter Typhoon Assembly Sees Extended Lifespan</title>
+            <link>https://www.aerospace-defense-monitor.com/news/31</link>
+            <pubDate>Mon, 09 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[BAE Systems and Airbus secure new Tranche 5 orders, keeping the highly distributed European assembly lines open well into the 2030s.]]></description>
+        </item>
+        <item>
+            <title>Aegis Combat System Hardware Transitions to Commercial-Off-The-Shelf</title>
+            <link>https://www.aerospace-defense-monitor.com/news/32</link>
+            <pubDate>Mon, 09 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Naval defense manufacturers abandon bespoke mainframe hardware, packaging standard enterprise server blades into shock-proof shipboard cabinets.]]></description>
+        </item>
+        <item>
+            <title>Next-Gen Squad Weapon (NGSW) Ammunition Scaling Challenges</title>
+            <link>https://www.aerospace-defense-monitor.com/news/33</link>
+            <pubDate>Tue, 10 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The Lake City Army Ammunition Plant struggles to hit yield targets for the complex 6.8mm hybrid bi-metal cartridge cases.]]></description>
+        </item>
+        <item>
+            <title>Directed Energy Weapon (Laser) Assembly Moves from Lab to Line</title>
+            <link>https://www.aerospace-defense-monitor.com/news/34</link>
+            <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Defense contractors build specialized optical cleanrooms to mass-produce 50kW and 300kW laser modules for short-range air defense Strykers.]]></description>
+        </item>
+        <item>
+            <title>Helicopter Rotor Blade Curing Requires New Autoclave Investments</title>
+            <link>https://www.aerospace-defense-monitor.com/news/35</link>
+            <pubDate>Wed, 11 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Sikorsky updates its Connecticut manufacturing hub to handle the advanced, vibration-dampening composite blades of the CH-53K King Stallion.]]></description>
+        </item>
+        <item>
+            <title>Frigate Shipbuilding Embraces Modular Block Construction</title>
+            <link>https://www.aerospace-defense-monitor.com/news/36</link>
+            <pubDate>Wed, 11 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Fincantieri Marinette Marine speeds up Constellation-class frigate delivery by fully outfitting electrical and plumbing in blocks before welding them together.]]></description>
+        </item>
+        <item>
+            <title>Defense Microelectronics Mandate 'Trusted Foundry' Certification</title>
+            <link>https://www.aerospace-defense-monitor.com/news/37</link>
+            <pubDate>Thu, 12 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The Pentagon aggressively audits its tier 3 electronics supply chain, requiring all silicon in smart munitions to be fabricated in verified onshore facilities.]]></description>
+        </item>
+        <item>
+            <title>Javelin Missile Assembly Transitions to Dual-Sourcing</title>
+            <link>https://www.aerospace-defense-monitor.com/news/38</link>
+            <pubDate>Thu, 12 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[To prevent future supply chain single-point-of-failures, the Raytheon/Lockheed joint venture completely duplicates its thermal imaging sensor line.]]></description>
+        </item>
+        <item>
+            <title>Night Vision Goggle Phosphorus Tube Manufacturing Scaled</title>
+            <link>https://www.aerospace-defense-monitor.com/news/39</link>
+            <pubDate>Fri, 13 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[L3Harris and Elbit Systems expand production of the delicate white-phosphor intensifier tubes critical for modern infantry optics.]]></description>
+        </item>
+        <item>
+            <title>Expeditionary Fighting Vehicle Aluminum Welds Face X-Ray Scrutiny</title>
+            <link>https://www.aerospace-defense-monitor.com/news/40</link>
+            <pubDate>Fri, 13 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Amphibious combat vehicle production slows slightly as the Marine Corps mandates 100% radiographic inspection of all watertight hull seams.]]></description>
+        </item>
+
+        <item>
+            <title>SpaceX Starbase Reaches Production Rate of One Starship per Week</title>
+            <link>https://www.aerospace-defense-monitor.com/news/41</link>
+            <pubDate>Mon, 02 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The Boca Chica facility perfects its stainless-steel ring welding and thermal tile application processes, achieving unprecedented rocket mass production.]]></description>
+        </item>
+        <item>
+            <title>Satellite Constellation Mass Production Adopts Automotive Tactics</title>
+            <link>https://www.aerospace-defense-monitor.com/news/42</link>
+            <pubDate>Mon, 02 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Starlink and Kuiper utilize continuously moving assembly lines, stamping out flat-panel satellites at a rate of 50 units per day.]]></description>
+        </item>
+        <item>
+            <title>Blue Origin Scales Up BE-4 Engine Manufacturing in Alabama</title>
+            <link>https://www.aerospace-defense-monitor.com/news/43</link>
+            <pubDate>Tue, 03 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The Huntsville factory overcomes early turbopump casting delays, finally supplying a steady stream of engines for the Vulcan Centaur and New Glenn rockets.]]></description>
+        </item>
+        <item>
+            <title>3D Printed Rocket Nozzles Become the Industry Standard</title>
+            <link>https://www.aerospace-defense-monitor.com/news/44</link>
+            <pubDate>Tue, 03 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Relativity Space and Rocket Lab abandon traditional brazing, using directed energy deposition (DED) printers to print entire copper-alloy combustion chambers.]]></description>
+        </item>
+        <item>
+            <title>Radiation-Hardened Microchips Face 18-Month Lead Times</title>
+            <link>https://www.aerospace-defense-monitor.com/news/45</link>
+            <pubDate>Wed, 04 Mar 2026 08:35:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Deep space missions and defense satellites face assembly delays as specialized foundries struggle to produce silicon capable of surviving harsh cosmic rays.]]></description>
+        </item>
+        <item>
+            <title>ULA Transitions Completely to Vulcan Centaur Assembly</title>
+            <link>https://www.aerospace-defense-monitor.com/news/46</link>
+            <pubDate>Wed, 04 Mar 2026 09:35:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The historic Decatur, Alabama rocket plant rolls out its final Atlas V, fully retooling the floor space for the heavy-lift Vulcan architecture.]]></description>
+        </item>
+        <item>
+            <title>CubeSat Manufacturing Pivots to COTS Components</title>
+            <link>https://www.aerospace-defense-monitor.com/news/47</link>
+            <pubDate>Thu, 05 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[To drastically lower costs, small-sat manufacturers integrate Commercial-Off-The-Shelf smartphone processors and camera sensors into Low Earth Orbit probes.]]></description>
+        </item>
+        <item>
+            <title>Space Suit Manufacturing Revived for Artemis Missions</title>
+            <link>https://www.aerospace-defense-monitor.com/news/48</link>
+            <pubDate>Thu, 05 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Axiom Space establishes a specialized cleanroom for sewing the intricate pressure bladders and machining the rotary joints of the new lunar EVA suits.]]></description>
+        </item>
+        <item>
+            <title>Thermal Protection Tile Application Speeds Up with Robotics</title>
+            <link>https://www.aerospace-defense-monitor.com/news/49</link>
+            <pubDate>Fri, 06 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Machine learning vision systems perfectly align and glue the brittle ceramic heat-shield tiles onto returning spacecraft, eliminating thousands of human hours.]]></description>
+        </item>
+        <item>
+            <title>Rocket Fairing Composite Curing Requires Massive New Ovens</title>
+            <link>https://www.aerospace-defense-monitor.com/news/50</link>
+            <pubDate>Fri, 06 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[As launch vehicle diameters increase, aerospace composite fabricators are forced to construct custom three-story-tall autoclaves just to bake the nose cones.]]></description>
+        </item>
+        <item>
+            <title>Krypton and Xenon Gas Shortages Impact Ion Thruster Testing</title>
+            <link>https://www.aerospace-defense-monitor.com/news/51</link>
+            <pubDate>Mon, 09 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Satellite assembly lines face bottlenecks in electric propulsion QA testing due to global supply constraints of ultra-pure noble gases.]]></description>
+        </item>
+        <item>
+            <title>Rocket Propellant Tanks Transition to Carbon Fiber Overwrapped Pressure Vessels (COPVs)</title>
+            <link>https://www.aerospace-defense-monitor.com/news/52</link>
+            <pubDate>Mon, 09 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Aerospace machine shops expand their automated filament-winding machines to create ultra-lightweight, high-pressure helium and oxygen tanks.]]></description>
+        </item>
+        <item>
+            <title>In-Space Manufacturing Hardware Readied for Orbit</title>
+            <link>https://www.aerospace-defense-monitor.com/news/53</link>
+            <pubDate>Tue, 10 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Startups finalize ground assembly of specialized microgravity 3D printers and pharmaceutical crystallizers bound for commercial space stations.]]></description>
+        </item>
+        <item>
+            <title>European Ariane 6 Rocket Reaches Steady Manufacturing Rhythm</title>
+            <link>https://www.aerospace-defense-monitor.com/news/54</link>
+            <pubDate>Tue, 10 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The fragmented European supply chain synchronizes, ensuring booster cores from Germany and upper stages from France mate seamlessly in French Guiana.]]></description>
+        </item>
+        <item>
+            <title>Solar Array Deployment Mechanisms Suffer Bearing Failures</title>
+            <link>https://www.aerospace-defense-monitor.com/news/55</link>
+            <pubDate>Wed, 11 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Satellite builders halt final integration to replace faulty hinges that threaten to jam solar panel deployments in the vacuum of space.]]></description>
+        </item>
+        <item>
+            <title>Solid Rocket Booster Segment Casting Fully Automated</title>
+            <link>https://www.aerospace-defense-monitor.com/news/56</link>
+            <pubDate>Wed, 11 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Northrop Grumman removes humans from the dangerous process of mixing and pouring highly explosive solid propellant into massive booster casings.]]></description>
+        </item>
+        <item>
+            <title>Laser Communications Terminals Become Standard Satellite Equipment</title>
+            <link>https://www.aerospace-defense-monitor.com/news/57</link>
+            <pubDate>Thu, 12 Mar 2026 08:10:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Optical engineering firms rapidly scale up production of the precision-gimbaled lasers required for high-bandwidth satellite-to-satellite data links.]]></description>
+        </item>
+        <item>
+            <title>Lunar Lander Assembly Requires Unprecedented Cleanliness</title>
+            <link>https://www.aerospace-defense-monitor.com/news/58</link>
+            <pubDate>Thu, 12 Mar 2026 09:10:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[NASA's planetary protection protocols force commercial lander manufacturers to assemble probes under strict bio-burden constraints to prevent moon contamination.]]></description>
+        </item>
+        <item>
+            <title>Hypergolic Fuel Valve Machining Demands Extreme Tolerances</title>
+            <link>https://www.aerospace-defense-monitor.com/news/59</link>
+            <pubDate>Fri, 13 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Aerospace CNC shops must achieve nanometer-level surface finishes on titanium valves to prevent the highly corrosive, spontaneously combusting fuels from leaking.]]></description>
+        </item>
+        <item>
+            <title>Commercial Space Station Modules Forged from Inflatable Kevlar</title>
+            <link>https://www.aerospace-defense-monitor.com/news/60</link>
+            <pubDate>Fri, 13 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Sierra Space masters the complex looming and weaving required to manufacture expandable space habitats designed to withstand micro-meteoroid impacts.]]></description>
+        </item>
+
+        <item>
+            <title>Skydio Scales Up US-Based Enterprise Drone Assembly</title>
+            <link>https://www.aerospace-defense-monitor.com/news/61</link>
+            <pubDate>Mon, 02 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The autonomous drone maker expands its California facility to meet surging demand from utilities and police departments moving away from Chinese drones.]]></description>
+        </item>
+        <item>
+            <title>Defense 'Swarm' Drones Enter Mass 3D-Printed Production</title>
+            <link>https://www.aerospace-defense-monitor.com/news/62</link>
+            <pubDate>Mon, 02 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[To fulfill the Pentagon's 'Replicator' initiative, contractors utilize sprawling print farms to churn out thousands of cheap, attritable kamikaze UAV airframes.]]></description>
+        </item>
+        <item>
+            <title>Heavy-Lift Cargo Drone Assembly Plagued by Battery Weight</title>
+            <link>https://www.aerospace-defense-monitor.com/news/63</link>
+            <pubDate>Tue, 03 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Manufacturers of 500lb-payload logistics drones shift from pure electric configurations to hybrid gas-electric generators to achieve viable flight ranges.]]></description>
+        </item>
+        <item>
+            <title>Unmanned Underwater Vehicles (UUVs) Require Specialized Titanium Welding</title>
+            <link>https://www.aerospace-defense-monitor.com/news/64</link>
+            <pubDate>Tue, 03 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Defense contractors building autonomous submarines struggle to find enough certified deep-sea welders to assemble the crush-resistant pressure hulls.]]></description>
+        </item>
+        <item>
+            <title>DJI Countersues Over US Manufacturing Component Bans</title>
+            <link>https://www.aerospace-defense-monitor.com/news/65</link>
+            <pubDate>Wed, 04 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The consumer drone titan faces massive supply chain disruptions as US sanctions restrict its access to advanced optical sensors and gyroscopes.]]></description>
+        </item>
+        <item>
+            <title>High-Altitude Pseudo-Satellite (HAPS) Drones Face Solar Cell Shortages</title>
+            <link>https://www.aerospace-defense-monitor.com/news/66</link>
+            <pubDate>Wed, 04 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Airbus and BAE Systems report delays in assembling their stratospheric gliders due to a lack of ultra-lightweight, high-efficiency gallium arsenide solar films.]]></description>
+        </item>
+        <item>
+            <title>Loitering Munition Assembly Shifts to Hardened Facilities</title>
+            <link>https://www.aerospace-defense-monitor.com/news/67</link>
+            <pubDate>Thu, 05 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[AeroVironment upgrades its Switchblade assembly lines with blast-proof walls to safely integrate explosive warheads directly onto the drone chassis.]]></description>
+        </item>
+        <item>
+            <title>Drone Motor Manufacturing Escapes Rare Earth Dependency</title>
+            <link>https://www.aerospace-defense-monitor.com/news/68</link>
+            <pubDate>Thu, 05 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Motor winding facilities begin producing ferrite-magnet brushless motors, accepting a slight weight penalty to completely decouple from Chinese Neodymium supply.]]></description>
+        </item>
+        <item>
+            <title>Agricultural Spraying Drones Dominate Carbon Fiber Tubing Demand</title>
+            <link>https://www.aerospace-defense-monitor.com/news/69</link>
+            <pubDate>Fri, 06 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The massive booms required for 50-liter crop-spraying UAVs consume huge quantities of pultruded carbon fiber, straining aerospace material suppliers.]]></description>
+        </item>
+        <item>
+            <title>Autonomous Wingman Jet Assembly Prioritizes Modularity</title>
+            <link>https://www.aerospace-defense-monitor.com/news/70</link>
+            <pubDate>Fri, 06 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Boeing's MQ-28 Ghost Bat factory is designed so the nose cones—containing either radar, jammers, or weapons—can be swapped out on the line in minutes.]]></description>
+        </item>
+        <item>
+            <title>FPV (First-Person View) Drone Assembly Rapidly Commercialized</title>
+            <link>https://www.aerospace-defense-monitor.com/news/71</link>
+            <pubDate>Mon, 09 Mar 2026 10:10:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Moving away from hobbyist tape-and-solder builds, defense contractors establish sleek injection-molded assembly lines for agile, high-speed tactical drones.]]></description>
+        </item>
+        <item>
+            <title>Unmanned Surface Vessels (USVs) Forge New Shipbuilding Sector</title>
+            <link>https://www.aerospace-defense-monitor.com/news/72</link>
+            <pubDate>Mon, 09 Mar 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Boutique shipyards pivot from luxury yachts to fabricating low-profile, radar-evading fiberglass hulls for autonomous naval drone ships.]]></description>
+        </item>
+        <item>
+            <title>Drone Flight Controller PCBs Mandate Extreme Conformal Coating</title>
+            <link>https://www.aerospace-defense-monitor.com/news/73</link>
+            <pubDate>Tue, 10 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[To survive maritime operations and torrential rain, UAV manufacturers dip entire circuit boards in specialized silicone baths during final assembly.]]></description>
+        </item>
+        <item>
+            <title>Payload Gimbal Manufacturing Requires Watchmaker Precision</title>
+            <link>https://www.aerospace-defense-monitor.com/news/74</link>
+            <pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The microscopic stepper motors and gyro-stabilizers used in drone camera turrets create a severe quality-control bottleneck on the factory floor.]]></description>
+        </item>
+        <item>
+            <title>Delivery Drones Adopt Noise-Cancelling Propeller Designs</title>
+            <link>https://www.aerospace-defense-monitor.com/news/75</link>
+            <pubDate>Wed, 11 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Amazon Prime Air and Wing force plastics manufacturers to cut complex, bio-mimetic propeller shapes to comply with strict urban noise regulations.]]></description>
+        </item>
+        <item>
+            <title>Tethered Drone Systems Integrate Micro-Filament Power Lines</title>
+            <link>https://www.aerospace-defense-monitor.com/news/76</link>
+            <pubDate>Wed, 11 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Assembly of perpetual-flight security drones requires highly specialized spooling machinery to wrap Kevlar around hair-thin high-voltage copper wire.]]></description>
+        </item>
+        <item>
+            <title>Hydrogen Fuel Cell Drones Expand Flight Times by 300%</title>
+            <link>https://www.aerospace-defense-monitor.com/news/77</link>
+            <pubDate>Thu, 12 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[UAV manufacturers integrate ultra-lightweight, 300-bar carbon fiber hydrogen tanks into drone airframes for pipeline inspection operations.]]></description>
+        </item>
+        <item>
+            <title>Anti-Drone Jamming Guns Enter High-Volume Production</title>
+            <link>https://www.aerospace-defense-monitor.com/news/78</link>
+            <pubDate>Thu, 12 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Electronics firms rapidly stamp out man-portable directional antennas and RF disruptors to counter the massive proliferation of commercial drones in warfare.]]></description>
+        </item>
+        <item>
+            <title>UAV Parachute Recovery Systems Become Mandatory for Urban Flight</title>
+            <link>https://www.aerospace-defense-monitor.com/news/79</link>
+            <pubDate>Fri, 13 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Drone assembly lines are forced to incorporate pyrotechnic ballistic parachute deployment modules to meet new FAA flight-over-people rules.]]></description>
+        </item>
+        <item>
+            <title>Solid-State Lidar Shrinks to Fit Micro-Drones</title>
+            <link>https://www.aerospace-defense-monitor.com/news/80</link>
+            <pubDate>Fri, 13 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Semiconductor fabs successfully package laser-radar systems onto a single silicon chip, allowing obstacle avoidance to be assembled into palm-sized UAVs.]]></description>
+        </item>
+
+        <item>
+            <title>Aerospace Aluminum Shortages Averted by Massive Recycling Initiative</title>
+            <link>https://www.aerospace-defense-monitor.com/news/81</link>
+            <pubDate>Mon, 02 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Alcoa and Novelis successfully refine the closed-loop recycling of 7000-series aluminum alloys, capturing factory-floor shavings to melt into new billets.]]></description>
+        </item>
+        <item>
+            <title>Non-Destructive Testing (NDT) Becomes Heavily Bottlenecked</title>
+            <link>https://www.aerospace-defense-monitor.com/news/82</link>
+            <pubDate>Mon, 02 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The critical ultrasonic and dye-penetrant inspections required for aerospace forgings face severe delays due to a lack of certified Level III inspectors.]]></description>
+        </item>
+        <item>
+            <title>Avionics Manufacturers Adopt Chiplet Packaging Technologies</title>
+            <link>https://www.aerospace-defense-monitor.com/news/83</link>
+            <pubDate>Tue, 03 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Flight computer assembly shifts from relying on single massive processors to tightly packaging smaller, redundancy-focused silicon 'chiplets' together.]]></description>
+        </item>
+        <item>
+            <title>Sustainable Aviation Fuel (SAF) Usage Mandated in Engine Hot-Testing</title>
+            <link>https://www.aerospace-defense-monitor.com/news/84</link>
+            <pubDate>Tue, 03 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[GE and Pratt & Whitney overhaul their massive factory test cells, running all post-assembly engine tests exclusively on bio-derived jet fuel.]]></description>
+        </item>
+        <item>
+            <title>Titanium Fastener Lead Times Stretch Past 50 Weeks</title>
+            <link>https://www.aerospace-defense-monitor.com/news/85</link>
+            <pubDate>Wed, 04 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The millions of specialized, lightweight bolts required to hold composite aircraft together become the most critical chokepoint in final assembly.]]></description>
+        </item>
+        <item>
+            <title>Beryllium Machining Facilities Face Intense OSHA Scrutiny</title>
+            <link>https://www.aerospace-defense-monitor.com/news/86</link>
+            <pubDate>Wed, 04 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Factories producing the ultra-stiff, highly toxic metal used in satellite optics and missile guidance systems are forced to install massive air-scrubbing upgrades.]]></description>
+        </item>
+        <item>
+            <title>Ceramic Matrix Composites (CMCs) Revolutionize Turbine Manufacturing</title>
+            <link>https://www.aerospace-defense-monitor.com/news/87</link>
+            <pubDate>Thu, 05 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Engine makers master the art of baking silicon-carbide fibers into turbine blades, allowing engines to run hundreds of degrees hotter without melting.]]></description>
+        </item>
+        <item>
+            <title>Aerospace Wire Insulation Shifts to Halogen-Free Materials</title>
+            <link>https://www.aerospace-defense-monitor.com/news/88</link>
+            <pubDate>Thu, 05 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Extrusion plants retool to coat Kapton wire in advanced polymers that will not release toxic gases in the event of an electrical cabin fire.]]></description>
+        </item>
+        <item>
+            <title>Inconel Superalloy Forging Dominates Space and Defense Supply</title>
+            <link>https://www.aerospace-defense-monitor.com/news/89</link>
+            <pubDate>Fri, 06 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The heavy drop-forges required to stamp out rocket nozzles and jet exhaust cones from the incredibly stubborn nickel-chrome alloy are booked out for years.]]></description>
+        </item>
+        <item>
+            <title>Gallium Nitride (GaN) Radar Modules Reach Mass Scale</title>
+            <link>https://www.aerospace-defense-monitor.com/news/90</link>
+            <pubDate>Fri, 06 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Defense electronics manufacturers successfully scale the production of GaN transmit/receive modules, vastly increasing the range of fighter jet AESA radars.]]></description>
+        </item>
+        <item>
+            <title>Carbon Fiber Prepreg Spoilage Causes Assembly Headaches</title>
+            <link>https://www.aerospace-defense-monitor.com/news/91</link>
+            <pubDate>Mon, 09 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Logistical delays in massive industrial freezers cause rolls of resin-impregnated carbon fiber to expire before they can be laid up into aircraft fuselages.]]></description>
+        </item>
+        <item>
+            <title>Waterjet Cutting Replaces Routing for Composite Aircraft Skins</title>
+            <link>https://www.aerospace-defense-monitor.com/news/92</link>
+            <pubDate>Mon, 09 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Machine shops adopt 5-axis abrasive waterjet systems to trim carbon fiber parts cleanly, avoiding the hazardous dust and edge-delamination caused by physical drill bits.]]></description>
+        </item>
+        <item>
+            <title>Aircraft Tire Retreading Facilities Hit Capacity Limits</title>
+            <link>https://www.aerospace-defense-monitor.com/news/93</link>
+            <pubDate>Tue, 10 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Michelin and Goodyear run triple shifts at their aviation rubber plants, re-vulcanizing commercial landing gear tires that wear out after just a few hundred landings.]]></description>
+        </item>
+        <item>
+            <title>Avionics Firmware Certification Processes Digitized by EASA and FAA</title>
+            <link>https://www.aerospace-defense-monitor.com/news/94</link>
+            <pubDate>Tue, 10 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[The grueling DO-178C software validation process is partially automated, allowing manufacturers to push critical flight-control updates to the assembly line faster.]]></description>
+        </item>
+        <item>
+            <title>Aerospace Sealant Mixing and Dispensing Fully Automated</title>
+            <link>https://www.aerospace-defense-monitor.com/news/95</link>
+            <pubDate>Wed, 11 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Robotic applicators replace humans inside fuel tanks, perfectly mixing the toxic, two-part polysulfide sealants required to prevent jet fuel leaks.]]></description>
+        </item>
+        <item>
+            <title>Aircraft Seat Belt Airbag Production Shifts to Mexico</title>
+            <link>https://www.aerospace-defense-monitor.com/news/96</link>
+            <pubDate>Wed, 11 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[AmSafe and other restraint manufacturers leverage automotive airbag supply chains south of the border to produce the specialized inflatable belts required for bulkhead seats.]]></description>
+        </item>
+        <item>
+            <title>Engine Pylon Forgings Require Massive 50,000-Ton Presses</title>
+            <link>https://www.aerospace-defense-monitor.com/news/97</link>
+            <pubDate>Thu, 12 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Only a handful of facilities globally possess the crushing power required to forge the massive titanium structures that hold 10,000lb jet engines to the wings.]]></description>
+        </item>
+        <item>
+            <title>Cockpit Display Bezel Machining Moves to 3D Printed Magnesium</title>
+            <link>https://www.aerospace-defense-monitor.com/news/98</link>
+            <pubDate>Thu, 12 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Avionics makers drastically reduce weight by printing the structural frames of flight computers, cutting away 60% of the material compared to block-machined aluminum.]]></description>
+        </item>
+        <item>
+            <title>Aerospace Grade Epoxy Resin Sourcing Diversifies</title>
+            <link>https://www.aerospace-defense-monitor.com/news/99</link>
+            <pubDate>Fri, 13 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Chemical manufacturers in the US and Europe expand their advanced resin capabilities, ending a decades-long reliance on single-source suppliers in East Asia.]]></description>
+        </item>
+        <item>
+            <title>Global Aerospace Supply Chain Predicts 8% Growth Despite Geopolitics</title>
+            <link>https://www.aerospace-defense-monitor.com/news/100</link>
+            <pubDate>Fri, 13 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Aerospace & Defense]]></category>
+            <description><![CDATA[Industry analysts confirm that the massive commercial aviation backlog and intense defense spending will keep manufacturing lines running at absolute maximum capacity through 2030.]]></description>
+        </item>
+
+    </channel>
+</rss>
