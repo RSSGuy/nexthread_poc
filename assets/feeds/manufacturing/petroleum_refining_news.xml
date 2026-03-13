@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Global Petroleum Refining News Monitor</title>
+        <link>https://www.petro-refining-monitor.com/news</link>
+        <description>Monthly compilation of 100 news headlines and summaries reflecting the state of global manufacturing for crude oil distillation, catalytic cracking, clean fuels, and bio-refining.</description>
+        <lastBuildDate>Fri, 13 Mar 2026 09:30:00 -0400</lastBuildDate>
+        <language>en-US</language>
+        <generator>Gemini-AI-Tracker</generator>
+
+        <item>
+            <title>ExxonMobil Upgrades Beaumont CDU Heat Exchanger Network</title>
+            <link>https://www.petro-refining-monitor.com/news/1</link>
+            <pubDate>Mon, 02 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The refinery installs advanced pinch-technology heat exchangers to maximize thermal recovery before crude oil enters the atmospheric distillation tower, slashing furnace gas consumption.]]></description>
+        </item>
+        <item>
+            <title>Desalter Emulsion Bottlenecks Plague Heavy Crude Processing</title>
+            <link>https://www.petro-refining-monitor.com/news/2</link>
+            <pubDate>Mon, 02 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Gulf Coast refiners struggle with severe rag-layer buildup in electrostatic desalters as they process heavier, higher-asphaltene Canadian tar sands crudes.]]></description>
+        </item>
+        <item>
+            <title>Vacuum Distillation Units (VDU) Face Ejector Wear Issues</title>
+            <link>https://www.petro-refining-monitor.com/news/3</link>
+            <pubDate>Tue, 03 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Steam ejectors used to pull deep vacuums on VDU towers experience accelerated erosion, forcing operators to switch to liquid ring vacuum pumps to prevent gas-oil yields from dropping.]]></description>
+        </item>
+        <item>
+            <title>Crude Blending Operations Optimized via Near-Infrared (NIR) Spectroscopy</title>
+            <link>https://www.petro-refining-monitor.com/news/4</link>
+            <pubDate>Tue, 03 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries deploy real-time NIR analyzers on incoming crude pipelines, allowing AI systems to instantly adjust the blend ratio of light sweet and heavy sour crudes to protect downstream catalysts.]]></description>
+        </item>
+        <item>
+            <title>Fouling Mitigation Chemicals Extend CDU Run Lengths</title>
+            <link>https://www.petro-refining-monitor.com/news/5</link>
+            <pubDate>Wed, 04 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Specialty chemical suppliers introduce new proprietary dispersants that prevent asphaltene precipitation in crude preheat trains, extending the time between costly mechanical cleanings by over 8 months.]]></description>
+        </item>
+        <item>
+            <title>Atmospheric Tower Bottoms (ATB) Pumping Requires Dual-Seal Upgrades</title>
+            <link>https://www.petro-refining-monitor.com/news/6</link>
+            <pubDate>Wed, 04 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Following localized fires, refineries mandate API 682 dual mechanical seals with pressurized barrier fluids on all massive centrifugal pumps handling 700°F residuum.]]></description>
+        </item>
+        <item>
+            <title>European Refineries Pivot to Process West African Light Sweets</title>
+            <link>https://www.petro-refining-monitor.com/news/7</link>
+            <pubDate>Thu, 05 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Continuing the shift away from Russian Urals, Mediterranean refineries optimize their distillation cuts to handle the higher naphtha yields of Nigerian and Angolan crude imports.]]></description>
+        </item>
+        <item>
+            <title>Crude Oil Tank Farm Vapor Recovery Systems Overhauled</title>
+            <link>https://www.petro-refining-monitor.com/news/8</link>
+            <pubDate>Thu, 05 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[EPA regulations force refineries to install advanced liquid-ring compressors and carbon absorption beds to perfectly capture and re-liquefy fugitive VOCs from floating-roof storage tanks.]]></description>
+        </item>
+        <item>
+            <title>Pre-Flash Towers Gain Popularity to Unburden Main CDUs</title>
+            <link>https://www.petro-refining-monitor.com/news/9</link>
+            <pubDate>Fri, 06 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Facilities processing ultra-light Permian Basin crudes bolt on secondary pre-flash drums to boil off the excess light ends before the oil even hits the main atmospheric distillation furnace.]]></description>
+        </item>
+        <item>
+            <title>Overhead Condenser Corrosion Tracked by Wireless Probes</title>
+            <link>https://www.petro-refining-monitor.com/news/10</link>
+            <pubDate>Fri, 06 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Hydrochloric acid condensation at the top of crude towers is now actively monitored by highly sensitive ultrasonic thickness gauges, automatically injecting neutralizing amines to prevent pipe failure.]]></description>
+        </item>
+        <item>
+            <title>Vacuum Gas Oil (VGO) Yield Maximized via Structured Packing</title>
+            <link>https://www.petro-refining-monitor.com/news/11</link>
+            <pubDate>Mon, 09 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries tear out traditional distillation trays in their vacuum towers, installing advanced corrugated sheet metal packing to lower the pressure drop and squeeze more VGO out of the heavy resid.]]></description>
+        </item>
+        <item>
+            <title>Crude Distillation Burners Transition to Ultra-Low NOx</title>
+            <link>https://www.petro-refining-monitor.com/news/12</link>
+            <pubDate>Mon, 09 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Massive 100-MMBtu/hr crude heaters are retrofitted with staged-fuel gas burners to drastically reduce nitrogen oxide emissions without sacrificing the radiant heat flux required to boil oil.]]></description>
+        </item>
+        <item>
+            <title>Naphthenic Acid Corrosion Spurs High-Moly Metallurgy Use</title>
+            <link>https://www.petro-refining-monitor.com/news/13</link>
+            <pubDate>Tue, 10 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Processing high-TAN (Total Acid Number) crudes forces engineers to cut out standard carbon steel piping, replacing transfer lines with expensive Type 317L stainless steel containing heavy molybdenum.]]></description>
+        </item>
+        <item>
+            <title>Desalter Water-Wash Efficiency Boosted by Ultrasonic Mixing</title>
+            <link>https://www.petro-refining-monitor.com/news/14</link>
+            <pubDate>Tue, 10 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Instead of traditional static mixers, refineries deploy in-line ultrasonic homogenizers to mix fresh wash-water into crude oil, perfectly extracting corrosive chlorides before they enter the tower.]]></description>
+        </item>
+        <item>
+            <title>Refinery Steam Balancing AI Cuts Boiler Fuel by 6%</title>
+            <link>https://www.petro-refining-monitor.com/news/15</link>
+            <pubDate>Wed, 11 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Software algorithms monitor the high, medium, and low-pressure steam headers across the entire refinery, opening and closing letdown valves autonomously to prevent venting excess steam to the atmosphere.]]></description>
+        </item>
+        <item>
+            <title>Fouled Crude Heat Exchangers Cleaned In-Situ via Cavitation</title>
+            <link>https://www.petro-refining-monitor.com/news/16</link>
+            <pubDate>Wed, 11 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Maintenance crews utilize specialized acoustic generators to create millions of microscopic collapsing bubbles inside active heat exchangers, blasting away baked-on carbon without dismantling the pipes.]]></description>
+        </item>
+        <item>
+            <title>CDU Pumparound Circuits Optimized for Maximum Heat Recovery</title>
+            <link>https://www.petro-refining-monitor.com/news/17</link>
+            <pubDate>Thu, 12 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Process engineers adjust the flow rates of hot liquid drawn off the side of the distillation tower and pumped back higher up, perfectly balancing internal liquid traffic to sharpen the cut between kerosene and diesel.]]></description>
+        </item>
+        <item>
+            <title>Vacuum Tower Wash-Bed Coking Causes Premature Shutdowns</title>
+            <link>https://www.petro-refining-monitor.com/news/18</link>
+            <pubDate>Thu, 12 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Insufficient slop-wax wetting at the very bottom of the vacuum packing allows heavy entrained asphalt to bake solid into the metal grids, forcing localized, unplanned cleanings.]]></description>
+        </item>
+        <item>
+            <title>Crude Slate Shifts Force CDUs to Run Below Turndown Limits</title>
+            <link>https://www.petro-refining-monitor.com/news/19</link>
+            <pubDate>Fri, 13 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[As gasoline demand softens slightly, massive 300,000 bpd crude units struggle with 'weeping' distillation trays because vapor velocities drop too low to hold liquid up on the plates.]]></description>
+        </item>
+        <item>
+            <title>Primary Distillation Output Tilts Toward Petrochemical Feedstocks</title>
+            <link>https://www.petro-refining-monitor.com/news/20</link>
+            <pubDate>Fri, 13 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries actively lower the boiling cut-point between naphtha and kerosene, intentionally producing more light liquids to feed integrated steam crackers for plastics rather than motor fuels.]]></description>
+        </item>
+
+        <item>
+            <title>Fluid Catalytic Cracking (FCC) Catalyst Formulations Target Propylene</title>
+            <link>https://www.petro-refining-monitor.com/news/21</link>
+            <pubDate>Mon, 02 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[With plastics demand soaring, FCC operators switch to specialized ZSM-5 zeolite additives designed to over-crack heavy gas oils specifically into high-value propylene gas instead of gasoline.]]></description>
+        </item>
+        <item>
+            <title>Delayed Coker Drums Face Severe Bulging and Cracking</title>
+            <link>https://www.petro-refining-monitor.com/news/22</link>
+            <pubDate>Mon, 02 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The violent thermal cycling of pumping 900°F residuum into steel drums and then quenching it with cold water forces refineries to perform complex weld-overlays to repair bulging 100-foot towers.]]></description>
+        </item>
+        <item>
+            <title>Hydrocracker Operations Constrained by Hydrogen Scarcity</title>
+            <link>https://www.petro-refining-monitor.com/news/23</link>
+            <pubDate>Tue, 03 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Massive high-pressure units designed to shatter heavy oil into premium diesel are forced to reduce feed rates as upstream Steam Methane Reformers undergo unexpected maintenance.]]></description>
+        </item>
+        <item>
+            <title>FCC Regenerator Flue Gas Scrubbers Capture Particulate Fines</title>
+            <link>https://www.petro-refining-monitor.com/news/24</link>
+            <pubDate>Tue, 03 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries install massive wet gas scrubbers and electrostatic precipitators to prevent the microscopic catalyst dust swirling inside the FCC from escaping out the main smokestack.]]></description>
+        </item>
+        <item>
+            <title>Alkylation Units Transition from Hydrofluoric to Solid Acid Catalysts</title>
+            <link>https://www.petro-refining-monitor.com/news/25</link>
+            <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[To eliminate the risk of a lethal HF gas cloud over populated areas, urban refineries invest heavily in retrofitting high-octane alkylate production lines to use safe, solid zeolite beds.]]></description>
+        </item>
+        <item>
+            <title>Coker Blowdown Recovery Systems Slash VOC Emissions</title>
+            <link>https://www.petro-refining-monitor.com/news/26</link>
+            <pubDate>Wed, 04 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Instead of venting steam and residual hydrocarbons to the atmosphere during drum depressurization, delayed cokers route the blowdown through complex contact condensers to recover valuable slop oil.]]></description>
+        </item>
+        <item>
+            <title>Isomerization Units Maximize Gasoline Octane Without Aromatics</title>
+            <link>https://www.petro-refining-monitor.com/news/27</link>
+            <pubDate>Thu, 05 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[With regulations capping toxic benzene in motor fuels, refiners push their 'isom' units to the limit, using platinum catalysts to bend straight-chain pentanes into high-octane branched isomers.]]></description>
+        </item>
+        <item>
+            <title>FCC Feed Nozzle Atomization Directly Impacts Yields</title>
+            <link>https://www.petro-refining-monitor.com/news/28</link>
+            <pubDate>Thu, 05 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Process engineers replace worn injection nozzles at the base of the FCC riser, ensuring the heavy oil is sprayed into a fine mist that instantly vaporizes upon contacting the 1300°F catalyst powder.]]></description>
+        </item>
+        <item>
+            <title>Heavy Oil Upgrading Relies on Ebullated Bed Hydrocracking</title>
+            <link>https://www.petro-refining-monitor.com/news/29</link>
+            <pubDate>Fri, 06 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Unlike fixed-bed reactors that quickly plug with metals, refineries processing bottom-of-the-barrel residuum utilize bubbling catalyst beds that can be added to and withdrawn from while the unit is running.]]></description>
+        </item>
+        <item>
+            <title>Sulfuric Acid Alkylation Regeneration Plants Overwhelmed</title>
+            <link>https://www.petro-refining-monitor.com/news/30</link>
+            <pubDate>Fri, 06 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries utilizing sulfuric acid to create aviation fuel blendstocks face logistical nightmares as the off-site chemical plants required to burn and regenerate the 'spent' black acid reach max capacity.]]></description>
+        </item>
+        <item>
+            <title>Catalytic Reformers Struggle with Chloride Injection Balance</title>
+            <link>https://www.petro-refining-monitor.com/news/31</link>
+            <pubDate>Mon, 09 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Operators must continuously inject precisely calibrated amounts of organic chlorides into continuous catalytic reformers (CCR) to maintain the acidic function of the platinum catalysts without rusting the downstream pipes.]]></description>
+        </item>
+        <item>
+            <title>Coke Drum De-Heading Completely Automated for Safety</title>
+            <link>https://www.petro-refining-monitor.com/news/32</link>
+            <pubDate>Mon, 09 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries finalize the elimination of manual drum-opening, installing massive hydraulic slide-valves at the bottom of delayed cokers to prevent operators from being exposed to scalding water and falling petcoke.]]></description>
+        </item>
+        <item>
+            <title>Visbreaking Units Enjoy a Resurgence for Fuel Oil Reduction</title>
+            <link>https://www.petro-refining-monitor.com/news/33</link>
+            <pubDate>Tue, 10 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[To meet IMO 2020 marine fuel regulations, older refineries bypass expensive cokers and run cheap, mild thermal cracking units to simply lower the viscosity of heavy residues into sellable fuel.]]></description>
+        </item>
+        <item>
+            <title>FCC Power Recovery Trains Generate Massive Electricity</title>
+            <link>https://www.petro-refining-monitor.com/news/34</link>
+            <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The incredibly hot, pressurized exhaust gas leaving the FCC catalyst regenerator is routed through heavy-duty expander turbines, generating enough megawatts to power the entire conversion complex.]]></description>
+        </item>
+        <item>
+            <title>Hydrocracker Catalyst Bed Temperature Excursions Trigger SCRAMs</title>
+            <link>https://www.petro-refining-monitor.com/news/35</link>
+            <pubDate>Wed, 11 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Highly exothermic hydrogenation reactions force operators to carefully monitor 'hot spots' inside the 2000-psi reactor beds, triggering automated cold-hydrogen quenches to prevent complete metallurgical failure.]]></description>
+        </item>
+        <item>
+            <title>Shot-Coke vs Sponge-Coke Formations Dictated by Feedstock</title>
+            <link>https://www.petro-refining-monitor.com/news/36</link>
+            <pubDate>Wed, 11 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Coker operators must rapidly adjust heating profiles when switching crude oils; inadvertently producing hard, BB-sized 'shot coke' instead of porous 'sponge coke' causes dangerous avalanches during drum cutting.]]></description>
+        </item>
+        <item>
+            <title>Polymerization Units Upgraded to Supplement Alkylate Shortages</title>
+            <link>https://www.petro-refining-monitor.com/news/37</link>
+            <pubDate>Thu, 12 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries reactivate older solid-phosphoric-acid 'poly' units, stitching light propylene and butylene gases together to create high-octane liquid gasoline blending components without requiring isobutane.]]></description>
+        </item>
+        <item>
+            <title>Fluid Coking Technology Offers Continuous Alternative to Drums</title>
+            <link>https://www.petro-refining-monitor.com/news/38</link>
+            <pubDate>Thu, 12 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Select Canadian tar sands upgraders utilize continuous fluidized bed cokers, burning a portion of the coke to provide heat to crack the heavy bitumen without the batch-cycle downtime of traditional drums.]]></description>
+        </item>
+        <item>
+            <title>FCC Riser Termination Devices Prevent Over-Cracking</title>
+            <link>https://www.petro-refining-monitor.com/news/39</link>
+            <pubDate>Fri, 13 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Advanced cyclonic separators are installed at the top of the FCC reactor, instantly ripping the hydrocarbon vapor away from the catalyst powder in milliseconds to prevent gasoline from degrading into dry gas.]]></description>
+        </item>
+        <item>
+            <title>Heavy Aromatics Processing Drives Needle Coke Production</title>
+            <link>https://www.petro-refining-monitor.com/news/40</link>
+            <pubDate>Fri, 13 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries carefully select highly aromatic decant oils to feed specialized delayed cokers, producing the ultra-premium 'needle coke' required to manufacture graphite electrodes for steel recycling.]]></description>
+        </item>
+
+        <item>
+            <title>Ultra-Low Sulfur Diesel (ULSD) Reactors Face Catalyst Deactivation</title>
+            <link>https://www.petro-refining-monitor.com/news/41</link>
+            <pubDate>Mon, 02 Mar 2026 08:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Hydrodesulfurization (HDS) units struggle to reach the mandated 10-ppm sulfur limit as microscopic silicon and arsenic contaminants in the crude oil permanently blind the active cobalt-molybdenum catalyst sites.]]></description>
+        </item>
+        <item>
+            <title>Steam Methane Reformers (SMR) Implement Carbon Capture</title>
+            <link>https://www.petro-refining-monitor.com/news/42</link>
+            <pubDate>Mon, 02 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refinery hydrogen plants, massive emitters of CO2, are retrofitted with amine absorption towers to strip carbon dioxide directly out of the syngas stream, creating 'blue hydrogen' for clean fuel production.]]></description>
+        </item>
+        <item>
+            <title>Claus Sulfur Recovery Units Maximize Conversion Efficiency</title>
+            <link>https://www.petro-refining-monitor.com/news/43</link>
+            <pubDate>Tue, 03 Mar 2026 10:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[To prevent toxic SO2 emissions, refineries upgrade their thermal reactor burners to ensure the highly lethal H2S gas stripped from fuels is perfectly combusted and condensed into pure liquid elemental sulfur.]]></description>
+        </item>
+        <item>
+            <title>Tail Gas Treating Units (TGTU) Become Mandatory for Compliance</title>
+            <link>https://www.petro-refining-monitor.com/news/44</link>
+            <pubDate>Tue, 03 Mar 2026 11:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Because standard Claus plants only capture 96% of sulfur, EPA consent decrees force refineries to add complex SCOT (Shell Claus Off-gas Treating) units to push total sulfur recovery past 99.9%.]]></description>
+        </item>
+        <item>
+            <title>Amine Regeneration Bottlenecks Limit Sour Crude Processing</title>
+            <link>https://www.petro-refining-monitor.com/news/45</link>
+            <pubDate>Wed, 04 Mar 2026 08:35:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The liquid MEA/DEA solvents used to wash hydrogen sulfide out of refinery gas streams become saturated; limits on the steam reboilers used to boil the acid gas back out cap the entire refinery's throughput.]]></description>
+        </item>
+        <item>
+            <title>Tier 3 Gasoline Standards Force Severe FCC Naphtha Hydrotreating</title>
+            <link>https://www.petro-refining-monitor.com/news/46</link>
+            <pubDate>Wed, 04 Mar 2026 09:35:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Meeting the 10-ppm sulfur average for gasoline requires refiners to aggressively hydrotreat cracked naphtha, destroying valuable octane in the process and forcing them to buy expensive alkylate to compensate.]]></description>
+        </item>
+        <item>
+            <title>Pressure Swing Adsorption (PSA) Purifies Hydrogen Networks</title>
+            <link>https://www.petro-refining-monitor.com/news/47</link>
+            <pubDate>Thu, 05 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries install massive vessels filled with molecular sieves that rapidly cycle pressure, scrubbing low-purity off-gas streams to recover 99.9% pure hydrogen gas to feed hungry diesel desulfurizers.]]></description>
+        </item>
+        <item>
+            <title>Sour Water Strippers Overwhelmed by High-Nitrogen Crudes</title>
+            <link>https://www.petro-refining-monitor.com/news/48</link>
+            <pubDate>Thu, 05 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The wastewater generated by hydrotreating units is heavily laden with ammonia and H2S; stripping towers run at maximum steam capacity to boil these toxic gases out before the water hits the environmental bio-treater.]]></description>
+        </item>
+        <item>
+            <title>Mercaptan Removal via Merox Units Kept for Jet Fuel</title>
+            <link>https://www.petro-refining-monitor.com/news/49</link>
+            <pubDate>Fri, 06 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Instead of destroying sulfur with hydrogen, aviation fuel units use caustic soda and specialized catalysts to simply oxidize foul-smelling mercaptans into sweet-smelling, non-corrosive disulfides, meeting Jet-A specifications.]]></description>
+        </item>
+        <item>
+            <title>Hydrotreater Wash-Water Injection Prevents Salt Plugs</title>
+            <link>https://www.petro-refining-monitor.com/news/50</link>
+            <pubDate>Fri, 06 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Engineers perfectly calibrate the continuous injection of liquid water into the high-pressure reactor effluent to dissolve ammonium bisulfide salts before they solidify and catastrophically choke the heat exchangers.]]></description>
+        </item>
+        <item>
+            <title>Liquid Sulfur Storage Pits Require Constant Sweep Air</title>
+            <link>https://www.petro-refining-monitor.com/news/51</link>
+            <pubDate>Mon, 09 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The massive concrete underground vaults holding 300°F molten elemental sulfur must be actively ventilated with sweeping air and steam ejectors to prevent toxic H2S from accumulating to explosive levels inside the headspace.]]></description>
+        </item>
+        <item>
+            <title>Aviation Alkylate Manufacturing Ensures Lead-Free Avgas</title>
+            <link>https://www.petro-refining-monitor.com/news/52</link>
+            <pubDate>Mon, 09 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[As the FAA phases out leaded 100LL fuel for piston airplanes, specialty refining units carefully tweak their alkylation reactor temperatures to produce a pure, 100-octane hydrocarbon that prevents engine knocking without lead.]]></description>
+        </item>
+        <item>
+            <title>Hydrogen Make-Up Compressors Suffer Valve Failures</title>
+            <link>https://www.petro-refining-monitor.com/news/53</link>
+            <pubDate>Tue, 10 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The massive reciprocating compressors that squeeze lightweight hydrogen gas up to 2000 psi face severe mechanical wear; broken compressor valves immediately bottleneck the entire refinery's ability to produce clean diesel.]]></description>
+        </item>
+        <item>
+            <title>Reactor Multipoint Thermocouples Monitor Catalyst Exotherms</title>
+            <link>https://www.petro-refining-monitor.com/news/54</link>
+            <pubDate>Tue, 10 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[To prevent the steel reactor walls from melting during heavy desulfurization, long sensor wands containing dozens of temperature probes are plunged directly into the catalyst bed to detect localized runaway heat spikes.]]></description>
+        </item>
+        <item>
+            <title>Heavy Oil Desulfurization Shift from Fixed to Moving Beds</title>
+            <link>https://www.petro-refining-monitor.com/news/55</link>
+            <pubDate>Wed, 11 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Processing heavy residuum from vacuum towers coats traditional catalysts in vanadium and nickel in months; refineries invest in bunker-style moving beds where fresh catalyst is slowly added at the top while spent rocks drop out the bottom.]]></description>
+        </item>
+        <item>
+            <title>Amine System Foaming Events Cause Refinery-Wide Upsets</title>
+            <link>https://www.petro-refining-monitor.com/news/56</link>
+            <pubDate>Wed, 11 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Liquid hydrocarbon accidentally carrying over into the amine gas scrubbers causes massive foaming; the amine spills over into the fuel gas headers, shutting down furnaces and forcing millions of dollars of gas to the safety flare.]]></description>
+        </item>
+        <item>
+            <title>High-Pressure Separator Liquid Levels Closely Monitored</title>
+            <link>https://www.petro-refining-monitor.com/news/57</link>
+            <pubDate>Thu, 12 Mar 2026 08:10:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[If the liquid seal is lost inside a hydrocracker separator drum, lethal 2000-psi hydrogen gas will blow down into the low-pressure product tanks, causing catastrophic rupture; redundant nucleonic level sensors are mandated.]]></description>
+        </item>
+        <item>
+            <title>Catalyst Sulfiding Operations Require Dimethyl Disulfide (DMDS)</title>
+            <link>https://www.petro-refining-monitor.com/news/58</link>
+            <pubDate>Thu, 12 Mar 2026 09:10:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Fresh hydrotreating catalyst arrives as inactive metal oxide; during startup, operators carefully inject highly odorous liquid DMDS to safely convert the catalyst into its active metal-sulfide state before hitting it with raw crude oil.]]></description>
+        </item>
+        <item>
+            <title>Isomerate Blending Resolves Reid Vapor Pressure (RVP) Limits</title>
+            <link>https://www.petro-refining-monitor.com/news/59</link>
+            <pubDate>Fri, 13 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[During the shift to summer-grade gasoline, refiners cannot use cheap, highly volatile butane for octane; instead, they rely entirely on stable C5/C6 isomerate to boost engine performance without exceeding strict EPA evaporation limits.]]></description>
+        </item>
+        <item>
+            <title>Global Sulfur Markets Saturated by Refinery Byproducts</title>
+            <link>https://www.petro-refining-monitor.com/news/60</link>
+            <pubDate>Fri, 13 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[As environmental mandates force every refinery in the developing world to scrub sulfur out of their diesel, millions of tons of yellow elemental sulfur flood the market, dropping the commodity price to near zero.]]></description>
+        </item>
+
+        <item>
+            <title>Neste Completes Massive Renewable Diesel Expansion in Singapore</title>
+            <link>https://www.petro-refining-monitor.com/news/61</link>
+            <pubDate>Mon, 02 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The world's leading bio-refiner brings massive new hydrotreating capacity online, processing used cooking oil and animal tallow into chemically identical drop-in diesel fuel.]]></description>
+        </item>
+        <item>
+            <title>Sustainable Aviation Fuel (SAF) Production Relies on HEFA Process</title>
+            <link>https://www.petro-refining-monitor.com/news/62</link>
+            <pubDate>Mon, 02 Mar 2026 09:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Traditional refineries re-tool idle hydrocrackers to utilize the Hydroprocessed Esters and Fatty Acids route, violently reacting vegetable oils with hydrogen to break them into jet-fuel length hydrocarbons.]]></description>
+        </item>
+        <item>
+            <title>Co-Processing Bio-Feeds Causes Catalyst Deactivation in FCCs</title>
+            <link>https://www.petro-refining-monitor.com/news/63</link>
+            <pubDate>Tue, 03 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries attempting to inject raw soybean oil directly into their massive Fluid Catalytic Crackers report high levels of water and oxygen destroying the structural integrity of the zeolite catalyst powder.]]></description>
+        </item>
+        <item>
+            <title>Renewable Naphtha Emerges as High-Value Petrochemical Feedstock</title>
+            <link>https://www.petro-refining-monitor.com/news/64</link>
+            <pubDate>Tue, 03 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The light, highly volatile byproduct of making renewable diesel is increasingly captured and sold at a massive premium to chemical plants looking to synthesize 'green' plastics.]]></description>
+        </item>
+        <item>
+            <title>Pre-Treatment Units (PTU) Crucial for Used Cooking Oil Processing</title>
+            <link>https://www.petro-refining-monitor.com/news/65</link>
+            <pubDate>Wed, 04 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Because restaurant grease is full of salt, food particles, and free fatty acids, bio-refineries must install extensive bleaching earth and polyethylene filtration steps before the oil touches delicate hydrogenation catalysts.]]></description>
+        </item>
+        <item>
+            <title>Alcohol-to-Jet (ATJ) SAF Pathways Reach Commercial Scale</title>
+            <link>https://www.petro-refining-monitor.com/news/66</link>
+            <pubDate>Wed, 04 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Moving beyond fats and oils, LanzaJet and others successfully dehydrate and oligomerize corn-derived ethanol into highly branched aviation fuel, radically expanding the available bio-feedstock pool.]]></description>
+        </item>
+        <item>
+            <title>Hydrogen Demands for Bio-Refining Dwarf Traditional Oil</title>
+            <link>https://www.petro-refining-monitor.com/news/67</link>
+            <pubDate>Thu, 05 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Tearing the oxygen atoms out of plant and animal fats to make pure hydrocarbons requires up to three times more hydrogen gas than desulfurizing traditional fossil crude, forcing refiners to build new SMR plants.]]></description>
+        </item>
+        <item>
+            <title>Green Hydrogen Electrolyzers Sited Directly at EU Refineries</title>
+            <link>https://www.petro-refining-monitor.com/news/68</link>
+            <pubDate>Thu, 05 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Shell and BP deploy massive 100MW alkaline water electrolyzers powered by offshore wind to inject zero-carbon hydrogen directly into their conventional diesel hydrotreaters.]]></description>
+        </item>
+        <item>
+            <title>Carbon Intensity (CI) Scoring Dictates Bio-Refinery Profits</title>
+            <link>https://www.petro-refining-monitor.com/news/69</link>
+            <pubDate>Fri, 06 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Under California's LCFS program, refiners actively source heavily degraded waste greases over virgin soy oil, because the lower the carbon score of the feedstock, the higher the tradable tax credit value of the fuel.]]></description>
+        </item>
+        <item>
+            <title>E-Fuels (Power-to-Liquid) Synthesis Plants Under Construction</title>
+            <link>https://www.petro-refining-monitor.com/news/70</link>
+            <pubDate>Fri, 06 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Porsche and Siemens Energy scale operations in Chile, using wind power to extract CO2 from the air and react it with green hydrogen to synthesize completely carbon-neutral synthetic methanol and gasoline.]]></description>
+        </item>
+        <item>
+            <title>Fischer-Tropsch Waxes Upgraded into Premium Lubricants</title>
+            <link>https://www.petro-refining-monitor.com/news/71</link>
+            <pubDate>Mon, 09 Mar 2026 10:10:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Gas-to-Liquids (GTL) plants operating in Qatar crack heavy synthetic waxes over platinum catalysts, yielding highly branched, crystal-clear base oils that perform better than any refined fossil lubricant.]]></description>
+        </item>
+        <item>
+            <title>Metallurgy Upgrades Required for Corrosive Bio-Oils</title>
+            <link>https://www.petro-refining-monitor.com/news/72</link>
+            <pubDate>Mon, 09 Mar 2026 11:10:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Legacy refineries transitioning to bio-feeds discover that free fatty acids at high temperatures aggressively dissolve standard carbon steel, forcing extensive piping replacements using 316 stainless.]]></description>
+        </item>
+        <item>
+            <title>Isomerization Dewaxing Ensures Bio-Diesel Flows in Winter</title>
+            <link>https://www.petro-refining-monitor.com/news/73</link>
+            <pubDate>Tue, 10 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Because renewable diesel from animal fats forms long, straight paraffin chains that freeze solid at 40°F, bio-refineries must add secondary catalytic reactors to 'bend' the molecules so the fuel remains liquid in snow.]]></description>
+        </item>
+        <item>
+            <title>Pyrolysis Oil from Waste Plastics Co-Processed in Crackers</title>
+            <link>https://www.petro-refining-monitor.com/news/74</link>
+            <pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Refineries begin accepting tanker trucks of 'taco oil'—melted down municipal plastic bags—blending it slowly into vacuum gas oil streams to be hydrocracked into certified circular fuels.]]></description>
+        </item>
+        <item>
+            <title>Tall Oil Pitch (Paper Mill Waste) Valued as Bio-Refinery Feed</title>
+            <link>https://www.petro-refining-monitor.com/news/75</link>
+            <pubDate>Wed, 11 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Scandinavian refiners lead the charge in extracting valuable rosins and fatty acids from the black, sludgy byproduct of kraft paper pulping, upgrading it into premium renewable diesel.]]></description>
+        </item>
+        <item>
+            <title>Exothermic Runaway Risks Managed in Bio-Hydrotreaters</title>
+            <link>https://www.petro-refining-monitor.com/news/76</link>
+            <pubDate>Wed, 11 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Ripping the oxygen out of triglycerides releases immense amounts of heat; operators must recycle massive volumes of cooled liquid product back into the reactor inlet to act as a heat-sink and prevent catalyst melting.]]></description>
+        </item>
+        <item>
+            <title>Propane Byproduct Yields from Bio-Refining Captured for Sale</title>
+            <link>https://www.petro-refining-monitor.com/news/77</link>
+            <pubDate>Thu, 12 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[When the glycerin backbone of a vegetable oil molecule is hydrotreated, it turns into pure propane gas; bio-refineries install compression recovery systems to sell this 'bio-LPG' as a valuable co-product.]]></description>
+        </item>
+        <item>
+            <title>Aviation Aromatics Limits Challenge 100% SAF Flights</title>
+            <link>https://www.petro-refining-monitor.com/news/78</link>
+            <pubDate>Thu, 12 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Because bio-synthesized jet fuel lacks the complex aromatic rings found in fossil fuel, it causes older rubber engine seals to shrink and leak; refiners must synthetically add aromatics or airlines must cap blends at 50%.]]></description>
+        </item>
+        <item>
+            <title>Algae-to-Biofuel Scale-Up Projects Quietly Shelved</title>
+            <link>https://www.petro-refining-monitor.com/news/79</link>
+            <pubDate>Fri, 13 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Major oil companies divest from multi-billion dollar algae pond experiments, citing the insurmountable thermodynamic costs of pumping and harvesting millions of gallons of water to extract a few barrels of oil.]]></description>
+        </item>
+        <item>
+            <title>Biodiesel (FAME) Factories Outcompeted by Renewable Diesel (HDRD)</title>
+            <link>https://www.petro-refining-monitor.com/news/80</link>
+            <pubDate>Fri, 13 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[First-generation biodiesel plants that use methanol transesterification face widespread bankruptcies, as massive oil refineries pivot to hydrotreating to create a superior, non-gelling drop-in fuel.]]></description>
+        </item>
+
+        <item>
+            <title>Refinery Turnaround (TAR) Schedules Delayed by Skilled Labor Shortages</title>
+            <link>https://www.petro-refining-monitor.com/news/81</link>
+            <pubDate>Mon, 02 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Massive planned shutdowns meant to replace catalysts and weld pipes are pushed back months due to a critical lack of certified boilermakers, pipefitters, and x-ray welding inspectors.]]></description>
+        </item>
+        <item>
+            <title>Corrosion Under Insulation (CUI) Plagues Aging Pipe Racks</title>
+            <link>https://www.petro-refining-monitor.com/news/82</link>
+            <pubDate>Mon, 02 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Water trapped beneath aluminum cladding secretly rusts steel pipelines from the outside in; refineries deploy advanced pulsed-eddy-current scanners that look through the insulation without destroying it.]]></description>
+        </item>
+        <item>
+            <title>Drone Inspections Replace Scaffolding for Flare Stacks</title>
+            <link>https://www.petro-refining-monitor.com/news/83</link>
+            <pubDate>Tue, 03 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[High-resolution optical and thermal drones fly hundreds of feet into the air to inspect the refractory tips of active flare stacks, saving millions in scaffolding costs and preventing dangerous worker climbs.]]></description>
+        </item>
+        <item>
+            <title>Pump Mechanical Seals Replaced with Magnetic Drive Pumps</title>
+            <link>https://www.petro-refining-monitor.com/news/84</link>
+            <pubDate>Tue, 03 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[To eliminate fugitive VOC emissions entirely, refineries replacing hazardous acid and benzene pumps abandon physical spinning shaft seals, utilizing sealed cans driven by external spinning magnets.]]></description>
+        </item>
+        <item>
+            <title>Catalyst Changeouts Handled by Life-Support Diving Crews</title>
+            <link>https://www.petro-refining-monitor.com/news/85</link>
+            <pubDate>Wed, 04 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Specialized contractors wearing umbilical breathing apparatus descend into massive, nitrogen-purged reactor vessels to vacuum out toxic, pyrophoric spent catalyst under zero-oxygen conditions.]]></description>
+        </item>
+        <item>
+            <title>Predictive Maintenance Software Monitors Compressor Vibrations</title>
+            <link>https://www.petro-refining-monitor.com/news/86</link>
+            <pubDate>Wed, 04 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Wireless piezoelectric sensors constantly analyze the harmonic signature of high-speed centrifugal compressors, using AI to predict bearing failure weeks before it causes a catastrophic plant trip.]]></description>
+        </item>
+        <item>
+            <title>Fenceline Air Monitoring Data Mandated for Public Access</title>
+            <link>https://www.petro-refining-monitor.com/news/87</link>
+            <pubDate>Thu, 05 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[New EPA rules force refineries to install permanent UV-spectrometry lasers around their perimeters, streaming real-time benzene and sulfur dioxide concentration levels directly to public community websites.]]></description>
+        </item>
+        <item>
+            <title>High-Temperature Hydrogen Attack (HTHA) Inspections Intensify</title>
+            <link>https://www.petro-refining-monitor.com/news/88</link>
+            <pubDate>Thu, 05 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Following the Tesoro Anacortes tragedy, inspectors aggressively phase-array test carbon steel heat exchangers operating above 400°F to find microscopic hydrogen fissures before the metal bursts.]]></description>
+        </item>
+        <item>
+            <title>Digital Twins Simulate Refinery Transients Before Execution</title>
+            <link>https://www.petro-refining-monitor.com/news/89</link>
+            <pubDate>Fri, 06 Mar 2026 08:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Control room operators use hyper-accurate thermodynamic models running parallel to the live plant, testing the exact effects of opening a massive valve in simulation before actually turning it in reality.]]></description>
+        </item>
+        <item>
+            <title>Process Hazard Analysis (PHA) Audits Overwhelm Engineering Teams</title>
+            <link>https://www.petro-refining-monitor.com/news/90</link>
+            <pubDate>Fri, 06 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[OSHA's Process Safety Management (PSM) standard forces refineries into endless loops of 'What-If' scenarios, requiring multi-disciplinary teams to mathematically prove that a failing pump cannot cause a catastrophic explosion.]]></description>
+        </item>
+        <item>
+            <title>Cooling Tower Basin Sludge Removed via Underwater ROVs</title>
+            <link>https://www.petro-refining-monitor.com/news/91</link>
+            <pubDate>Mon, 09 Mar 2026 10:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[To prevent shutting down massive water-cooling systems during summer peaks, refineries deploy small tracked submarines to vacuum up biological sludge and mud from the bottom of the active cooling basins.]]></description>
+        </item>
+        <item>
+            <title>Safety Instrumented Systems (SIS) Decoupled from Main Networks</title>
+            <link>https://www.petro-refining-monitor.com/news/92</link>
+            <pubDate>Mon, 09 Mar 2026 11:45:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[Following high-profile cybersecurity threats, refineries physically sever the hardwiring of emergency shutdown PLCs from the corporate IT networks, ensuring a hacker cannot disable the safety blowdown valves.]]></description>
+        </item>
+        <item>
+            <title>Air-Cooled Heat Exchangers (Fin-Fans) Require Winterization</title>
+            <link>https://www.petro-refining-monitor.com/news/93</link>
+            <pubDate>Tue, 10 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[After the Texas freeze disaster, southern US refineries scramble to install automated louvers and steam-tracing on overhead cooling fans to prevent pipes from freezing solid and bursting during freak polar vortexes.]]></description>
+        </item>
+        <item>
+            <title>Coke Cutting High-Pressure Water Pumps Utilize Variable Frequency Drives</title>
+            <link>https://www.petro-refining-monitor.com/news/94</link>
+            <pubDate>Tue, 10 Mar 2026 09:20:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The massive 4,000 psi jet-pumps used to blast solid petcoke out of 100-foot drums are retrofitted with VFDs, preventing massive electrical grid spikes every time the cutting tool is turned on.]]></description>
+        </item>
+        <item>
+            <title>Furnace Decoking Operations Limit Refinery Throughput</title>
+            <link>https://www.petro-refining-monitor.com/news/95</link>
+            <pubDate>Wed, 11 Mar 2026 10:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[When carbon deposits choke the inside of fired heater tubes, operators must run 'steam-air decoking'—intentionally injecting oxygen to burn the carbon out in a controlled fire without melting the steel pipes.]]></description>
+        </item>
+        <item>
+            <title>API 653 Tank Inspections Rely on Magnetic Flux Leakage Floor Scanners</title>
+            <link>https://www.petro-refining-monitor.com/news/96</link>
+            <pubDate>Wed, 11 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[When 5-million-gallon crude tanks are emptied for mandatory 10-year checks, inspectors push magnetic carts across the steel floor plates, instantly mapping out pitting and rust that could cause a bottom-out leak.]]></description>
+        </item>
+        <item>
+            <title>Hot-Tapping and Line-Stopping Allows Welding on Live Pipes</title>
+            <link>https://www.petro-refining-monitor.com/news/97</link>
+            <pubDate>Thu, 12 Mar 2026 08:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[To avoid shutting down a multi-million dollar process, specialized welders weld a valve directly onto a pipe carrying pressurized explosive gas, then drill through the open valve into the live pipe to create a new branch.]]></description>
+        </item>
+        <item>
+            <title>Sulfiding Fires Highlight Dangers of Pyrophoric Iron</title>
+            <link>https://www.petro-refining-monitor.com/news/98</link>
+            <pubDate>Thu, 12 Mar 2026 09:50:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[When opening sour-crude processing vessels for maintenance, iron sulfide scale on the walls reacts instantly with atmospheric oxygen to burst into flames, requiring continuous water-washing until the metal is clean.]]></description>
+        </item>
+        <item>
+            <title>Refinery Control Rooms Transition from Panels to Operator Graphics</title>
+            <link>https://www.petro-refining-monitor.com/news/99</link>
+            <pubDate>Fri, 13 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[The last analog wall-boards are ripped out of major facilities, replaced entirely by High-Performance HMI (Human Machine Interface) screens that use muted greys to prevent alarm fatigue during crisis situations.]]></description>
+        </item>
+        <item>
+            <title>Global Refining Capacity Rationalization Expected to Continue</title>
+            <link>https://www.petro-refining-monitor.com/news/100</link>
+            <pubDate>Fri, 13 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Petroleum Refining]]></category>
+            <description><![CDATA[As massive, highly efficient mega-refineries come online in the Middle East and China, older, less complex facilities in Europe and the US East Coast face permanent closure or conversion to bio-terminals.]]></description>
+        </item>
+
+    </channel>
+</rss>
