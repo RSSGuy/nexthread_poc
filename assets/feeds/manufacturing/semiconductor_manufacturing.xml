@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Global Semiconductor &amp; Microelectronics News Monitor</title>
+        <link>https://www.semiconductor-news-monitor.com/news</link>
+        <description>Monthly compilation of news headlines and summaries reflecting the state of global semiconductor fabrication, microelectronics, and advanced packaging.</description>
+        <lastBuildDate>Fri, 13 Mar 2026 09:30:00 -0400</lastBuildDate>
+        <language>en-US</language>
+        <generator>Gemini-AI-Tracker</generator>
+
+        <item>
+            <title>TSMC Announces Accelerated Timeline for 2nm Fab in Arizona</title>
+            <link>https://www.semiconductor-news-monitor.com/tsmc-arizona-2nm/</link>
+            <pubDate>Mon, 02 Mar 2026 08:00:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[The Taiwanese foundry giant confirms that its second US-based facility will move to 2-nanometer production earlier than expected to meet domestic AI chip demand.]]></description>
+        </item>
+        <item>
+            <title>ASML Ships Third High-NA EUV Lithography System to Intel</title>
+            <link>https://www.semiconductor-news-monitor.com/asml-high-na-euv-intel/</link>
+            <pubDate>Mon, 02 Mar 2026 10:30:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[The massive $350 million machine arrives at Intel's Oregon R&D site, marking a critical step in the race for sub-angstrom transistor geometries.]]></description>
+        </item>
+        <item>
+            <title>Global Silicon Wafer Shipments Rebound Sharply in Q1</title>
+            <link>https://www.semiconductor-news-monitor.com/silicon-wafer-shipments-q1/</link>
+            <pubDate>Tue, 03 Mar 2026 09:15:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[SEMI reports a 12% quarter-over-quarter increase in 300mm wafer shipments, signaling an end to the prolonged inventory correction cycle.]]></description>
+        </item>
+        <item>
+            <title>Samsung Foundry Invests $5 Billion in Advanced Packaging Capacity</title>
+            <link>https://www.semiconductor-news-monitor.com/samsung-advanced-packaging/</link>
+            <pubDate>Tue, 03 Mar 2026 13:45:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[To compete with TSMC's CoWoS dominance, Samsung drastically expands its 2.5D and 3D chip-stacking facilities in South Korea.]]></description>
+        </item>
+        <item>
+            <title>Silicon Carbide (SiC) Substrate Shortages Ease as New Plants Come Online</title>
+            <link>https://www.semiconductor-news-monitor.com/sic-substrate-shortages-ease/</link>
+            <pubDate>Wed, 04 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Wolfspeed and STMicroelectronics ramp up 200mm SiC wafer production, bringing relief to EV power electronics manufacturers.]]></description>
+        </item>
+        <item>
+            <title>US CHIPS Act Disburses Final $3 Billion Tranche for Domestic Foundries</title>
+            <link>https://www.semiconductor-news-monitor.com/us-chips-act-final-tranche/</link>
+            <pubDate>Wed, 04 Mar 2026 11:00:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[The Department of Commerce finalizes grants aimed at securing the supply chain for mature node chips used in defense and automotive sectors.]]></description>
+        </item>
+        <item>
+            <title>Japan's Rapidus Achieves Yield Milestone on 2nm Test Wafers</title>
+            <link>https://www.semiconductor-news-monitor.com/japan-rapidus-2nm-yield/</link>
+            <pubDate>Thu, 05 Mar 2026 09:10:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[The state-backed Japanese consortium proves viability of its novel gate-all-around (GAA) transistor design ahead of 2027 mass production.]]></description>
+        </item>
+        <item>
+            <title>Neon Gas Supply Chain Stabilizes Following Diversification Efforts</title>
+            <link>https://www.semiconductor-news-monitor.com/neon-gas-supply-stabilizes/</link>
+            <pubDate>Thu, 05 Mar 2026 14:30:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Semiconductor fabs successfully secure long-term rare gas contracts from North American and Australian air separation plants.]]></description>
+        </item>
+        <item>
+            <title>Micron Opens Massive Mega-Fab for HBM Memory in New York</title>
+            <link>https://www.semiconductor-news-monitor.com/micron-mega-fab-new-york/</link>
+            <pubDate>Fri, 06 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[The memory giant begins equipment move-in at its Clay, NY facility, dedicated to High Bandwidth Memory critical for AI accelerators.]]></description>
+        </item>
+        <item>
+            <title>Water Scarcity in Taiwan Prompts Fabs to Increase Recycling Targets to 90%</title>
+            <link>https://www.semiconductor-news-monitor.com/taiwan-water-scarcity-recycling/</link>
+            <pubDate>Fri, 06 Mar 2026 12:20:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Extended droughts force logic and memory makers in Hsinchu Science Park to invest heavily in advanced ultra-pure water reclamation systems.]]></description>
+        </item>
+        <item>
+            <title>China Ramps Up Legacy Node Capacity to 40% of Global Market</title>
+            <link>https://www.semiconductor-news-monitor.com/china-legacy-node-capacity/</link>
+            <pubDate>Mon, 09 Mar 2026 08:45:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Restricted from cutting-edge equipment, Chinese foundries dominate the 28nm and above space, flooding the market for IoT and appliance chips.]]></description>
+        </item>
+        <item>
+            <title>Photonic Integrated Circuits (PICs) Enter High-Volume Manufacturing</title>
+            <link>https://www.semiconductor-news-monitor.com/photonic-ics-high-volume/</link>
+            <pubDate>Mon, 09 Mar 2026 11:15:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Silicon photonics foundries achieve economies of scale, paving the way for optical interconnects to replace copper in massive data centers.]]></description>
+        </item>
+        <item>
+            <title>Texas Instruments Completes 300mm Analog Fab in Sherman, Texas</title>
+            <link>https://www.semiconductor-news-monitor.com/ti-sherman-analog-fab/</link>
+            <pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[The expansion solidifies TI's dominance in analog and embedded processing, utilizing highly efficient 300mm wafer economics.]]></description>
+        </item>
+        <item>
+            <title>SK Hynix Breaks Through Thermal Limits with Next-Gen HBM4</title>
+            <link>https://www.semiconductor-news-monitor.com/sk-hynix-hbm4-thermal/</link>
+            <pubDate>Tue, 10 Mar 2026 13:50:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[A new hybrid bonding technique eliminates microbumps, drastically reducing heat generation in tightly packed 3D memory stacks.]]></description>
+        </item>
+        <item>
+            <title>European Chips Act Drives Resurgence in German Silicon Ecosystem</title>
+            <link>https://www.semiconductor-news-monitor.com/european-chips-act-germany/</link>
+            <pubDate>Wed, 11 Mar 2026 10:00:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Subsidies successfully attract new joint ventures between European auto-makers and Asian foundries in the 'Silicon Saxony' region.]]></description>
+        </item>
+        <item>
+            <title>Semiconductor Equipment Billings Hit All-Time High of $120 Billion</title>
+            <link>https://www.semiconductor-news-monitor.com/semi-equipment-billings-record/</link>
+            <pubDate>Wed, 11 Mar 2026 14:15:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Applied Materials, Lam Research, and TEL report unprecedented backlog orders driven by concurrent fab constructions in the US, Japan, and Europe.]]></description>
+        </item>
+        <item>
+            <title>Advanced Micro-Patterning Techniques Challenge EUV Monopoly</title>
+            <link>https://www.semiconductor-news-monitor.com/nanoimprint-lithography-challenge/</link>
+            <pubDate>Thu, 12 Mar 2026 09:00:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Canon's Nanoimprint Lithography (NIL) equipment gains traction for specific memory manufacturing steps, offering a cheaper alternative to EUV.]]></description>
+        </item>
+        <item>
+            <title>Glass Substrates Emerge as the Future of Advanced Chip Packaging</title>
+            <link>https://www.semiconductor-news-monitor.com/glass-substrates-advanced-packaging/</link>
+            <pubDate>Thu, 12 Mar 2026 11:30:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Intel and substrate suppliers shift away from organic materials, utilizing glass panels to support massive, power-hungry multi-chiplet designs.]]></description>
+        </item>
+        <item>
+            <title>Gallium Nitride (GaN) Foundries Double Output for Consumer Chargers</title>
+            <link>https://www.semiconductor-news-monitor.com/gan-foundries-double-output/</link>
+            <pubDate>Thu, 12 Mar 2026 15:45:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[The wide-bandgap material completes its transition from niche aerospace application to standard technology in fast-charging consumer electronics.]]></description>
+        </item>
+        <item>
+            <title>AI-Driven Defect Detection Speeds Up New Node Yield Curves</title>
+            <link>https://www.semiconductor-news-monitor.com/ai-defect-detection-yields/</link>
+            <pubDate>Fri, 13 Mar 2026 08:20:00 +0000</pubDate>
+            <category><![CDATA[Semiconductor Manufacturing]]></category>
+            <description><![CDATA[Machine learning models analyzing metrology data in real-time allow process engineers to identify and correct lithography flaws 40% faster.]]></description>
+        </item>
+    </channel>
+</rss>

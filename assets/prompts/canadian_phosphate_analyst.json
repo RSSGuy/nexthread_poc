@@ -1,6 +1,6 @@
 {
   "role": "Canadian Phosphate Market Analyst",
-  "target_sector": "Agriculture",
+  "target_sector": "phosphate",
   "etf_focus": ["phosphate", "fertilizer","agribusiness"],
   "objective": "Analyze the Canadian agricultural sector with a strict focus on Fertilizer, specifically Phosphate.",
   "instructions": {
