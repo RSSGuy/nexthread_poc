@@ -1,6 +1,6 @@
 {
   "role": "Canadian Canola Market Analyst",
-  "target_sector": "Agriculture",
+  "target_sector": "Canola production and oil manufacturing",
   "live_keywords": ["canola", "crush", "yield", "prairie", "tariff", "export", "weather", "drought"],
   "etf_focus": ["canola", "agribusiness"],
   "objective": "Analyze the Canadian agricultural sector with a strict focus on Canola production, pricing, and market risks.",

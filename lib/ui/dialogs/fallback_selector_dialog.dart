@@ -115,6 +115,7 @@ class FallbackSelectorDialog extends StatelessWidget {
 
 // lib/ui/dialogs/fallback_selector_dialog.dart
 
+/*
 import 'dart:convert';
 import 'package:flutter/material.dart';
 
@@ -236,6 +237,207 @@ class _FallbackSelectorDialogState extends State<FallbackSelectorDialog> {
                   subtitle: Text(path, style: const TextStyle(fontSize: 10)),
                   value: isSelected,
                   onChanged: (_) => _toggleSelection(path),
+                );
+              },
+            );
+          },
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text("Cancel"),
+        ),
+        ElevatedButton(
+          onPressed: _selectedPaths.isEmpty
+              ? null
+              : () => Navigator.pop(context, _selectedPaths.toList()),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color(0xFF6366F1),
+            foregroundColor: Colors.white,
+          ),
+          child: Text("Analyze (${_selectedPaths.length})"),
+        ),
+      ],
+    );
+  }
+}*/
+
+// lib/ui/dialogs/fallback_selector_dialog.dart
+
+import 'dart:convert';
+import 'package:flutter/material.dart';
+
+class FallbackSelectorDialog extends StatefulWidget {
+  const FallbackSelectorDialog({super.key});
+
+  static Future<List<String>?> show(BuildContext context) async {
+    return await showDialog<List<String>>(
+      context: context,
+      builder: (context) => const FallbackSelectorDialog(),
+    );
+  }
+
+  @override
+  State<FallbackSelectorDialog> createState() => _FallbackSelectorDialogState();
+}
+
+class _FallbackSelectorDialogState extends State<FallbackSelectorDialog> {
+  final Set<String> _selectedPaths = {};
+  late Future<List<String>> _assetsFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _assetsFuture = _getFeedAssets(context);
+  }
+
+  // Helper to load and filter assets
+  Future<List<String>> _getFeedAssets(BuildContext context) async {
+    try {
+      // 1. Load the AssetManifest
+      final manifestContent = await DefaultAssetBundle.of(context).loadString('AssetManifest.json');
+      final Map<String, dynamic> manifestMap = json.decode(manifestContent);
+
+      // 2. Filter for files in 'assets/feeds/' that end with .xml (this includes sub-folders)
+      final feedFiles = manifestMap.keys
+          .where((key) => key.startsWith('assets/feeds/') && key.endsWith('.xml'))
+          .toList();
+
+      return feedFiles;
+    } catch (e) {
+      print("Error loading asset manifest: $e");
+      return [];
+    }
+  }
+
+  // Helper to make filenames pretty
+  String _formatTitle(String assetPath) {
+    final fileName = assetPath.split('/').last; // "consumer_electronics_news.xml"
+    final name = fileName.replaceAll('.xml', ''); // "consumer_electronics_news"
+
+    // Capitalize and replace underscores/hyphens with spaces
+    return name
+        .replaceAll(RegExp(r'[-_]'), ' ')
+        .split(' ')
+        .map((word) => word.isNotEmpty ? '${word[0].toUpperCase()}${word.substring(1)}' : '')
+        .join(' ');
+  }
+
+  void _toggleSelection(String path) {
+    setState(() {
+      if (_selectedPaths.contains(path)) {
+        _selectedPaths.remove(path);
+      } else {
+        _selectedPaths.add(path);
+      }
+    });
+  }
+
+  // Helper to group files by their sub-directory
+  Map<String, List<String>> _groupFilesByDirectory(List<String> files) {
+    final Map<String, List<String>> grouped = {};
+    for (var file in files) {
+      final parts = file.split('/');
+      // Path format: assets/feeds/manufacturing/file.xml
+      // parts[0] = assets, parts[1] = feeds, parts[2] = manufacturing (or filename if no subfolder)
+
+      String groupName = "General";
+      if (parts.length > 3) {
+        groupName = parts[2].toUpperCase(); // E.g., "MANUFACTURING"
+      }
+
+      if (!grouped.containsKey(groupName)) {
+        grouped[groupName] = [];
+      }
+      grouped[groupName]!.add(file);
+    }
+    return grouped;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text("Select Fallback Data"),
+      content: SizedBox(
+        width: double.maxFinite,
+        child: FutureBuilder<List<String>>(
+          future: _assetsFuture,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const SizedBox(
+                height: 100,
+                child: Center(child: CircularProgressIndicator()),
+              );
+            }
+
+            final files = snapshot.data ?? [];
+
+            if (files.isEmpty) {
+              return const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text("No feed files found in assets/feeds/. Ensure subfolders are added to pubspec.yaml!"),
+              );
+            }
+
+            final groupedFiles = _groupFilesByDirectory(files);
+
+            return ListView.builder(
+              shrinkWrap: true,
+              itemCount: groupedFiles.length,
+              itemBuilder: (context, index) {
+                final groupName = groupedFiles.keys.elementAt(index);
+                final groupItems = groupedFiles[groupName]!;
+
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Section Header
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0)
+                          .copyWith(top: index == 0 ? 0 : 16.0),
+                      child: Text(
+                        groupName,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blueGrey.shade700,
+                          fontSize: 12,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                    ),
+                    // Items in this section
+                    ...groupItems.map((path) {
+                      final title = _formatTitle(path);
+                      final isSelected = _selectedPaths.contains(path);
+
+                      // Customize icon based on filename or folder keywords
+                      IconData icon = Icons.description;
+                      Color color = const Color(0xFF64748B);
+
+                      if (path.contains('crisis')) {
+                        icon = Icons.warning_amber_rounded;
+                        color = const Color(0xFFEF4444);
+                      } else if (path.contains('farmer') || path.contains('agriculture') || path.contains('fertilizer')) {
+                        icon = Icons.agriculture;
+                        color = const Color(0xFF10B981);
+                      } else if (path.contains('manufacturing') || path.contains('electronics') || path.contains('equipment')) {
+                        icon = Icons.precision_manufacturing;
+                        color = const Color(0xFF3B82F6);
+                      }
+
+                      return CheckboxListTile(
+                        secondary: Icon(icon, color: color),
+                        title: Text(title, style: const TextStyle(fontSize: 14)),
+                        subtitle: Text(path, style: const TextStyle(fontSize: 10)),
+                        value: isSelected,
+                        onChanged: (_) => _toggleSelection(path),
+                        dense: true,
+                        controlAffinity: ListTileControlAffinity.leading,
+                      );
+                    }).toList(), // Don't forget .toList() here instead of trailing commas inside map
+                    const Divider(),
+                  ],
                 );
               },
             );
